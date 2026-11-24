@@ -8,10 +8,15 @@ on:
     - cron: "0 17 * * *"
   # Bouton « Run workflow » pour lancer une édition à la main.
   workflow_dispatch:
-  # Une modification de la page republie le site, sans refaire d'édition.
+  # Une modification du code, des sources ou de la page relance une édition.
   push:
     branches: [main]
-    paths: ["docs/index.html"]
+    paths:
+      - "docs/index.html"
+      - "build_edition.py"
+      - "sources.json"
+      - "requirements.txt"
+      - ".github/workflows/edition.yml"
 
 permissions:
   contents: write
@@ -32,23 +37,19 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Installer Python
-        if: github.event_name != 'push'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Installer les dépendances
-        if: github.event_name != 'push'
         run: pip install -r requirements.txt
 
       - name: Fabriquer l'édition
-        if: github.event_name != 'push'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python build_edition.py
 
       - name: Enregistrer l'édition dans le dépôt
-        if: github.event_name != 'push'
         run: |
           git config user.name "double-lecture-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
