@@ -2,7 +2,7 @@
 
 L'essentiel de l'actualité, vu sous plusieurs angles, sans stress.
 
-Deux fois par jour, un programme lit les flux RSS de plusieurs journaux, envoie les titres à Claude, qui regroupe les articles par événement et rédige l'essentiel, puis publie une édition finie en deux rubriques : **France** et **International**.
+Chaque matin, un programme lit les flux RSS de plusieurs journaux, envoie les titres à Claude, qui regroupe les articles par événement et rédige l'essentiel, puis publie une édition finie en deux rubriques : **France** et **International**.
 
 ## Comment ça marche
 
@@ -12,7 +12,7 @@ Deux fois par jour, un programme lit les flux RSS de plusieurs journaux, envoie 
 | `build_edition.py` | Lit les flux, appelle Claude, écrit `docs/edition.json`. |
 | `docs/index.html` | La page que tu ouvres sur ton téléphone. |
 | `docs/archive/` | Une copie de chaque édition. |
-| `.github/workflows/edition.yml` | L'automatisation : tous les jours vers 6 h 30 et 18 h (heure de Paris, en hiver). |
+| `.github/workflows/edition.yml` | L'automatisation : tous les jours vers 6 h 30 (heure de Paris, en hiver). |
 
 ## Mise en route (à faire une seule fois)
 

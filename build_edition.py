@@ -10,7 +10,7 @@
 Lancement : python build_edition.py
 Variables utiles :
   ANTHROPIC_API_KEY  clé API (obligatoire, rangée dans les Secrets GitHub)
-  CLAUDE_MODEL       modèle utilisé (par défaut claude-sonnet-5-5)
+  CLAUDE_MODEL       modèle utilisé (par défaut claude-haiku-5-5, le plus économique)
   MAX_EVENTS         nombre maximum d'événements par catégorie (6)
   WINDOW_HOURS       ancienneté maximale des articles en heures (24)
 """
@@ -31,10 +31,10 @@ import feedparser
 
 ROOT = Path(__file__).resolve().parent
 PARIS = ZoneInfo("Europe/Paris")
-MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")
+MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")
 MAX_EVENTS = int(os.environ.get("MAX_EVENTS", "6"))
 WINDOW_HOURS = int(os.environ.get("WINDOW_HOURS", "24"))
-MAX_PER_FEED = 25
+MAX_PER_FEED = 15  # articles gardés par flux : moins de texte envoyé, moins de coût
 USER_AGENT = "DoubleLecture/0.1 (lecteur RSS personnel)"
 
 JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
@@ -93,7 +93,7 @@ def fetch_category(category: dict, now: datetime) -> tuple[list[dict], list[dict
                 "id": f"{category['id']}-{len(items) + 1}",
                 "source": feed["source"],
                 "title": title,
-                "summary": clean(entry.get("summary", ""), 400),
+                "summary": clean(entry.get("summary", ""), 200),
                 "link": link,
                 "published": published.isoformat() if published else None,
             })
@@ -141,7 +141,7 @@ def call_claude(system: str, user: str) -> str:
     client = anthropic.Anthropic()
     response = client.messages.create(
         model=MODEL,
-        max_tokens=16000,
+        max_tokens=8000,
         system=system,
         messages=[{"role": "user", "content": user}],
     )
