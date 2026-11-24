@@ -1,0 +1,452 @@
+{
+ "genere_le": "2026-11-24T21:59+01:00",
+ "date": "mardi 24 novembre 2026",
+ "moment": "soir",
+ "modele": "claude-sonnet-5-5",
+ "categories": [
+  {
+   "id": "france",
+   "label": "France",
+   "events": [
+    {
+     "titre": "L'Assemblée adopte en première lecture le projet de loi logement, avec les voix du RN",
+     "theme": "Logement",
+     "essentiel": "L'Assemblée nationale a adopté mardi 24 novembre en première lecture le projet de loi de relance du logement, par 362 voix contre 118. À l'initiative du Rassemblement national, les députés ont ajouté la suppression de l'interdiction progressive de louer les logements les plus énergivores, les « passoires thermiques ». Les députés se sont divisés sur ce point. Le texte doit maintenant passer en commission mixte paritaire.",
+     "pour_situer": null,
+     "incertain": "Le sort de l'amendement du RN n'est pas réglé : le ministre du Logement, Vincent Jeanbrun, compte sur sa suppression en commission mixte paritaire en décembre. Si députés et sénateurs s'accordent, l'Assemblée se prononcerait définitivement le 15 décembre.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "L’Assemblée nationale adopte le projet de loi sur le logement, avec les voix du Rassemblement national",
+       "lien": "https://www.lemonde.fr/societe/article/2026/11/24/l-assemblee-nationale-adopte-le-projet-de-loi-sur-le-logement-avec-les-voix-du-rassemblement-national_6814849_3224.html",
+       "publie": "2026-11-24T20:22:48+00:00",
+       "angle": "Le Monde souligne que le texte passe grâce aux voix du RN et que le ministre mise sur le retrait de leur amendement en commission mixte paritaire."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "L’Assemblée nationale adopte en première lecture le projet de loi logement",
+       "lien": "https://www.liberation.fr/societe/logement/lassemblee-nationale-adopte-en-premiere-lecture-le-projet-de-loi-logement-20261124_I5ODNUGDAVB7DD5MXBTZCWV35Q/",
+       "publie": "2026-11-24T18:09:44+00:00",
+       "angle": "Libération donne le score du vote, 362 voix contre 118, et attribue au RN l'ajout sur les passoires énergétiques."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "L'Assemblée nationale adopte en première lecture le projet de loi de relance du logement",
+       "lien": "https://www.franceinfo.fr/politique/l-assemblee-nationale-adopte-en-premiere-lecture-le-projet-de-loi-de-relance-du-logement_8298255.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-24T18:49:59+00:00",
+       "angle": "franceinfo décrit le vote de façon brève et insiste sur la division des députés à propos de l'interdiction de louer les logements les plus énergivores."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "L'Assemblée nationale adopte en première lecture le projet de loi logement",
+       "lien": "https://www.lefigaro.fr/conjoncture/l-assemblee-nationale-adopte-en-premiere-lecture-le-projet-de-loi-logement-20261124",
+       "publie": "2026-11-24T17:42:56+00:00",
+       "angle": "Le Figaro se concentre sur le calendrier : une commission mixte paritaire, puis un vote définitif de l'Assemblée le 15 décembre en cas d'accord."
+      }
+     ]
+    },
+    {
+     "titre": "Budget : la loi de fin de gestion 2026 est adoptée, le compromis pour 2027 reste à construire",
+     "theme": "Politique",
+     "essentiel": "Le Parlement a validé mardi 24 novembre la loi de fin de gestion pour 2026. Le Premier ministre Sébastien Lecornu s'en est félicité. Il recevra les présidents des groupes parlementaires début décembre pour prolonger les discussions sur le budget 2027.",
+     "pour_situer": null,
+     "incertain": "Un accord sur le budget 2027 paraît beaucoup plus aléatoire selon Le Monde, qui évoque un « énorme couac » sur les retraites survenu au Sénat mardi. Les articles fournis ne détaillent pas cet épisode.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Budget : un premier texte adopté par le Parlement, Sébastien Lecornu rêve désormais d’un compromis pour 2027",
+       "lien": "https://www.lemonde.fr/politique/article/2026/11/24/budget-un-premier-texte-adopte-par-le-parlement-sebastien-lecornu-reve-desormais-d-un-compromis-pour-2027_6814842_823448.html",
+       "publie": "2026-11-24T18:59:13+00:00",
+       "angle": "Le Monde met l'accent sur les difficultés à venir : l'accord pour 2027 serait incertain, notamment à cause du couac sur les retraites au Sénat."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Sébastien Lecornu recevra les présidents des groupes parlementaires début décembre pour prolonger les discussions sur le budget 2027",
+       "lien": "https://www.franceinfo.fr/economie/budget/sebastien-lecornu-recevra-les-presidents-des-groupes-parlementaires-la-semaine-prochaine-pour-prolonger-les-discussions-sur-le-budget-2027_8298285.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-24T19:15:27+00:00",
+       "angle": "franceinfo relaie la satisfaction du Premier ministre et l'annonce des réunions avec les présidents de groupes début décembre."
+      }
+     ]
+    },
+    {
+     "titre": "BYD entre en négociations exclusives pour reprendre l'usine Ineos d'Hambach, en Moselle",
+     "theme": "Économie",
+     "essentiel": "Le constructeur chinois BYD et Ineos Automotive ont confirmé mardi 24 novembre, dans deux communiqués distincts, être entrés en négociations exclusives pour le rachat du site d'Hambach, en Moselle. L'usine fabrique le Grenadier et est l'ancienne usine Smart. BYD cherche depuis un an à produire ses véhicules en Europe pour contourner les droits de douane.",
+     "pour_situer": null,
+     "incertain": "Le rachat n'est pas conclu : il s'agit d'une phase de négociations exclusives. Les articles ne donnent ni prix, ni calendrier, ni conséquences pour l'emploi.",
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "Le constructeur chinois BYD annonce être entré en négociations exclusives pour l'acquisition de l'usine Ineos Automotive d'Hambach en Moselle",
+       "lien": "https://france3-regions.franceinfo.fr/grand-est/moselle/metz/le-constructeur-chinois-byd-annonce-etre-entre-en-negociations-exclusives-pour-l-acquisition-de-l-usine-ineos-automotive-d-hambach-en-moselle-3455360.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-24T16:41:08+00:00",
+       "angle": "franceinfo s'en tient à la confirmation par les deux entreprises, dans des communiqués séparés, de la phase de négociations exclusives."
+      },
+      {
+       "source": "Le Monde",
+       "titre_original": "Le constructeur automobile chinois BYD va s’implanter en France",
+       "lien": "https://www.lemonde.fr/economie/article/2026/11/24/le-constructeur-automobile-chinois-byd-va-s-implanter-en-france_6814850_3234.html",
+       "publie": "2026-11-24T20:35:09+00:00",
+       "angle": "Le Monde présente l'opération comme une implantation de BYD en France, dans sa stratégie de production européenne pour éviter les droits de douane."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Le leader chinois des voitures électriques BYD en passe de racheter l’ancienne usine Smart en Moselle",
+       "lien": "https://www.liberation.fr/economie/transports/le-leader-chinois-des-voitures-electriques-byd-en-passe-de-racheter-lancienne-usine-smart-en-moselle-20261124_KHO3BPXMONE47BALWT6HATAXPQ/",
+       "publie": "2026-11-24T19:44:42+00:00",
+       "angle": "Libération rappelle l'histoire du site, l'ancienne usine Smart, et relie l'opération à la préférence européenne en discussion au Parlement européen."
+      }
+     ]
+    },
+    {
+     "titre": "Présidentielle 2027 : Philippe, Attal et Lisnard au centre des débats à droite et au centre",
+     "theme": "Présidentielle 2027",
+     "essentiel": "Au congrès des maires, Édouard Philippe a voté pour David Lisnard à la présidence de l'AMF, tout en critiquant sa position face au RN et à la « droite extrême ». Gabriel Attal propose deux débats thématiques d'ici Noël avec Édouard Philippe, Bruno Retailleau et David Lisnard, puis une primaire entre mi-janvier et mi-février. Édouard Philippe, opposé à la primaire, devrait selon lui proposer une autre façon de départager les candidats. Par ailleurs, Philippe dit voter blanc dans un duel hypothétique Mélenchon–Le Pen au second tour.",
+     "pour_situer": null,
+     "incertain": "Le résultat du vote à l'AMF est attendu mercredi avant 14h. Une enquête pour détournement de fonds publics a été ouverte à la communauté urbaine du Havre, dirigée par Édouard Philippe, qui dénonce une « vendetta judiciaire ». À ce stade, elle ne repose que sur un signalement.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Présidentielle 2027 : Edouard Philippe a voté pour David Lisnard à la présidence de l’AMF, mais fustige sa posture dans la course à l’Elysée",
+       "lien": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/11/24/edouard-philippe-a-vote-pour-david-lisnard-a-la-presidence-de-l-amf-mais-fustige-sa-posture-dans-la-course-a-l-elysee_6814832_6205049.html",
+       "publie": "2026-11-24T17:43:11+00:00",
+       "angle": "Le Monde relève le paradoxe d'un vote pour Lisnard à l'AMF assorti de critiques sur sa posture dans la course à l'Élysée."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "«S’il reste contre la primaire, Philippe doit proposer une autre modalité de départage» : Attal met la pression sur son rival, fixant Noël comme échéance",
+       "lien": "https://www.lefigaro.fr/elections/presidentielles/s-il-reste-contre-la-primaire-philippe-doit-proposer-une-autre-modalite-de-departage-attal-met-la-pression-sur-son-rival-fixant-noel-comme-echeance-20261124",
+       "publie": "2026-11-24T20:25:28+00:00",
+       "angle": "Le Figaro détaille la proposition d'Attal, avec deux débats avant Noël puis une primaire, et y voit une pression sur son rival."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Présidentielle 2027 : Edouard Philippe \"vote blanc\" dans un duel hypothétique entre Jean-Luc Mélenchon et Marine Le Pen au second tour",
+       "lien": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-le-congres-des-maires-s-ouvre-plusieurs-candidats-attendus-sur-place_8297094.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-24T20:02:03+00:00",
+       "angle": "franceinfo retient une autre déclaration d'Édouard Philippe : il voterait blanc dans un second tour entre Mélenchon et Le Pen."
+      }
+     ]
+    },
+    {
+     "titre": "Nvidia : retour de Jensen Huang à la tête du groupe, sous la pression de Donald Trump",
+     "theme": "Économie",
+     "essentiel": "Jensen Huang a repris la direction de Nvidia lundi 23 novembre, onze jours après son départ du 12 novembre. Celui-ci faisait suite à un scandale lié à sa maîtresse, soupçonnée d'espionnage au profit de la Chine. Son retour a été appuyé par Donald Trump. L'action a fortement progressé lundi, de 31,5 % selon Le Figaro. Le dirigeant s'est excusé en reconnaissant de « terribles erreurs » et doit être auditionné par le Congrès début décembre.",
+     "pour_situer": "Selon Le Figaro, la hausse de lundi a fait regagner environ 950 milliards de dollars de capitalisation au groupe.",
+     "incertain": "Les estimations des gains de Donald Trump divergent : jusqu'à 15 millions de dollars selon Le Figaro, 60 millions selon une sénatrice démocrate citée par franceinfo, qui y ajoute d'éventuels gains liés à sa pression.",
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "Affaire Nvidia : l’intervention de Donald Trump en faveur de Jensen Huang tourne à l’affaire d’État",
+       "lien": "https://www.lefigaro.fr/secteur/high-tech/affaire-nvidia-l-intervention-de-donald-trump-en-faveur-de-jensen-huang-tourne-a-l-affaire-d-etat-20261124",
+       "publie": "2026-11-24T20:06:52+00:00",
+       "angle": "Le Figaro souligne la dimension politique : l'appui de Trump suscite des réactions indignées au Congrès."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Donald Trump s'est-il enrichi avec le retour surprise de Jensen Huang à la tête de Nvidia ?",
+       "lien": "https://www.franceinfo.fr/internet/nvidia/donald-trump-s-est-il-enrichi-avec-le-retour-surprise-de-jensen-huang-a-la-tete-de-nvidia_8298000.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-24T17:34:08+00:00",
+       "angle": "franceinfo s'interroge sur l'enrichissement personnel de Trump et rapporte l'accusation d'une sénatrice démocrate."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Retour de Jensen Huang à Nvidia : «J’ai commis de terribles erreurs», s’excuse le PDG",
+       "lien": "https://www.liberation.fr/economie/economie-numerique/onze-jours-apres-sa-demission-nvidia-reintegre-jensen-huang-a-son-poste-de-directeur-general-20261123_OQ3UFJGVAZER5JTIPRRTKF7W7Q/",
+       "publie": "2026-11-24T20:37:49+00:00",
+       "angle": "Libération insiste sur les excuses publiques du PDG et sur les circonstances de son départ initial."
+      },
+      {
+       "source": "Le Monde",
+       "titre_original": "Derrière l’affaire Nvidia, un vaste réseau de détournement de puces d’IA au service de la Chine",
+       "lien": "https://www.lemonde.fr/economie/article/2026/11/24/derriere-l-affaire-nvidia-un-vaste-reseau-de-detournement-de-puces-d-ia-au-service-de-la-chine_6814811_3234.html",
+       "publie": "2026-11-24T15:49:52+00:00",
+       "angle": "Le Monde, citant la presse financière, élargit à un réseau de détournement de puces d'IA vers la Chine malgré les restrictions américaines."
+      }
+     ]
+    },
+    {
+     "titre": "Mort de Nahel Merzouk : le policier sera jugé pour meurtre devant les assises",
+     "theme": "Justice",
+     "essentiel": "La cour d'appel de Versailles a ordonné mardi 24 novembre que le policier Florian Menesplier soit jugé devant la cour d'assises des Hauts-de-Seine pour « meurtre ». La qualification retenue n'est donc pas celle de violences ayant entraîné la mort sans intention de la donner. Nahel Merzouk a été tué en 2023. Sa mère, Mounia Merzouk, se dit soulagée et affirme que le combat n'est pas terminé.",
+     "pour_situer": "Selon franceinfo, cette affaire a connu plusieurs rebondissements judiciaires.",
+     "incertain": "La date du procès n'est pas indiquée dans les articles fournis.",
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "Mort de Nahel Merzouk en 2023 : quatre questions après la décision de juger le policier auteur du tir pour meurtre",
+       "lien": "https://www.franceinfo.fr/faits-divers/adolescent-tue-par-un-policier-a-nanterre/mort-de-nahel-merzouk-en-2023-quatre-questions-apres-la-decision-de-juger-le-policier-auteur-du-tir-pour-meurtre_8297382.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-24T17:52:03+00:00",
+       "angle": "franceinfo expose la décision judiciaire et ses enjeux sous forme de questions-réponses, en insistant sur le changement de qualification."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "La mère de Nahel Merzouk se dit \"soulagée et contente\", alors que la justice confirme en appel le renvoi du policier pour meurtre",
+       "lien": "https://www.franceinfo.fr/faits-divers/adolescent-tue-par-un-policier-a-nanterre/la-mere-de-nahel-merzouk-se-dit-soulagee-et-contente-alors-que-la-justice-confirme-en-appel-le-renvoi-du-policier-pour-meurtre_8297925.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-24T15:06:27+00:00",
+       "angle": "franceinfo rapporte aussi la réaction de la mère, qui est allée annoncer « la bonne nouvelle » sur la tombe de son fils."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "«C’est une victoire importante» : la mère de Nahel Merzouk «soulagée» des poursuites pour meurtre contre le policier à l’origine des tirs",
+       "lien": "https://www.liberation.fr/societe/police-justice/cest-une-victoire-importante-la-mere-de-nahel-merzouk-soulagee-des-poursuites-pour-meurtre-contre-le-policier-a-lorigine-des-tirs-20261124_REQX5SS6RNEBNNGY4FTTO23K7M/",
+       "publie": "2026-11-24T20:16:54+00:00",
+       "angle": "Libération met en avant la « victoire importante » évoquée par la mère de Nahel, tout en rappelant qu'elle estime le combat inachevé."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Le Monde",
+     "articles": 15
+    },
+    {
+     "source": "franceinfo",
+     "articles": 25
+    },
+    {
+     "source": "Le Figaro",
+     "articles": 19
+    },
+    {
+     "source": "Libération",
+     "articles": 25
+    },
+    {
+     "source": "20 Minutes",
+     "articles": 20
+    }
+   ]
+  },
+  {
+   "id": "international",
+   "label": "International",
+   "events": [
+    {
+     "titre": "Des navires russes visés par des drones ukrainiens, tensions accrues autour de la Baltique",
+     "theme": "Ukraine",
+     "essentiel": "Selon Le Figaro, deux navires russes ont été frappés à dix jours d'intervalle par des drones ukrainiens dans le golfe de Finlande, ce qui embarrasse les pays riverains membres de l'Otan. Le Figaro indique aussi que, depuis ces attaques, le nombre d'avions perturbés par des brouillages GPS a triplé en une semaine. De son côté, le président ukrainien Volodymyr Zelensky a revendiqué lundi l'attaque de deux navires russes au large de Benghazi, en Libye. Le ministre ukrainien des affaires étrangères, Andrii Sybiha, répond aux menaces de Vladimir Poutine sur les raffineries : si Moscou veut que cela cesse, il peut mettre fin à la guerre.",
+     "pour_situer": null,
+     "incertain": "Les articles évoquent à la fois le golfe de Finlande et les côtes libyennes. Ils ne précisent pas si ces attaques sont liées. Le gouvernement de Tripoli dément toute « entente » avec Kiev.",
+     "lectures": [
+      {
+       "source": "Le Figaro International",
+       "titre_original": "Attaques de drones, « flotte fantôme »… La mer Baltique, nouveau théâtre du conflit entre l’Ukraine et la Russie",
+       "lien": "https://www.lefigaro.fr/international/attaques-de-drones-flotte-fantome-la-mer-baltique-nouveau-theatre-du-conflit-entre-l-ukraine-et-la-russie-20261124",
+       "publie": "2026-11-24T20:31:45+00:00",
+       "angle": "Le Figaro se concentre sur la mer Baltique et sur la gêne des pays de l'Otan riverains face aux frappes de drones ukrainiens."
+      },
+      {
+       "source": "Le Figaro International",
+       "titre_original": "Comment le brouillage GPS affecte les trafics aériens et maritimes dans la mer Baltique",
+       "lien": "https://www.lefigaro.fr/sciences/comment-le-brouillage-gps-affecte-les-trafics-aeriens-et-maritimes-dans-la-mer-baltique-20261124",
+       "publie": "2026-11-24T20:15:00+00:00",
+       "angle": "Le Figaro regarde les conséquences concrètes pour le trafic aérien et maritime, avec des brouillages GPS en nette hausse."
+      },
+      {
+       "source": "France 24",
+       "titre_original": "Ukraine : une guerre sans frontières ?",
+       "lien": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20261124-ukraine-une-guerre-sans-fronti%C3%A8res",
+       "publie": "2026-11-24T19:56:30+00:00",
+       "angle": "France 24 met l'accent sur la revendication d'une attaque loin du front, en Libye, et sur le démenti du gouvernement de Tripoli."
+      },
+      {
+       "source": "Le Monde International",
+       "titre_original": "EN DIRECT, guerre en Ukraine : Kiev répond aux menaces de Poutine sur les raffineries : « Mettez fin à la guerre »",
+       "lien": "https://www.lemonde.fr/international/live/2026/11/24/en-direct-guerre-en-ukraine-kiev-repond-aux-menaces-de-poutine-sur-les-raffineries-mettez-fin-a-la-guerre_6814183_3210.html",
+       "publie": "2026-11-24T19:32:44+00:00",
+       "angle": "Le Monde rapporte la réponse politique de Kiev aux menaces russes sur les raffineries, dans un direct sur la guerre."
+      }
+     ]
+    },
+    {
+     "titre": "Pertes militaires russes en Ukraine : de nouvelles estimations issues de données fuitées",
+     "theme": "Ukraine",
+     "essentiel": "Des médias indépendants russes en exil, Meduza et Mediazona, ont analysé des données de l'agence russe des statistiques Rosstat obtenues par fuite. Ils estiment à plus de 700 000 le nombre de militaires russes morts depuis février 2022. Le Guardian, cité par Le Figaro, a de son côté examiné plus de 11 millions d'actes de décès. Il en tire que plus de 1000 soldats russes se seraient suicidés depuis le début du conflit, un chiffre qu'il juge inférieur à la réalité.",
+     "pour_situer": null,
+     "incertain": "Il s'agit d'estimations non officielles. Le Monde parle d'au moins 500 000 morts, et de plus de 700 000 en incluant les militaires disparus, tandis que France 24 retient plus de 700 000 morts. Le Kremlin n'a pas publié de chiffres.",
+     "lectures": [
+      {
+       "source": "Le Monde International",
+       "titre_original": "Hackeurs et médias révèlent ce que le Kremlin voulait cacher : le bilan de 500 000 morts au moins sur le front ukrainien",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/24/hackers-et-medias-revelent-ce-que-le-kremlin-voulait-cacher-le-bilan-de-500-000-morts-au-moins-sur-le-front-ukrainien_6814823_3210.html",
+       "publie": "2026-11-24T17:00:00+00:00",
+       "angle": "Le Monde présente l'affaire comme la révélation de chiffres que le Kremlin cherchait à cacher, en distinguant un décompte d'au moins 500 000 morts d'un total plus élevé avec les disparus."
+      },
+      {
+       "source": "France 24",
+       "titre_original": "Plus de 700 000 soldats russes morts en Ukraine : ce que l'on sait de cette nouvelle estimation",
+       "lien": "https://www.france24.com/fr/europe/20261124-plus-700-000-soldats-russes-morts-ukraine-sait-cette-nouvelle-estimation",
+       "publie": "2026-11-24T17:06:20+00:00",
+       "angle": "France 24 explique la méthode et le contexte de l'enquête de Meduza et Mediazona, et retient le chiffre de plus de 700 000 morts."
+      },
+      {
+       "source": "Le Figaro International",
+       "titre_original": "Guerre en Ukraine : plus de 1000 soldats russes se seraient suicidés depuis le début du conflit",
+       "lien": "https://www.lefigaro.fr/international/guerre-en-ukraine-plus-de-1000-soldats-russes-se-seraient-suicides-depuis-le-debut-du-conflit-20261124",
+       "publie": "2026-11-24T14:08:54+00:00",
+       "angle": "Le Figaro reprend l'analyse du Guardian et se concentre sur un aspect particulier, les suicides de soldats."
+      }
+     ]
+    },
+    {
+     "titre": "Affaire Nvidia : le retour de Jensen Huang suscite des demandes d'explications au Congrès américain",
+     "theme": "Économie",
+     "essentiel": "Jensen Huang a repris lundi 23 novembre la direction de Nvidia, après avoir été évincé le 12 novembre. Le président Donald Trump affirme avoir négocié ce retour. Des élus américains demandent des comptes sur son implication, et le Congrès doit auditionner le dirigeant début décembre. Selon la BBC, l'action Nvidia a reculé de 7 % et la ministre de la justice américaine a esquivé les questions sur une éventuelle enquête.",
+     "pour_situer": null,
+     "incertain": "Les circonstances de l'éviction et le rôle exact de Donald Trump restent à clarifier. RFI évoque des soupçons d'espionnage au profit de la Chine, que les autres articles fournis ne détaillent pas.",
+     "lectures": [
+      {
+       "source": "Le Figaro International",
+       "titre_original": "Affaire Nvidia : l’intervention de Donald Trump en faveur de Jensen Huang tourne à l’affaire d’État",
+       "lien": "https://www.lefigaro.fr/secteur/high-tech/affaire-nvidia-l-intervention-de-donald-trump-en-faveur-de-jensen-huang-tourne-a-l-affaire-d-etat-20261124",
+       "publie": "2026-11-24T20:06:52+00:00",
+       "angle": "Le Figaro insiste sur la dimension politique : l'intervention de Trump provoque des réactions indignées au Congrès."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "US attorney general dodges questions about Nvidia investigation",
+       "lien": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-24T18:55:59+00:00",
+       "angle": "La BBC met en avant la réaction des marchés et le fait que la responsable américaine de la justice évite de répondre sur une enquête."
+      },
+      {
+       "source": "RFI",
+       "titre_original": "Retour de Jensen Huang à la tête de Nvidia: «Il y a une relation d'intérêts croisés» avec Donald Trump",
+       "lien": "https://www.rfi.fr/fr/podcasts/invit%C3%A9-international/20261124-retour-de-jensen-huang-%C3%A0-la-t%C3%AAte-de-nvidia-il-y-a-une-relation-d-int%C3%A9r%C3%AAts-crois%C3%A9s-avec-donald-trump",
+       "publie": "2026-11-24T16:59:32+00:00",
+       "angle": "RFI s'intéresse à l'accueil du retour de Huang chez Nvidia et à la « relation d'intérêts croisés » avec Donald Trump."
+      },
+      {
+       "source": "Le Monde International",
+       "titre_original": "Derrière l’affaire Nvidia, un vaste réseau de détournement de puces d’IA au service de la Chine",
+       "lien": "https://www.lemonde.fr/economie/article/2026/11/24/derriere-l-affaire-nvidia-un-vaste-reseau-de-detournement-de-puces-d-ia-au-service-de-la-chine_6814811_3234.html",
+       "publie": "2026-11-24T15:49:52+00:00",
+       "angle": "Le Monde, s'appuyant sur la presse financière, replace l'affaire dans un réseau de détournement de puces d'IA vers la Chine malgré les restrictions américaines."
+      }
+     ]
+    },
+    {
+     "titre": "L'Union européenne propose d'exclure les athlètes russes des compétitions organisées sur son territoire",
+     "theme": "Union européenne",
+     "essentiel": "La Commission européenne a présenté lundi un nouveau paquet de sanctions contre la Russie. Il prévoit de généraliser l'exclusion des athlètes russes des compétitions sportives organisées sur le territoire de l'Union. Selon RFI, les sanctions précédentes visaient les hydrocarbures, le secteur financier ou les armements, et celle-ci s'étend au sport et à la culture.",
+     "pour_situer": "RFI compte vingt-et-un trains de sanctions européens contre la Russie depuis février 2022.",
+     "incertain": "Il s'agit d'une proposition de la Commission. Les articles ne disent pas si les États membres l'ont adoptée.",
+     "lectures": [
+      {
+       "source": "Le Figaro International",
+       "titre_original": "Dans son dernier train de sanctions, l’UE entend généraliser l’exclusion des athlètes russes des compétitions sportives organisées sur son territoire",
+       "lien": "https://www.lefigaro.fr/international/dans-son-dernier-train-de-sanctions-l-ue-entend-generaliser-l-exclusion-des-athletes-russes-des-competitions-sportives-organisees-sur-son-territoire-20261124",
+       "publie": "2026-11-24T18:09:46+00:00",
+       "angle": "Le Figaro situe cette mesure dans une intensification de la « guerre hybride » entre l'Union et la Russie."
+      },
+      {
+       "source": "RFI",
+       "titre_original": "Guerre en Ukraine: l'Union européenne propose d'interdire de compétition les athlètes russes sur son territoire",
+       "lien": "https://www.rfi.fr/fr/europe/20261124-l-union-europ%C3%A9enne-propose-d-interdire-de-comp%C3%A9tition-les-athl%C3%A8tes-russes-sur-son-territoire",
+       "publie": "2026-11-24T06:29:46+00:00",
+       "angle": "RFI souligne le changement d'échelle : après l'économie et l'armement, Bruxelles s'attaque au sport et à la culture."
+      },
+      {
+       "source": "Le Monde International",
+       "titre_original": "Bloquer les visas des athlètes russes, une décision moralement justifiable mais qui crée un dangereux précédent",
+       "lien": "https://www.lemonde.fr/sport/article/2026/11/24/bloquer-les-visas-des-athletes-russes-une-decision-moralement-justifiable-mais-qui-cree-un-dangereux-precedent_6814775_3242.html",
+       "publie": "2026-11-24T14:00:11+00:00",
+       "angle": "Le Monde propose une analyse : bloquer les visas des athlètes russes se justifie moralement, mais risque de créer un précédent face aux décisions du Tribunal arbitral du sport."
+      }
+     ]
+    },
+    {
+     "titre": "CAN 2025 : le Tribunal arbitral du sport rend le titre au Sénégal face au Maroc",
+     "theme": "Sport",
+     "essentiel": "Le Tribunal arbitral du sport a décidé mardi 24 novembre, à l'unanimité, que le Sénégal est vainqueur de la CAN 2025. Il annule la décision du jury d'appel de la CAF, qui avait donné le titre au Maroc sur tapis vert. La finale, jouée le 18 janvier et remportée 1-0 par le Sénégal sur le terrain, s'était achevée dans la tension. Le tribunal estime que l'arbitre était seul juge pour reprendre la partie après l'interruption. La fédération marocaine annonce qu'elle engagera tous les recours légaux possibles.",
+     "pour_situer": "Cette décision intervient plus de 300 jours après la finale.",
+     "incertain": "RFI parle d'un jugement définitif, alors que France 24 indique que le Maroc dispose de 30 jours pour faire appel devant le Tribunal fédéral suisse.",
+     "lectures": [
+      {
+       "source": "France 24",
+       "titre_original": "CAN 2025 : pourquoi le TAS a donné raison à l'arbitre et au Sénégal",
+       "lien": "https://www.france24.com/fr/sports/20261124-can-2025-pourquoi-tas-arbitre-senegal-maroc",
+       "publie": "2026-11-24T17:02:32+00:00",
+       "angle": "France 24 explique le raisonnement juridique du tribunal, qui donne raison à l'arbitre."
+      },
+      {
+       "source": "France 24",
+       "titre_original": "CAN 2025 : le Sénégal, vainqueur officiel selon le verdict du TAS",
+       "lien": "https://www.france24.com/fr/vid%C3%A9o/20261124-can-2025-le-s%C3%A9n%C3%A9gal-vainqueur-officiel-selon-le-verdict-du-tas",
+       "publie": "2026-11-24T15:23:26+00:00",
+       "angle": "France 24 donne le verdict et le délai de 30 jours dont dispose le Maroc pour faire appel."
+      },
+      {
+       "source": "RFI",
+       "titre_original": "La CAN 2025 attribuée définitivement au Sénégal par le Tribunal arbitral du sport",
+       "lien": "https://www.rfi.fr/fr/afrique-foot/20261124-la-can-2025-attribu%C3%A9e-d%C3%A9finitivement-au-s%C3%A9n%C3%A9gal-par-le-tribunal-arbitral-du-sport",
+       "publie": "2026-11-24T14:27:25+00:00",
+       "angle": "RFI présente la décision comme définitive et rappelle que le Sénégal avait gagné sur le terrain avant d'être destitué."
+      },
+      {
+       "source": "Le Monde International",
+       "titre_original": "« La vérité d’une rencontre s’établit sur le terrain » : le Sénégal, déclaré vainqueur près d’un an après la finale contre le Maroc, célèbre son titre de champion d’Afrique",
+       "lien": "https://www.lemonde.fr/football/article/2026/11/24/can-2025-le-tribunal-arbitral-du-sport-declare-le-senegal-champion-d-afrique-des-nations-au-detriment-du-maroc_6814779_1616938.html",
+       "publie": "2026-11-24T14:34:56+00:00",
+       "angle": "Le Monde raconte la célébration du titre au Sénégal et le long contentieux juridique ouvert depuis la finale."
+      }
+     ]
+    },
+    {
+     "titre": "Affaire de la fausse rétractation de Takieddine : Nicolas Sarkozy et Carla Bruni renvoyés en procès",
+     "theme": "Justice",
+     "essentiel": "Nicolas Sarkozy, son épouse Carla Bruni-Sarkozy et Mimi Marchand seront jugés en 2027. L'affaire porte sur la rétractation, possiblement monnayée, de l'intermédiaire Ziad Takieddine. L'information a été donnée mardi par l'AFP, de source proche du dossier, et confirme celle de RTL. Selon RFI, tous les mis en examen du dossier ont été renvoyés devant le tribunal.",
+     "pour_situer": "La BBC rappelle que Nicolas Sarkozy est devenu l'an dernier le premier ancien président français à aller en prison.",
+     "incertain": null,
+     "lectures": [
+      {
+       "source": "France 24",
+       "titre_original": "Fausse rétractation de Takieddine : renvoi en procès de Nicolas Sarkozy et Carla Bruni",
+       "lien": "https://www.france24.com/fr/france/20261124-fausse-r%C3%A9tractation-takieddine-renvoi-proc%C3%A8s-nicolas-sarkozy-carla-bruni",
+       "publie": "2026-11-24T14:53:55+00:00",
+       "angle": "France 24 reprend l'information de l'AFP en nommant les trois personnes renvoyées et en précisant la source."
+      },
+      {
+       "source": "RFI",
+       "titre_original": "Fausse rétractation de Ziad Takieddine: l'ex-président Nicolas Sarkozy et son épouse Carla Bruni renvoyés en procès",
+       "lien": "https://www.rfi.fr/fr/france/20261124-fausse-r%C3%A9tractation-de-ziad-takieddine-nicolas-sarkozy-et-carla-bruni-renvoy%C3%A9s-en-proc%C3%A8s",
+       "publie": "2026-11-24T12:30:30+00:00",
+       "angle": "RFI reprend elle aussi la dépêche de l'AFP et précise que tous les mis en examen sont renvoyés devant le tribunal."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "French ex-President Sarkozy and wife Carla Bruni to face trial",
+       "lien": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-24T16:49:07+00:00",
+       "angle": "La BBC présente l'affaire à un public international, comme un nouvel épisode des démêlés judiciaires de Sarkozy."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Le Monde International",
+     "articles": 20
+    },
+    {
+     "source": "France 24",
+     "articles": 23
+    },
+    {
+     "source": "RFI",
+     "articles": 22
+    },
+    {
+     "source": "Le Figaro International",
+     "articles": 8
+    },
+    {
+     "source": "BBC News",
+     "articles": 20
+    }
+   ]
+  }
+ ]
+}
