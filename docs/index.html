@@ -4,259 +4,404 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Le Relevé</title>
-<!-- Le Relevé · page de lecture -->
 <meta name="description" content="Les faits du jour, recoupés par plusieurs journaux.">
-<meta name="theme-color" content="#efebe1">
+<meta name="theme-color" content="#d9dde2">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap">
 <script>
-  // Applique le thème choisi avant l'affichage, pour éviter un flash.
+  // Applique le mode choisi avant l'affichage, pour éviter un flash.
   try {
     var t = localStorage.getItem("releve-theme");
     if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
   } catch (e) {}
 </script>
 <style>
-/* Mise en page : une colonne de quotidien, manchette gothique, filets noirs.
-   Papier journal le jour, papier sombre la nuit. Une seule couleur d'accent, lie-de-vin, très rare. */
+/* Mise en page : un « bureau » d'ordinateur ancien sur lequel chaque événement est une fenêtre.
+   Lisibilité d'abord : texte en Inter, structure et étiquettes en police d'ordinateur.
+   Jour : bureau gris clair, barres de titre bleu marine. Nuit : terminal, vert phosphore. */
 :root {
-  --paper: #efebe1;
-  --ink: #1b1a17;
-  --muted: #5d594f;
-  --faint: #cdc6b6;
-  --accent: #8a2b1d;
-  --box: #e6e1d4;
-  --font-mast: "UnifrakturMaguntia", "Old English Text MT", Georgia, serif;
-  --font-head: "Old Standard TT", "Times New Roman", Georgia, serif;
-  --font-body: "Libre Caslon Text", Georgia, "Times New Roman", serif;
+  --desk: #d9dde2;
+  --win: #ffffff;
+  --ink: #15181c;
+  --muted: #59616b;
+  --line: #22272e;
+  --bar: #23367d;
+  --bar-ink: #ffffff;
+  --soft: #eef0f3;
+  --accent: #23367d;
+  --link: #1f3fc4;
+  --note: #fff6d6;
+  --note-ink: #5b4a12;
+  --font-pixel: "VT323", "IBM Plex Mono", ui-monospace, monospace;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-text: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #16150f; --ink: #e9e3d3; --muted: #a29c8b; --faint: #3b382f;
-    --accent: #d98a6c; --box: #201e17; color-scheme: dark;
+    --desk: #0b0f0d; --win: #121816; --ink: #dbe6df; --muted: #8b9b93; --line: #3d5048;
+    --bar: #1a2722; --bar-ink: #86e3ad; --soft: #18201d; --accent: #86e3ad; --link: #86e3ad;
+    --note: #221f12; --note-ink: #e3d29a; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --paper: #16150f; --ink: #e9e3d3; --muted: #a29c8b; --faint: #3b382f;
-  --accent: #d98a6c; --box: #201e17; color-scheme: dark;
+  --desk: #0b0f0d; --win: #121816; --ink: #dbe6df; --muted: #8b9b93; --line: #3d5048;
+  --bar: #1a2722; --bar-ink: #86e3ad; --soft: #18201d; --accent: #86e3ad; --link: #86e3ad;
+  --note: #221f12; --note-ink: #e3d29a; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
-  margin: 0; background: var(--paper); color: var(--ink);
-  font-family: var(--font-body); font-size: 17px; line-height: 1.6;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: env(safe-area-inset-top, 0px) calc(56px + env(safe-area-inset-bottom, 0px));
+  margin: 0; background: var(--desk); color: var(--ink);
+  font-family: var(--font-text); font-size: 17px; line-height: 1.55;
+  padding-left: max(14px, env(safe-area-inset-left, 0px));
+  padding-right: max(14px, env(safe-area-inset-right, 0px));
+  padding-block: calc(14px + env(safe-area-inset-top, 0px)) calc(48px + env(safe-area-inset-bottom, 0px));
 }
 body::before {
   content: ""; position: fixed; inset: 0 0 auto;
-  height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper);
+  height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--desk);
 }
-.page { max-width: 660px; margin: 0 auto; }
-button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; padding: 0; }
-button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visible {
-  outline: 2px solid var(--accent); outline-offset: 3px;
-}
-.caps {
-  font-family: var(--font-head); text-transform: uppercase;
-  letter-spacing: 0.14em; font-size: 0.68rem;
-}
+.page { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+button, select { font: inherit; color: inherit; }
+a { color: var(--link); }
+:focus-visible { outline: 2px dashed var(--accent); outline-offset: 3px; }
 
-/* Manchette */
-.masthead { padding-top: 14px; text-align: center; }
-.topline {
-  display: flex; justify-content: space-between; align-items: center; gap: 8px;
-  color: var(--muted); padding-bottom: 6px;
+/* Fenêtre « ordinateur ancien » */
+.win {
+  background: var(--win); border: 2px solid var(--line);
+  box-shadow: 4px 4px 0 var(--line); border-radius: 2px; min-width: 0;
 }
-.theme-btn { color: var(--muted); padding: 4px 0; }
-.theme-btn:hover { color: var(--ink); }
-.title {
-  font-family: var(--font-mast); font-weight: 400; margin: 0;
-  font-size: clamp(3rem, 15vw, 4.6rem); line-height: 1; letter-spacing: 0.01em;
+.bar {
+  background: var(--bar); color: var(--bar-ink);
+  font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  padding: 5px 10px; border-bottom: 2px solid var(--line);
 }
-.motto { font-family: var(--font-body); font-style: italic; color: var(--muted); font-size: 0.85rem; margin: 6px 0 10px; }
-.folio {
-  border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
-  display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; min-height: 44px;
-}
-.folio button { height: 44px; font-family: var(--font-head); font-size: 1.3rem; }
-.folio button:disabled { opacity: 0.25; cursor: default; }
-.folio-date { position: relative; display: flex; justify-content: center; align-items: center; min-width: 0; }
-.folio-date span { font-family: var(--font-head); font-size: 0.95rem; }
-.folio-date select {
-  position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer;
-  font-size: 16px; /* évite le zoom automatique sur iPhone */
-}
+.bar .dots { display: flex; gap: 5px; }
+.bar .dots i { width: 9px; height: 9px; border: 1.5px solid currentColor; display: block; }
+.win-body { padding: 16px; display: flex; flex-direction: column; gap: 12px; }
 
-/* Rubriques */
-.sections {
-  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper);
-  display: flex; justify-content: space-between; align-items: center; gap: 12px;
-  border-bottom: 1px solid var(--ink); padding-block: 4px;
+/* Bouton façon interface ancienne */
+.btn {
+  font-family: var(--font-mono); font-size: 0.82rem; font-weight: 500;
+  background: var(--soft); color: var(--ink); cursor: pointer;
+  border: 2px solid var(--line); box-shadow: 2px 2px 0 var(--line);
+  padding: 7px 12px; border-radius: 2px; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px; min-height: 40px;
 }
-.tabs { display: flex; gap: 18px; }
-.tab { padding: 10px 0 8px; color: var(--muted); border-bottom: 2px solid transparent; text-transform: uppercase; letter-spacing: 0.14em; font-family: var(--font-head); font-size: 0.78rem; }
-.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
-.tab .n { font-family: var(--font-body); letter-spacing: 0; text-transform: none; margin-left: 4px; }
-.progress { color: var(--muted); font-variant-numeric: tabular-nums; }
+.btn:active { transform: translate(2px, 2px); box-shadow: none; }
+.btn[aria-pressed="true"], .btn[aria-selected="true"] { background: var(--bar); color: var(--bar-ink); }
+.btn:disabled { opacity: 0.35; cursor: default; transform: none; box-shadow: 2px 2px 0 var(--line); }
 
-/* Articles */
-main { display: flex; flex-direction: column; }
-.item { padding-block: 22px; border-bottom: 1px solid var(--faint); display: flex; flex-direction: column; gap: 12px; transition: opacity .25s ease; }
-.item.read { opacity: 0.5; }
-.kicker { color: var(--accent); }
-.item h2 {
-  font-family: var(--font-head); font-weight: 700; margin: 0;
-  font-size: 1.55rem; line-height: 1.18; text-wrap: balance;
+/* En-tête */
+.masthead .win-body { gap: 10px; }
+.brand-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.brand { font-family: var(--font-pixel); white-space: nowrap; font-size: clamp(2.3rem, 11vw, 3.1rem); line-height: 0.9; margin: 0; font-weight: 400; letter-spacing: 0.01em; }
+.cursor { display: inline-block; width: 0.5em; height: 0.8em; background: var(--accent); margin-left: 4px; vertical-align: -0.05em; animation: blink 1.1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.motto { margin: 0; font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
+.datebar { display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: center; }
+.datebar .date {
+  position: relative; text-align: center; font-family: var(--font-mono); font-size: 0.85rem;
+  border: 2px solid var(--line); background: var(--soft); padding: 8px 6px; min-height: 40px; min-width: 0;
 }
-.lede { margin: 0; hyphens: auto; -webkit-hyphens: auto; text-align: justify; }
-.item:first-child .lede::first-letter {
-  font-family: var(--font-head); font-weight: 700; float: left;
-  font-size: 3.4em; line-height: 0.82; padding: 6px 8px 0 0;
+.datebar select { position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer; font-size: 16px; }
+
+.toolbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--desk); padding-block: 6px;
+  display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;
 }
-.repere { background: var(--box); border-left: 3px solid var(--ink); padding: 10px 12px; font-size: 0.92rem; }
-.repere .caps { display: block; margin-bottom: 2px; color: var(--muted); }
-.doute { margin: 0; font-size: 0.92rem; font-style: italic; color: var(--muted); }
-.doute b { font-style: normal; font-family: var(--font-head); color: var(--ink); }
+.tabs { display: flex; gap: 8px; }
+.progress { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 
-details { border-top: 1px dotted var(--faint); }
-summary {
-  list-style: none; cursor: pointer; padding: 10px 0; display: flex; justify-content: space-between;
-  align-items: center; gap: 12px; font-family: var(--font-head); font-size: 0.95rem;
+/* Liste des événements */
+.list { display: flex; flex-direction: column; gap: 18px; }
+.card { display: block; color: inherit; text-decoration: none; }
+.card:hover .card-title { text-decoration: underline; text-underline-offset: 4px; }
+.card.read { opacity: 0.6; }
+.card-title { font-size: 1.22rem; font-weight: 700; line-height: 1.3; margin: 0; text-wrap: balance; }
+.card-text {
+  margin: 0; color: var(--muted);
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
-summary::-webkit-details-marker { display: none; }
-summary::after { content: "▸"; transition: transform .2s ease; color: var(--muted); }
-details[open] > summary::after { transform: rotate(90deg); }
-.ctx p { margin: 0 0 8px; font-size: 0.95rem; }
-.note { color: var(--muted); font-style: italic; font-size: 0.8rem !important; }
-.journal { padding: 10px 0; border-top: 1px solid var(--faint); display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-.journal:first-of-type { border-top: 0; padding-top: 0; }
-.journal-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-.journal-head .caps { color: var(--ink); font-size: 0.72rem; }
-.journal-head small { color: var(--muted); font-size: 0.78rem; font-variant-numeric: tabular-nums; }
-.headline { margin: 0; font-family: var(--font-head); font-size: 1.02rem; line-height: 1.35; overflow-wrap: anywhere; }
-.angle { margin: 0; color: var(--muted); font-size: 0.9rem; }
-.journal a { color: var(--accent); font-size: 0.85rem; text-decoration: underline; text-underline-offset: 3px; align-self: flex-start; }
+/* L'événement le plus important est mis « à la une » : titre plus grand, texte complet. */
+.list .card:first-child .card-title { font-size: 1.45rem; }
+.list .card:first-child .card-text { -webkit-line-clamp: 6; color: var(--ink); }
+.card-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
+.card-foot .open { color: var(--link); font-weight: 600; }
 
-.read-btn { align-self: flex-start; color: var(--muted); padding: 6px 0; }
-.read-btn[aria-pressed="true"] { color: var(--ink); }
+/* Page d'un événement */
+.detail-title { font-size: 1.6rem; font-weight: 700; line-height: 1.22; margin: 0; text-wrap: balance; }
+.section-label { font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.detail p { margin: 0; }
+.box { border: 2px solid var(--line); padding: 12px 14px; background: var(--soft); }
+.box.warn { background: var(--note); color: var(--note-ink); border-style: dashed; }
+.box.warn .section-label { color: inherit; }
+.ai-note { margin-top: 8px !important; font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+.journals { display: flex; flex-direction: column; gap: 12px; }
+.journal { border: 2px solid var(--line); background: var(--win); min-width: 0; }
+.journal .bar { background: var(--soft); color: var(--ink); border-bottom-width: 1px; }
+.journal-body { padding: 12px; display: flex; flex-direction: column; gap: 6px; }
+.headline { font-weight: 600; line-height: 1.35; overflow-wrap: anywhere; }
+.angle { color: var(--muted); font-size: 0.93rem; }
+.journal a { font-family: var(--font-mono); font-size: 0.82rem; font-weight: 600; align-self: flex-start; }
+.detail-actions { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 
-.state { padding: 28px 0; color: var(--muted); font-style: italic; text-align: center; }
-.end { text-align: center; padding-top: 30px; display: flex; flex-direction: column; gap: 10px; align-items: center; }
-.fleuron { font-size: 1.6rem; color: var(--muted); line-height: 1; }
-.end p { margin: 0; color: var(--muted); font-style: italic; max-width: 46ch; }
-.end details { width: 100%; text-align: left; font-size: 0.85rem; color: var(--muted); }
-.end ul { margin: 0 0 8px; padding-left: 18px; }
+.state { font-family: var(--font-mono); color: var(--muted); text-align: center; padding: 24px 8px; }
+.end { font-family: var(--font-mono); font-size: 0.82rem; color: var(--muted); text-align: center; display: flex; flex-direction: column; gap: 8px; }
+.end details { text-align: left; }
+.end summary { cursor: pointer; text-align: center; }
+.end ul { margin: 8px 0 0; padding-left: 18px; }
 
-@media (prefers-reduced-motion: reduce) { .item, summary::after { transition: none; } }
+@media (max-width: 380px) { .brand { font-size: 2.6rem; } .btn { padding: 6px 9px; } }
+@media (prefers-reduced-motion: reduce) { .cursor { animation: none; } .btn:active { transform: none; } }
 </style>
 </head>
 <body>
 <div class="page">
-  <header class="masthead">
-    <div class="topline caps">
-      <span id="numero">Paris</span>
-      <button type="button" class="theme-btn caps" id="theme-btn" aria-label="Changer de mode">Mode nuit</button>
-    </div>
-    <h1 class="title">Le Relevé</h1>
-    <p class="motto">Les faits du jour, recoupés par plusieurs journaux</p>
-    <div class="folio">
-      <button type="button" id="prev" aria-label="Édition précédente" disabled>‹</button>
-      <div class="folio-date">
-        <span id="folio-label">Chargement…</span>
-        <select id="date-select" aria-label="Choisir une édition"></select>
+  <header class="win masthead">
+    <div class="bar"><span id="numero">releve.exe</span><span class="dots" aria-hidden="true"><i></i><i></i></span></div>
+    <div class="win-body">
+      <div class="brand-row">
+        <h1 class="brand">Le Relevé<span class="cursor" aria-hidden="true"></span></h1>
+        <button type="button" class="btn" id="theme-btn">☾ Nuit</button>
       </div>
-      <button type="button" id="next" aria-label="Édition suivante" disabled>›</button>
+      <p class="motto">&gt; les faits du jour, recoupés par plusieurs journaux</p>
+      <div class="datebar">
+        <button type="button" class="btn" id="prev" aria-label="Édition précédente" disabled>◀</button>
+        <div class="date"><span id="date-label">Chargement…</span><select id="date-select" aria-label="Choisir une édition"></select></div>
+        <button type="button" class="btn" id="next" aria-label="Édition suivante" disabled>▶</button>
+      </div>
     </div>
   </header>
 
-  <nav class="sections">
-    <div class="tabs caps" role="tablist" id="tabs"></div>
-    <span class="progress caps" id="progress"></span>
+  <nav class="toolbar" id="toolbar">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <span class="progress" id="progress"></span>
   </nav>
 
-  <main id="events"><p class="state">Chargement de l'édition…</p></main>
-
-  <section class="end" id="end" hidden>
-    <div class="fleuron" aria-hidden="true">❦</div>
-    <p id="end-text">Fin de l'édition.</p>
-    <details>
-      <summary>Sources consultées</summary>
-      <ul id="sources-list"></ul>
-    </details>
-  </section>
+  <main id="view"><p class="state">Chargement de l'édition…</p></main>
 </div>
 
 <script>
-// ---------- Thème jour / nuit ----------
-const root = document.documentElement;
+// ---------- Mode jour / nuit ----------
+const rootEl = document.documentElement;
 const themeBtn = document.getElementById("theme-btn");
 function isDark() {
-  const t = root.getAttribute("data-theme");
-  if (t) return t === "dark";
-  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const t = rootEl.getAttribute("data-theme");
+  return t ? t === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
-function syncThemeBtn() {
-  themeBtn.textContent = isDark() ? "Mode jour" : "Mode nuit";
-  const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.setAttribute("content", isDark() ? "#16150f" : "#efebe1");
+function syncTheme() {
+  themeBtn.textContent = isDark() ? "☀ Jour" : "☾ Nuit";
+  document.querySelector('meta[name="theme-color"]').setAttribute("content", isDark() ? "#0b0f0d" : "#d9dde2");
 }
 themeBtn.addEventListener("click", () => {
   const next = isDark() ? "light" : "dark";
-  root.setAttribute("data-theme", next);
+  rootEl.setAttribute("data-theme", next);
   try { localStorage.setItem("releve-theme", next); } catch (e) {}
-  syncThemeBtn();
+  syncTheme();
 });
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", syncThemeBtn);
-syncThemeBtn();
+const mq = window.matchMedia("(prefers-color-scheme: dark)");
+if (mq.addEventListener) mq.addEventListener("change", syncTheme);
+syncTheme();
 
-// ---------- Données ----------
-let editions = [];      // index des éditions archivées, la plus récente en premier
-let position = 0;       // position de l'édition affichée dans cet index
-let edition = null;
-let current = null;     // rubrique affichée
-let readSet = new Set();
-
+// ---------- Outils ----------
+let editions = [], position = 0, edition = null, readSet = new Set();
+let listScroll = {};
 function el(tag, cls, text) {
   const n = document.createElement(tag);
   if (cls) n.className = cls;
   if (text != null) n.textContent = text;
   return n;
 }
-function readKey() { return "releve-lus-" + (edition ? edition.genere_le : ""); }
-function loadRead() {
-  try { readSet = new Set(JSON.parse(localStorage.getItem(readKey()) || "[]")); }
-  catch (e) { readSet = new Set(); }
-}
-function saveRead() { try { localStorage.setItem(readKey(), JSON.stringify([...readSet])); } catch (e) {} }
+function cap(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
 function timeLabel(iso) {
   if (!iso) return "";
   const d = new Date(iso);
-  if (isNaN(d)) return "";
-  return d.toLocaleString("fr-FR", { weekday: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Paris" });
+  return isNaN(d) ? "" : d.toLocaleString("fr-FR", { weekday: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Paris" });
 }
-function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
+function readKey() { return "releve-lus-" + (edition ? edition.genere_le : ""); }
+function loadRead() { try { readSet = new Set(JSON.parse(localStorage.getItem(readKey()) || "[]")); } catch (e) { readSet = new Set(); } }
+function saveRead() { try { localStorage.setItem(readKey(), JSON.stringify([...readSet])); } catch (e) {} }
+function key(catId, i) { return catId + "-" + (i + 1); }
 
-// ---------- Navigation par date ----------
-function renderFolio() {
-  document.getElementById("folio-label").textContent =
-    capitalize(edition.date) + " · édition du " + edition.moment;
+// ---------- Navigation : #france (liste) ou #france-3 (événement) ----------
+function parseHash() {
+  const h = location.hash.replace("#", "");
+  const m = h.match(/^([a-z]+)-(\d+)$/);
+  const catId = m ? m[1] : h;
+  const cat = edition.categories.find(c => c.id === catId) || edition.categories[0];
+  const index = m ? Number(m[2]) - 1 : null;
+  return { cat, index: index != null && cat.events[index] ? index : null };
+}
+function render() {
+  const { cat, index } = parseHash();
+  renderTabs(cat);
+  updateProgress();
+  if (index == null) renderList(cat); else renderDetail(cat, index);
+}
+window.addEventListener("hashchange", () => { if (edition) render(); });
+
+function renderTabs(active) {
+  const tabs = document.getElementById("tabs");
+  tabs.textContent = "";
+  edition.categories.forEach(c => {
+    const b = el("button", "btn", c.label + " (" + c.events.length + ")");
+    b.type = "button";
+    b.setAttribute("role", "tab");
+    b.setAttribute("aria-selected", c.id === active.id ? "true" : "false");
+    b.addEventListener("click", () => { location.hash = c.id; });
+    tabs.appendChild(b);
+  });
+}
+function updateProgress() {
+  const keys = [];
+  edition.categories.forEach(c => c.events.forEach((_, i) => keys.push(key(c.id, i))));
+  const n = keys.filter(k => readSet.has(k)).length;
+  document.getElementById("progress").textContent = keys.length ? n + "/" + keys.length + " lus" : "";
+  saveRead();
+}
+
+// ---------- Vue liste ----------
+function renderList(cat) {
+  const view = document.getElementById("view");
+  view.textContent = "";
+  const list = el("div", "list");
+  if (!cat.events.length) list.appendChild(el("p", "state", "Rien d'important à relever dans cette rubrique pour cette édition."));
+  cat.events.forEach((ev, i) => {
+    const k = key(cat.id, i);
+    const card = el("a", "card win" + (readSet.has(k) ? " read" : ""));
+    card.href = "#" + k;
+    card.addEventListener("click", () => { listScroll[cat.id] = window.scrollY; });
+    const bar = el("div", "bar");
+    bar.appendChild(el("span", null, "■ " + (ev.theme || cat.label)));
+    bar.appendChild(el("span", null, readSet.has(k) ? "✓ lu" : ev.lectures.length + " source" + (ev.lectures.length > 1 ? "s" : "")));
+    card.appendChild(bar);
+    const body = el("div", "win-body");
+    body.appendChild(el("h2", "card-title", ev.titre));
+    body.appendChild(el("p", "card-text", ev.essentiel));
+    const foot = el("div", "card-foot");
+    foot.appendChild(el("span", null, ev.contexte ? "+ contexte" : ""));
+    foot.appendChild(el("span", "open", "Ouvrir →"));
+    body.appendChild(foot);
+    card.appendChild(body);
+    list.appendChild(card);
+  });
+  view.appendChild(list);
+
+  const end = el("div", "end");
+  const other = edition.categories.find(c => c.id !== cat.id);
+  end.appendChild(el("p", null, "— fin de la rubrique " + cat.label + (other ? " · reste : " + other.label : "") + " —"));
+  const d = el("details");
+  d.appendChild(el("summary", null, "Sources consultées"));
+  const ul = el("ul");
+  (cat.sources || []).forEach(s => ul.appendChild(el("li", null, s.source + " : " + s.articles + " article" + (s.articles > 1 ? "s" : "") + (s.erreur ? " (indisponible)" : ""))));
+  d.appendChild(ul);
+  end.appendChild(d);
+  view.appendChild(end);
+  window.scrollTo(0, listScroll[cat.id] || 0);
+}
+
+// ---------- Vue événement (grande page) ----------
+function block(label, text, cls) {
+  const b = el("div", cls || "");
+  b.appendChild(el("p", "section-label", label));
+  b.appendChild(el("p", null, text));
+  return b;
+}
+function renderDetail(cat, i) {
+  const ev = cat.events[i];
+  const k = key(cat.id, i);
+  readSet.add(k); updateProgress();
+  const view = document.getElementById("view");
+  view.textContent = "";
+
+  const back = el("a", "btn", "← " + cat.label);
+  back.href = "#" + cat.id;
+  back.style.alignSelf = "flex-start";
+  const wrap = el("div", "list");
+  wrap.appendChild(back);
+
+  const win = el("article", "win detail");
+  const bar = el("div", "bar");
+  bar.appendChild(el("span", null, "■ " + (ev.theme || cat.label)));
+  bar.appendChild(el("span", null, (i + 1) + "/" + cat.events.length));
+  win.appendChild(bar);
+  const body = el("div", "win-body");
+  body.appendChild(el("h2", "detail-title", ev.titre));
+  body.appendChild(block("L'essentiel", ev.essentiel));
+  if (ev.pour_situer) body.appendChild(block("Repère", ev.pour_situer, "box"));
+  if (ev.incertain) body.appendChild(block("À confirmer", ev.incertain, "box warn"));
+  if (ev.contexte) {
+    const c = block("Pour comprendre", ev.contexte);
+    c.appendChild(el("p", "ai-note", "Contexte général rédigé par l'IA, sans vérification : à recouper."));
+    body.appendChild(c);
+  }
+
+  const j = el("div");
+  j.appendChild(el("p", "section-label", "Ce qu'en disent " + ev.lectures.length + " journa" + (ev.lectures.length > 1 ? "ux" : "l")));
+  const list = el("div", "journals");
+  ev.lectures.forEach(l => {
+    const box = el("div", "journal");
+    const jb = el("div", "bar");
+    jb.appendChild(el("span", null, l.source));
+    jb.appendChild(el("span", null, timeLabel(l.publie)));
+    box.appendChild(jb);
+    const b = el("div", "journal-body");
+    b.appendChild(el("p", "headline", "« " + l.titre_original + " »"));
+    if (l.angle) b.appendChild(el("p", "angle", l.angle));
+    if (/^https:\/\//.test(l.lien || "")) {
+      const a = el("a", null, "Lire l'article ↗");
+      a.href = l.lien; a.target = "_blank"; a.rel = "noopener";
+      b.appendChild(a);
+    }
+    box.appendChild(b);
+    list.appendChild(box);
+  });
+  j.appendChild(list);
+  body.appendChild(j);
+  win.appendChild(body);
+  wrap.appendChild(win);
+
+  const actions = el("div", "detail-actions");
+  const unread = el("button", "btn", "Marquer comme non lu");
+  unread.type = "button";
+  unread.addEventListener("click", () => { readSet.delete(k); updateProgress(); location.hash = cat.id; });
+  actions.appendChild(unread);
+  if (cat.events[i + 1]) {
+    const next = el("a", "btn", "Suivant →");
+    next.href = "#" + key(cat.id, i + 1);
+    actions.appendChild(next);
+  } else {
+    const b2 = el("a", "btn", "← Retour à la liste");
+    b2.href = "#" + cat.id;
+    actions.appendChild(b2);
+  }
+  wrap.appendChild(actions);
+  view.appendChild(wrap);
+  window.scrollTo(0, 0);
+}
+
+// ---------- Éditions et dates ----------
+function renderDatebar() {
+  document.getElementById("date-label").textContent = cap(edition.date) + " · " + edition.moment;
   const n = editions.length ? editions.length - position : 1;
-  document.getElementById("numero").textContent = "N° " + n + " · Paris";
+  document.getElementById("numero").textContent = "releve.exe — édition n° " + n;
   document.getElementById("prev").disabled = position >= editions.length - 1;
   document.getElementById("next").disabled = position <= 0;
-  const select = document.getElementById("date-select");
-  select.textContent = "";
+  const sel = document.getElementById("date-select");
+  sel.textContent = "";
   editions.forEach((e, i) => {
-    const o = el("option", null, capitalize(e.date) + " · " + e.moment);
+    const o = el("option", null, cap(e.date) + " · " + e.moment);
     o.value = String(i);
     if (i === position) o.selected = true;
-    select.appendChild(o);
+    sel.appendChild(o);
   });
-  select.disabled = editions.length < 2;
+  sel.disabled = editions.length < 2;
 }
 async function openEdition(i) {
   const entry = editions[i];
@@ -266,156 +411,39 @@ async function openEdition(i) {
     if (!res.ok) throw new Error();
     edition = await res.json();
     position = i;
+    listScroll = {};
     loadRead();
-    renderFolio();
-    renderAll();
-    window.scrollTo(0, 0);
+    renderDatebar();
+    const cat = parseHash().cat;
+    if (location.hash !== "#" + cat.id) location.hash = cat.id; else render();
   } catch (e) {
-    document.getElementById("folio-label").textContent = "Édition introuvable";
+    document.getElementById("date-label").textContent = "Édition introuvable";
   }
 }
 document.getElementById("prev").addEventListener("click", () => openEdition(position + 1));
 document.getElementById("next").addEventListener("click", () => openEdition(position - 1));
 document.getElementById("date-select").addEventListener("change", e => openEdition(Number(e.target.value)));
 
-// ---------- Rubriques et articles ----------
-function eventKey(catId, i) { return catId + ":" + i; }
-function updateProgress() {
-  const keys = [];
-  edition.categories.forEach(c => c.events.forEach((_, i) => keys.push(eventKey(c.id, i))));
-  const n = keys.filter(k => readSet.has(k)).length;
-  document.getElementById("progress").textContent = keys.length ? n + " / " + keys.length + " lus" : "";
-  saveRead();
-}
-function renderTabs() {
-  const tabs = document.getElementById("tabs");
-  tabs.textContent = "";
-  edition.categories.forEach(c => {
-    const b = el("button", "tab");
-    b.type = "button";
-    b.setAttribute("role", "tab");
-    b.setAttribute("aria-selected", c.id === current ? "true" : "false");
-    b.appendChild(document.createTextNode(c.label));
-    b.appendChild(el("span", "n", "(" + c.events.length + ")"));
-    b.addEventListener("click", () => { location.hash = c.id; });
-    tabs.appendChild(b);
-  });
-}
-function detailsBlock(cls, summaryText) {
-  const d = el("details", cls);
-  d.appendChild(el("summary", null, summaryText));
-  return d;
-}
-function renderCategory() {
-  const cat = edition.categories.find(c => c.id === current) || edition.categories[0];
-  const root = document.getElementById("events");
-  root.textContent = "";
-  if (!cat.events.length) {
-    root.appendChild(el("p", "state", "Rien d'important à relever dans cette rubrique pour cette édition."));
-  }
-  cat.events.forEach((ev, i) => {
-    const key = eventKey(cat.id, i);
-    const item = el("article", "item");
-    item.appendChild(el("div", "kicker caps", ev.theme || cat.label));
-    item.appendChild(el("h2", null, ev.titre));
-    item.appendChild(el("p", "lede", ev.essentiel));
-
-    if (ev.pour_situer) {
-      const r = el("aside", "repere");
-      r.appendChild(el("span", "caps", "Repère"));
-      r.appendChild(document.createTextNode(ev.pour_situer));
-      item.appendChild(r);
-    }
-    if (ev.incertain) {
-      const d = el("p", "doute");
-      d.appendChild(el("b", null, "À confirmer. "));
-      d.appendChild(document.createTextNode(ev.incertain));
-      item.appendChild(d);
-    }
-    if (ev.contexte) {
-      const ctx = detailsBlock("ctx", "Pour comprendre");
-      ctx.appendChild(el("p", null, ev.contexte));
-      ctx.appendChild(el("p", "note", "Contexte général rédigé par l'IA, sans vérification : à recouper."));
-      item.appendChild(ctx);
-    }
-
-    const n = ev.lectures.length;
-    const jr = detailsBlock("journaux", n > 1 ? "Ce qu'en disent " + n + " journaux" : "Ce qu'en dit 1 journal");
-    ev.lectures.forEach(l => {
-      const row = el("div", "journal");
-      const head = el("div", "journal-head");
-      head.appendChild(el("span", "caps", l.source));
-      head.appendChild(el("small", null, timeLabel(l.publie)));
-      row.appendChild(head);
-      row.appendChild(el("p", "headline", "« " + l.titre_original + " »"));
-      if (l.angle) row.appendChild(el("p", "angle", l.angle));
-      if (/^https:\/\//.test(l.lien || "")) {
-        const a = el("a", null, "Lire l'article");
-        a.href = l.lien; a.target = "_blank"; a.rel = "noopener";
-        row.appendChild(a);
-      }
-      jr.appendChild(row);
-    });
-    item.appendChild(jr);
-
-    const btn = el("button", "read-btn caps");
-    btn.type = "button";
-    const sync = () => {
-      const on = readSet.has(key);
-      btn.setAttribute("aria-pressed", on ? "true" : "false");
-      btn.textContent = on ? "✓ Lu" : "Marquer comme lu";
-      item.classList.toggle("read", on);
-    };
-    btn.addEventListener("click", () => {
-      readSet.has(key) ? readSet.delete(key) : readSet.add(key);
-      sync(); updateProgress();
-    });
-    sync();
-    item.appendChild(btn);
-    root.appendChild(item);
-  });
-
-  const list = document.getElementById("sources-list");
-  list.textContent = "";
-  (cat.sources || []).forEach(s => {
-    list.appendChild(el("li", null, s.source + " : " + s.articles + " article" + (s.articles > 1 ? "s" : "") + (s.erreur ? " (indisponible)" : "")));
-  });
-  const other = edition.categories.find(c => c.id !== cat.id);
-  document.getElementById("end-text").textContent = other
-    ? "Fin de la rubrique " + cat.label + ". Il reste la rubrique " + other.label + "."
-    : "Fin de l'édition.";
-  document.getElementById("end").hidden = false;
-}
-function renderAll() {
-  const wanted = location.hash.replace("#", "");
-  current = edition.categories.some(c => c.id === wanted) ? wanted : edition.categories[0].id;
-  renderTabs();
-  renderCategory();
-  updateProgress();
-}
-window.addEventListener("hashchange", () => { if (edition) { renderAll(); window.scrollTo(0, 0); } });
-
-// ---------- Démarrage ----------
 async function start() {
   try {
     const res = await fetch("edition.json", { cache: "no-store" });
     if (!res.ok) throw new Error();
     edition = await res.json();
   } catch (e) {
-    document.getElementById("folio-label").textContent = "Aucune édition";
-    document.getElementById("events").textContent = "";
-    document.getElementById("events").appendChild(el("p", "state", "Aucune édition n'a encore été publiée. Elle apparaîtra après le prochain passage automatique."));
+    document.getElementById("date-label").textContent = "Aucune édition";
+    document.getElementById("view").textContent = "";
+    document.getElementById("view").appendChild(el("p", "state", "Aucune édition publiée pour l'instant. Elle apparaîtra après le prochain passage automatique."));
     return;
   }
   try {
     const res = await fetch("archive/index.json", { cache: "no-store" });
     if (res.ok) editions = await res.json();
   } catch (e) { editions = []; }
-  position = Math.max(0, editions.findIndex(e => e.genere_le === edition.genere_le));
   if (!editions.length) editions = [{ fichier: "edition.json", date: edition.date, moment: edition.moment, genere_le: edition.genere_le }];
+  position = Math.max(0, editions.findIndex(e => e.genere_le === edition.genere_le));
   loadRead();
-  renderFolio();
-  renderAll();
+  renderDatebar();
+  render();
 }
 start();
 </script>

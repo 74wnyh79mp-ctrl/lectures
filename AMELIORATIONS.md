@@ -4,7 +4,8 @@ Liste tenue au fil de l'eau, à traiter en une seule séance après une semaine 
 
 ## Faites (24 novembre 2026)
 
-- Nouveau nom : Le Relevé. Interface style journal rétro, mode jour et mode nuit.
+- Nouveau nom : Le Relevé. Interface « ordinateur rétro » lisible, mode jour et mode nuit (le style journal a été abandonné, trop peu lisible).
+- Chaque événement s'ouvre sur une page à part, avec tous les détails.
 - Journaux de chaque événement repliés derrière une flèche ; contexte « Pour comprendre » dépliable.
 - Navigation entre les éditions par date.
 - Tribunes, éditos et chroniques écartés ; édition plus courte les jours calmes.
