@@ -10,7 +10,7 @@
 Lancement : python build_edition.py
 Variables utiles :
   ANTHROPIC_API_KEY  clé API (obligatoire, rangée dans les Secrets GitHub)
-  CLAUDE_MODEL       modèle utilisé (par défaut claude-haiku-5-5, le plus économique)
+  CLAUDE_MODEL       modèle utilisé (par défaut claude-sonnet-5-5)
   MAX_EVENTS         nombre maximum d'événements par catégorie (6)
   WINDOW_HOURS       ancienneté maximale des articles en heures (24)
 """
@@ -31,7 +31,7 @@ import feedparser
 
 ROOT = Path(__file__).resolve().parent
 PARIS = ZoneInfo("Europe/Paris")
-MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-5-5")
+MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")
 MAX_EVENTS = int(os.environ.get("MAX_EVENTS", "6"))
 WINDOW_HOURS = int(os.environ.get("WINDOW_HOURS", "24"))
 MAX_PER_FEED = 15  # articles gardés par flux : moins de texte envoyé, moins de coût
@@ -172,11 +172,13 @@ def write_edition(categories: list[dict], items: list[dict],
 
     last_error: Exception | None = None
     for _ in range(2):  # un nouvel essai si le JSON est illisible
+        answer = llm(system, user)
         try:
-            data = parse_json(llm(system, user))
+            data = parse_json(answer)
             break
         except (ValueError, json.JSONDecodeError) as exc:
             last_error = exc
+            print(f"Réponse illisible ({len(answer)} caractères), début : {answer[:300]!r}")
     else:
         raise RuntimeError(f"réponse illisible : {last_error}")
 
