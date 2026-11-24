@@ -1,0 +1,73 @@
+name: Édition du jour
+
+on:
+  schedule:
+    # Heures en UTC : 5 h 30 UTC = 6 h 30 à Paris en hiver (7 h 30 en été).
+    - cron: "30 5 * * *"
+    # 17 h UTC = 18 h à Paris en hiver (19 h en été).
+    - cron: "0 17 * * *"
+  # Bouton « Run workflow » pour lancer une édition à la main.
+  workflow_dispatch:
+  # Une modification de la page republie le site, sans refaire d'édition.
+  push:
+    branches: [main]
+    paths: ["docs/index.html"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: edition
+  cancel-in-progress: false
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer Python
+        if: github.event_name != 'push'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        if: github.event_name != 'push'
+        run: pip install -r requirements.txt
+
+      - name: Fabriquer l'édition
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python build_edition.py
+
+      - name: Enregistrer l'édition dans le dépôt
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "double-lecture-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau."
+          else
+            git commit -m "Édition du $(TZ=Europe/Paris date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
+
+      - name: Préparer la publication
+        uses: actions/configure-pages@v5
+
+      - name: Empaqueter le site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Publier sur GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
