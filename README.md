@@ -1,6 +1,6 @@
-# Double lecture
+# Le Relevé
 
-L'essentiel de l'actualité, vu sous plusieurs angles, sans stress.
+Les faits du jour, recoupés par plusieurs journaux. Pas un journal : pas d'éditos ni d'opinions, juste une dose d'infos factuelles, sans le bruit.
 
 Chaque matin, un programme lit les flux RSS de plusieurs journaux, envoie les titres à Claude, qui regroupe les articles par événement et rédige l'essentiel, puis publie une édition finie en deux rubriques : **France** et **International**.
 

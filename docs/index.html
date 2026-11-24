@@ -3,140 +3,186 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Double lecture</title>
-<meta name="theme-color" content="#f2f5f3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111614" media="(prefers-color-scheme: dark)">
-<meta name="description" content="L'essentiel de l'actualité, vu sous plusieurs angles.">
+<title>Le Relevé</title>
+<meta name="description" content="Les faits du jour, recoupés par plusieurs journaux.">
+<meta name="theme-color" content="#efebe1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<script>
+  // Applique le thème choisi avant l'affichage, pour éviter un flash.
+  try {
+    var t = localStorage.getItem("releve-theme");
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+</script>
 <style>
-/* Une colonne de lecture, une édition finie, sans compteur de non-lus.
-   Papier gris-vert froid, encre ardoise, accent sauge : calme, sans rouge d'alerte. */
+/* Mise en page : une colonne de quotidien, manchette gothique, filets noirs.
+   Papier journal le jour, papier sombre la nuit. Une seule couleur d'accent, lie-de-vin, très rare. */
 :root {
-  --paper: #f2f5f3; --card: #ffffff; --ink: #1c2422; --muted: #5b6a66;
-  --rule: #d6dedb; --accent: #2e6b5f; --accent-soft: #e3eeea;
-  --note: #f6f3e8; --note-ink: #5c5233;
-  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
-  --font-text: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --paper: #efebe1;
+  --ink: #1b1a17;
+  --muted: #5d594f;
+  --faint: #cdc6b6;
+  --accent: #8a2b1d;
+  --box: #e6e1d4;
+  --font-mast: "UnifrakturMaguntia", "Old English Text MT", Georgia, serif;
+  --font-head: "Old Standard TT", "Times New Roman", Georgia, serif;
+  --font-body: "Libre Caslon Text", Georgia, "Times New Roman", serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #111614; --card: #19201e; --ink: #e3ebe8; --muted: #98a8a3;
-    --rule: #2a3431; --accent: #82c2b2; --accent-soft: #1f2f2b;
-    --note: #23211a; --note-ink: #d8cda5; color-scheme: dark;
+  :root:not([data-theme="light"]) {
+    --paper: #16150f; --ink: #e9e3d3; --muted: #a29c8b; --faint: #3b382f;
+    --accent: #d98a6c; --box: #201e17; color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+  --paper: #16150f; --ink: #e9e3d3; --muted: #a29c8b; --faint: #3b382f;
+  --accent: #d98a6c; --box: #201e17; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--paper); color: var(--ink);
-  font-family: var(--font-text); font-size: 16px; line-height: 1.55;
+  font-family: var(--font-body); font-size: 17px; line-height: 1.6;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 0 calc(48px + env(safe-area-inset-bottom, 0px));
+  padding-block: env(safe-area-inset-top, 0px) calc(56px + env(safe-area-inset-bottom, 0px));
 }
 body::before {
   content: ""; position: fixed; inset: 0 0 auto;
   height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper);
 }
-.wrap { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
-
-.bar {
-  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
-  background: var(--paper); padding-block: 14px 10px;
-  border-bottom: 1px solid var(--rule); display: flex; flex-direction: column; gap: 10px;
+.page { max-width: 660px; margin: 0 auto; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; padding: 0; }
+button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 3px;
 }
-.bar-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
-.brand { font-family: var(--font-display); font-weight: 600; font-size: 1.35rem; letter-spacing: -0.01em; }
-.brand span { color: var(--accent); }
-.progress-label { font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
-.track { height: 3px; background: var(--rule); border-radius: 2px; overflow: hidden; }
-.fill { height: 100%; width: 0; background: var(--accent); transition: width .3s ease; }
-.tabs { display: flex; gap: 8px; }
-.tab {
-  font: inherit; font-size: 0.9rem; font-weight: 500; cursor: pointer;
-  background: transparent; color: var(--muted); border: 1px solid var(--rule);
-  border-radius: 999px; padding: 6px 14px;
+.caps {
+  font-family: var(--font-head); text-transform: uppercase;
+  letter-spacing: 0.14em; font-size: 0.68rem;
 }
-.tab[aria-selected="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
-.tab .count { font-variant-numeric: tabular-nums; opacity: 0.7; margin-left: 4px; }
 
-.intro { padding-top: 6px; display: flex; flex-direction: column; gap: 6px; }
-.eyebrow { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-.intro h1 { font-family: var(--font-display); font-weight: 500; font-size: 2rem; line-height: 1.15; margin: 0; text-wrap: balance; }
-.intro p { margin: 0; color: var(--muted); max-width: 60ch; }
-
-.events { display: flex; flex-direction: column; gap: 16px; }
-.event {
-  background: var(--card); border: 1px solid var(--rule); border-radius: 10px;
-  padding: 20px; display: flex; flex-direction: column; gap: 14px; transition: opacity .25s ease;
+/* Manchette */
+.masthead { padding-top: 14px; text-align: center; }
+.topline {
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  color: var(--muted); padding-bottom: 6px;
 }
-.event.read { opacity: 0.55; }
-.event-head { display: flex; flex-direction: column; gap: 6px; }
-.meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 0.78rem; color: var(--muted); }
-.chip { background: var(--accent-soft); color: var(--accent); font-weight: 600; padding: 2px 8px; border-radius: 999px; }
-.event h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; line-height: 1.25; margin: 0; text-wrap: balance; }
-.label { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin: 0 0 4px; }
-.block p { margin: 0; }
-.context { background: var(--accent-soft); border-radius: 8px; padding: 12px 14px; font-size: 0.92rem; }
-.unknown { background: var(--note); color: var(--note-ink); border-radius: 8px; padding: 12px 14px; font-size: 0.92rem; }
-.unknown .label { color: inherit; opacity: 0.8; }
-
-.lectures { border-top: 1px solid var(--rule); }
-.lectures > .label { margin: 12px 0 4px; }
-.lecture { display: flex; flex-direction: column; gap: 4px; padding-block: 12px; border-bottom: 1px solid var(--rule); min-width: 0; }
-.lecture:last-child { border-bottom: 0; }
-.outlet { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-.outlet strong { font-weight: 600; }
-.outlet small { color: var(--muted); font-size: 0.78rem; font-variant-numeric: tabular-nums; }
-.headline { font-family: var(--font-display); font-size: 1.05rem; line-height: 1.35; margin: 0; overflow-wrap: anywhere; }
-.angle { margin: 0; font-size: 0.92rem; color: var(--muted); }
-.lecture a { color: var(--accent); font-size: 0.85rem; font-weight: 500; text-decoration: none; align-self: flex-start; }
-.lecture a:hover, .lecture a:focus-visible { text-decoration: underline; }
-
-.read-btn {
-  align-self: flex-start; font: inherit; font-size: 0.88rem; font-weight: 500; cursor: pointer;
-  background: transparent; color: var(--accent); border: 1px solid var(--accent);
-  border-radius: 999px; padding: 6px 14px;
+.theme-btn { color: var(--muted); padding: 4px 0; }
+.theme-btn:hover { color: var(--ink); }
+.title {
+  font-family: var(--font-mast); font-weight: 400; margin: 0;
+  font-size: clamp(3rem, 15vw, 4.6rem); line-height: 1; letter-spacing: 0.01em;
 }
-.read-btn[aria-pressed="true"] { background: var(--accent); color: var(--card); }
-button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.motto { font-family: var(--font-body); font-style: italic; color: var(--muted); font-size: 0.85rem; margin: 6px 0 10px; }
+.folio {
+  border-top: 3px double var(--ink); border-bottom: 1px solid var(--ink);
+  display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; min-height: 44px;
+}
+.folio button { height: 44px; font-family: var(--font-head); font-size: 1.3rem; }
+.folio button:disabled { opacity: 0.25; cursor: default; }
+.folio-date { position: relative; display: flex; justify-content: center; align-items: center; min-width: 0; }
+.folio-date span { font-family: var(--font-head); font-size: 0.95rem; }
+.folio-date select {
+  position: absolute; inset: 0; width: 100%; opacity: 0; cursor: pointer;
+  font-size: 16px; /* évite le zoom automatique sur iPhone */
+}
 
-.empty, .state { background: var(--card); border: 1px dashed var(--rule); border-radius: 10px; padding: 20px; color: var(--muted); }
-.end { padding: 28px 4px 8px; display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--rule); }
-.end h2 { font-family: var(--font-display); font-weight: 500; font-size: 1.6rem; margin: 0; }
-.end p { margin: 0; color: var(--muted); max-width: 60ch; }
-details { font-size: 0.82rem; color: var(--muted); }
-details ul { margin: 8px 0 0; padding-left: 18px; }
-summary { cursor: pointer; }
+/* Rubriques */
+.sections {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper);
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  border-bottom: 1px solid var(--ink); padding-block: 4px;
+}
+.tabs { display: flex; gap: 18px; }
+.tab { padding: 10px 0 8px; color: var(--muted); border-bottom: 2px solid transparent; text-transform: uppercase; letter-spacing: 0.14em; font-family: var(--font-head); font-size: 0.78rem; }
+.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.tab .n { font-family: var(--font-body); letter-spacing: 0; text-transform: none; margin-left: 4px; }
+.progress { color: var(--muted); font-variant-numeric: tabular-nums; }
 
-@media (prefers-reduced-motion: reduce) { .fill, .event { transition: none; } }
+/* Articles */
+main { display: flex; flex-direction: column; }
+.item { padding-block: 22px; border-bottom: 1px solid var(--faint); display: flex; flex-direction: column; gap: 12px; transition: opacity .25s ease; }
+.item.read { opacity: 0.5; }
+.kicker { color: var(--accent); }
+.item h2 {
+  font-family: var(--font-head); font-weight: 700; margin: 0;
+  font-size: 1.55rem; line-height: 1.18; text-wrap: balance;
+}
+.lede { margin: 0; hyphens: auto; -webkit-hyphens: auto; text-align: justify; }
+.item:first-child .lede::first-letter {
+  font-family: var(--font-head); font-weight: 700; float: left;
+  font-size: 3.4em; line-height: 0.82; padding: 6px 8px 0 0;
+}
+.repere { background: var(--box); border-left: 3px solid var(--ink); padding: 10px 12px; font-size: 0.92rem; }
+.repere .caps { display: block; margin-bottom: 2px; color: var(--muted); }
+.doute { margin: 0; font-size: 0.92rem; font-style: italic; color: var(--muted); }
+.doute b { font-style: normal; font-family: var(--font-head); color: var(--ink); }
+
+details { border-top: 1px dotted var(--faint); }
+summary {
+  list-style: none; cursor: pointer; padding: 10px 0; display: flex; justify-content: space-between;
+  align-items: center; gap: 12px; font-family: var(--font-head); font-size: 0.95rem;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "▸"; transition: transform .2s ease; color: var(--muted); }
+details[open] > summary::after { transform: rotate(90deg); }
+.ctx p { margin: 0 0 8px; font-size: 0.95rem; }
+.note { color: var(--muted); font-style: italic; font-size: 0.8rem !important; }
+.journal { padding: 10px 0; border-top: 1px solid var(--faint); display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.journal:first-of-type { border-top: 0; padding-top: 0; }
+.journal-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.journal-head .caps { color: var(--ink); font-size: 0.72rem; }
+.journal-head small { color: var(--muted); font-size: 0.78rem; font-variant-numeric: tabular-nums; }
+.headline { margin: 0; font-family: var(--font-head); font-size: 1.02rem; line-height: 1.35; overflow-wrap: anywhere; }
+.angle { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.journal a { color: var(--accent); font-size: 0.85rem; text-decoration: underline; text-underline-offset: 3px; align-self: flex-start; }
+
+.read-btn { align-self: flex-start; color: var(--muted); padding: 6px 0; }
+.read-btn[aria-pressed="true"] { color: var(--ink); }
+
+.state { padding: 28px 0; color: var(--muted); font-style: italic; text-align: center; }
+.end { text-align: center; padding-top: 30px; display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.fleuron { font-size: 1.6rem; color: var(--muted); line-height: 1; }
+.end p { margin: 0; color: var(--muted); font-style: italic; max-width: 46ch; }
+.end details { width: 100%; text-align: left; font-size: 0.85rem; color: var(--muted); }
+.end ul { margin: 0 0 8px; padding-left: 18px; }
+
+@media (prefers-reduced-motion: reduce) { .item, summary::after { transition: none; } }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="bar">
-    <div class="bar-row">
-      <div class="brand">Double <span>lecture</span></div>
-      <div class="progress-label" id="progress-label"></div>
+<div class="page">
+  <header class="masthead">
+    <div class="topline caps">
+      <span id="numero">Paris</span>
+      <button type="button" class="theme-btn caps" id="theme-btn" aria-label="Changer de mode">Mode nuit</button>
     </div>
-    <div class="track" aria-hidden="true"><div class="fill" id="fill"></div></div>
-    <div class="tabs" role="tablist" id="tabs"></div>
+    <h1 class="title">Le Relevé</h1>
+    <p class="motto">Les faits du jour, recoupés par plusieurs journaux</p>
+    <div class="folio">
+      <button type="button" id="prev" aria-label="Édition précédente" disabled>‹</button>
+      <div class="folio-date">
+        <span id="folio-label">Chargement…</span>
+        <select id="date-select" aria-label="Choisir une édition"></select>
+      </div>
+      <button type="button" id="next" aria-label="Édition suivante" disabled>›</button>
+    </div>
   </header>
 
-  <section class="intro">
-    <div class="eyebrow" id="eyebrow">Chargement de l'édition…</div>
-    <h1 id="headline">L'essentiel, vu sous plusieurs angles</h1>
-    <p id="intro-text">Pour chaque événement : les faits, un repère pour situer, puis la manière dont différents journaux l'ont traité.</p>
-  </section>
+  <nav class="sections">
+    <div class="tabs caps" role="tablist" id="tabs"></div>
+    <span class="progress caps" id="progress"></span>
+  </nav>
 
-  <main class="events" id="events"></main>
+  <main id="events"><p class="state">Chargement de l'édition…</p></main>
 
   <section class="end" id="end" hidden>
-    <h2>C'est tout pour cette édition.</h2>
-    <p id="end-text">Vous êtes à jour.</p>
-    <details id="sources-details">
+    <div class="fleuron" aria-hidden="true">❦</div>
+    <p id="end-text">Fin de l'édition.</p>
+    <details>
       <summary>Sources consultées</summary>
       <ul id="sources-list"></ul>
     </details>
@@ -144,18 +190,34 @@ summary { cursor: pointer; }
 </div>
 
 <script>
-let edition = null;
-let current = null;
-let readSet = new Set();
+// ---------- Thème jour / nuit ----------
+const root = document.documentElement;
+const themeBtn = document.getElementById("theme-btn");
+function isDark() {
+  const t = root.getAttribute("data-theme");
+  if (t) return t === "dark";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+function syncThemeBtn() {
+  themeBtn.textContent = isDark() ? "Mode jour" : "Mode nuit";
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", isDark() ? "#16150f" : "#efebe1");
+}
+themeBtn.addEventListener("click", () => {
+  const next = isDark() ? "light" : "dark";
+  root.setAttribute("data-theme", next);
+  try { localStorage.setItem("releve-theme", next); } catch (e) {}
+  syncThemeBtn();
+});
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", syncThemeBtn);
+syncThemeBtn();
 
-function storageKey() { return "double-lecture-lus-" + (edition ? edition.genere_le : ""); }
-function loadRead() {
-  try { readSet = new Set(JSON.parse(localStorage.getItem(storageKey()) || "[]")); }
-  catch (e) { readSet = new Set(); }
-}
-function saveRead() {
-  try { localStorage.setItem(storageKey(), JSON.stringify([...readSet])); } catch (e) {}
-}
+// ---------- Données ----------
+let editions = [];      // index des éditions archivées, la plus récente en premier
+let position = 0;       // position de l'édition affichée dans cet index
+let edition = null;
+let current = null;     // rubrique affichée
+let readSet = new Set();
 
 function el(tag, cls, text) {
   const n = document.createElement(tag);
@@ -163,143 +225,196 @@ function el(tag, cls, text) {
   if (text != null) n.textContent = text;
   return n;
 }
-function block(cls, label, text) {
-  const b = el("div", "block " + cls);
-  b.appendChild(el("p", "label", label));
-  b.appendChild(el("p", null, text));
-  return b;
+function readKey() { return "releve-lus-" + (edition ? edition.genere_le : ""); }
+function loadRead() {
+  try { readSet = new Set(JSON.parse(localStorage.getItem(readKey()) || "[]")); }
+  catch (e) { readSet = new Set(); }
 }
-function eventKey(catId, i) { return catId + ":" + i; }
+function saveRead() { try { localStorage.setItem(readKey(), JSON.stringify([...readSet])); } catch (e) {} }
 function timeLabel(iso) {
   if (!iso) return "";
   const d = new Date(iso);
   if (isNaN(d)) return "";
   return d.toLocaleString("fr-FR", { weekday: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Paris" });
 }
+function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
 
+// ---------- Navigation par date ----------
+function renderFolio() {
+  document.getElementById("folio-label").textContent =
+    capitalize(edition.date) + " · édition du " + edition.moment;
+  const n = editions.length ? editions.length - position : 1;
+  document.getElementById("numero").textContent = "N° " + n + " · Paris";
+  document.getElementById("prev").disabled = position >= editions.length - 1;
+  document.getElementById("next").disabled = position <= 0;
+  const select = document.getElementById("date-select");
+  select.textContent = "";
+  editions.forEach((e, i) => {
+    const o = el("option", null, capitalize(e.date) + " · " + e.moment);
+    o.value = String(i);
+    if (i === position) o.selected = true;
+    select.appendChild(o);
+  });
+  select.disabled = editions.length < 2;
+}
+async function openEdition(i) {
+  const entry = editions[i];
+  if (!entry) return;
+  try {
+    const res = await fetch(entry.fichier, { cache: "no-store" });
+    if (!res.ok) throw new Error();
+    edition = await res.json();
+    position = i;
+    loadRead();
+    renderFolio();
+    renderAll();
+    window.scrollTo(0, 0);
+  } catch (e) {
+    document.getElementById("folio-label").textContent = "Édition introuvable";
+  }
+}
+document.getElementById("prev").addEventListener("click", () => openEdition(position + 1));
+document.getElementById("next").addEventListener("click", () => openEdition(position - 1));
+document.getElementById("date-select").addEventListener("change", e => openEdition(Number(e.target.value)));
+
+// ---------- Rubriques et articles ----------
+function eventKey(catId, i) { return catId + ":" + i; }
 function updateProgress() {
-  const all = [];
-  edition.categories.forEach(c => c.events.forEach((_, i) => all.push(eventKey(c.id, i))));
-  const n = all.filter(k => readSet.has(k)).length;
-  document.getElementById("progress-label").textContent = all.length ? n + " sur " + all.length + " lus" : "";
-  document.getElementById("fill").style.width = all.length ? (n / all.length * 100) + "%" : "0";
+  const keys = [];
+  edition.categories.forEach(c => c.events.forEach((_, i) => keys.push(eventKey(c.id, i))));
+  const n = keys.filter(k => readSet.has(k)).length;
+  document.getElementById("progress").textContent = keys.length ? n + " / " + keys.length + " lus" : "";
   saveRead();
 }
-
 function renderTabs() {
   const tabs = document.getElementById("tabs");
   tabs.textContent = "";
   edition.categories.forEach(c => {
     const b = el("button", "tab");
     b.type = "button";
-    b.id = "tab-" + c.id;
     b.setAttribute("role", "tab");
     b.setAttribute("aria-selected", c.id === current ? "true" : "false");
     b.appendChild(document.createTextNode(c.label));
-    b.appendChild(el("span", "count", String(c.events.length)));
+    b.appendChild(el("span", "n", "(" + c.events.length + ")"));
     b.addEventListener("click", () => { location.hash = c.id; });
     tabs.appendChild(b);
   });
 }
-
+function detailsBlock(cls, summaryText) {
+  const d = el("details", cls);
+  d.appendChild(el("summary", null, summaryText));
+  return d;
+}
 function renderCategory() {
   const cat = edition.categories.find(c => c.id === current) || edition.categories[0];
   const root = document.getElementById("events");
   root.textContent = "";
   if (!cat.events.length) {
-    root.appendChild(el("div", "empty", "Aucun événement dans cette catégorie pour cette édition. Les flux n'ont peut-être pas répondu : voir « Sources consultées » en bas de page."));
+    root.appendChild(el("p", "state", "Rien d'important à relever dans cette rubrique pour cette édition."));
   }
   cat.events.forEach((ev, i) => {
     const key = eventKey(cat.id, i);
-    const card = el("article", "event");
+    const item = el("article", "item");
+    item.appendChild(el("div", "kicker caps", ev.theme || cat.label));
+    item.appendChild(el("h2", null, ev.titre));
+    item.appendChild(el("p", "lede", ev.essentiel));
 
-    const head = el("div", "event-head");
-    const meta = el("div", "meta");
-    meta.appendChild(el("span", "chip", ev.theme || cat.label));
-    meta.appendChild(el("span", null, ev.lectures.length + (ev.lectures.length > 1 ? " sources" : " source")));
-    head.appendChild(meta);
-    head.appendChild(el("h2", null, ev.titre));
-    card.appendChild(head);
+    if (ev.pour_situer) {
+      const r = el("aside", "repere");
+      r.appendChild(el("span", "caps", "Repère"));
+      r.appendChild(document.createTextNode(ev.pour_situer));
+      item.appendChild(r);
+    }
+    if (ev.incertain) {
+      const d = el("p", "doute");
+      d.appendChild(el("b", null, "À confirmer. "));
+      d.appendChild(document.createTextNode(ev.incertain));
+      item.appendChild(d);
+    }
+    if (ev.contexte) {
+      const ctx = detailsBlock("ctx", "Pour comprendre");
+      ctx.appendChild(el("p", null, ev.contexte));
+      ctx.appendChild(el("p", "note", "Contexte général rédigé par l'IA, sans vérification : à recouper."));
+      item.appendChild(ctx);
+    }
 
-    card.appendChild(block("essentiel", "L'essentiel", ev.essentiel));
-    if (ev.pour_situer) card.appendChild(block("context", "Pour situer", ev.pour_situer));
-    if (ev.incertain) card.appendChild(block("unknown", "Ce qui reste incertain", ev.incertain));
-
-    const lec = el("div", "lectures");
-    lec.appendChild(el("p", "label", "Double lecture · " + ev.lectures.length + (ev.lectures.length > 1 ? " regards" : " regard")));
+    const n = ev.lectures.length;
+    const jr = detailsBlock("journaux", n > 1 ? "Ce qu'en disent " + n + " journaux" : "Ce qu'en dit 1 journal");
     ev.lectures.forEach(l => {
-      const row = el("div", "lecture");
-      const o = el("div", "outlet");
-      o.appendChild(el("strong", null, l.source));
-      o.appendChild(el("small", null, timeLabel(l.publie)));
-      row.appendChild(o);
+      const row = el("div", "journal");
+      const head = el("div", "journal-head");
+      head.appendChild(el("span", "caps", l.source));
+      head.appendChild(el("small", null, timeLabel(l.publie)));
+      row.appendChild(head);
       row.appendChild(el("p", "headline", "« " + l.titre_original + " »"));
       if (l.angle) row.appendChild(el("p", "angle", l.angle));
       if (/^https:\/\//.test(l.lien || "")) {
-        const a = el("a", null, "Lire l'article ↗");
+        const a = el("a", null, "Lire l'article");
         a.href = l.lien; a.target = "_blank"; a.rel = "noopener";
         row.appendChild(a);
       }
-      lec.appendChild(row);
+      jr.appendChild(row);
     });
-    card.appendChild(lec);
+    item.appendChild(jr);
 
-    const btn = el("button", "read-btn");
+    const btn = el("button", "read-btn caps");
     btn.type = "button";
     const sync = () => {
       const on = readSet.has(key);
       btn.setAttribute("aria-pressed", on ? "true" : "false");
-      btn.textContent = on ? "Lu ✓" : "Marquer comme lu";
-      card.classList.toggle("read", on);
+      btn.textContent = on ? "✓ Lu" : "Marquer comme lu";
+      item.classList.toggle("read", on);
     };
     btn.addEventListener("click", () => {
       readSet.has(key) ? readSet.delete(key) : readSet.add(key);
       sync(); updateProgress();
     });
     sync();
-    card.appendChild(btn);
-    root.appendChild(card);
+    item.appendChild(btn);
+    root.appendChild(item);
   });
 
   const list = document.getElementById("sources-list");
   list.textContent = "";
   (cat.sources || []).forEach(s => {
-    const txt = s.source + " : " + s.articles + " article" + (s.articles > 1 ? "s" : "") + (s.erreur ? " (indisponible)" : "");
-    list.appendChild(el("li", null, txt));
+    list.appendChild(el("li", null, s.source + " : " + s.articles + " article" + (s.articles > 1 ? "s" : "") + (s.erreur ? " (indisponible)" : "")));
   });
   const other = edition.categories.find(c => c.id !== cat.id);
   document.getElementById("end-text").textContent = other
-    ? "Vous êtes à jour pour la rubrique " + cat.label + ". Il reste la rubrique " + other.label + "."
-    : "Vous êtes à jour.";
+    ? "Fin de la rubrique " + cat.label + ". Il reste la rubrique " + other.label + "."
+    : "Fin de l'édition.";
   document.getElementById("end").hidden = false;
 }
-
-function route() {
+function renderAll() {
   const wanted = location.hash.replace("#", "");
   current = edition.categories.some(c => c.id === wanted) ? wanted : edition.categories[0].id;
   renderTabs();
   renderCategory();
-  window.scrollTo(0, 0);
+  updateProgress();
 }
+window.addEventListener("hashchange", () => { if (edition) { renderAll(); window.scrollTo(0, 0); } });
 
+// ---------- Démarrage ----------
 async function start() {
   try {
     const res = await fetch("edition.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("statut " + res.status);
+    if (!res.ok) throw new Error();
     edition = await res.json();
   } catch (e) {
-    document.getElementById("eyebrow").textContent = "Édition indisponible";
-    document.getElementById("events").appendChild(el("div", "state", "Aucune édition n'a encore été publiée, ou elle n'a pas pu être chargée. Elle apparaîtra après le prochain passage automatique."));
+    document.getElementById("folio-label").textContent = "Aucune édition";
+    document.getElementById("events").textContent = "";
+    document.getElementById("events").appendChild(el("p", "state", "Aucune édition n'a encore été publiée. Elle apparaîtra après le prochain passage automatique."));
     return;
   }
-  const total = edition.categories.reduce((n, c) => n + c.events.length, 0);
-  document.getElementById("eyebrow").textContent = "Édition du " + edition.moment + " · " + edition.date;
-  document.getElementById("headline").textContent = total + " événements, plusieurs regards";
-  document.getElementById("intro-text").textContent = "Environ " + Math.max(3, Math.round(total * 1.2)) + " minutes de lecture. Pour chaque événement : les faits, un repère pour situer, puis la manière dont différents journaux l'ont traité.";
+  try {
+    const res = await fetch("archive/index.json", { cache: "no-store" });
+    if (res.ok) editions = await res.json();
+  } catch (e) { editions = []; }
+  position = Math.max(0, editions.findIndex(e => e.genere_le === edition.genere_le));
+  if (!editions.length) editions = [{ fichier: "edition.json", date: edition.date, moment: edition.moment, genere_le: edition.genere_le }];
   loadRead();
-  updateProgress();
-  route();
-  window.addEventListener("hashchange", route);
+  renderFolio();
+  renderAll();
 }
 start();
 </script>
