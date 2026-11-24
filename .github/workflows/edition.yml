@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy2.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -75,4 +75,15 @@ jobs:
 
       - name: Publier sur GitHub Pages
         id: deploy
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      # GitHub ne retrouve parfois pas le site empaqueté du premier coup : on réessaie.
+      - name: Patienter avant un nouvel essai
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 30
+
+      - name: Publier sur GitHub Pages (nouvel essai)
+        id: deploy2
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
