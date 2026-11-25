@@ -24,6 +24,8 @@ Liste tenue au fil de l'eau, à traiter en une seule séance après une semaine 
 
 - Historique d'un sujet : depuis une « Suite », frise de toutes les étapes précédentes, tirée des éditions archivées (aucun coût d'IA). Idée née du retour de la mère de Raphael (« suivre un sujet qui m'intéresse »).
 
+- Photo de l'événement (fournie par le journal dans son flux, page de l'événement seulement), logos des journaux, « Le principe » réécrit, « tirer pour actualiser ».
+
 ## Ligne éditoriale en vigueur
 
 **« Les faits qui comptent, et qui aident à comprendre le monde. »**
@@ -52,6 +54,10 @@ Pistes pour mieux juger l'importance, à évaluer :
 - **Comptes utilisateurs** (plus tard) : profil, connexion, rubriques et filtre synchronisés entre appareils.
 - **Couvrir le plus de journaux possible, avec un tri en deux étapes** (validé, après quelques jours avec les 22 sources actuelles) : 1) un tri gratuit, sans IA, regroupe les titres par sujet (mots en commun) et ne garde que les sujets couverts par plusieurs journaux ; 2) l'IA ne reçoit que ces groupes. Le coût dépend alors du nombre de sujets, plus du nombre de journaux.
 - **Concurrent à étudier : Ground News** (appli américaine qui compare la couverture d'un fait par plusieurs médias).
+- **Étiquette d'angle par journal** (idée vue chez Ground News) : un ou deux mots sur chaque article, en plus de la phrase d'angle (« Angle unique », « À contre-courant », « Reprend la dépêche AFP », « Le plus factuel »). Quasi gratuit ; va avec les « regards divergents ».
+- **À ne pas reprendre de Ground News** : les étiquettes gauche/droite et « fiabilité » collées aux médias (leur point le plus critiqué, fausse équivalence). Montrer ce que dit chaque journal, pas noter ce qu'il est. Les profils des journaux restent internes, pour choisir des angles contrastés.
+- **Leçons de Ground News** : des gens paient pour comparer la couverture (freemium, environ 1 à 10 $ par mois) ; leur défaut est l'excès de contenu, d'alertes et de payant ; leur croissance repose sur le sponsoring YouTube (coûteux). Espace libre : la presse française, une édition finie, sans alertes. Leur sélection suit le volume de couverture (ex. prise d'otages de Carthagène), pas l'importance.
+- **Photos : points à surveiller** : images de violence possibles (anxiogènes), droits des photographes et des agences (usage personnel acceptable, à vérifier avant ouverture au public), images bloquées par certains sites.
 - **Filtre d'importance** : une note de 1 à 3 par événement, et un réglage sur le téléphone. Plutôt deux niveaux (« L'essentiel » / « Complet ») que trois. Les événements secondaires en brèves (titre, une phrase, un lien) pour limiter le coût (+20 à 40 % estimés). « L'essentiel » par défaut.
 - **Rejeté : recherche libre avec les opinions des journaux** (retour de la mère de Raphael). Revient à refaire Google et contredit la ligne « pas d'opinions » ; le besoin réel (suivre un sujet) est couvert par les Suites et l'historique.
 - **Personnalisation** : socle commun obligatoire + rubriques au choix (fait sur ce téléphone) ; rubriques sur mesure plus tard éventuellement.

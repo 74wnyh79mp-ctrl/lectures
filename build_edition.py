@@ -69,6 +69,31 @@ def clean(text: str, limit: int) -> str:
     return text
 
 
+IMG_SRC = re.compile(r"<img[^>]+src=[\"'](https://[^\"']+)[\"']", re.I)
+
+
+def entry_image(entry) -> str | None:
+    """Photo fournie par le journal dans son flux (jamais générée)."""
+    candidates = []
+    for key in ("media_content", "media_thumbnail"):
+        for m in entry.get(key) or []:
+            if m.get("url") and (m.get("medium") in (None, "image") or "image" in str(m.get("type", ""))):
+                candidates.append(m["url"])
+    for enc in entry.get("enclosures") or []:
+        if "image" in str(enc.get("type", "")) and enc.get("href"):
+            candidates.append(enc["href"])
+    for field in ("summary", "content"):
+        raw = entry.get(field)
+        text = raw[0].get("value", "") if isinstance(raw, list) and raw else (raw or "")
+        found = IMG_SRC.search(str(text))
+        if found:
+            candidates.append(found.group(1))
+    for url in candidates:
+        if url.startswith("https://"):
+            return html.unescape(url)
+    return None
+
+
 def entry_time(entry) -> datetime | None:
     for key in ("published_parsed", "updated_parsed"):
         value = entry.get(key)
@@ -152,6 +177,7 @@ def fetch_category(category: dict, now: datetime, since: datetime | None = None,
                 "title": title,
                 "summary": clean(entry.get("summary", ""), 200),
                 "link": link,
+                "image": entry_image(entry),
                 "published": published.isoformat() if published else None,
             })
             kept += 1
@@ -354,6 +380,10 @@ def write_edition(categories: list[dict], items: list[dict],
                 "publie": item["published"],
                 "angle": str(lecture.get("angle", "")).strip(),
             })
+        ordered = [by_id[str(l.get("item_id", ""))] for l in raw.get("lectures", [])
+                   if str(l.get("item_id", "")) in used_items]
+        image = next(({"url": it["image"], "source": it["source"]}
+                      for it in ordered if it.get("image")), None)
         if len(lectures) < MIN_SOURCES or not raw.get("titre") or not raw.get("essentiel"):
             # Moins de deux journaux : pas de double lecture, l'événement est écarté.
             continue
@@ -361,6 +391,7 @@ def write_edition(categories: list[dict], items: list[dict],
             "titre": str(raw["titre"]).strip(),
             "theme": str(raw.get("theme") or labels[cat]).strip(),
             "pourquoi": (raw.get("pourquoi") or None),
+            "image": image,
             "suite": suite_info(raw, prev_refs, previous),
             "essentiel": str(raw["essentiel"]).strip(),
             "pour_situer": (raw.get("pour_situer") or None),

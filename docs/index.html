@@ -34,7 +34,8 @@
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; overscroll-behavior-y: contain; }
+body { overscroll-behavior-y: contain; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
   font-family: var(--font); font-size: 17px; line-height: 1.55;
@@ -107,6 +108,26 @@ a { color: var(--accent); }
 .history .h-date { font-size: 0.78rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
 .history .h-title { display: block; text-align: left; background: none; border: 0; padding: 2px 0 0; color: var(--ink); font-weight: 600; cursor: pointer; }
 .history .h-title:hover { color: var(--accent); }
+/* Photo d'un événement (page de l'événement seulement) */
+.photo { margin: -8px -16px 0; position: relative; }
+.photo img { display: block; width: 100%; max-height: 230px; object-fit: cover; background: var(--soft); }
+.photo figcaption { font-size: 0.72rem; color: var(--muted); padding: 4px 16px 0; }
+/* Logo du journal */
+.logo { width: 16px; height: 16px; border-radius: 3px; vertical-align: -3px; margin-right: 6px; background: var(--soft); }
+/* Tirer pour actualiser */
+.ptr {
+  position: fixed; left: 50%; top: calc(env(safe-area-inset-top, 0px) + 8px); z-index: 20;
+  transform: translate(-50%, -80px); transition: transform .2s ease, opacity .2s ease; opacity: 0;
+  background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12); padding: 8px 14px; font-size: 0.85rem; font-weight: 500;
+  display: flex; align-items: center; gap: 8px; max-width: calc(100vw - 32px); pointer-events: none;
+}
+.ptr.dragging { transition: none; }
+.ptr-icon { width: 18px; height: 18px; flex: 0 0 18px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; }
+.ptr.loading .ptr-icon { animation: spin .8s linear infinite; }
+.ptr.done .ptr-icon { border-color: var(--accent); }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .ptr, .ptr.loading .ptr-icon { transition: none; animation: none; } }
 .why { color: var(--accent); font-size: 0.95rem; font-weight: 500; }
 .progress { color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
 
@@ -174,13 +195,14 @@ a { color: var(--accent); }
     <p class="numero"><span id="numero"></span><button type="button" class="link-btn" id="about-open">Le principe</button></p>
     <section class="about" id="about" hidden>
       <h2>Le principe</h2>
-      <p>Les faits importants du jour, et comment chaque journal les raconte. Ce n'est pas une appli de bonnes nouvelles : toute l'actualité importante, bonne ou mauvaise, mais sans le bruit qui la rend épuisante.</p>
+      <p><b>Contrechamp vous montre les faits importants du jour, et comment chaque journal les raconte.</b> Au cinéma, le contrechamp, c'est le plan qui montre l'autre côté de la scène : ici, c'est le même fait vu par des journaux de sensibilités différentes.</p>
       <ul>
-        <li><b>Plusieurs journaux par événement</b> : au moins deux, de sensibilités différentes, pour voir comment chacun raconte le même fait.</li>
-        <li><b>Seulement ce qui compte</b> : pas de faits divers, de petites phrases ou de polémiques sans suite.</li>
-        <li><b>Des faits, pas d'opinions</b> : ni éditos, ni tribunes, ni débats.</li>
-        <li><b>Une édition finie</b> : chaque matin, puis c'est terminé. Pas de flux sans fin, pas d'alertes.</li>
+        <li><b>Au moins deux journaux par événement</b>, choisis parmi une vingtaine de titres de tous bords (Le Monde, Le Figaro, Libération, L'Humanité, Les Échos, La Croix, la BBC, Al Jazeera…). Pour chacun : son titre, et ce qu'il met en avant.</li>
+        <li><b>Seulement ce qui compte</b> : ce qui aura encore de l'importance dans un mois, concerne beaucoup de gens ou fait avancer un grand sujet. Pas de faits divers, de petites phrases ni d'opinions.</li>
+        <li><b>Les sujets suivis</b> : quand une affaire avance, elle revient en « Suite », avec ce qu'on savait déjà et son historique.</li>
+        <li><b>Une édition finie, chaque matin</b> : pas de flux sans fin, pas d'alertes. Toute l'actualité importante, bonne ou mauvaise, sans le bruit.</li>
       </ul>
+      <p class="ai-note">Les résumés sont rédigés par une IA à partir des titres et chapeaux des journaux, qui peut se tromper : chaque article d'origine est en lien pour vérifier.</p>
       <button type="button" class="btn" id="about-close">Compris</button>
     </section>
   </header>
@@ -195,6 +217,8 @@ a { color: var(--accent); }
     <div id="picker-list"></div>
     <button type="button" class="btn" id="picker-close">Terminé</button>
   </section>
+
+  <div class="ptr" id="ptr" role="status" aria-live="polite"><span class="ptr-icon" id="ptr-icon"></span><span id="ptr-text">Tirer pour actualiser</span></div>
 
   <main id="view"><p class="state">Chargement de l'édition…</p></main>
 </div>
@@ -410,6 +434,20 @@ function renderDetail(cat, i) {
   bar.appendChild(el("span", null, (ev.theme || cat.label)));
   bar.appendChild(el("span", null, (i + 1) + "/" + cat.events.length));
   win.appendChild(bar);
+  if (ev.image && /^https:\/\//.test(ev.image.url || "")) {
+    const fig = el("figure", "photo");
+    const img = el("img");
+    img.src = ev.image.url;
+    img.alt = "";
+    img.loading = "lazy";
+    img.referrerPolicy = "no-referrer";
+    img.onerror = () => fig.remove();
+    fig.appendChild(img);
+    fig.appendChild(el("figcaption", null, "Photo : " + ev.image.source));
+    const holder = el("div", "win-body");
+    holder.appendChild(fig);
+    win.appendChild(holder);
+  }
   const body = el("div", "win-body");
   body.appendChild(el("h2", "detail-title", ev.titre));
   if (ev.pourquoi) body.appendChild(el("p", "why", "Pourquoi c'est important : " + ev.pourquoi));
@@ -444,7 +482,18 @@ function renderDetail(cat, i) {
   ev.lectures.forEach(l => {
     const box = el("div", "journal");
     const jb = el("div", "bar");
-    jb.appendChild(el("span", null, l.source));
+    const name = el("span", null);
+    const host = (() => { try { return new URL(l.lien).hostname.replace(/^www\./, ""); } catch (e) { return ""; } })();
+    if (host) {
+      const logo = el("img", "logo");
+      logo.alt = "";
+      logo.loading = "lazy";
+      logo.src = "https://www.google.com/s2/favicons?sz=64&domain=" + encodeURIComponent(host);
+      logo.onerror = () => logo.remove();
+      name.appendChild(logo);
+    }
+    name.appendChild(document.createTextNode(l.source));
+    jb.appendChild(name);
     jb.appendChild(el("span", null, timeLabel(l.publie)));
     box.appendChild(jb);
     const b = el("div", "journal-body");
@@ -594,6 +643,66 @@ async function start() {
   render();
 }
 start();
+
+// ---------- Tirer vers le bas pour actualiser ----------
+(function () {
+  const box = document.getElementById("ptr"), text = document.getElementById("ptr-text");
+  const THRESHOLD = 70;
+  let startY = null, pull = 0, busy = false, hideTimer = null;
+  function show(y, label, state) {
+    clearTimeout(hideTimer);
+    box.classList.remove("loading", "done");
+    if (state) box.classList.add(state);
+    box.style.opacity = "1";
+    box.style.transform = "translate(-50%, " + y + "px)";
+    text.textContent = label;
+  }
+  function hide(delay) {
+    hideTimer = setTimeout(() => { box.style.opacity = "0"; box.style.transform = "translate(-50%, -80px)"; }, delay || 0);
+  }
+  async function refresh() {
+    busy = true;
+    show(0, "Recherche d'une nouvelle édition…", "loading");
+    let msg = "Rien de nouveau : vous avez la dernière édition.";
+    try {
+      const res = await fetch("edition.json", { cache: "no-store" });
+      const fresh = res.ok ? await res.json() : null;
+      if (!fresh) throw new Error();
+      if (edition && fresh.genere_le !== edition.genere_le) {
+        try { const r = await fetch("archive/index.json", { cache: "no-store" }); if (r.ok) editions = await r.json(); } catch (e) {}
+        edition = fresh;
+        position = Math.max(0, editions.findIndex(e => e.genere_le === edition.genere_le));
+        loadRead(); renderDatebar(); render();
+        msg = "Nouvelle édition chargée.";
+      } else if (edition && position !== 0) {
+        msg = "Rien de nouveau. Vous consultez une ancienne édition.";
+      }
+    } catch (e) {
+      msg = "Impossible de vérifier : connexion indisponible.";
+    }
+    show(0, msg, "done");
+    hide(2600);
+    busy = false;
+  }
+  window.addEventListener("touchstart", e => {
+    startY = (!busy && window.scrollY <= 0 && e.touches.length === 1) ? e.touches[0].clientY : null;
+    pull = 0;
+  }, { passive: true });
+  window.addEventListener("touchmove", e => {
+    if (startY === null) return;
+    pull = e.touches[0].clientY - startY;
+    if (pull <= 0 || window.scrollY > 0) { pull = 0; return; }
+    box.classList.add("dragging");
+    const y = Math.min(pull, THRESHOLD * 1.6) * 0.6 - 40;
+    show(y, pull > THRESHOLD ? "Relâchez pour actualiser" : "Tirez pour actualiser");
+  }, { passive: true });
+  window.addEventListener("touchend", () => {
+    box.classList.remove("dragging");
+    if (startY !== null && pull > THRESHOLD) refresh();
+    else if (!busy) hide();
+    startY = null; pull = 0;
+  });
+})();
 </script>
 </body>
 </html>
