@@ -1,5 +1,5 @@
 {
- "genere_le": "2026-11-25T09:23+01:00",
+ "genere_le": "2026-11-25T09:31+01:00",
  "date": "mercredi 25 novembre 2026",
  "moment": "matin",
  "modele": "claude-sonnet-5-5",
@@ -9,150 +9,153 @@
    "label": "France",
    "events": [
     {
-     "titre": "Perquisition au siège du RN : Darmanin saisit l'Inspection générale de la justice",
+     "titre": "Procureur présent au siège du RN : Darmanin saisit l'Inspection générale de la justice",
      "theme": "Justice",
-     "essentiel": "Interrogé mercredi 25 novembre sur France Inter, le garde des Sceaux Gérald Darmanin a annoncé saisir l'Inspection générale de la justice. Un procureur adjoint, Christian de Rocquigny, était présent début novembre lors d'une perquisition au siège du Rassemblement national, menée dans une information judiciaire notamment pour violation du secret professionnel. Le ministre dénonce un « défaut de loyauté » : le magistrat n'a pas prévenu sa hiérarchie ni posé de jour de congé pour rendre visite à une personnalité politique, Jean-Paul Garraud, député.",
+     "essentiel": "Le garde des Sceaux Gérald Darmanin a annoncé, mercredi sur France Inter, avoir saisi l'Inspection générale de la justice. Il vise la présence du procureur adjoint Christian de Rocquigny lors d'une perquisition au siège du Rassemblement national, début novembre. Le ministre a pointé un « défaut de loyauté » du magistrat, qui n'a pas posé de jour de congé pour rendre visite à une personnalité politique, le député Jean-Paul Garraud.",
      "pour_situer": null,
-     "incertain": "Les circonstances précises de la présence du magistrat restent à établir par l'inspection, saisie « pour faire toute la lumière ».",
-     "contexte": "L'Inspection générale de la justice est un service de contrôle rattaché au ministère de la Justice. Elle contrôle le fonctionnement des juridictions et peut enquêter sur le comportement des magistrats. Le ministre de la Justice porte aussi le titre de garde des Sceaux.",
+     "incertain": null,
+     "contexte": "L'Inspection générale de la justice est le corps de contrôle rattaché au ministère de la Justice. Elle enquête notamment sur le fonctionnement des juridictions et le comportement des magistrats.",
      "lectures": [
       {
        "source": "Le Monde",
        "titre_original": "Procureur présent au siège du RN lors d’une perquisition : Gérald Darmanin annonce saisir l’inspection générale de la justice « pour faire toute la lumière »",
        "lien": "https://www.lemonde.fr/societe/article/2026/11/25/procureur-present-lors-d-une-perquisition-au-rn-gerald-darmanin-annonce-saisir-l-inspection-generale-de-la-justice-pour-faire-toute-la-lumiere_6815060_3224.html",
        "publie": "2026-11-25T07:55:20+00:00",
-       "angle": "Insiste sur la visite du procureur à Jean-Paul Garraud et sur le reproche de ne pas avoir posé de jour de congé."
+       "angle": "Le Monde cite le « défaut de loyauté » et précise le motif : le magistrat n'a pas posé de congé pour rendre visite à un député."
       },
       {
        "source": "franceinfo",
        "titre_original": "Présence d'un procureur au siège du RN : Gérald Darmanin annonce avoir saisi l'Inspection générale de la justice",
        "lien": "https://www.franceinfo.fr/politique/front-national/presence-d-un-procureur-au-siege-du-rn-gerald-darmanin-annonce-avoir-saisi-l-inspection-generale-de-la-justice_8298930.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-25T08:10:08+00:00",
-       "angle": "Rend compte de l'annonce faite sur France Inter, avec peu de détails sur le magistrat."
+       "publie": "2026-11-25T08:19:18+00:00",
+       "angle": "franceinfo met l'accent sur l'interview de France Inter et sur la perquisition au siège du RN début novembre."
       },
       {
        "source": "Le Figaro",
        "titre_original": "Procureur présent au siège du RN : Gérald Darmanin saisit l’Inspection générale de la Justice",
        "lien": "https://www.lefigaro.fr/actualite-france/procureur-present-au-siege-du-rn-gerald-darmanin-saisit-l-inspection-generale-de-la-justice-20261125",
        "publie": "2026-11-25T08:21:21+00:00",
-       "angle": "Nomme le procureur et précise le cadre de la perquisition, une information judiciaire pour violation du secret professionnel."
+       "angle": "Le Figaro nomme le procureur adjoint et rappelle le cadre de l'information judiciaire (violation du secret professionnel)."
       },
       {
        "source": "Libération",
        "titre_original": "Procureur au siège du RN : Gérald Darmanin saisit l’Inspection générale de la Justice",
        "lien": "https://www.liberation.fr/politique/procureur-au-siege-du-rn-gerald-darmanin-saisit-linspection-generale-de-la-justice-20261125_EU7CDIDAZFD6PPTT3ORXBFSSZQ/",
        "publie": "2026-11-25T07:54:42+00:00",
-       "angle": "Retient le « défaut de loyauté » et le fait que le magistrat n'ait pas prévenu sa hiérarchie."
+       "angle": "Libération reprend les propos du ministre sur le défaut de loyauté, dans un traitement proche de celui des autres titres."
       }
      ]
     },
     {
-     "titre": "Congrès des maires : élection à la tête de l'AMF et chasse aux parrainages",
-     "theme": "Politique",
-     "essentiel": "Le 108e congrès des maires de France se tient à Paris, à cinq mois de l'élection présidentielle. Mardi, David Lisnard et Philippe Laurent ont défendu leur projet pour la présidence de l'AMF devant 3 000 personnes, et le résultat du vote est attendu mercredi avant 14 h. La majorité des candidats à la présidentielle ont prévu de s'y rendre pour rencontrer des élus et chercher des parrainages. Certains maires disent hésiter à en accorder.",
-     "pour_situer": null,
-     "incertain": "Le résultat du vote pour la présidence de l'AMF n'est pas connu au moment de ces articles.",
-     "contexte": "L'Association des maires de France (AMF) représente les maires et les élus locaux auprès de l'État. Son congrès annuel se tient à Paris. Pour se présenter à l'élection présidentielle, un candidat doit réunir 500 parrainages d'élus, dont beaucoup sont des maires.",
+     "titre": "Salon des maires : les prétendants à l'Élysée courent les parrainages",
+     "theme": "Présidentielle",
+     "essentiel": "Au congrès des maires, à Paris, les candidats à la présidentielle de 2027 cherchent les signatures d'élus nécessaires à leur candidature. Le président de l'Association des maires de France est élu mercredi, avec David Lisnard, candidat à la présidentielle, et Philippe Laurent en lice. Édouard Philippe a proposé un débat à David Lisnard et réclame de sa part une clarification vis-à-vis du RN. Valérie Pécresse appelle la droite et le centre à s'entendre sur un mode de départage.",
+     "pour_situer": "L'élection à la tête de l'AMF a lieu à cinq mois de la présidentielle, ce qui donne au congrès une dimension très politique.",
+     "incertain": null,
+     "contexte": "Les candidats à la présidentielle doivent recueillir 500 parrainages d'élus pour se présenter. Les maires en fournissent la majorité.",
      "lectures": [
       {
        "source": "Le Monde",
        "titre_original": "EN DIRECT, congrès des maires 2026 : suivez l’élection du président de l’Association des maires de France, à cinq mois de l’élection présidentielle",
        "lien": "https://www.lemonde.fr/politique/live/2026/11/25/en-direct-congres-des-maires-2026-suivez-l-election-du-president-de-l-association-des-maires-de-france-a-cinq-mois-de-l-election-presidentielle_6815062_823448.html",
        "publie": "2026-11-25T07:57:12+00:00",
-       "angle": "Suit l'élection de l'AMF en direct et souligne la tonalité très politique du congrès à l'approche de la présidentielle."
-      },
-      {
-       "source": "Le Figaro",
-       "titre_original": "« Il est déjà élu à l’applaudimètre »: dans les coulisses du match entre David Lisnard et Philippe Laurent pour la présidence de l’AMF",
-       "lien": "https://www.lefigaro.fr/elections/presidentielles/il-est-deja-elu-a-l-applaudimetre-dans-les-coulisses-du-match-entre-david-lisnard-et-philippe-laurent-pour-la-presidence-de-l-amf-20261124",
-       "publie": "2026-11-24T18:52:21+00:00",
-       "angle": "Raconte les coulisses du duel entre David Lisnard et Philippe Laurent pour la présidence de l'AMF."
+       "angle": "Le Monde suit en direct l'élection à la présidence de l'AMF et souligne la tonalité politique du congrès."
       },
       {
        "source": "franceinfo",
        "titre_original": "\"L'opportunité de rencontrer des élus de toute la France\" : au salon des maires, les prétendants à l’Elysée font la chasse aux signatures",
        "lien": "https://www.franceinfo.fr/elections/reportage-l-opportunite-de-rencontrer-des-elus-de-toute-la-france-au-salon-des-maires-les-pretendants-a-l-elysee-font-la-chasse-aux-signatures_8296235.html#xtor=RSS-3-[lestitres]",
        "publie": "2026-11-25T04:52:25+00:00",
-       "angle": "Se concentre sur les prétendants à l'Élysée venus chercher des signatures auprès des maires."
+       "angle": "franceinfo décrit le salon comme un passage obligé pour les candidats en quête de parrainages."
       },
-      {
-       "source": "20 Minutes",
-       "titre_original": "Présidentielle 2027 : « Je ne voudrais pas froisser mes administrés »… Les maires face au casse-tête des parrainages",
-       "lien": "https://www.20minutes.fr/politique/4265401-20261124-presidentielle-2027-voudrais-froisser-administres-maires-face-casse-tete-parrainages?at_medium=display&at_campaign=149",
-       "publie": "2026-11-24T17:51:58+00:00",
-       "angle": "Donne la parole aux maires eux-mêmes, embarrassés ou indécis face aux demandes de parrainage."
-      }
-     ]
-    },
-    {
-     "titre": "Présidentielle 2027 : Édouard Philippe propose un débat à David Lisnard",
-     "theme": "Politique",
-     "essentiel": "Invité de LCI mardi soir, Édouard Philippe, candidat Horizons, a proposé un débat à David Lisnard plutôt qu'une primaire, en évoquant un « désaccord manifeste sur la ligne politique ». Il reproche au maire de Cannes d'entretenir une frontière « poreuse » avec l'« extrême droite ». Mardi, depuis le Salon des maires, il l'avait déjà appelé à clarifier sa position vis-à-vis du RN. Le Figaro décrit David Lisnard comme en dynamique dans les sondages.",
-     "pour_situer": null,
-     "incertain": "Le mode de départage entre les candidats de la droite et du centre n'est pas arrêté : les négociations pour une primaire piétinent, selon Le Figaro.",
-     "contexte": "Édouard Philippe a été Premier ministre de 2017 à 2020 et préside Horizons, le parti qu'il a fondé. David Lisnard est maire de Cannes.",
-     "lectures": [
       {
        "source": "Le Figaro",
-       "titre_original": "«Un désaccord manifeste sur la ligne politique» : plutôt qu’une primaire, Édouard Philippe propose un débat à David Lisnard",
-       "lien": "https://www.lefigaro.fr/elections/presidentielles/un-desaccord-manifeste-sur-la-ligne-politique-plutot-qu-une-primaire-edouard-philippe-propose-un-debat-a-david-lisnard-20261124",
-       "publie": "2026-11-25T05:54:42+00:00",
-       "angle": "Met en avant le débat proposé en lieu et place d'une primaire, et l'accusation de frontière « poreuse » avec l'extrême droite."
-      },
-      {
-       "source": "20 Minutes",
-       "titre_original": "EN DIRECT Présidentielle 2027 : Édouard Philippe propose à David Lisnard un débat télévisé…",
-       "lien": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-edouard-philippe-propose-david-lisnard-debat-televise?at_medium=display&at_campaign=149",
-       "publie": "2026-11-25T04:53:33+00:00",
-       "angle": "Suit la campagne en direct et place en tête la proposition d'un débat télévisé."
+       "titre_original": "« Il est déjà élu à l’applaudimètre »: dans les coulisses du match entre David Lisnard et Philippe Laurent pour la présidence de l’AMF",
+       "lien": "https://www.lefigaro.fr/elections/presidentielles/il-est-deja-elu-a-l-applaudimetre-dans-les-coulisses-du-match-entre-david-lisnard-et-philippe-laurent-pour-la-presidence-de-l-amf-20261124",
+       "publie": "2026-11-24T18:52:21+00:00",
+       "angle": "Le Figaro raconte le duel Lisnard-Laurent devant 3 000 personnes, avec un résultat attendu avant 14h."
       }
      ]
     },
     {
-     "titre": "« Sauver Sarko » : onze personnes renvoyées en correctionnelle, dont Nicolas Sarkozy",
-     "theme": "Justice",
-     "essentiel": "Onze personnes sont renvoyées devant le tribunal correctionnel pour leur implication dans l'opération « Sauver Sarko », liée à la fausse rétractation de Ziad Takieddine. Nicolas Sarkozy et son épouse Carla Bruni figurent parmi les personnes poursuivies. L'information a été rapportée mardi 24 novembre.",
-     "pour_situer": "Selon la BBC, c'est la dernière affaire visant Nicolas Sarkozy, devenu l'an dernier le premier ancien président français à être incarcéré.",
-     "incertain": null,
-     "contexte": "Ziad Takieddine, intermédiaire franco-libanais, avait mis en cause Nicolas Sarkozy dans le dossier du financement libyen présumé de sa campagne de 2007, avant de se rétracter publiquement.",
+     "titre": "BYD en négociations pour racheter l'usine Ineos de Hambach, en Moselle",
+     "theme": "Industrie",
+     "essentiel": "Le constructeur chinois BYD a annoncé mardi l'ouverture de négociations exclusives pour acquérir l'usine du britannique Ineos Automotive à Hambach, en Moselle. Le ministre de l'Industrie salue l'annonce et estime que plus de 1 000 personnes vont avoir un avenir.",
+     "pour_situer": "Selon France 24, ce serait la première usine de BYD en Europe de l'Ouest.",
+     "incertain": "Il s'agit de négociations exclusives : l'acquisition n'est pas encore conclue.",
+     "contexte": "BYD est un grand constructeur chinois de véhicules électriques.",
      "lectures": [
       {
        "source": "franceinfo",
-       "titre_original": "Nicolas Sarkozy, Carla Bruni, Mimi Marchand… Qui sont les principaux protagonistes de l'affaire de la fausse rétractation de Ziad Takieddine ?",
-       "lien": "https://www.franceinfo.fr/politique/affaire/financement-de-la-campagne-de-sarkozy/nicolas-sarkozy-carla-bruni-mimi-marchand-qui-sont-les-principaux-protagonistes-de-l-affaire-de-la-fausse-retractation-de-ziad-takieddine_8297730.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T18:10:39+00:00",
-       "angle": "Présente les principaux protagonistes de l'affaire et le détail des poursuites."
+       "titre_original": "\"Plus de 1 000 personnes vont avoir un avenir\" : le ministre de l'Industrie salue l'annonce du constructeur automobile chinois BYD, qui envisage de racheter une usine en Moselle",
+       "lien": "https://www.franceinfo.fr/economie/industrie/video-le-ministre-de-l-industrie-salue-la-capacite-de-la-france-a-attirer-des-investisseurs-alors-que-le-chinois-byd-envisage-de-racheter-une-usine-en-moselle_8298897.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T07:28:56+00:00",
+       "angle": "franceinfo met en avant la réaction du ministre de l'Industrie et les emplois concernés."
       },
       {
-       "source": "20 Minutes",
-       "titre_original": "Harcèlement, agressions, viols… 30 % des pharmaciennes se disent victimes de violences sexistes et sexuelles",
-       "lien": "https://www.20minutes.fr/societe/4265548-20261125-harcelement-agressions-viols-30-pharmaciennes-disent-victimes-violences-sexistes-sexuelles?at_medium=display&at_campaign=149",
-       "publie": "2026-11-25T07:04:35+00:00",
-       "angle": "Annonce le procès à un public anglophone, en le replaçant dans la série d'affaires visant l'ancien président."
+       "source": "France 24",
+       "titre_original": "Le constructeur automobile chinois BYD choisit la France pour sa première usine d'Europe de l'Ouest",
+       "lien": "https://www.france24.com/fr/%C3%A9co-tech/20261124-le-constructeur-automobile-chinois-byd-choisit-la-france-pour-sa-premi%C3%A8re-usine-d-europe-de-l-ouest",
+       "publie": "2026-11-24T22:29:26+00:00",
+       "angle": "France 24 présente le choix de la France comme une première pour BYD en Europe de l'Ouest."
       }
      ]
     },
     {
-     "titre": "Vigilance orange dans le Var et les Alpes-Maritimes après un nouvel épisode méditerranéen",
-     "theme": "Météo",
-     "essentiel": "Le Var est passé en vigilance orange « crues », et l'alerte « pluie-inondation » se poursuit dans ce département et dans les Alpes-Maritimes. Selon Météo-France, l'épisode doit durer toute la journée et prendre fin à 22 h mercredi 25 novembre. Les zones les plus exposées sont la zone côtière du Var, de la Sainte-Baume à l'Estérel en passant par les Maures, ainsi que les pré-Alpes de Grasse et la Côte d'Azur.",
+     "titre": "Stellantis supprime l'équipe de nuit de l'usine de Sochaux, 500 emplois concernés",
+     "theme": "Économie",
+     "essentiel": "Stellantis supprime l'équipe de nuit de son usine de Sochaux dès janvier, ce qui concerne 500 emplois. C'est la deuxième annonce sociale d'ampleur de la semaine pour le groupe, qui avait annoncé lundi retirer ses écuries de la compétition automobile.",
      "pour_situer": null,
      "incertain": null,
-     "contexte": "Les épisodes méditerranéens sont des pluies intenses touchant le pourtour méditerranéen, fréquentes à l'automne. Météo-France classe ses vigilances en quatre couleurs, l'orange correspondant à un danger important.",
+     "contexte": "Stellantis est le groupe automobile qui réunit notamment les marques Peugeot, Citroën et Opel.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Stellantis supprime l’équipe de nuit de l’usine de Sochaux, 500 emplois concernés dès janvier",
+       "lien": "https://www.lemonde.fr/economie-francaise/article/2026/11/25/stellantis-supprime-l-equipe-de-nuit-de-l-usine-de-sochaux-500-emplois-concernes-des-janvier_6815054_1656968.html",
+       "publie": "2026-11-25T06:42:51+00:00",
+       "angle": "Le Monde relie cette annonce à celle du retrait des compétitions automobiles faite lundi."
+      }
+     ]
+    },
+    {
+     "titre": "Nahel Merzouk : le policier auteur du tir sera jugé pour meurtre",
+     "theme": "Justice",
+     "essentiel": "La cour d'appel de Versailles a ordonné mardi que Florian Menesplier soit jugé devant la cour d'assises des Hauts-de-Seine pour la mort de Nahel Merzouk en 2023. L'affaire a connu plusieurs rebondissements judiciaires.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": "Nahel Merzouk, adolescent, a été tué par un tir de policier lors d'un contrôle routier à Nanterre en juin 2023, ce qui avait déclenché plusieurs nuits de violences urbaines en France.",
      "lectures": [
       {
        "source": "franceinfo",
-       "titre_original": "Le Var passe en vigilance orange \"crues\", l'alerte \"pluie-inondation\" se poursuit dans ce département et dans les Alpes-Maritimes",
-       "lien": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/le-var-passe-en-vigilance-orange-crues-l-alerte-pluie-inondation-se-poursuit-dans-ce-departement-et-dans-les-alpes-maritimes_8298813.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-25T06:36:51+00:00",
-       "angle": "Détaille le passage du Var en vigilance orange « crues » et les zones les plus exposées."
+       "titre_original": "Mort de Nahel Merzouk en 2023 : quatre questions après la décision de juger le policier auteur du tir pour meurtre",
+       "lien": "https://www.franceinfo.fr/faits-divers/adolescent-tue-par-un-policier-a-nanterre/mort-de-nahel-merzouk-en-2023-quatre-questions-apres-la-decision-de-juger-le-policier-auteur-du-tir-pour-meurtre_8297382.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-24T17:52:03+00:00",
+       "angle": "franceinfo répond en quatre questions à la suite de la décision de la cour d'appel."
+      }
+     ]
+    },
+    {
+     "titre": "Mobilisation étudiante et lycéenne : fermetures d'universités et rapport de l'inspection",
+     "theme": "Éducation",
+     "essentiel": "L'inspection générale de l'éducation nationale a remis mardi au ministre Édouard Geffray un rapport sur le mouvement lycéen, avec des recommandations pour sortir de la crise. Des universités sont fermées administrativement pour endiguer les blocus, dont celle de Lille, sur décision de son président. Seuls certains cours y sont maintenus, ce qui désoriente des étudiants de première année.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Mobilisation lycéenne : l’inspection générale de l’éducation nationale livre une première analyse du mouvement et formule des recommandations pour sortir de la crise",
+       "lien": "https://www.lemonde.fr/education/article/2026/11/25/mobilisation-lyceenne-l-inspection-generale-de-l-education-nationale-livre-une-premiere-analyse-du-mouvement-et-formule-des-recommandations-pour-sortir-de-la-crise_6815037_1473685.html",
+       "publie": "2026-11-25T04:45:07+00:00",
+       "angle": "Le Monde se concentre sur le rapport de l'inspection et ses recommandations après des semaines de confrontation politique."
       },
       {
-       "source": "Libération",
-       "titre_original": "Le Var et les Alpes Maritimes placés en vigilance orange après un nouvel épisode méditerranéen",
-       "lien": "https://www.liberation.fr/environnement/climat/le-var-et-les-alpes-maritimes-places-en-vigilance-orange-apres-un-nouvel-episode-mediterraneen-20261125_ILLDVPWP2NCYHKPL64XEHDLDZI/",
-       "publie": "2026-11-25T07:25:13+00:00",
-       "angle": "Insiste sur l'horaire de fin de l'épisode, 22 heures mercredi, et le placement des deux départements en vigilance orange."
+       "source": "franceinfo",
+       "titre_original": "\"Les visios, ce n'est pas viable\" : le désarroi d'étudiants en première année après la fermeture administrative de l'université de Lille",
+       "lien": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/les-visios-ce-n-est-pas-viable-le-desarroi-d-etudiants-en-premiere-annee-apres-la-fermeture-administrative-de-l-universite-de-lille_8298867.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T08:11:47+00:00",
+       "angle": "franceinfo donne la parole à des étudiants de Lille pour qui les cours en visio ne sont pas viables."
       }
      ]
     }
@@ -183,7 +186,201 @@
   {
    "id": "international",
    "label": "International",
-   "events": [],
+   "events": [
+    {
+     "titre": "Prise d'otages dans un supermarché de Carthagène : tous les otages libérés",
+     "theme": "Colombie",
+     "essentiel": "Des clients d'un supermarché de Carthagène, en Colombie, étaient retenus depuis mardi matin par des hommes qui ont tenté en vain de s'emparer d'un fourgon blindé. Les forces de l'ordre ont donné l'assaut dans la nuit et tous les otages ont été libérés, selon le président. Un assaillant a été tué. Le président Abelardo de la Espriella a affirmé qu'il s'agissait de criminalité de droit commun, écartant toute implication des groupes armés.",
+     "pour_situer": null,
+     "incertain": "Le nombre exact d'otages n'est pas précisé : franceinfo évoque une vingtaine de personnes libérées.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "En Colombie, le président et l’armée à Carthagène pour une prise d’otages en cours dans un supermarché",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/25/en-colombie-le-president-et-l-armee-a-carthagenes-pour-une-prise-d-otages-en-cours-dans-un-supermarche_6814815_3211.html",
+       "publie": "2026-11-25T04:52:04+00:00",
+       "angle": "Le Monde rend compte de l'événement alors qu'il est en cours, avec le président et l'armée sur place."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Une vingtaine de personnes libérées après une prise d'otages en Colombie",
+       "lien": "https://www.franceinfo.fr/monde/ameriques/une-vingtaine-de-personnes-retenues-dans-une-prise-d-otages-en-colombie-le-president-sur-place_8298720.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T07:56:24+00:00",
+       "angle": "franceinfo parle d'une vingtaine de personnes libérées et reprend la thèse de la criminalité ordinaire."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Prises d’otage en Colombie : les forces de l’ordre donnent l’assaut, tous les détenus libérés",
+       "lien": "https://www.liberation.fr/international/amerique/prise-dotages-en-colombie-apres-un-braquage-rate-10-personnes-sur-30-liberees-le-president-dextreme-droite-sur-place-20261125_OZZ3PUOE3BAV3AELKK2ERPWK7A/",
+       "publie": "2026-11-25T07:12:13+00:00",
+       "angle": "Libération détaille le déroulement : tentative de vol d'un fourgon blindé puis assaut dans la nuit."
+      },
+      {
+       "source": "France 24",
+       "titre_original": "🔴 Prise d'otages en Colombie : un assaillant tué, \"tous les otages libérés\", annonce le président",
+       "lien": "https://www.france24.com/fr/am%C3%A9riques/20261124-colombie-prise-otages-cours-ville-touristique-carthag%C3%A8ne",
+       "publie": "2026-11-25T07:19:32+00:00",
+       "angle": "France 24 met en avant le bilan annoncé par le président : un assaillant tué, tous les otages libérés."
+      }
+     ]
+    },
+    {
+     "titre": "Yémen : frappes saoudiennes sur Hodeïda, les Houthis menacent de représailles",
+     "theme": "Yémen",
+     "essentiel": "La coalition dirigée par l'Arabie saoudite a confirmé mercredi avoir visé des capacités opérationnelles dans le port de Hodeïda, au Yémen. Les Houthis menacent de représailles. Le siège du fonds souverain saoudien a été touché mardi pour la deuxième fois en cinq jours, et Riyad se prépare à une guerre plus intense. Autour d'Aden, capitale provisoire du Yémen, la bataille s'annonce.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": "Le Yémen est en guerre depuis plus de dix ans entre le gouvernement, soutenu par une coalition emmenée par l'Arabie saoudite, et les houthis, qui contrôlent Sanaa et une partie de l'ouest du pays.",
+     "lectures": [
+      {
+       "source": "Le Monde International",
+       "titre_original": "Arabie saoudite : après la frappe sur le siège de son fonds souverain, Riyad se prépare à une guerre plus intense au Yémen",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/25/arabie-saoudite-apres-la-frappe-sur-le-siege-de-son-fonds-souverain-riyad-se-prepare-a-une-guerre-plus-intense-au-yemen_6815066_3210.html",
+       "publie": "2026-11-25T08:15:08+00:00",
+       "angle": "Le Monde insiste sur la frappe contre le siège du fonds souverain saoudien et la préparation de Riyad à une guerre plus intense."
+      },
+      {
+       "source": "France 24",
+       "titre_original": "Au Yémen, l'Arabie saoudite attaque Hodeïda, les Houthis menacent de représailles",
+       "lien": "https://www.france24.com/fr/moyen-orient/20261125-yemen-arabie-saoudite-attaque-hodeida-houthis-menacent-represailles",
+       "publie": "2026-11-25T03:22:42+00:00",
+       "angle": "France 24 rapporte la confirmation par la coalition de la frappe sur Hodeïda et les menaces houthies."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Au Yémen, la bataille d'Aden va commencer : en jeu le contrôle du pays et de la mer Rouge",
+       "lien": "https://www.franceinfo.fr/replay-radio/d-un-monde-a-l-autre/au-yemen-la-bataille-d-aden-va-commencer-en-jeu-le-controle-du-pays-et-de-la-mer-rouge_8277113.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T07:25:55+00:00",
+       "angle": "franceinfo présente la bataille d'Aden à venir et son enjeu : le contrôle du pays et de la mer Rouge."
+      }
+     ]
+    },
+    {
+     "titre": "Guerre en Ukraine : attaques de drones et navires russes visés en Libye et dans la Baltique",
+     "theme": "Ukraine",
+     "essentiel": "La Russie a attaqué l'Ukraine avec 112 drones dans la nuit de mardi à mercredi, dont 88 abattus ou neutralisés selon l'armée ukrainienne. Deux militaires libyens sont morts des suites des attaques, revendiquées par l'Ukraine, contre des navires russes à Benghazi le 22 novembre. Deux navires russes ont aussi été frappés à dix jours d'intervalle dans le golfe de Finlande. Les brouillages GPS en Baltique ont triplé le nombre d'avions perturbés en une semaine.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde International",
+       "titre_original": "EN DIRECT, guerre en Ukraine : les dernières informations",
+       "lien": "https://www.lemonde.fr/international/live/2026/11/25/en-direct-guerre-en-ukraine-deux-militaires-libyens-succombent-a-leurs-blessures-apres-les-frappes-revendiquees-par-kiev-contre-des-navires-russes-a-benghazi_6814183_3210.html",
+       "publie": "2026-11-25T05:27:46+00:00",
+       "angle": "Le Monde suit les dernières informations en direct, avec le bilan des drones russes de la nuit."
+      },
+      {
+       "source": "France 24",
+       "titre_original": "Ukraine en direct : deux militaires libyens tués dans les attaques de navires russes à Benghazi",
+       "lien": "https://www.france24.com/fr/europe/20261125-en-direct-ukraine-russie-libye-benghazi-union-europeenne-zelensky-poutine",
+       "publie": "2026-11-25T03:02:35+00:00",
+       "angle": "France 24 rapporte la mort de deux militaires libyens après les attaques de Benghazi."
+      },
+      {
+       "source": "RFI",
+       "titre_original": "Libye: deux militaires libyens morts des suites des attaques ukrainiennes contre des navires russes à Benghazi",
+       "lien": "https://www.rfi.fr/fr/afrique/20261125-libye-deux-militaires-libyens-morts-des-suites-des-attaques-ukrainiennes-contre-des-navires-russes-%C3%A0-benghazi",
+       "publie": "2026-11-25T03:41:28+00:00",
+       "angle": "RFI rapporte la même annonce de la mort des deux militaires libyens."
+      },
+      {
+       "source": "Le Figaro International",
+       "titre_original": "Attaques de drones, « flotte fantôme »… La mer Baltique, nouveau théâtre du conflit entre l’Ukraine et la Russie",
+       "lien": "https://www.lefigaro.fr/international/attaques-de-drones-flotte-fantome-la-mer-baltique-nouveau-theatre-du-conflit-entre-l-ukraine-et-la-russie-20261124",
+       "publie": "2026-11-24T20:31:45+00:00",
+       "angle": "Le Figaro s'intéresse à la Baltique, nouveau théâtre du conflit, et à l'embarras des pays riverains de l'Otan."
+      }
+     ]
+    },
+    {
+     "titre": "Huawei reconnu coupable de vol de secrets industriels aux États-Unis",
+     "theme": "Chine / États-Unis",
+     "essentiel": "Un jury fédéral de New York a reconnu mardi le groupe chinois Huawei coupable de fraude bancaire et de vol de secrets industriels, après un procès de onze semaines. Il l'a acquitté de l'accusation de racket. Huawei a vivement contesté le verdict.",
+     "pour_situer": "La procédure aura duré huit ans.",
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "Le géant chinois Huawei reconnu coupable de vol de secrets industriels aux États-Unis",
+       "lien": "https://www.liberation.fr/international/amerique/le-geant-chinois-huawei-reconnu-coupable-de-vol-de-secrets-industriels-aux-etats-unis-20261125_B5HWM3HH5RFZFPQ4H6RLOO7WS4/",
+       "publie": "2026-11-25T08:21:58+00:00",
+       "angle": "Libération évoque aussi l'aide apportée à l'Iran pour censurer internet et la contestation de Huawei."
+      },
+      {
+       "source": "France 24",
+       "titre_original": "Le groupe chinois Huawei reconnu coupable de vol de secrets industriels aux États-Unis",
+       "lien": "https://www.france24.com/fr/%C3%A9co-tech/20261124-le-groupe-chinois-huawei-reconnu-coupable-de-vol-de-secret-industriel-aux-%C3%A9tats-unis",
+       "publie": "2026-11-24T23:01:24+00:00",
+       "angle": "France 24 cite la fraude bancaire et des tentatives de recrutement liées au vol de secrets."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
+       "lien": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-25T02:59:27+00:00",
+       "angle": "La BBC souligne l'acquittement sur le chef de racket."
+      }
+     ]
+    },
+    {
+     "titre": "Nvidia : l'intervention de Trump pour le retour de Jensen Huang fait réagir le Congrès",
+     "theme": "Économie",
+     "essentiel": "Le retour à la tête de Nvidia de Jensen Huang, évincé le 12 novembre, suscite des réactions au Congrès, qui doit auditionner le dirigeant. L'action du groupe a reflué, de 7 % selon la BBC. Jensen Huang contredit l'implication de Donald Trump dans son retour. La ministre de la Justice américaine a esquivé les questions sur une enquête.",
+     "pour_situer": null,
+     "incertain": "Le rôle exact de Donald Trump dans le retour de Jensen Huang est contesté : le dirigeant le dément, des élus s'en indignent.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "Tout juste réintégré à Nvidia, Jensen Huang contredit Trump et l’implication du président dans son retour",
+       "lien": "https://www.liberation.fr/international/amerique/tout-juste-reintegre-a-nvidia-jensen-huang-contredit-trump-et-limplication-du-president-dans-son-retour-20261125_APPQ6WKAMBCTFOW3H7FD4AUBC4/",
+       "publie": "2026-11-25T07:07:39+00:00",
+       "angle": "Libération insiste sur le démenti de Jensen Huang quant à l'implication de Trump et sur le recul de l'action."
+      },
+      {
+       "source": "Le Figaro International",
+       "titre_original": "Affaire Nvidia : l’intervention de Donald Trump en faveur de Jensen Huang tourne à l’affaire d’État",
+       "lien": "https://www.lefigaro.fr/secteur/high-tech/affaire-nvidia-l-intervention-de-donald-trump-en-faveur-de-jensen-huang-tourne-a-l-affaire-d-etat-20261124",
+       "publie": "2026-11-24T20:06:52+00:00",
+       "angle": "Le Figaro parle d'une affaire d'État et des réactions indignées au Congrès."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "US attorney general dodges questions about Nvidia investigation",
+       "lien": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-25T03:44:07+00:00",
+       "angle": "La BBC met en avant la chute de 7 % de l'action et les questions éludées sur une enquête."
+      }
+     ]
+    },
+    {
+     "titre": "Kilmar Ábrego García quitte les États-Unis pour l'Espagne",
+     "theme": "États-Unis",
+     "essentiel": "Le Salvadorien Kilmar Ábrego García, habitant du Maryland marié à une Américaine, a pris mardi un vol pour l'Espagne. Expulsé vers le Salvador en mars 2025 puis ramené aux États-Unis, il avait été inculpé par la justice fédérale. Son cas était devenu un symbole du débat sur la politique d'immigration de Donald Trump.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Le Salvadorien Kilmar Abrego Garcia, symbole des expulsions sous Donald Trump, quitte les Etats-Unis",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/25/le-salvadorien-kilmar-abrego-garcia-symbole-des-expulsions-sous-trump-quitte-les-etats-unis_6814999_3210.html",
+       "publie": "2026-11-25T03:25:48+00:00",
+       "angle": "Le Monde présente son parcours : expulsion, retour, puis inculpation fédérale."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle",
+       "lien": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-25T06:36:00+00:00",
+       "angle": "La BBC y voit la fin d'une bataille et un point de crispation de la politique d'immigration de Trump."
+      }
+     ]
+    }
+   ],
    "sources": [
     {
      "source": "Le Monde International",
