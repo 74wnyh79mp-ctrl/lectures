@@ -1,7 +1,7 @@
 {
- "genere_le": "2026-11-24T22:02+01:00",
- "date": "mardi 24 novembre 2026",
- "moment": "soir",
+ "genere_le": "2026-11-25T09:23+01:00",
+ "date": "mercredi 25 novembre 2026",
+ "moment": "matin",
  "modele": "claude-sonnet-5-5",
  "categories": [
   {
@@ -9,203 +9,150 @@
    "label": "France",
    "events": [
     {
-     "titre": "Logement : l'Assemblée adopte en première lecture le projet de loi, à 362 voix contre 118",
-     "theme": "Logement",
-     "essentiel": "L'Assemblée nationale a adopté mardi 24 novembre en première lecture le projet de loi de relance du logement, par 362 voix contre 118. À l'initiative du Rassemblement national, les députés ont ajouté la suppression de l'interdiction progressive de louer les logements les plus énergivores (les « passoires thermiques »). Le ministre du Logement, Vincent Jeanbrun, compte faire retirer cet amendement lors de la commission mixte paritaire de décembre.",
-     "pour_situer": "Si députés et sénateurs s'accordent sur une version commune, l'Assemblée se prononcera définitivement sur le texte le 15 décembre.",
-     "incertain": "Le maintien ou non de l'amendement du RN dépendra de la commission mixte paritaire.",
-     "lectures": [
-      {
-       "source": "Le Monde",
-       "titre_original": "L’Assemblée nationale adopte le projet de loi sur le logement, avec les voix du Rassemblement national",
-       "lien": "https://www.lemonde.fr/societe/article/2026/11/24/l-assemblee-nationale-adopte-le-projet-de-loi-sur-le-logement-avec-les-voix-du-rassemblement-national_6814849_3224.html",
-       "publie": "2026-11-24T20:22:45+00:00",
-       "angle": "Le Monde souligne le rôle des voix du RN dans l'adoption et le pari du ministre de faire retirer l'amendement en commission mixte paritaire."
-      },
-      {
-       "source": "franceinfo",
-       "titre_original": "L'Assemblée nationale adopte en première lecture le projet de loi de relance du logement",
-       "lien": "https://www.franceinfo.fr/politique/l-assemblee-nationale-adopte-en-premiere-lecture-le-projet-de-loi-de-relance-du-logement_8298255.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T18:49:59+00:00",
-       "angle": "franceinfo reste sur le constat factuel d'un vote où les députés se sont divisés sur la fin de l'interdiction de louer les logements les plus énergivores."
-      },
-      {
-       "source": "Le Figaro",
-       "titre_original": "L'Assemblée nationale adopte en première lecture le projet de loi logement",
-       "lien": "https://www.lefigaro.fr/conjoncture/l-assemblee-nationale-adopte-en-premiere-lecture-le-projet-de-loi-logement-20261124",
-       "publie": "2026-11-24T17:42:56+00:00",
-       "angle": "Le Figaro met en avant le calendrier : accord en commission mixte paritaire puis vote définitif de l'Assemblée le 15 décembre."
-      },
-      {
-       "source": "Libération",
-       "titre_original": "L’Assemblée nationale adopte en première lecture le projet de loi logement",
-       "lien": "https://www.liberation.fr/societe/logement/lassemblee-nationale-adopte-en-premiere-lecture-le-projet-de-loi-logement-20261124_I5ODNUGDAVB7DD5MXBTZCWV35Q/",
-       "publie": "2026-11-24T18:09:44+00:00",
-       "angle": "Libération donne le décompte précis des voix et attribue au RN l'ajout de la suppression de l'interdiction de louer les passoires énergétiques."
-      }
-     ]
-    },
-    {
-     "titre": "Budget : la loi de fin de gestion 2026 est adoptée, les discussions sur 2027 se poursuivent",
-     "theme": "Budget",
-     "essentiel": "Le Parlement a validé mardi 24 novembre la loi de fin de gestion pour 2026, dont le Premier ministre Sébastien Lecornu s'est félicité. Il recevra les présidents des groupes parlementaires début décembre pour prolonger les discussions sur le budget 2027. Le Monde juge un accord sur 2027 beaucoup plus aléatoire, notamment à cause d'un incident sur les retraites survenu mardi au Sénat. Le commissaire européen Valdis Dombrovskis table, selon Le Monde, sur l'adoption du budget 2027 par le Parlement français.",
+     "titre": "Perquisition au siège du RN : Darmanin saisit l'Inspection générale de la justice",
+     "theme": "Justice",
+     "essentiel": "Interrogé mercredi 25 novembre sur France Inter, le garde des Sceaux Gérald Darmanin a annoncé saisir l'Inspection générale de la justice. Un procureur adjoint, Christian de Rocquigny, était présent début novembre lors d'une perquisition au siège du Rassemblement national, menée dans une information judiciaire notamment pour violation du secret professionnel. Le ministre dénonce un « défaut de loyauté » : le magistrat n'a pas prévenu sa hiérarchie ni posé de jour de congé pour rendre visite à une personnalité politique, Jean-Paul Garraud, député.",
      "pour_situer": null,
-     "incertain": "Les articles ne détaillent pas l'incident sur les retraites au Sénat ni le contenu d'un éventuel compromis pour 2027.",
+     "incertain": "Les circonstances précises de la présence du magistrat restent à établir par l'inspection, saisie « pour faire toute la lumière ».",
+     "contexte": "L'Inspection générale de la justice est un service de contrôle rattaché au ministère de la Justice. Elle contrôle le fonctionnement des juridictions et peut enquêter sur le comportement des magistrats. Le ministre de la Justice porte aussi le titre de garde des Sceaux.",
      "lectures": [
       {
        "source": "Le Monde",
-       "titre_original": "Budget : un premier texte adopté par le Parlement, Sébastien Lecornu rêve désormais d’un compromis pour 2027",
-       "lien": "https://www.lemonde.fr/politique/article/2026/11/24/budget-un-premier-texte-adopte-par-le-parlement-sebastien-lecornu-reve-desormais-d-un-compromis-pour-2027_6814842_823448.html",
-       "publie": "2026-11-24T18:59:13+00:00",
-       "angle": "Le Monde insiste sur la fragilité de la suite : le premier texte passe, mais l'accord sur 2027 paraît incertain après l'épisode des retraites au Sénat."
+       "titre_original": "Procureur présent au siège du RN lors d’une perquisition : Gérald Darmanin annonce saisir l’inspection générale de la justice « pour faire toute la lumière »",
+       "lien": "https://www.lemonde.fr/societe/article/2026/11/25/procureur-present-lors-d-une-perquisition-au-rn-gerald-darmanin-annonce-saisir-l-inspection-generale-de-la-justice-pour-faire-toute-la-lumiere_6815060_3224.html",
+       "publie": "2026-11-25T07:55:20+00:00",
+       "angle": "Insiste sur la visite du procureur à Jean-Paul Garraud et sur le reproche de ne pas avoir posé de jour de congé."
       },
       {
        "source": "franceinfo",
-       "titre_original": "Sébastien Lecornu recevra les présidents des groupes parlementaires début décembre pour prolonger les discussions sur le budget 2027",
-       "lien": "https://www.franceinfo.fr/economie/budget/sebastien-lecornu-recevra-les-presidents-des-groupes-parlementaires-la-semaine-prochaine-pour-prolonger-les-discussions-sur-le-budget-2027_8298285.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T19:15:27+00:00",
-       "angle": "franceinfo rapporte la démarche du Premier ministre, avec des rencontres prévues début décembre, sans évoquer de difficulté particulière."
-      }
-     ]
-    },
-    {
-     "titre": "Présidentielle 2027 : à droite et au centre, la primaire au cœur des tensions",
-     "theme": "Politique",
-     "essentiel": "Dans une interview au « Parisien », Gabriel Attal a demandé à Édouard Philippe de proposer une autre façon de départager les candidats s'il refuse la primaire. Il propose deux débats thématiques d'ici Noël avec Philippe, Bruno Retailleau et David Lisnard, puis une primaire entre mi-janvier et mi-février. Édouard Philippe a par ailleurs déclaré qu'il voterait blanc dans un second tour hypothétique entre Jean-Luc Mélenchon et Marine Le Pen. Il a aussi critiqué la posture de David Lisnard vis-à-vis du RN, tout en ayant voté pour lui à la présidence de l'AMF.",
-     "pour_situer": "Le résultat du vote pour la présidence de l'AMF, entre David Lisnard et Philippe Laurent, est attendu mercredi avant 14h.",
-     "incertain": "Aucune primaire n'est décidée à ce stade ; Édouard Philippe y reste opposé selon les articles.",
-     "lectures": [
-      {
-       "source": "Le Monde",
-       "titre_original": "Présidentielle 2027 : Gabriel Attal presse Edouard Philippe de « proposer une autre modalité de départage », face à son refus de la primaire",
-       "lien": "https://www.lemonde.fr/politique/article/2026/11/24/presidentielle-2027-gabriel-attal-presse-edouard-philippe-de-proposer-une-autre-modalite-de-departage-face-a-son-refus-de-la-primaire_6814848_823448.html",
-       "publie": "2026-11-24T19:56:50+00:00",
-       "angle": "Le Monde rapporte la pression d'Attal sur Philippe et son argument selon lequel seule une primaire peut créer un élan au centre et à droite."
+       "titre_original": "Présence d'un procureur au siège du RN : Gérald Darmanin annonce avoir saisi l'Inspection générale de la justice",
+       "lien": "https://www.franceinfo.fr/politique/front-national/presence-d-un-procureur-au-siege-du-rn-gerald-darmanin-annonce-avoir-saisi-l-inspection-generale-de-la-justice_8298930.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T08:10:08+00:00",
+       "angle": "Rend compte de l'annonce faite sur France Inter, avec peu de détails sur le magistrat."
       },
       {
        "source": "Le Figaro",
-       "titre_original": "«S’il reste contre la primaire, Philippe doit proposer une autre modalité de départage» : Attal met la pression sur son rival, fixant Noël comme échéance",
-       "lien": "https://www.lefigaro.fr/elections/presidentielles/s-il-reste-contre-la-primaire-philippe-doit-proposer-une-autre-modalite-de-departage-attal-met-la-pression-sur-son-rival-fixant-noel-comme-echeance-20261124",
-       "publie": "2026-11-24T20:25:28+00:00",
-       "angle": "Le Figaro détaille le calendrier proposé par Attal : deux débats avant Noël, puis une primaire entre mi-janvier et mi-février."
-      },
-      {
-       "source": "franceinfo",
-       "titre_original": "Présidentielle 2027 : Edouard Philippe \"vote blanc\" dans un duel hypothétique entre Jean-Luc Mélenchon et Marine Le Pen au second tour",
-       "lien": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-le-congres-des-maires-s-ouvre-plusieurs-candidats-attendus-sur-place_8297094.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T20:02:03+00:00",
-       "angle": "franceinfo met l'accent sur la déclaration d'Édouard Philippe, qui voterait blanc dans un duel Mélenchon-Le Pen."
-      },
-      {
-       "source": "RFI",
-       "titre_original": "«Aujourd'hui, le candidat de la droite est Bruno Retailleau», martèle le porte-parole de sa campagne, Pierre Henri-Dumont",
-       "lien": "https://www.rfi.fr/fr/podcasts/invit%C3%A9-politique/20261124-aujourd-hui-le-candidat-de-la-droite-est-bruno-retailleau-mart%C3%A8le-le-porte-parole-de-sa-campagne-pierre-henri-dumont",
-       "publie": "2026-11-24T14:45:59+00:00",
-       "angle": "RFI donne la parole au porte-parole de Bruno Retailleau, qui soutient une primaire de la droite et du bloc central comme moment de débat."
-      }
-     ]
-    },
-    {
-     "titre": "Mort de Nahel Merzouk : le policier sera jugé aux assises pour meurtre",
-     "theme": "Justice",
-     "essentiel": "La cour d'appel de Versailles a ordonné mardi 24 novembre que le policier auteur du tir, Florian Menesplier, soit jugé devant la cour d'assises des Hauts-de-Seine pour « meurtre ». Il ne sera donc pas jugé pour « violences ayant entraîné la mort sans intention de la donner ». Nahel Merzouk, 17 ans, avait été tué à Nanterre le 27 juin 2023 lors d'un contrôle routier. La mère de l'adolescent se dit soulagée, et la défense annonce se pourvoir en cassation.",
-     "pour_situer": "L'affaire a connu plusieurs rebondissements judiciaires depuis 2023.",
-     "incertain": "Le pourvoi en cassation annoncé par la défense peut encore modifier la suite de la procédure ; aucune date de procès n'est mentionnée.",
-     "lectures": [
-      {
-       "source": "franceinfo",
-       "titre_original": "Mort de Nahel Merzouk en 2023 : quatre questions après la décision de juger le policier auteur du tir pour meurtre",
-       "lien": "https://www.franceinfo.fr/faits-divers/adolescent-tue-par-un-policier-a-nanterre/mort-de-nahel-merzouk-en-2023-quatre-questions-apres-la-decision-de-juger-le-policier-auteur-du-tir-pour-meurtre_8297382.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T17:52:03+00:00",
-       "angle": "franceinfo propose un décryptage en questions de la décision et de la qualification retenue."
+       "titre_original": "Procureur présent au siège du RN : Gérald Darmanin saisit l’Inspection générale de la Justice",
+       "lien": "https://www.lefigaro.fr/actualite-france/procureur-present-au-siege-du-rn-gerald-darmanin-saisit-l-inspection-generale-de-la-justice-20261125",
+       "publie": "2026-11-25T08:21:21+00:00",
+       "angle": "Nomme le procureur et précise le cadre de la perquisition, une information judiciaire pour violation du secret professionnel."
       },
       {
        "source": "Libération",
-       "titre_original": "«C’est une victoire importante» : la mère de Nahel Merzouk «soulagée» des poursuites pour meurtre contre le policier à l’origine des tirs",
-       "lien": "https://www.liberation.fr/societe/police-justice/cest-une-victoire-importante-la-mere-de-nahel-merzouk-soulagee-des-poursuites-pour-meurtre-contre-le-policier-a-lorigine-des-tirs-20261124_REQX5SS6RNEBNNGY4FTTO23K7M/",
-       "publie": "2026-11-24T20:16:54+00:00",
-       "angle": "Libération donne la parole à la mère de Nahel, qui parle d'une victoire importante mais dit que le combat n'est pas terminé."
-      },
-      {
-       "source": "France 24",
-       "titre_original": "Mort de Nahel : la justice confirme en appel le renvoi du policier pour meurtre",
-       "lien": "https://www.france24.com/fr/vid%C3%A9o/20261124-mort-de-nahel-la-justice-confirme-en-appel-le-renvoi-du-policier-pour-meurtre",
-       "publie": "2026-11-24T14:40:45+00:00",
-       "angle": "France 24 souligne que la défense conteste la décision et annonce un pourvoi en cassation."
-      },
-      {
-       "source": "RFI",
-       "titre_original": "Mort de Nahel Merzouk en 2023: en appel, la justice française ordonne un procès pour meurtre à l'encontre du policier",
-       "lien": "https://www.rfi.fr/fr/france/20261124-mort-de-nahel-en-2023-en-appel-la-justice-fran%C3%A7aise-ordonne-un-proc%C3%A8s-pour-meurtre-%C3%A0-l-encontre-du-policier",
-       "publie": "2026-11-24T08:42:24+00:00",
-       "angle": "RFI s'appuie sur le communiqué de la juridiction et rappelle que le policier avait déjà été renvoyé pour le même chef d'accusation."
+       "titre_original": "Procureur au siège du RN : Gérald Darmanin saisit l’Inspection générale de la Justice",
+       "lien": "https://www.liberation.fr/politique/procureur-au-siege-du-rn-gerald-darmanin-saisit-linspection-generale-de-la-justice-20261125_EU7CDIDAZFD6PPTT3ORXBFSSZQ/",
+       "publie": "2026-11-25T07:54:42+00:00",
+       "angle": "Retient le « défaut de loyauté » et le fait que le magistrat n'ait pas prévenu sa hiérarchie."
       }
      ]
     },
     {
-     "titre": "Fausse rétractation de Takieddine : Nicolas Sarkozy et Carla Bruni renvoyés en procès",
+     "titre": "Congrès des maires : élection à la tête de l'AMF et chasse aux parrainages",
+     "theme": "Politique",
+     "essentiel": "Le 108e congrès des maires de France se tient à Paris, à cinq mois de l'élection présidentielle. Mardi, David Lisnard et Philippe Laurent ont défendu leur projet pour la présidence de l'AMF devant 3 000 personnes, et le résultat du vote est attendu mercredi avant 14 h. La majorité des candidats à la présidentielle ont prévu de s'y rendre pour rencontrer des élus et chercher des parrainages. Certains maires disent hésiter à en accorder.",
+     "pour_situer": null,
+     "incertain": "Le résultat du vote pour la présidence de l'AMF n'est pas connu au moment de ces articles.",
+     "contexte": "L'Association des maires de France (AMF) représente les maires et les élus locaux auprès de l'État. Son congrès annuel se tient à Paris. Pour se présenter à l'élection présidentielle, un candidat doit réunir 500 parrainages d'élus, dont beaucoup sont des maires.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "EN DIRECT, congrès des maires 2026 : suivez l’élection du président de l’Association des maires de France, à cinq mois de l’élection présidentielle",
+       "lien": "https://www.lemonde.fr/politique/live/2026/11/25/en-direct-congres-des-maires-2026-suivez-l-election-du-president-de-l-association-des-maires-de-france-a-cinq-mois-de-l-election-presidentielle_6815062_823448.html",
+       "publie": "2026-11-25T07:57:12+00:00",
+       "angle": "Suit l'élection de l'AMF en direct et souligne la tonalité très politique du congrès à l'approche de la présidentielle."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "« Il est déjà élu à l’applaudimètre »: dans les coulisses du match entre David Lisnard et Philippe Laurent pour la présidence de l’AMF",
+       "lien": "https://www.lefigaro.fr/elections/presidentielles/il-est-deja-elu-a-l-applaudimetre-dans-les-coulisses-du-match-entre-david-lisnard-et-philippe-laurent-pour-la-presidence-de-l-amf-20261124",
+       "publie": "2026-11-24T18:52:21+00:00",
+       "angle": "Raconte les coulisses du duel entre David Lisnard et Philippe Laurent pour la présidence de l'AMF."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "\"L'opportunité de rencontrer des élus de toute la France\" : au salon des maires, les prétendants à l’Elysée font la chasse aux signatures",
+       "lien": "https://www.franceinfo.fr/elections/reportage-l-opportunite-de-rencontrer-des-elus-de-toute-la-france-au-salon-des-maires-les-pretendants-a-l-elysee-font-la-chasse-aux-signatures_8296235.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T04:52:25+00:00",
+       "angle": "Se concentre sur les prétendants à l'Élysée venus chercher des signatures auprès des maires."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Présidentielle 2027 : « Je ne voudrais pas froisser mes administrés »… Les maires face au casse-tête des parrainages",
+       "lien": "https://www.20minutes.fr/politique/4265401-20261124-presidentielle-2027-voudrais-froisser-administres-maires-face-casse-tete-parrainages?at_medium=display&at_campaign=149",
+       "publie": "2026-11-24T17:51:58+00:00",
+       "angle": "Donne la parole aux maires eux-mêmes, embarrassés ou indécis face aux demandes de parrainage."
+      }
+     ]
+    },
+    {
+     "titre": "Présidentielle 2027 : Édouard Philippe propose un débat à David Lisnard",
+     "theme": "Politique",
+     "essentiel": "Invité de LCI mardi soir, Édouard Philippe, candidat Horizons, a proposé un débat à David Lisnard plutôt qu'une primaire, en évoquant un « désaccord manifeste sur la ligne politique ». Il reproche au maire de Cannes d'entretenir une frontière « poreuse » avec l'« extrême droite ». Mardi, depuis le Salon des maires, il l'avait déjà appelé à clarifier sa position vis-à-vis du RN. Le Figaro décrit David Lisnard comme en dynamique dans les sondages.",
+     "pour_situer": null,
+     "incertain": "Le mode de départage entre les candidats de la droite et du centre n'est pas arrêté : les négociations pour une primaire piétinent, selon Le Figaro.",
+     "contexte": "Édouard Philippe a été Premier ministre de 2017 à 2020 et préside Horizons, le parti qu'il a fondé. David Lisnard est maire de Cannes.",
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "«Un désaccord manifeste sur la ligne politique» : plutôt qu’une primaire, Édouard Philippe propose un débat à David Lisnard",
+       "lien": "https://www.lefigaro.fr/elections/presidentielles/un-desaccord-manifeste-sur-la-ligne-politique-plutot-qu-une-primaire-edouard-philippe-propose-un-debat-a-david-lisnard-20261124",
+       "publie": "2026-11-25T05:54:42+00:00",
+       "angle": "Met en avant le débat proposé en lieu et place d'une primaire, et l'accusation de frontière « poreuse » avec l'extrême droite."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "EN DIRECT Présidentielle 2027 : Édouard Philippe propose à David Lisnard un débat télévisé…",
+       "lien": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-edouard-philippe-propose-david-lisnard-debat-televise?at_medium=display&at_campaign=149",
+       "publie": "2026-11-25T04:53:33+00:00",
+       "angle": "Suit la campagne en direct et place en tête la proposition d'un débat télévisé."
+      }
+     ]
+    },
+    {
+     "titre": "« Sauver Sarko » : onze personnes renvoyées en correctionnelle, dont Nicolas Sarkozy",
      "theme": "Justice",
-     "essentiel": "Onze personnes sont renvoyées devant le tribunal correctionnel dans l'affaire de la rétractation de Ziad Takieddine, dont Nicolas Sarkozy, Carla Bruni-Sarkozy et « Mimi » Marchand. Le procès doit se tenir en 2027. L'ancien président et son épouse sont poursuivis pour « association de malfaiteurs en vue de commettre une escroquerie en bande organisée » et « recel de subornation de témoin ». L'information a été confirmée par l'AFP de source proche du dossier, après une révélation de RTL.",
-     "pour_situer": "Selon la BBC, Nicolas Sarkozy est devenu l'an dernier le premier ex-président français à aller en prison.",
-     "incertain": "La date exacte du procès n'est pas précisée ; les renvois restent des poursuites, non des condamnations.",
+     "essentiel": "Onze personnes sont renvoyées devant le tribunal correctionnel pour leur implication dans l'opération « Sauver Sarko », liée à la fausse rétractation de Ziad Takieddine. Nicolas Sarkozy et son épouse Carla Bruni figurent parmi les personnes poursuivies. L'information a été rapportée mardi 24 novembre.",
+     "pour_situer": "Selon la BBC, c'est la dernière affaire visant Nicolas Sarkozy, devenu l'an dernier le premier ancien président français à être incarcéré.",
+     "incertain": null,
+     "contexte": "Ziad Takieddine, intermédiaire franco-libanais, avait mis en cause Nicolas Sarkozy dans le dossier du financement libyen présumé de sa campagne de 2007, avant de se rétracter publiquement.",
      "lectures": [
       {
        "source": "franceinfo",
        "titre_original": "Nicolas Sarkozy, Carla Bruni, Mimi Marchand… Qui sont les principaux protagonistes de l'affaire de la fausse rétractation de Ziad Takieddine ?",
        "lien": "https://www.franceinfo.fr/politique/affaire/financement-de-la-campagne-de-sarkozy/nicolas-sarkozy-carla-bruni-mimi-marchand-qui-sont-les-principaux-protagonistes-de-l-affaire-de-la-fausse-retractation-de-ziad-takieddine_8297730.html#xtor=RSS-3-[lestitres]",
        "publie": "2026-11-24T18:10:39+00:00",
-       "angle": "franceinfo présente les principaux protagonistes de l'opération baptisée « Sauver Sarko » et les chefs de poursuite."
+       "angle": "Présente les principaux protagonistes de l'affaire et le détail des poursuites."
       },
       {
-       "source": "France 24",
-       "titre_original": "Fausse rétractation de Takieddine : renvoi en procès de Nicolas Sarkozy et Carla Bruni",
-       "lien": "https://www.france24.com/fr/france/20261124-fausse-r%C3%A9tractation-takieddine-renvoi-proc%C3%A8s-nicolas-sarkozy-carla-bruni",
-       "publie": "2026-11-24T14:53:55+00:00",
-       "angle": "France 24 relaie l'information telle que l'AFP l'a obtenue, sans détailler davantage."
-      },
-      {
-       "source": "RFI",
-       "titre_original": "Fausse rétractation de Ziad Takieddine: l'ex-président Nicolas Sarkozy et son épouse Carla Bruni renvoyés en procès",
-       "lien": "https://www.rfi.fr/fr/france/20261124-fausse-r%C3%A9tractation-de-ziad-takieddine-nicolas-sarkozy-et-carla-bruni-renvoy%C3%A9s-en-proc%C3%A8s",
-       "publie": "2026-11-24T12:30:30+00:00",
-       "angle": "RFI paraît reprendre la même dépêche AFP et précise que tous les mis en examen sont renvoyés devant le tribunal."
-      },
-      {
-       "source": "BBC News",
-       "titre_original": "French ex-President Sarkozy and wife Carla Bruni to face trial",
-       "lien": "https://www.bbc.co.uk/news/articles/c65y17pwv1z7o?at_medium=RSS&at_campaign=rss",
-       "publie": "2026-11-24T16:49:07+00:00",
-       "angle": "La BBC replace l'affaire dans le parcours judiciaire de Sarkozy pour un public étranger."
+       "source": "20 Minutes",
+       "titre_original": "Harcèlement, agressions, viols… 30 % des pharmaciennes se disent victimes de violences sexistes et sexuelles",
+       "lien": "https://www.20minutes.fr/societe/4265548-20261125-harcelement-agressions-viols-30-pharmaciennes-disent-victimes-violences-sexistes-sexuelles?at_medium=display&at_campaign=149",
+       "publie": "2026-11-25T07:04:35+00:00",
+       "angle": "Annonce le procès à un public anglophone, en le replaçant dans la série d'affaires visant l'ancien président."
       }
      ]
     },
     {
-     "titre": "BYD en négociations exclusives pour racheter l'usine Ineos de Hambach, en Moselle",
-     "theme": "Industrie",
-     "essentiel": "BYD et Ineos Automotive ont confirmé mardi 24 novembre, dans deux communiqués distincts, être entrés en négociations exclusives pour le rachat de l'usine d'Hambach (Moselle), où est fabriqué le Grenadier. Le constructeur chinois cherche depuis un an à produire en Europe pour contourner les droits de douane. Libération rappelle que le site est l'ancienne usine Smart.",
+     "titre": "Vigilance orange dans le Var et les Alpes-Maritimes après un nouvel épisode méditerranéen",
+     "theme": "Météo",
+     "essentiel": "Le Var est passé en vigilance orange « crues », et l'alerte « pluie-inondation » se poursuit dans ce département et dans les Alpes-Maritimes. Selon Météo-France, l'épisode doit durer toute la journée et prendre fin à 22 h mercredi 25 novembre. Les zones les plus exposées sont la zone côtière du Var, de la Sainte-Baume à l'Estérel en passant par les Maures, ainsi que les pré-Alpes de Grasse et la Côte d'Azur.",
      "pour_situer": null,
-     "incertain": "Le rachat n'est pas conclu ; les articles ne donnent ni prix ni conséquences sur l'emploi.",
+     "incertain": null,
+     "contexte": "Les épisodes méditerranéens sont des pluies intenses touchant le pourtour méditerranéen, fréquentes à l'automne. Météo-France classe ses vigilances en quatre couleurs, l'orange correspondant à un danger important.",
      "lectures": [
       {
-       "source": "Le Monde",
-       "titre_original": "Le constructeur automobile chinois BYD va s’implanter en France",
-       "lien": "https://www.lemonde.fr/economie/article/2026/11/24/le-constructeur-automobile-chinois-byd-va-s-implanter-en-france_6814850_3234.html",
-       "publie": "2026-11-24T20:35:09+00:00",
-       "angle": "Le Monde présente l'opération comme une implantation de BYD en France et l'inscrit dans sa stratégie pour contourner les droits de douane."
-      },
-      {
        "source": "franceinfo",
-       "titre_original": "Le constructeur chinois BYD annonce être entré en négociations exclusives pour l'acquisition de l'usine Ineos Automotive d'Hambach en Moselle",
-       "lien": "https://france3-regions.franceinfo.fr/grand-est/moselle/metz/le-constructeur-chinois-byd-annonce-etre-entre-en-negociations-exclusives-pour-l-acquisition-de-l-usine-ineos-automotive-d-hambach-en-moselle-3455360.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T16:41:08+00:00",
-       "angle": "franceinfo s'en tient à la confirmation des négociations exclusives par les deux entreprises et à la nature du site."
+       "titre_original": "Le Var passe en vigilance orange \"crues\", l'alerte \"pluie-inondation\" se poursuit dans ce département et dans les Alpes-Maritimes",
+       "lien": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/le-var-passe-en-vigilance-orange-crues-l-alerte-pluie-inondation-se-poursuit-dans-ce-departement-et-dans-les-alpes-maritimes_8298813.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T06:36:51+00:00",
+       "angle": "Détaille le passage du Var en vigilance orange « crues » et les zones les plus exposées."
       },
       {
        "source": "Libération",
-       "titre_original": "Le leader chinois des voitures électriques BYD en passe de racheter l’ancienne usine Smart en Moselle",
-       "lien": "https://www.liberation.fr/economie/transports/le-leader-chinois-des-voitures-electriques-byd-en-passe-de-racheter-lancienne-usine-smart-en-moselle-20261124_KHO3BPXMONE47BALWT6HATAXPQ/",
-       "publie": "2026-11-24T19:44:42+00:00",
-       "angle": "Libération rattache l'opération au débat européen sur la préférence européenne et rappelle l'histoire du site, ancienne usine Smart."
+       "titre_original": "Le Var et les Alpes Maritimes placés en vigilance orange après un nouvel épisode méditerranéen",
+       "lien": "https://www.liberation.fr/environnement/climat/le-var-et-les-alpes-maritimes-places-en-vigilance-orange-apres-un-nouvel-episode-mediterraneen-20261125_ILLDVPWP2NCYHKPL64XEHDLDZI/",
+       "publie": "2026-11-25T07:25:13+00:00",
+       "angle": "Insiste sur l'horaire de fin de l'épisode, 22 heures mercredi, et le placement des deux départements en vigilance orange."
       }
      ]
     }
@@ -213,252 +160,50 @@
    "sources": [
     {
      "source": "Le Monde",
-     "articles": 15
+     "articles": 14
     },
     {
      "source": "franceinfo",
-     "articles": 25
+     "articles": 15
     },
     {
      "source": "Le Figaro",
-     "articles": 19
+     "articles": 13
     },
     {
      "source": "Libération",
-     "articles": 25
+     "articles": 15
     },
     {
      "source": "20 Minutes",
-     "articles": 20
+     "articles": 11
     }
    ]
   },
   {
    "id": "international",
    "label": "International",
-   "events": [
-    {
-     "titre": "Ukraine : navires russes frappés, la Libye nie toute entente avec Kiev",
-     "theme": "Ukraine",
-     "essentiel": "Volodymyr Zelensky a revendiqué lundi l'attaque de deux navires russes au large de Benghazi, dans l'est de la Libye. Le gouvernement d'unité nationale de Tripoli dément toute « entente » avec Kiev. En mer Baltique, deux navires russes ont aussi été frappés à dix jours d'intervalle par des drones ukrainiens dans le golfe de Finlande, ce qui embarrasse des pays riverains membres de l'Otan. Le ministre ukrainien des Affaires étrangères a répondu aux menaces de Vladimir Poutine sur les raffineries en l'invitant à mettre fin à la guerre.",
-     "pour_situer": "Selon Le Figaro, depuis ces attaques, le nombre d'avions perturbés par le brouillage GPS dans la Baltique a triplé en une semaine.",
-     "incertain": "Les liens éventuels entre Kiev et des acteurs libyens restent contestés ; les articles ne détaillent pas les dégâts ni les bilans.",
-     "lectures": [
-      {
-       "source": "France 24",
-       "titre_original": "Ukraine : une guerre sans frontières ?",
-       "lien": "https://www.france24.com/fr/%C3%A9missions/le-d%C3%A9bat/20261124-ukraine-une-guerre-sans-fronti%C3%A8res",
-       "publie": "2026-11-24T19:56:30+00:00",
-       "angle": "France 24 met en avant la revendication de Zelensky et le démenti de Tripoli, sous l'angle d'une guerre qui s'étend hors d'Ukraine."
-      },
-      {
-       "source": "franceinfo",
-       "titre_original": "La Libye nie toute \"entente\" avec Kiev après les attaques ukrainiennes contre des navires russes",
-       "lien": "https://www.franceinfo.fr/monde/afrique/libye/la-libye-nie-toute-entente-avec-kiev-apres-les-attaques-ukrainiennes-contre-des-navires-russes_8298132.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T18:58:33+00:00",
-       "angle": "franceinfo rapporte le communiqué libyen rejetant toute entente avec Kiev comme « sans fondement »."
-      },
-      {
-       "source": "Le Figaro International",
-       "titre_original": "Attaques de drones, « flotte fantôme »… La mer Baltique, nouveau théâtre du conflit entre l’Ukraine et la Russie",
-       "lien": "https://www.lefigaro.fr/international/attaques-de-drones-flotte-fantome-la-mer-baltique-nouveau-theatre-du-conflit-entre-l-ukraine-et-la-russie-20261124",
-       "publie": "2026-11-24T20:31:45+00:00",
-       "angle": "Le Figaro déplace l'attention vers la Baltique, où les frappes de drones créent une gêne chez les pays de l'Otan voisins."
-      },
-      {
-       "source": "Le Monde International",
-       "titre_original": "EN DIRECT, guerre en Ukraine : Kiev répond aux menaces de Poutine sur les raffineries : « Mettez fin à la guerre »",
-       "lien": "https://www.lemonde.fr/international/live/2026/11/24/en-direct-guerre-en-ukraine-kiev-repond-aux-menaces-de-poutine-sur-les-raffineries-mettez-fin-a-la-guerre_6814183_3210.html",
-       "publie": "2026-11-24T19:32:44+00:00",
-       "angle": "Le Monde relaie la réponse de la diplomatie ukrainienne aux menaces de Poutine sur les raffineries et les navires."
-      }
-     ]
-    },
-    {
-     "titre": "Nvidia : le retour de Jensen Huang, appuyé par Trump, suscite des réactions au Congrès",
-     "theme": "Économie",
-     "essentiel": "Jensen Huang, évincé de la direction de Nvidia le 12 novembre après un scandale lié à sa maîtresse, soupçonnée d'espionnage au profit de la Chine, a été réintégré lundi 23 novembre sous la pression de Donald Trump. L'action a bondi de 31,5 % lundi, mais la BBC indique qu'elle a reculé de 7 % mardi, alors que des parlementaires demandent des explications sur le rôle du président. Le Congrès doit auditionner le dirigeant début décembre.",
-     "pour_situer": "Le Monde rapporte que la presse financière retrace un réseau de détournement de puces d'IA vers la Chine, malgré les restrictions américaines.",
-     "incertain": "Les gains attribués à Donald Trump divergent : jusqu'à 15 millions de dollars selon Le Figaro, 60 millions selon une sénatrice démocrate citée par franceinfo, qui les évalue davantage encore. Ces accusations ne sont pas établies, pas plus que les soupçons d'espionnage.",
-     "lectures": [
-      {
-       "source": "franceinfo",
-       "titre_original": "Donald Trump s'est-il enrichi avec le retour surprise de Jensen Huang à la tête de Nvidia ?",
-       "lien": "https://www.franceinfo.fr/internet/nvidia/donald-trump-s-est-il-enrichi-avec-le-retour-surprise-de-jensen-huang-a-la-tete-de-nvidia_8298000.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T17:34:08+00:00",
-       "angle": "franceinfo pose la question de l'enrichissement de Trump à partir des accusations d'une sénatrice démocrate."
-      },
-      {
-       "source": "Le Figaro",
-       "titre_original": "Jusqu’à 15 millions de dollars de gains : jackpot pour Donald Trump après le retour de Jensen Huang à la tête de Nvidia",
-       "lien": "https://www.lefigaro.fr/secteur/high-tech/jusqu-a-15-millions-de-dollars-de-gains-jackpot-pour-donald-trump-apres-le-retour-de-jensen-huang-a-la-tete-de-nvidia-20261124",
-       "publie": "2026-11-24T14:38:39+00:00",
-       "angle": "Le Figaro chiffre le rebond de l'action et les gains potentiels du président, avec une estimation plus basse que celle de la sénatrice."
-      },
-      {
-       "source": "Le Monde",
-       "titre_original": "Derrière l’affaire Nvidia, un vaste réseau de détournement de puces d’IA au service de la Chine",
-       "lien": "https://www.lemonde.fr/economie/article/2026/11/24/derriere-l-affaire-nvidia-un-vaste-reseau-de-detournement-de-puces-d-ia-au-service-de-la-chine_6814811_3234.html",
-       "publie": "2026-11-24T15:49:52+00:00",
-       "angle": "Le Monde élargit à l'enquête sur le circuit de détournement de puces d'IA vers la Chine."
-      },
-      {
-       "source": "BBC News",
-       "titre_original": "US attorney general dodges questions about Nvidia investigation",
-       "lien": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
-       "publie": "2026-11-24T18:55:59+00:00",
-       "angle": "La BBC insiste sur les élus qui réclament des réponses et sur le repli de l'action Nvidia mardi."
-      }
-     ]
-    },
-    {
-     "titre": "Guerre en Ukraine : des données russes piratées évoquent jusqu'à 700 000 soldats tués",
-     "theme": "Ukraine",
-     "essentiel": "Des données de l'agence russe des statistiques, piratées puis analysées par des médias, évoquent des pertes militaires russes très supérieures à ce que le Kremlin a laissé publier. Le Monde fait état d'au moins 500 000 morts, et de plus de 700 000 en incluant les disparus. France 24 attribue l'estimation de plus de 700 000 aux médias indépendants Meduza et Mediazona. Le Guardian, cité par Le Figaro, a analysé plus de 11 millions d'actes de décès et compte plus de 1 000 suicides de soldats, un chiffre qu'il juge sous-estimé.",
-     "pour_situer": "Le Monde indique que Vladimir Poutine a empêché la publication des chiffres de décès depuis l'invasion de février 2022.",
-     "incertain": "Il s'agit d'estimations issues de données piratées, non de chiffres officiels, et les médias n'avancent pas tous la même fourchette.",
-     "lectures": [
-      {
-       "source": "Le Monde",
-       "titre_original": "Hackeurs et médias révèlent ce que le Kremlin voulait cacher : le bilan de 500 000 morts au moins sur le front ukrainien",
-       "lien": "https://www.lemonde.fr/international/article/2026/11/24/hackers-et-medias-revelent-ce-que-le-kremlin-voulait-cacher-le-bilan-de-500-000-morts-au-moins-sur-le-front-ukrainien_6814823_3210.html",
-       "publie": "2026-11-24T17:00:00+00:00",
-       "angle": "Le Monde distingue le plancher de 500 000 morts et l'estimation plus haute avec les disparus, et insiste sur le secret entretenu par le Kremlin."
-      },
-      {
-       "source": "France 24",
-       "titre_original": "Plus de 700 000 soldats russes morts en Ukraine : ce que l'on sait de cette nouvelle estimation",
-       "lien": "https://www.france24.com/fr/europe/20261124-plus-700-000-soldats-russes-morts-ukraine-sait-cette-nouvelle-estimation",
-       "publie": "2026-11-24T17:06:20+00:00",
-       "angle": "France 24 attribue l'estimation de plus de 700 000 morts à Meduza et Mediazona et fait le point sur ce que l'on sait."
-      },
-      {
-       "source": "Libération",
-       "titre_original": "Guerre en Ukraine : pourquoi les pertes russes pourraient s’élever à 700 000 soldats tués",
-       "lien": "https://www.liberation.fr/checknews/guerre-en-ukraine-pourquoi-les-pertes-russes-pourraient-selever-a-700-000-soldats-tues-20261124_Z3QV66Z26RFPZDQZSVADZFWJEY/",
-       "publie": "2026-11-24T19:27:36+00:00",
-       "angle": "Libération formule le chiffre au conditionnel et explique comment les données ont été obtenues par des hackers."
-      },
-      {
-       "source": "Le Figaro International",
-       "titre_original": "Guerre en Ukraine : plus de 1000 soldats russes se seraient suicidés depuis le début du conflit",
-       "lien": "https://www.lefigaro.fr/international/guerre-en-ukraine-plus-de-1000-soldats-russes-se-seraient-suicides-depuis-le-debut-du-conflit-20261124",
-       "publie": "2026-11-24T14:08:54+00:00",
-       "angle": "Le Figaro retient un aspect particulier de l'enquête du Guardian, les suicides de soldats, qu'il juge sous-estimés."
-      }
-     ]
-    },
-    {
-     "titre": "Iran : Israël et les États-Unis face au choix de relancer ou non les frappes",
-     "theme": "Iran",
-     "essentiel": "Le premier ministre sortant d'Israël, Benyamin Nétanyahou, plaide auprès de Donald Trump pour une reprise rapide des frappes sur l'Iran. Le président américain s'est donné jusqu'à janvier pour trancher, selon Le Monde, après la défaite de son camp aux élections de mi-mandat. Le ministre israélien de la Défense affirme que l'Iran développe « des armes chimiques », tandis que son rival Gadi Eisenkot estime qu'aucune opération militaire ne s'impose dans l'immédiat.",
-     "pour_situer": null,
-     "incertain": "Les articles ne présentent pas d'éléments à l'appui de l'accusation sur les armes chimiques ; la décision américaine n'est pas arrêtée.",
-     "lectures": [
-      {
-       "source": "Le Monde International",
-       "titre_original": "Relancer ou non la guerre : l’alliance israélo-américaine au défi du réarmement iranien",
-       "lien": "https://www.lemonde.fr/international/article/2026/11/24/relancer-ou-non-la-guerre-l-alliance-israelo-americaine-au-defi-du-rearmement-iranien_6814843_3210.html",
-       "publie": "2026-11-24T19:00:03+00:00",
-       "angle": "Le Monde analyse l'alliance israélo-américaine et le délai que Donald Trump s'est fixé avant de décider."
-      },
-      {
-       "source": "franceinfo",
-       "titre_original": "Le ministre de la Défense israélien affirme que l'Iran développe \"des armes chimiques\"",
-       "lien": "https://www.franceinfo.fr/monde/conflit-israel-iran/le-ministre-de-la-defense-israelien-affirme-que-l-iran-developpe-des-armes-chimiques_8298327.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T19:42:33+00:00",
-       "angle": "franceinfo rapporte l'accusation du ministre israélien de la Défense et la position plus prudente de Gadi Eisenkot."
-      }
-     ]
-    },
-    {
-     "titre": "Russie : un satellite à charge nucléaire en préparation, selon des médias allemands",
-     "theme": "Défense",
-     "essentiel": "Des médias allemands ont rapporté lundi que la Russie serait prête à lancer d'ici la fin de l'année un satellite muni d'une charge nucléaire. L'Otan a promis de garantir la sécurité de ses membres jusque dans l'espace. Moscou dément, et une telle initiative serait interdite par le traité de l'espace, selon 20 Minutes.",
-     "pour_situer": null,
-     "incertain": "L'information vient de médias allemands et n'est pas confirmée ; Moscou la dément, et le calendrier varie selon les sources (fin d'année, ou « prochaines semaines » pour la BBC).",
-     "lectures": [
-      {
-       "source": "franceinfo",
-       "titre_original": "La Russie soupçonnée de vouloir placer une arme nucléaire dans l'espace",
-       "lien": "https://www.franceinfo.fr/societe/armee-securite-defense/nucleaire-militaire/la-russie-soupconnee-de-vouloir-placer-une-arme-nucleaire-dans-l-espace_8297916.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T16:28:40+00:00",
-       "angle": "franceinfo expose les informations des médias allemands et la réaction de l'Otan."
-      },
-      {
-       "source": "20 Minutes",
-       "titre_original": "Espace : « C’est évidemment interdit »… La Russie peut-elle vraiment placer une arme nucléaire en orbite ?",
-       "lien": "https://www.20minutes.fr/monde/ukraine/4265350-20261124-espace-evidemment-interdit-russie-peut-vraiment-placer-arme-nucleaire-orbite?at_medium=display&at_campaign=149",
-       "publie": "2026-11-24T16:59:23+00:00",
-       "angle": "20 Minutes insiste sur le démenti de Moscou et sur l'interdiction posée par le traité de l'espace."
-      },
-      {
-       "source": "BBC News",
-       "titre_original": "Nato chief vows defence against space threat after Russian nuclear satellite reports",
-       "lien": "https://www.bbc.co.uk/news/articles/c9x2er1ry2mzo?at_medium=RSS&at_campaign=rss",
-       "publie": "2026-11-24T10:58:51+00:00",
-       "angle": "La BBC met en avant la promesse du chef de l'Otan de se défendre contre une menace venue de l'espace."
-      }
-     ]
-    },
-    {
-     "titre": "CAN 2025 : le Tribunal arbitral du sport attribue le titre au Sénégal",
-     "theme": "Sport",
-     "essentiel": "Le Tribunal arbitral du sport a déclaré mardi 24 novembre, « à l'unanimité », le Sénégal vainqueur de la CAN 2025. Les Sénégalais avaient battu le Maroc 1-0 en finale le 18 janvier, mais la Confédération africaine de football avait ensuite attribué le titre au Maroc. Le TAS estime que l'arbitre était seul juge pour reprendre la partie après l'interruption. La CAF dit respecter la décision, et le Maroc annonce engager « toutes les procédures légales nécessaires ».",
-     "pour_situer": "Selon France 24, le Maroc dispose de 30 jours pour faire appel devant le Tribunal fédéral suisse.",
-     "incertain": "Le recours marocain n'est pas encore déposé, et son issue est inconnue.",
-     "lectures": [
-      {
-       "source": "France 24",
-       "titre_original": "CAN 2025 : pourquoi le TAS a donné raison à l'arbitre et au Sénégal",
-       "lien": "https://www.france24.com/fr/sports/20261124-can-2025-pourquoi-tas-arbitre-senegal-maroc",
-       "publie": "2026-11-24T17:02:32+00:00",
-       "angle": "France 24 explique le raisonnement du TAS, fondé sur le pouvoir de l'arbitre pour reprendre le match."
-      },
-      {
-       "source": "franceinfo",
-       "titre_original": "Victoire du Sénégal à la CAN : la Confédération africaine de football déclare \"respecter la décision\" du Tribunal arbitral du sport",
-       "lien": "https://www.franceinfo.fr/sports/foot/can/direct-senegal-vainqueur-de-la-can-le-tribunal-arbitral-du-sport-a-rendu-justice-au-sport-estime-le-president-de-la-federation-senegalaise_8298138.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T19:49:01+00:00",
-       "angle": "franceinfo s'intéresse à la réaction de la CAF, qui déclare respecter la décision."
-      },
-      {
-       "source": "Le Monde International",
-       "titre_original": "« La vérité d’une rencontre s’établit sur le terrain » : le Sénégal, déclaré vainqueur près d’un an après la finale contre le Maroc, célèbre son titre de champion d’Afrique",
-       "lien": "https://www.lemonde.fr/football/article/2026/11/24/can-2025-le-tribunal-arbitral-du-sport-declare-le-senegal-champion-d-afrique-des-nations-au-detriment-du-maroc_6814779_1616938.html",
-       "publie": "2026-11-24T14:34:56+00:00",
-       "angle": "Le Monde raconte les célébrations au Sénégal et rappelle près d'un an de bataille juridique."
-      },
-      {
-       "source": "RFI",
-       "titre_original": "La CAN 2025 attribuée définitivement au Sénégal par le Tribunal arbitral du sport",
-       "lien": "https://www.rfi.fr/fr/afrique-foot/20261124-la-can-2025-attribu%C3%A9e-d%C3%A9finitivement-au-s%C3%A9n%C3%A9gal-par-le-tribunal-arbitral-du-sport",
-       "publie": "2026-11-24T14:27:25+00:00",
-       "angle": "RFI présente le jugement comme définitif et rappelle que le titre avait été retiré aux Sénégalais deux mois après la finale."
-      }
-     ]
-    }
-   ],
+   "events": [],
    "sources": [
     {
      "source": "Le Monde International",
-     "articles": 20
+     "articles": 14
     },
     {
      "source": "France 24",
-     "articles": 24
+     "articles": 15
     },
     {
      "source": "RFI",
-     "articles": 22
+     "articles": 14
     },
     {
      "source": "Le Figaro International",
-     "articles": 8
+     "articles": 9
     },
     {
      "source": "BBC News",
-     "articles": 20
+     "articles": 15
     }
    ]
   }

@@ -1,0 +1,211 @@
+{
+ "genere_le": "2026-11-25T09:23+01:00",
+ "date": "mercredi 25 novembre 2026",
+ "moment": "matin",
+ "modele": "claude-sonnet-5-5",
+ "categories": [
+  {
+   "id": "france",
+   "label": "France",
+   "events": [
+    {
+     "titre": "Perquisition au siège du RN : Darmanin saisit l'Inspection générale de la justice",
+     "theme": "Justice",
+     "essentiel": "Interrogé mercredi 25 novembre sur France Inter, le garde des Sceaux Gérald Darmanin a annoncé saisir l'Inspection générale de la justice. Un procureur adjoint, Christian de Rocquigny, était présent début novembre lors d'une perquisition au siège du Rassemblement national, menée dans une information judiciaire notamment pour violation du secret professionnel. Le ministre dénonce un « défaut de loyauté » : le magistrat n'a pas prévenu sa hiérarchie ni posé de jour de congé pour rendre visite à une personnalité politique, Jean-Paul Garraud, député.",
+     "pour_situer": null,
+     "incertain": "Les circonstances précises de la présence du magistrat restent à établir par l'inspection, saisie « pour faire toute la lumière ».",
+     "contexte": "L'Inspection générale de la justice est un service de contrôle rattaché au ministère de la Justice. Elle contrôle le fonctionnement des juridictions et peut enquêter sur le comportement des magistrats. Le ministre de la Justice porte aussi le titre de garde des Sceaux.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Procureur présent au siège du RN lors d’une perquisition : Gérald Darmanin annonce saisir l’inspection générale de la justice « pour faire toute la lumière »",
+       "lien": "https://www.lemonde.fr/societe/article/2026/11/25/procureur-present-lors-d-une-perquisition-au-rn-gerald-darmanin-annonce-saisir-l-inspection-generale-de-la-justice-pour-faire-toute-la-lumiere_6815060_3224.html",
+       "publie": "2026-11-25T07:55:20+00:00",
+       "angle": "Insiste sur la visite du procureur à Jean-Paul Garraud et sur le reproche de ne pas avoir posé de jour de congé."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Présence d'un procureur au siège du RN : Gérald Darmanin annonce avoir saisi l'Inspection générale de la justice",
+       "lien": "https://www.franceinfo.fr/politique/front-national/presence-d-un-procureur-au-siege-du-rn-gerald-darmanin-annonce-avoir-saisi-l-inspection-generale-de-la-justice_8298930.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T08:10:08+00:00",
+       "angle": "Rend compte de l'annonce faite sur France Inter, avec peu de détails sur le magistrat."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "Procureur présent au siège du RN : Gérald Darmanin saisit l’Inspection générale de la Justice",
+       "lien": "https://www.lefigaro.fr/actualite-france/procureur-present-au-siege-du-rn-gerald-darmanin-saisit-l-inspection-generale-de-la-justice-20261125",
+       "publie": "2026-11-25T08:21:21+00:00",
+       "angle": "Nomme le procureur et précise le cadre de la perquisition, une information judiciaire pour violation du secret professionnel."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Procureur au siège du RN : Gérald Darmanin saisit l’Inspection générale de la Justice",
+       "lien": "https://www.liberation.fr/politique/procureur-au-siege-du-rn-gerald-darmanin-saisit-linspection-generale-de-la-justice-20261125_EU7CDIDAZFD6PPTT3ORXBFSSZQ/",
+       "publie": "2026-11-25T07:54:42+00:00",
+       "angle": "Retient le « défaut de loyauté » et le fait que le magistrat n'ait pas prévenu sa hiérarchie."
+      }
+     ]
+    },
+    {
+     "titre": "Congrès des maires : élection à la tête de l'AMF et chasse aux parrainages",
+     "theme": "Politique",
+     "essentiel": "Le 108e congrès des maires de France se tient à Paris, à cinq mois de l'élection présidentielle. Mardi, David Lisnard et Philippe Laurent ont défendu leur projet pour la présidence de l'AMF devant 3 000 personnes, et le résultat du vote est attendu mercredi avant 14 h. La majorité des candidats à la présidentielle ont prévu de s'y rendre pour rencontrer des élus et chercher des parrainages. Certains maires disent hésiter à en accorder.",
+     "pour_situer": null,
+     "incertain": "Le résultat du vote pour la présidence de l'AMF n'est pas connu au moment de ces articles.",
+     "contexte": "L'Association des maires de France (AMF) représente les maires et les élus locaux auprès de l'État. Son congrès annuel se tient à Paris. Pour se présenter à l'élection présidentielle, un candidat doit réunir 500 parrainages d'élus, dont beaucoup sont des maires.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "EN DIRECT, congrès des maires 2026 : suivez l’élection du président de l’Association des maires de France, à cinq mois de l’élection présidentielle",
+       "lien": "https://www.lemonde.fr/politique/live/2026/11/25/en-direct-congres-des-maires-2026-suivez-l-election-du-president-de-l-association-des-maires-de-france-a-cinq-mois-de-l-election-presidentielle_6815062_823448.html",
+       "publie": "2026-11-25T07:57:12+00:00",
+       "angle": "Suit l'élection de l'AMF en direct et souligne la tonalité très politique du congrès à l'approche de la présidentielle."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "« Il est déjà élu à l’applaudimètre »: dans les coulisses du match entre David Lisnard et Philippe Laurent pour la présidence de l’AMF",
+       "lien": "https://www.lefigaro.fr/elections/presidentielles/il-est-deja-elu-a-l-applaudimetre-dans-les-coulisses-du-match-entre-david-lisnard-et-philippe-laurent-pour-la-presidence-de-l-amf-20261124",
+       "publie": "2026-11-24T18:52:21+00:00",
+       "angle": "Raconte les coulisses du duel entre David Lisnard et Philippe Laurent pour la présidence de l'AMF."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "\"L'opportunité de rencontrer des élus de toute la France\" : au salon des maires, les prétendants à l’Elysée font la chasse aux signatures",
+       "lien": "https://www.franceinfo.fr/elections/reportage-l-opportunite-de-rencontrer-des-elus-de-toute-la-france-au-salon-des-maires-les-pretendants-a-l-elysee-font-la-chasse-aux-signatures_8296235.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T04:52:25+00:00",
+       "angle": "Se concentre sur les prétendants à l'Élysée venus chercher des signatures auprès des maires."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Présidentielle 2027 : « Je ne voudrais pas froisser mes administrés »… Les maires face au casse-tête des parrainages",
+       "lien": "https://www.20minutes.fr/politique/4265401-20261124-presidentielle-2027-voudrais-froisser-administres-maires-face-casse-tete-parrainages?at_medium=display&at_campaign=149",
+       "publie": "2026-11-24T17:51:58+00:00",
+       "angle": "Donne la parole aux maires eux-mêmes, embarrassés ou indécis face aux demandes de parrainage."
+      }
+     ]
+    },
+    {
+     "titre": "Présidentielle 2027 : Édouard Philippe propose un débat à David Lisnard",
+     "theme": "Politique",
+     "essentiel": "Invité de LCI mardi soir, Édouard Philippe, candidat Horizons, a proposé un débat à David Lisnard plutôt qu'une primaire, en évoquant un « désaccord manifeste sur la ligne politique ». Il reproche au maire de Cannes d'entretenir une frontière « poreuse » avec l'« extrême droite ». Mardi, depuis le Salon des maires, il l'avait déjà appelé à clarifier sa position vis-à-vis du RN. Le Figaro décrit David Lisnard comme en dynamique dans les sondages.",
+     "pour_situer": null,
+     "incertain": "Le mode de départage entre les candidats de la droite et du centre n'est pas arrêté : les négociations pour une primaire piétinent, selon Le Figaro.",
+     "contexte": "Édouard Philippe a été Premier ministre de 2017 à 2020 et préside Horizons, le parti qu'il a fondé. David Lisnard est maire de Cannes.",
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "«Un désaccord manifeste sur la ligne politique» : plutôt qu’une primaire, Édouard Philippe propose un débat à David Lisnard",
+       "lien": "https://www.lefigaro.fr/elections/presidentielles/un-desaccord-manifeste-sur-la-ligne-politique-plutot-qu-une-primaire-edouard-philippe-propose-un-debat-a-david-lisnard-20261124",
+       "publie": "2026-11-25T05:54:42+00:00",
+       "angle": "Met en avant le débat proposé en lieu et place d'une primaire, et l'accusation de frontière « poreuse » avec l'extrême droite."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "EN DIRECT Présidentielle 2027 : Édouard Philippe propose à David Lisnard un débat télévisé…",
+       "lien": "https://www.20minutes.fr/politique/4265545-20261125-direct-presidentielle-2027-edouard-philippe-propose-david-lisnard-debat-televise?at_medium=display&at_campaign=149",
+       "publie": "2026-11-25T04:53:33+00:00",
+       "angle": "Suit la campagne en direct et place en tête la proposition d'un débat télévisé."
+      }
+     ]
+    },
+    {
+     "titre": "« Sauver Sarko » : onze personnes renvoyées en correctionnelle, dont Nicolas Sarkozy",
+     "theme": "Justice",
+     "essentiel": "Onze personnes sont renvoyées devant le tribunal correctionnel pour leur implication dans l'opération « Sauver Sarko », liée à la fausse rétractation de Ziad Takieddine. Nicolas Sarkozy et son épouse Carla Bruni figurent parmi les personnes poursuivies. L'information a été rapportée mardi 24 novembre.",
+     "pour_situer": "Selon la BBC, c'est la dernière affaire visant Nicolas Sarkozy, devenu l'an dernier le premier ancien président français à être incarcéré.",
+     "incertain": null,
+     "contexte": "Ziad Takieddine, intermédiaire franco-libanais, avait mis en cause Nicolas Sarkozy dans le dossier du financement libyen présumé de sa campagne de 2007, avant de se rétracter publiquement.",
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "Nicolas Sarkozy, Carla Bruni, Mimi Marchand… Qui sont les principaux protagonistes de l'affaire de la fausse rétractation de Ziad Takieddine ?",
+       "lien": "https://www.franceinfo.fr/politique/affaire/financement-de-la-campagne-de-sarkozy/nicolas-sarkozy-carla-bruni-mimi-marchand-qui-sont-les-principaux-protagonistes-de-l-affaire-de-la-fausse-retractation-de-ziad-takieddine_8297730.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-24T18:10:39+00:00",
+       "angle": "Présente les principaux protagonistes de l'affaire et le détail des poursuites."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Harcèlement, agressions, viols… 30 % des pharmaciennes se disent victimes de violences sexistes et sexuelles",
+       "lien": "https://www.20minutes.fr/societe/4265548-20261125-harcelement-agressions-viols-30-pharmaciennes-disent-victimes-violences-sexistes-sexuelles?at_medium=display&at_campaign=149",
+       "publie": "2026-11-25T07:04:35+00:00",
+       "angle": "Annonce le procès à un public anglophone, en le replaçant dans la série d'affaires visant l'ancien président."
+      }
+     ]
+    },
+    {
+     "titre": "Vigilance orange dans le Var et les Alpes-Maritimes après un nouvel épisode méditerranéen",
+     "theme": "Météo",
+     "essentiel": "Le Var est passé en vigilance orange « crues », et l'alerte « pluie-inondation » se poursuit dans ce département et dans les Alpes-Maritimes. Selon Météo-France, l'épisode doit durer toute la journée et prendre fin à 22 h mercredi 25 novembre. Les zones les plus exposées sont la zone côtière du Var, de la Sainte-Baume à l'Estérel en passant par les Maures, ainsi que les pré-Alpes de Grasse et la Côte d'Azur.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": "Les épisodes méditerranéens sont des pluies intenses touchant le pourtour méditerranéen, fréquentes à l'automne. Météo-France classe ses vigilances en quatre couleurs, l'orange correspondant à un danger important.",
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "Le Var passe en vigilance orange \"crues\", l'alerte \"pluie-inondation\" se poursuit dans ce département et dans les Alpes-Maritimes",
+       "lien": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/le-var-passe-en-vigilance-orange-crues-l-alerte-pluie-inondation-se-poursuit-dans-ce-departement-et-dans-les-alpes-maritimes_8298813.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T06:36:51+00:00",
+       "angle": "Détaille le passage du Var en vigilance orange « crues » et les zones les plus exposées."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Le Var et les Alpes Maritimes placés en vigilance orange après un nouvel épisode méditerranéen",
+       "lien": "https://www.liberation.fr/environnement/climat/le-var-et-les-alpes-maritimes-places-en-vigilance-orange-apres-un-nouvel-episode-mediterraneen-20261125_ILLDVPWP2NCYHKPL64XEHDLDZI/",
+       "publie": "2026-11-25T07:25:13+00:00",
+       "angle": "Insiste sur l'horaire de fin de l'épisode, 22 heures mercredi, et le placement des deux départements en vigilance orange."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Le Monde",
+     "articles": 14
+    },
+    {
+     "source": "franceinfo",
+     "articles": 15
+    },
+    {
+     "source": "Le Figaro",
+     "articles": 13
+    },
+    {
+     "source": "Libération",
+     "articles": 15
+    },
+    {
+     "source": "20 Minutes",
+     "articles": 11
+    }
+   ]
+  },
+  {
+   "id": "international",
+   "label": "International",
+   "events": [],
+   "sources": [
+    {
+     "source": "Le Monde International",
+     "articles": 14
+    },
+    {
+     "source": "France 24",
+     "articles": 15
+    },
+    {
+     "source": "RFI",
+     "articles": 14
+    },
+    {
+     "source": "Le Figaro International",
+     "articles": 9
+    },
+    {
+     "source": "BBC News",
+     "articles": 15
+    }
+   ]
+  }
+ ]
+}
