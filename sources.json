@@ -43,9 +43,20 @@
           "site": "https://www.lopinion.fr/"
         },
         {
+          "source": "Mediapart",
+          "profil": "journal en ligne d'investigation, gauche",
+          "url": "https://www.mediapart.fr/articles/feed",
+          "site": "https://www.mediapart.fr/"
+        },
+        {
           "source": "Valeurs actuelles",
           "profil": "hebdomadaire, droite conservatrice",
           "site": "https://www.valeursactuelles.com/"
+        },
+        {
+          "source": "Le JDD",
+          "profil": "hebdomadaire, droite conservatrice",
+          "site": "https://www.lejdd.fr/"
         },
         {
           "source": "Ouest-France",
