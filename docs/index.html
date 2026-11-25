@@ -97,6 +97,8 @@ a { color: var(--accent); }
 }
 .tabs::-webkit-scrollbar { display: none; }
 .tabs .sep { flex: 0 0 1px; align-self: stretch; background: var(--line); margin: 4px 2px; }
+.suite-tag { background: var(--accent); color: var(--card); border-radius: 6px; padding: 1px 6px; margin-right: 6px; letter-spacing: 0.04em; }
+.prev-link { align-self: flex-start; margin-top: 8px; }
 .why { color: var(--accent); font-size: 0.95rem; font-weight: 500; }
 .progress { color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
 
@@ -345,7 +347,10 @@ function renderList(cat) {
     card.addEventListener("click", () => { listScroll[cat.id] = window.scrollY; });
     const bar = el("div", "bar");
     bar.appendChild(el("span", null, (ev.theme || cat.label)));
-    bar.appendChild(el("span", null, readSet.has(k) ? "✓ lu" : ev.lectures.length + " source" + (ev.lectures.length > 1 ? "s" : "")));
+    const right = el("span", null);
+    if (ev.suite) right.appendChild(el("span", "suite-tag", "Suite"));
+    right.appendChild(document.createTextNode(readSet.has(k) ? "✓ lu" : ev.lectures.length + " source" + (ev.lectures.length > 1 ? "s" : "")));
+    bar.appendChild(right);
     card.appendChild(bar);
     const body = el("div", "win-body");
     body.appendChild(el("h2", "card-title", ev.titre));
@@ -400,6 +405,19 @@ function renderDetail(cat, i) {
   const body = el("div", "win-body");
   body.appendChild(el("h2", "detail-title", ev.titre));
   if (ev.pourquoi) body.appendChild(el("p", "why", "Pourquoi c'est important : " + ev.pourquoi));
+  if (ev.suite) {
+    const box = el("div", "box");
+    box.appendChild(el("p", "section-label", "Suite · ce qu'on savait déjà"));
+    box.appendChild(el("p", null, ev.suite.deja_su || ("Sujet déjà traité : « " + ev.suite.titre + " »")));
+    const idx = editions.findIndex(e => e.fichier === ev.suite.edition);
+    if (idx >= 0) {
+      const b = el("button", "btn prev-link", "Voir l'édition " + (ev.suite.date ? "du " + ev.suite.date : "précédente"));
+      b.type = "button";
+      b.addEventListener("click", () => openEdition(idx, ev.suite.ancre));
+      box.appendChild(b);
+    }
+    body.appendChild(box);
+  }
   body.appendChild(block("L'essentiel", ev.essentiel));
   if (ev.pour_situer) body.appendChild(block("Repère", ev.pour_situer, "box"));
   if (ev.incertain) body.appendChild(block("À confirmer", ev.incertain, "box warn"));
@@ -470,7 +488,7 @@ function renderDatebar() {
   });
   sel.disabled = editions.length < 2;
 }
-async function openEdition(i) {
+async function openEdition(i, anchor) {
   const entry = editions[i];
   if (!entry) return;
   try {
@@ -481,8 +499,8 @@ async function openEdition(i) {
     listScroll = {};
     loadRead();
     renderDatebar();
-    const cat = parseHash().cat;
-    if (location.hash !== "#" + cat.id) location.hash = cat.id; else render();
+    const target = anchor || parseHash().cat.id;
+    if (location.hash !== "#" + target) location.hash = target; else render();
   } catch (e) {
     document.getElementById("date-label").textContent = "Édition introuvable";
   }

@@ -12,7 +12,7 @@ Variables utiles :
   ANTHROPIC_API_KEY  clé API (obligatoire, rangée dans les Secrets GitHub)
   CLAUDE_MODEL       modèle utilisé (par défaut claude-sonnet-5-5)
   MAX_EVENTS         nombre maximum d'événements par catégorie (6)
-  WINDOW_HOURS       ancienneté maximale des articles en heures (24)
+  WINDOW_HOURS       ancienneté maximale des articles en heures, sans édition précédente (24)
 """
 
 from __future__ import annotations
@@ -97,7 +97,8 @@ def discover_feed(site: str) -> str | None:
     return None
 
 
-def fetch_category(category: dict, now: datetime) -> tuple[list[dict], list[dict]]:
+def fetch_category(category: dict, now: datetime, since: datetime | None = None,
+                   skip_links: set[str] | None = None) -> tuple[list[dict], list[dict]]:
     """Renvoie les articles récents d'une catégorie et un bilan par flux."""
     items: list[dict] = []
     report: list[dict] = []
@@ -122,12 +123,15 @@ def fetch_category(category: dict, now: datetime) -> tuple[list[dict], list[dict
         kept = 0
         for entry in parsed.entries[:per_feed]:
             published = entry_time(entry)
-            if published and now - published > timedelta(hours=WINDOW_HOURS):
+            oldest = since or (now - timedelta(hours=WINDOW_HOURS))
+            if published and published < oldest:
                 continue
             title = clean(entry.get("title", ""), 300)
             link = entry.get("link", "")
             if not title or not link.startswith("http") or link in seen_links:
                 continue
+            if skip_links and link in skip_links:
+                continue  # article déjà utilisé dans l'édition précédente
             if is_opinion(title, link):
                 continue
             seen_links.add(link)
@@ -168,8 +172,12 @@ Ta tâche :
    - les rubriques du socle (France, International) reçoivent l'essentiel de l'actualité : « france » pour ce qui se passe en France ou concerne d'abord la vie politique, économique ou sociale française, « international » pour le reste ;
    - les rubriques thématiques complètent le socle sans le répéter : elles reçoivent les faits importants pour leur domaine qui ne sont pas assez généraux pour le socle (un contrat d'armement, un programme militaire, une réforme des marchés publics, une tension sur une matière première, un nouveau modèle d'IA, une décision de régulation du numérique…). Un événement majeur reste dans le socle, même s'il touche un thème.
    Pour une rubrique thématique, l'importance se juge à l'échelle de son domaine, avec les mêmes exclusions.
-4. Classer les événements de chaque rubrique par portée réelle, du plus important au moins important, et non par nombre d'articles.
-5. Pour chaque événement, rédiger en français :
+4. Suivi d'un jour à l'autre. Tu reçois aussi les événements de l'édition précédente (identifiants « prev-… »). Pour chaque événement du jour :
+   - s'il ne figurait pas dans l'édition précédente, traite-le normalement ("suite_de": null) ;
+   - s'il y figurait et que les articles du jour apportent un fait nouveau (vote, décision, nouveau bilan, nouvelle étape), traite-le comme une suite : "suite_de" = l'identifiant « prev-… », un titre qui annonce le fait nouveau, un "essentiel" limité à ce qui a changé, et "deja_su" = une phrase qui rappelle ce qu'on savait déjà ;
+   - s'il y figurait et que les articles du jour ne font que le répéter, sans fait nouveau, ne le reprends pas.
+5. Classer les événements de chaque rubrique par portée réelle, du plus important au moins important, et non par nombre d'articles.
+6. Pour chaque événement, rédiger en français :
    - "categorie" : l'identifiant de la rubrique.
    - "titre" : un titre neutre et factuel, 90 caractères au plus, sans mot dramatisant.
    - "theme" : un ou deux mots (ex. « Politique », « Économie », « Ukraine », « Santé »).
@@ -178,6 +186,8 @@ Ta tâche :
    - "pour_situer" : une phrase de contexte ou d'ordre de grandeur, uniquement si les articles fournis la permettent, sinon null.
    - "incertain" : ce qui n'est pas encore établi, ou ce sur quoi les sources divergent (chiffres, versions), sinon null.
    - "contexte" : pour comprendre, 2 à 4 phrases de contexte général et durable, que tu peux tirer de tes connaissances : qui sont les acteurs, ce qu'est l'institution ou le lieu, les grandes étapes connues de l'affaire. Uniquement des faits établis et stables, sans chiffre récent ni événement que tu ne connais pas avec certitude. Mets null si tu n'es pas sûr.
+   - "suite_de" : l'identifiant « prev-… » de l'événement de l'édition précédente qu'il prolonge, sinon null.
+   - "deja_su" : pour une suite, une phrase qui rappelle ce qu'on savait déjà ; sinon null.
    - "lectures" : 1 à 4 articles, au plus un par journal, avec "item_id" (l'identifiant fourni) et "angle" : une phrase, avec tes propres mots, sur ce que ce journal met en avant par rapport aux autres. Si deux articles semblent reprendre la même dépêche d'agence, dis-le dans l'angle.
 
 Règles impératives :
@@ -185,7 +195,7 @@ Règles impératives :
 - Ton sobre : pas d'adjectifs alarmistes, pas de points d'exclamation, pas de formules sensationnelles.
 
 Réponds uniquement avec un objet JSON valide, sans texte autour, de la forme :
-{{"events": [{{"categorie": "...", "titre": "...", "theme": "...", "pourquoi": "...", "essentiel": "...", "pour_situer": null, "incertain": null, "contexte": null, "lectures": [{{"item_id": "...", "angle": "..."}}]}}]}}"""
+{{"events": [{{"categorie": "...", "suite_de": null, "deja_su": null, "titre": "...", "theme": "...", "pourquoi": "...", "essentiel": "...", "pour_situer": null, "incertain": null, "contexte": null, "lectures": [{{"item_id": "...", "angle": "..."}}]}}]}}"""
 
 
 def call_claude(system: str, user: str) -> str:
@@ -253,8 +263,22 @@ def salvage_events(text: str) -> list[dict]:
     return events
 
 
+def suite_info(raw: dict, prev_refs: dict[str, dict], previous: dict | None) -> dict | None:
+    ref = str(raw.get("suite_de") or "")
+    if ref not in prev_refs or not previous:
+        return None  # identifiant absent ou inventé : traité comme un sujet nouveau
+    info = prev_refs[ref]
+    return {
+        "titre": info["titre"],
+        "deja_su": (raw.get("deja_su") or None),
+        "edition": previous.get("_fichier"),
+        "ancre": f"{info['rubrique']}-{info['numero']}",
+        "date": previous.get("date"),
+    }
+
+
 def write_edition(categories: list[dict], items: list[dict],
-                  llm: Callable[[str, str], str]) -> dict[str, list[dict]]:
+                  llm: Callable[[str, str], str], previous: dict | None = None) -> dict[str, list[dict]]:
     """Un seul appel pour toute l'édition, afin qu'un événement ne soit jamais
     rangé dans deux rubriques. Renvoie les événements par identifiant de rubrique."""
     result: dict[str, list[dict]] = {c["id"]: [] for c in categories}
@@ -270,7 +294,17 @@ def write_edition(categories: list[dict], items: list[dict],
         {k: item[k] for k in ("id", "source", "title", "summary", "published")}
         for item in items
     ]
-    user = f"Articles ({len(payload)}) :\n" + json.dumps(payload, ensure_ascii=False, separators=(",", ":"))  # compact : moins de jetons lus
+    prev_refs: dict[str, dict] = {}
+    prev_list = []
+    if previous:
+        for c in previous.get("categories", []):
+            for i, ev in enumerate(c.get("events", [])):
+                ref = f"prev-{c['id']}-{i + 1}"
+                prev_refs[ref] = {"titre": ev.get("titre", ""), "rubrique": c["id"], "numero": i + 1}
+                prev_list.append({"id": ref, "titre": ev.get("titre", ""), "essentiel": ev.get("essentiel", "")[:300]})
+    compact = dict(ensure_ascii=False, separators=(",", ":"))  # compact : moins de jetons lus
+    user = (f"Édition précédente ({len(prev_list)} événements) :\n" + json.dumps(prev_list, **compact)
+            + f"\n\nArticles du jour ({len(payload)}) :\n" + json.dumps(payload, **compact))
 
     last_error: Exception | None = None
     for _ in range(2):  # un nouvel essai si le JSON est illisible
@@ -311,6 +345,7 @@ def write_edition(categories: list[dict], items: list[dict],
             "titre": str(raw["titre"]).strip(),
             "theme": str(raw.get("theme") or labels[cat]).strip(),
             "pourquoi": (raw.get("pourquoi") or None),
+            "suite": suite_info(raw, prev_refs, previous),
             "essentiel": str(raw["essentiel"]).strip(),
             "pour_situer": (raw.get("pour_situer") or None),
             "incertain": (raw.get("incertain") or None),
@@ -334,11 +369,26 @@ def build(sources_path: Path, out_dir: Path, llm: Callable[[str, str], str] = ca
     local = now.astimezone(PARIS)
     config = json.loads(sources_path.read_text(encoding="utf-8"))
 
+    previous = load_previous(out_dir)
+    since = None
+    skip_links: set[str] = set()
+    if previous:
+        try:
+            prev_time = datetime.fromisoformat(previous["genere_le"]).astimezone(timezone.utc)
+            # Articles parus depuis l'édition précédente, entre 12 et 36 heures en arrière.
+            since = min(max(prev_time, now - timedelta(hours=36)), now - timedelta(hours=12))
+        except (KeyError, ValueError):
+            since = None
+        skip_links = {l.get("lien") for c in previous.get("categories", [])
+                      for ev in c.get("events", []) for l in ev.get("lectures", [])}
+        print(f"Édition précédente : {previous.get('date')} ({previous.get('moment')}), "
+              f"articles pris depuis {since.astimezone(PARIS):%d/%m %H:%M}" if since else "")
+
     all_items: list[dict] = []
     reports: dict[str, list[dict]] = {}
     seen_links: set[str] = set()
     for category in config["categories"]:
-        items, report = fetch_category(category, now)
+        items, report = fetch_category(category, now, since, skip_links)
         items = [i for i in items if i["link"] not in seen_links]
         seen_links.update(i["link"] for i in items)
         all_items.extend(items)
@@ -348,7 +398,7 @@ def build(sources_path: Path, out_dir: Path, llm: Callable[[str, str], str] = ca
             print(f"   - {line['source']} : {line['articles']} {line.get('erreur', '')}")
 
     total_items = len(all_items)
-    events = write_edition(config["categories"], all_items, llm) if all_items else {}
+    events = write_edition(config["categories"], all_items, llm, previous) if all_items else {}
     categories = []
     for category in config["categories"]:
         cat_events = events.get(category["id"], [])
@@ -380,6 +430,18 @@ def build(sources_path: Path, out_dir: Path, llm: Callable[[str, str], str] = ca
     (archive / f"{local:%Y-%m-%d}-{edition['moment']}.json").write_text(
         json.dumps(edition, ensure_ascii=False, indent=1), encoding="utf-8")
     write_archive_index(archive)
+    return edition
+
+
+def load_previous(out_dir: Path) -> dict | None:
+    """Dernière édition publiée, avec le nom de son fichier d'archive."""
+    path = out_dir / "edition.json"
+    try:
+        edition = json.loads(path.read_text(encoding="utf-8"))
+        local = datetime.fromisoformat(edition["genere_le"])
+    except (OSError, KeyError, ValueError, json.JSONDecodeError):
+        return None
+    edition["_fichier"] = f"archive/{local:%Y-%m-%d}-{edition.get('moment', 'matin')}.json"
     return edition
 
 

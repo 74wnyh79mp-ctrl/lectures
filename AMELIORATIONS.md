@@ -16,7 +16,13 @@ Liste tenue au fil de l'eau, à traiter en une seule séance après une semaine 
 - **Lecture à deux niveaux : pouvoir toucher un événement pour en savoir plus.** Une fiche détaillée avec le contexte global (origines de l'affaire, enjeux, chronologie). À trancher : contexte rédigé à l'avance chaque matin pour tous les événements (coût fixe, un peu plus élevé), ou seulement pour les deux ou trois plus importants. Pas d'explication « à la demande » au clic : ça exposerait la clé API sur un site public.
 - **Naviguer entre les jours.** En haut de la page, la date de l'édition affichée, avec des flèches ou un sélecteur pour revoir les éditions précédentes. Les éditions sont déjà archivées dans `docs/archive/` ; il manque un index de ces archives et le sélecteur dans la page. Aucun coût supplémentaire.
 
-## Validé pour la prochaine mise à jour : nouvelle ligne éditoriale
+## Faites (25 novembre 2026)
+
+- Nouvelle ligne éditoriale (ci-dessous), sans nombre fixe d'événements, avec « Pourquoi c'est important ».
+- Rubriques thématiques Défense, Achats, Tech et IA, qui complètent le socle sans le répéter ; bouton « + » pour choisir ses rubriques.
+- Suivi d'un jour à l'autre : les articles déjà utilisés sont écartés, un sujet qui avance devient une « Suite », un sujet sans nouveauté disparaît.
+
+## Ligne éditoriale en vigueur
 
 **« Les faits qui comptent, et qui aident à comprendre le monde. »**
 
@@ -38,8 +44,9 @@ Pistes pour mieux juger l'importance, à évaluer :
 
 ## Idées en attente (à discuter en fin de semaine)
 
-- **Articles de la veille dans l'édition du jour.** Aujourd'hui, l'appli prend tous les articles des 24 dernières heures : une édition de 6 h 30 reprend donc les articles publiés la veille depuis 6 h 30, et les articles sans date sont gardés. Pistes : ne prendre que ce qui est paru depuis l'édition précédente ; ou garder un sujet de la veille seulement s'il y a du nouveau.
-- **Suivi des sujets d'un jour à l'autre (facultatif).** Repérer qu'un événement était déjà dans l'édition précédente et l'afficher comme « Suite » avec seulement ce qui a changé, au lieu de le répéter. À décider : utile ou superflu ?
+- **Suivi au-delà de la veille.** Aujourd'hui, la comparaison se fait seulement avec l'édition précédente : un sujet qui revient après plusieurs jours est traité comme nouveau.
+- **Nom et devise** : ils disent ce que fait l'appli, pas ce qu'elle évite (retour d'Alexis : « ce n'est pas que les bonnes nouvelles ? »).
+- **Personnalisation** : socle commun obligatoire + rubriques au choix (fait sur ce téléphone) ; rubriques sur mesure plus tard éventuellement.
 
 ## Positionnement à formaliser
 
