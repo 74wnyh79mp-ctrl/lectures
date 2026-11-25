@@ -59,6 +59,11 @@
           "site": "https://www.lejdd.fr/"
         },
         {
+          "source": "Franc-Tireur",
+          "profil": "hebdomadaire, centre, laïque, opposé aux extrêmes",
+          "site": "https://www.franc-tireur.fr/"
+        },
+        {
           "source": "Ouest-France",
           "profil": "quotidien régional, modéré",
           "site": "https://www.ouest-france.fr/"
