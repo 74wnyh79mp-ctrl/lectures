@@ -156,16 +156,26 @@ def call_claude(system: str, user: str) -> str:
     client = anthropic.Anthropic()
     # max_tokens est un plafond : seuls les mots réellement écrits sont facturés.
     # Un plafond trop bas coupe la réponse en plein milieu (panne du 25 novembre).
-    with client.messages.stream(
-        model=MODEL,
-        max_tokens=16000,
-        system=system,
-        messages=[{"role": "user", "content": user}],
-    ) as stream:
-        response = stream.get_final_message()
+    request = dict(model=MODEL, max_tokens=16000, system=system,
+                   messages=[{"role": "user", "content": user}])
+    # Sonnet 5.5 « réfléchit » par défaut avant de répondre, et cette réflexion est
+    # facturée et compte dans max_tokens (panne du 25 novembre : 16 000 jetons pour
+    # 5 événements). Résumer des titres n'en a pas besoin : on la coupe, avec un
+    # effort moyen. Si l'API refuse ces réglages, on réessaie sans eux.
+    sober = {"thinking": {"type": "between_tools"}, "output_config": {"effort": "medium"}}
+    try:
+        with client.messages.stream(**request, extra_body=sober) as stream:
+            response = stream.get_final_message()
+    except anthropic.BadRequestError as exc:
+        print(f"Réglages refusés par l'API ({exc}), nouvel essai avec les réglages par défaut.")
+        with client.messages.stream(**request) as stream:
+            response = stream.get_final_message()
     usage = getattr(response, "usage", None)
     print(f"Réponse de Claude : arrêt « {response.stop_reason} », "
           f"{getattr(usage, 'input_tokens', '?')} jetons lus, {getattr(usage, 'output_tokens', '?')} écrits")
+    thinking = sum(1 for block in response.content if block.type in ("thinking", "redacted_thinking"))
+    if thinking:
+        print(f"Attention : {thinking} bloc(s) de réflexion dans la réponse.")
     return "".join(block.text for block in response.content if block.type == "text")
 
 
