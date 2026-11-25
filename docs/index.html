@@ -33,6 +33,7 @@
   --accent: #8fb8dd; --soft: #22262a; --note: #25231b; --note-ink: #d9cfa8; color-scheme: dark;
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0; background: var(--bg); color: var(--ink);
@@ -55,7 +56,13 @@ a { color: var(--accent); }
 .brand-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .brand { margin: 0; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em; }
 .motto { margin: 2px 0 0; color: var(--muted); font-size: 0.9rem; }
-.numero { margin: 0; color: var(--muted); font-size: 0.8rem; }
+.numero { margin: 0; color: var(--muted); font-size: 0.8rem; display: flex; justify-content: space-between; gap: 10px; }
+.link-btn { background: none; border: 0; padding: 0; color: var(--accent); font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+.about { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.about h2 { margin: 0; font-size: 1rem; }
+.about p { margin: 0; font-size: 0.93rem; }
+.about ul { margin: 0; padding-left: 18px; font-size: 0.93rem; display: flex; flex-direction: column; gap: 4px; }
+.about .btn { align-self: flex-start; }
 .datebar { display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: center; }
 .datebar .date {
   position: relative; text-align: center; font-size: 0.92rem; font-weight: 500;
@@ -142,7 +149,18 @@ a { color: var(--accent); }
       <div class="date"><span id="date-label">Chargement…</span><select id="date-select" aria-label="Choisir une édition"></select></div>
       <button type="button" class="btn" id="next" aria-label="Édition suivante" disabled>›</button>
     </div>
-    <p class="numero" id="numero"></p>
+    <p class="numero"><span id="numero"></span><button type="button" class="link-btn" id="about-open">Le principe</button></p>
+    <section class="about" id="about" hidden>
+      <h2>Le principe</h2>
+      <p>Le Relevé n'est pas une appli de bonnes nouvelles. Il donne toute l'actualité importante, bonne ou mauvaise, mais sans le bruit qui la rend épuisante.</p>
+      <ul>
+        <li><b>Des faits, pas d'opinions</b> : ni éditos, ni tribunes, ni débats.</li>
+        <li><b>Une édition finie</b> : chaque matin, une douzaine d'événements, puis c'est terminé. Pas de flux sans fin, pas d'alertes.</li>
+        <li><b>Plusieurs journaux par événement</b> : pour voir comment chacun raconte le même fait.</li>
+        <li><b>Un ton posé</b> : pas de titres choc, et ce qui n'est pas encore sûr est signalé.</li>
+      </ul>
+      <button type="button" class="btn" id="about-close">Compris</button>
+    </section>
   </header>
 
   <nav class="toolbar" id="toolbar">
@@ -174,6 +192,21 @@ themeBtn.addEventListener("click", () => {
 const mq = window.matchMedia("(prefers-color-scheme: dark)");
 if (mq.addEventListener) mq.addEventListener("change", syncTheme);
 syncTheme();
+
+// ---------- « Le principe » : affiché à la première visite ----------
+const about = document.getElementById("about");
+function setAbout(open) {
+  about.hidden = !open;
+  document.getElementById("about-open").textContent = open ? "Masquer" : "Le principe";
+}
+let aboutSeen = false;
+try { aboutSeen = localStorage.getItem("releve-principe-vu") === "1"; } catch (e) {}
+setAbout(!aboutSeen);
+document.getElementById("about-open").addEventListener("click", () => setAbout(about.hidden));
+document.getElementById("about-close").addEventListener("click", () => {
+  setAbout(false);
+  try { localStorage.setItem("releve-principe-vu", "1"); } catch (e) {}
+});
 
 // ---------- Outils ----------
 let editions = [], position = 0, edition = null, readSet = new Set();
