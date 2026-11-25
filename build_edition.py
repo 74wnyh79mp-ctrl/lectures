@@ -104,6 +104,10 @@ def fetch_category(category: dict, now: datetime, since: datetime | None = None,
     report: list[dict] = []
     seen_links: set[str] = set()
     per_feed = int(category.get("max_per_feed", MAX_PER_FEED))
+    if category.get("window_hours"):
+        # Les sites spécialisés publient peu : fenêtre plus longue. Les articles
+        # déjà utilisés la veille restent écartés grâce à skip_links.
+        since = now - timedelta(hours=int(category["window_hours"]))
     for feed in category["feeds"]:
         url = feed.get("url") or (discover_feed(feed["site"]) if feed.get("site") else None)
         if not url:
@@ -166,16 +170,17 @@ Ta tâche :
    a. il aura encore de l'importance dans un mois (loi votée, décision de justice qui fait date, tournant dans un conflit, décision économique majeure) ;
    b. il concerne beaucoup de gens, en France ou dans le monde (économie, emploi, santé publique, climat, énergie, libertés) ;
    c. il fait avancer un grand sujet en cours (guerres, budget, élections, relations entre grandes puissances, transition énergétique…).
-   Écarte, même s'ils sont très repris : les faits divers sans conséquence nationale ou internationale (prises d'otages, accidents, crimes isolés), les petites phrases et polémiques politiques sans décision, la tactique électorale, les « réactions » sans fait nouveau, les affaires individuelles sans portée générale, le sport et les célébrités sauf événement exceptionnel, les contenus promotionnels, les tests de produits et tout article d'opinion.
+   Écarte, même s'ils sont très repris : les faits divers sans conséquence nationale ou internationale (prises d'otages, accidents, crimes isolés), les petites phrases et polémiques politiques sans décision, la tactique électorale, les « réactions » sans fait nouveau, les affaires individuelles sans portée générale, les variations de cours de Bourse d'une entreprise sauf effondrement exceptionnel, le sport et les célébrités sauf événement exceptionnel, les contenus promotionnels, les tests de produits et tout article d'opinion.
    Il n'y a pas de nombre à atteindre : un jour calme donne une édition courte, et c'est voulu. Ne remplis jamais. Plafond : {max_events} événements par rubrique.
 3. Ranger chaque événement dans une seule rubrique :
    - les rubriques du socle (France, International) reçoivent l'essentiel de l'actualité : « france » pour ce qui se passe en France ou concerne d'abord la vie politique, économique ou sociale française, « international » pour le reste ;
-   - les rubriques thématiques complètent le socle sans le répéter : elles reçoivent les faits importants pour leur domaine qui ne sont pas assez généraux pour le socle (un contrat d'armement, un programme militaire, une réforme des marchés publics, une tension sur une matière première, un nouveau modèle d'IA, une décision de régulation du numérique…). Un événement majeur reste dans le socle, même s'il touche un thème.
+   - les rubriques thématiques complètent le socle sans le répéter : elles reçoivent les faits importants pour leur domaine qui ne sont pas assez généraux pour le socle (un contrat d'armement, un programme militaire, une réforme des marchés publics, une tension sur une matière première, un nouveau modèle d'IA, une décision de régulation du numérique…). Un événement majeur reste dans le socle, même s'il touche un thème. Un même événement n'apparaît jamais dans deux rubriques : s'il est déjà dans le socle, ne le répète pas dans une rubrique thématique, même sous un autre angle.
    Pour une rubrique thématique, l'importance se juge à l'échelle de son domaine, avec les mêmes exclusions.
 4. Suivi d'un jour à l'autre. Tu reçois aussi les événements de l'édition précédente (identifiants « prev-… »). Pour chaque événement du jour :
    - s'il ne figurait pas dans l'édition précédente, traite-le normalement ("suite_de": null) ;
    - s'il y figurait et que les articles du jour apportent un fait nouveau (vote, décision, nouveau bilan, nouvelle étape), traite-le comme une suite : "suite_de" = l'identifiant « prev-… », un titre qui annonce le fait nouveau, un "essentiel" limité à ce qui a changé, et "deja_su" = une phrase qui rappelle ce qu'on savait déjà ;
    - s'il y figurait et que les articles du jour ne font que le répéter, sans fait nouveau, ne le reprends pas.
+   Une suite doit passer les mêmes tests d'importance et les mêmes exclusions qu'un événement nouveau : la suite d'un fait divers reste un fait divers, ne la reprends pas.
 5. Classer les événements de chaque rubrique par portée réelle, du plus important au moins important, et non par nombre d'articles.
 6. Pour chaque événement, rédiger en français :
    - "categorie" : l'identifiant de la rubrique.
