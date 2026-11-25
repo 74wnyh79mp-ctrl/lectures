@@ -154,20 +154,55 @@ def call_claude(system: str, user: str) -> str:
     import anthropic  # importé ici pour que les tests puissent s'en passer
 
     client = anthropic.Anthropic()
-    response = client.messages.create(
+    # max_tokens est un plafond : seuls les mots réellement écrits sont facturés.
+    # Un plafond trop bas coupe la réponse en plein milieu (panne du 25 novembre).
+    with client.messages.stream(
         model=MODEL,
-        max_tokens=8000,
+        max_tokens=16000,
         system=system,
         messages=[{"role": "user", "content": user}],
-    )
+    ) as stream:
+        response = stream.get_final_message()
+    usage = getattr(response, "usage", None)
+    print(f"Réponse de Claude : arrêt « {response.stop_reason} », "
+          f"{getattr(usage, 'input_tokens', '?')} jetons lus, {getattr(usage, 'output_tokens', '?')} écrits")
     return "".join(block.text for block in response.content if block.type == "text")
 
 
 def parse_json(text: str) -> dict:
     start, end = text.find("{"), text.rfind("}")
-    if start == -1 or end == -1:
-        raise ValueError("aucun objet JSON dans la réponse")
-    return json.loads(text[start : end + 1])
+    if start != -1 and end != -1:
+        try:
+            return json.loads(text[start : end + 1])
+        except json.JSONDecodeError:
+            pass
+    # Réponse coupée : on récupère les événements complets.
+    events = salvage_events(text)
+    if events:
+        print(f"Réponse incomplète : {len(events)} événements complets récupérés.")
+        return {"events": events}
+    raise ValueError("aucun événement exploitable dans la réponse")
+
+
+def salvage_events(text: str) -> list[dict]:
+    """Lit un à un les événements d'une liste JSON interrompue."""
+    pos = text.find("[", text.find('"events"'))
+    if pos == -1:
+        return []
+    decoder = json.JSONDecoder()
+    events, pos = [], pos + 1
+    while True:
+        while pos < len(text) and text[pos] in " \n\r\t,":
+            pos += 1
+        if pos >= len(text) or text[pos] != "{":
+            break
+        try:
+            obj, pos = decoder.raw_decode(text, pos)
+        except json.JSONDecodeError:
+            break
+        if isinstance(obj, dict):
+            events.append(obj)
+    return events
 
 
 def write_edition(categories: list[dict], items: list[dict],
@@ -193,7 +228,7 @@ def write_edition(categories: list[dict], items: list[dict],
             break
         except (ValueError, json.JSONDecodeError) as exc:
             last_error = exc
-            print(f"Réponse illisible ({len(answer)} caractères), début : {answer[:300]!r}")
+            print(f"Réponse illisible ({len(answer)} caractères), fin : {answer[-200:]!r}")
     else:
         raise RuntimeError(f"réponse illisible : {last_error}")
 
