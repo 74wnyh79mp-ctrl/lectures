@@ -1,5 +1,5 @@
 {
-  "_note": "Flux RSS par rubrique. « url » : adresse exacte du flux. « site » : page d'accueil, dont le flux est trouvé automatiquement. Un flux qui ne répond pas est ignoré ; le bilan s'affiche en bas de chaque rubrique. « window_hours » : ancienneté maximale des articles pour une rubrique (les sites spécialisés publient peu).",
+  "_note": "Un seul flux par journal, de sensibilités variées : c'est ce qui fait la double lecture. « url » : adresse du flux ; « site » : page d'accueil, utilisée pour trouver le flux si l'adresse manque ou ne répond pas. « profil » : sensibilité du journal, transmise à l'IA pour choisir des angles contrastés. « actif »: false met une rubrique en pause.",
   "categories": [
     {
       "id": "france",
@@ -8,22 +8,58 @@
       "feeds": [
         {
           "source": "Le Monde",
+          "profil": "quotidien de référence, centre gauche",
           "url": "https://www.lemonde.fr/rss/une.xml"
         },
         {
-          "source": "franceinfo",
-          "url": "https://www.francetvinfo.fr/titres.rss"
-        },
-        {
           "source": "Le Figaro",
+          "profil": "quotidien, droite libérale et conservatrice",
           "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml"
         },
         {
           "source": "Libération",
+          "profil": "quotidien, gauche",
           "url": "https://www.liberation.fr/arc/outboundfeeds/rss-all/?outputType=xml"
         },
         {
+          "source": "L'Humanité",
+          "profil": "quotidien, gauche communiste",
+          "site": "https://www.humanite.fr/"
+        },
+        {
+          "source": "La Croix",
+          "profil": "quotidien d'inspiration catholique, centre",
+          "site": "https://www.la-croix.com/"
+        },
+        {
+          "source": "Les Échos",
+          "profil": "quotidien économique, libéral",
+          "url": "https://syndication.lesechos.fr/rss/rss_une.xml",
+          "site": "https://www.lesechos.fr/"
+        },
+        {
+          "source": "L'Opinion",
+          "profil": "quotidien libéral, centre droit",
+          "site": "https://www.lopinion.fr/"
+        },
+        {
+          "source": "Valeurs actuelles",
+          "profil": "hebdomadaire, droite conservatrice",
+          "site": "https://www.valeursactuelles.com/"
+        },
+        {
+          "source": "Ouest-France",
+          "profil": "quotidien régional, modéré",
+          "site": "https://www.ouest-france.fr/"
+        },
+        {
+          "source": "franceinfo",
+          "profil": "service public d'information",
+          "url": "https://www.francetvinfo.fr/titres.rss"
+        },
+        {
           "source": "20 Minutes",
+          "profil": "quotidien gratuit, généraliste",
           "url": "https://www.20minutes.fr/feeds/rss-une.xml"
         }
       ]
@@ -34,28 +70,49 @@
       "type": "socle",
       "feeds": [
         {
-          "source": "Le Monde International",
-          "url": "https://www.lemonde.fr/international/rss_full.xml"
-        },
-        {
           "source": "France 24",
+          "profil": "chaîne publique française d'info internationale",
           "url": "https://www.france24.com/fr/rss"
         },
         {
           "source": "RFI",
+          "profil": "radio publique française internationale",
           "url": "https://www.rfi.fr/fr/rss"
         },
         {
           "source": "Courrier international",
+          "profil": "sélection traduite de la presse étrangère",
           "site": "https://www.courrierinternational.com/"
         },
         {
-          "source": "Le Figaro International",
-          "url": "https://www.lefigaro.fr/rss/figaro_international.xml"
+          "source": "BBC News",
+          "profil": "service public britannique",
+          "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
         },
         {
-          "source": "BBC News",
-          "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+          "source": "The Guardian",
+          "profil": "quotidien britannique, centre gauche",
+          "url": "https://www.theguardian.com/world/rss"
+        },
+        {
+          "source": "The New York Times",
+          "profil": "quotidien américain, centre gauche",
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+        },
+        {
+          "source": "Al Jazeera",
+          "profil": "chaîne qatarie, regard du monde arabe et du Sud",
+          "url": "https://www.aljazeera.com/xml/rss/all.xml"
+        },
+        {
+          "source": "Deutsche Welle",
+          "profil": "média public allemand",
+          "site": "https://www.dw.com/fr/"
+        },
+        {
+          "source": "Le Temps",
+          "profil": "quotidien suisse, libéral",
+          "site": "https://www.letemps.ch/"
         }
       ]
     },
@@ -91,7 +148,8 @@
           "url": "https://breakingdefense.com/feed/"
         }
       ],
-      "window_hours": 72
+      "window_hours": 72,
+      "actif": false
     },
     {
       "id": "achats",
@@ -121,7 +179,8 @@
           "site": "https://www.usinenouvelle.com/"
         }
       ],
-      "window_hours": 72
+      "window_hours": 72,
+      "actif": false
     },
     {
       "id": "tech",
@@ -159,7 +218,8 @@
           "url": "https://www.theverge.com/rss/index.xml"
         }
       ],
-      "window_hours": 72
+      "window_hours": 72,
+      "actif": false
     }
   ]
 }
