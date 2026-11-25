@@ -1,161 +1,225 @@
 {
- "genere_le": "2026-11-25T09:31+01:00",
+ "genere_le": "2026-11-25T14:50+01:00",
  "date": "mercredi 25 novembre 2026",
- "moment": "matin",
+ "moment": "soir",
  "modele": "claude-sonnet-5-5",
  "categories": [
   {
    "id": "france",
    "label": "France",
+   "type": "socle",
    "events": [
     {
-     "titre": "Procureur présent au siège du RN : Darmanin saisit l'Inspection générale de la justice",
-     "theme": "Justice",
-     "essentiel": "Le garde des Sceaux Gérald Darmanin a annoncé, mercredi sur France Inter, avoir saisi l'Inspection générale de la justice. Il vise la présence du procureur adjoint Christian de Rocquigny lors d'une perquisition au siège du Rassemblement national, début novembre. Le ministre a pointé un « défaut de loyauté » du magistrat, qui n'a pas posé de jour de congé pour rendre visite à une personnalité politique, le député Jean-Paul Garraud.",
-     "pour_situer": null,
-     "incertain": null,
-     "contexte": "L'Inspection générale de la justice est le corps de contrôle rattaché au ministère de la Justice. Elle enquête notamment sur le fonctionnement des juridictions et le comportement des magistrats.",
-     "lectures": [
-      {
-       "source": "Le Monde",
-       "titre_original": "Procureur présent au siège du RN lors d’une perquisition : Gérald Darmanin annonce saisir l’inspection générale de la justice « pour faire toute la lumière »",
-       "lien": "https://www.lemonde.fr/societe/article/2026/11/25/procureur-present-lors-d-une-perquisition-au-rn-gerald-darmanin-annonce-saisir-l-inspection-generale-de-la-justice-pour-faire-toute-la-lumiere_6815060_3224.html",
-       "publie": "2026-11-25T07:55:20+00:00",
-       "angle": "Le Monde cite le « défaut de loyauté » et précise le motif : le magistrat n'a pas posé de congé pour rendre visite à un député."
-      },
-      {
-       "source": "franceinfo",
-       "titre_original": "Présence d'un procureur au siège du RN : Gérald Darmanin annonce avoir saisi l'Inspection générale de la justice",
-       "lien": "https://www.franceinfo.fr/politique/front-national/presence-d-un-procureur-au-siege-du-rn-gerald-darmanin-annonce-avoir-saisi-l-inspection-generale-de-la-justice_8298930.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-25T08:19:18+00:00",
-       "angle": "franceinfo met l'accent sur l'interview de France Inter et sur la perquisition au siège du RN début novembre."
-      },
-      {
-       "source": "Le Figaro",
-       "titre_original": "Procureur présent au siège du RN : Gérald Darmanin saisit l’Inspection générale de la Justice",
-       "lien": "https://www.lefigaro.fr/actualite-france/procureur-present-au-siege-du-rn-gerald-darmanin-saisit-l-inspection-generale-de-la-justice-20261125",
-       "publie": "2026-11-25T08:21:21+00:00",
-       "angle": "Le Figaro nomme le procureur adjoint et rappelle le cadre de l'information judiciaire (violation du secret professionnel)."
-      },
-      {
-       "source": "Libération",
-       "titre_original": "Procureur au siège du RN : Gérald Darmanin saisit l’Inspection générale de la Justice",
-       "lien": "https://www.liberation.fr/politique/procureur-au-siege-du-rn-gerald-darmanin-saisit-linspection-generale-de-la-justice-20261125_EU7CDIDAZFD6PPTT3ORXBFSSZQ/",
-       "publie": "2026-11-25T07:54:42+00:00",
-       "angle": "Libération reprend les propos du ministre sur le défaut de loyauté, dans un traitement proche de celui des autres titres."
-      }
-     ]
-    },
-    {
-     "titre": "Salon des maires : les prétendants à l'Élysée courent les parrainages",
-     "theme": "Présidentielle",
-     "essentiel": "Au congrès des maires, à Paris, les candidats à la présidentielle de 2027 cherchent les signatures d'élus nécessaires à leur candidature. Le président de l'Association des maires de France est élu mercredi, avec David Lisnard, candidat à la présidentielle, et Philippe Laurent en lice. Édouard Philippe a proposé un débat à David Lisnard et réclame de sa part une clarification vis-à-vis du RN. Valérie Pécresse appelle la droite et le centre à s'entendre sur un mode de départage.",
-     "pour_situer": "L'élection à la tête de l'AMF a lieu à cinq mois de la présidentielle, ce qui donne au congrès une dimension très politique.",
-     "incertain": null,
-     "contexte": "Les candidats à la présidentielle doivent recueillir 500 parrainages d'élus pour se présenter. Les maires en fournissent la majorité.",
-     "lectures": [
-      {
-       "source": "Le Monde",
-       "titre_original": "EN DIRECT, congrès des maires 2026 : suivez l’élection du président de l’Association des maires de France, à cinq mois de l’élection présidentielle",
-       "lien": "https://www.lemonde.fr/politique/live/2026/11/25/en-direct-congres-des-maires-2026-suivez-l-election-du-president-de-l-association-des-maires-de-france-a-cinq-mois-de-l-election-presidentielle_6815062_823448.html",
-       "publie": "2026-11-25T07:57:12+00:00",
-       "angle": "Le Monde suit en direct l'élection à la présidence de l'AMF et souligne la tonalité politique du congrès."
-      },
-      {
-       "source": "franceinfo",
-       "titre_original": "\"L'opportunité de rencontrer des élus de toute la France\" : au salon des maires, les prétendants à l’Elysée font la chasse aux signatures",
-       "lien": "https://www.franceinfo.fr/elections/reportage-l-opportunite-de-rencontrer-des-elus-de-toute-la-france-au-salon-des-maires-les-pretendants-a-l-elysee-font-la-chasse-aux-signatures_8296235.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-25T04:52:25+00:00",
-       "angle": "franceinfo décrit le salon comme un passage obligé pour les candidats en quête de parrainages."
-      },
-      {
-       "source": "Le Figaro",
-       "titre_original": "« Il est déjà élu à l’applaudimètre »: dans les coulisses du match entre David Lisnard et Philippe Laurent pour la présidence de l’AMF",
-       "lien": "https://www.lefigaro.fr/elections/presidentielles/il-est-deja-elu-a-l-applaudimetre-dans-les-coulisses-du-match-entre-david-lisnard-et-philippe-laurent-pour-la-presidence-de-l-amf-20261124",
-       "publie": "2026-11-24T18:52:21+00:00",
-       "angle": "Le Figaro raconte le duel Lisnard-Laurent devant 3 000 personnes, avec un résultat attendu avant 14h."
-      }
-     ]
-    },
-    {
-     "titre": "BYD en négociations pour racheter l'usine Ineos de Hambach, en Moselle",
-     "theme": "Industrie",
-     "essentiel": "Le constructeur chinois BYD a annoncé mardi l'ouverture de négociations exclusives pour acquérir l'usine du britannique Ineos Automotive à Hambach, en Moselle. Le ministre de l'Industrie salue l'annonce et estime que plus de 1 000 personnes vont avoir un avenir.",
-     "pour_situer": "Selon France 24, ce serait la première usine de BYD en Europe de l'Ouest.",
-     "incertain": "Il s'agit de négociations exclusives : l'acquisition n'est pas encore conclue.",
-     "contexte": "BYD est un grand constructeur chinois de véhicules électriques.",
-     "lectures": [
-      {
-       "source": "franceinfo",
-       "titre_original": "\"Plus de 1 000 personnes vont avoir un avenir\" : le ministre de l'Industrie salue l'annonce du constructeur automobile chinois BYD, qui envisage de racheter une usine en Moselle",
-       "lien": "https://www.franceinfo.fr/economie/industrie/video-le-ministre-de-l-industrie-salue-la-capacite-de-la-france-a-attirer-des-investisseurs-alors-que-le-chinois-byd-envisage-de-racheter-une-usine-en-moselle_8298897.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-25T07:28:56+00:00",
-       "angle": "franceinfo met en avant la réaction du ministre de l'Industrie et les emplois concernés."
-      },
-      {
-       "source": "France 24",
-       "titre_original": "Le constructeur automobile chinois BYD choisit la France pour sa première usine d'Europe de l'Ouest",
-       "lien": "https://www.france24.com/fr/%C3%A9co-tech/20261124-le-constructeur-automobile-chinois-byd-choisit-la-france-pour-sa-premi%C3%A8re-usine-d-europe-de-l-ouest",
-       "publie": "2026-11-24T22:29:26+00:00",
-       "angle": "France 24 présente le choix de la France comme une première pour BYD en Europe de l'Ouest."
-      }
-     ]
-    },
-    {
-     "titre": "Stellantis supprime l'équipe de nuit de l'usine de Sochaux, 500 emplois concernés",
-     "theme": "Économie",
-     "essentiel": "Stellantis supprime l'équipe de nuit de son usine de Sochaux dès janvier, ce qui concerne 500 emplois. C'est la deuxième annonce sociale d'ampleur de la semaine pour le groupe, qui avait annoncé lundi retirer ses écuries de la compétition automobile.",
-     "pour_situer": null,
-     "incertain": null,
-     "contexte": "Stellantis est le groupe automobile qui réunit notamment les marques Peugeot, Citroën et Opel.",
-     "lectures": [
-      {
-       "source": "Le Monde",
-       "titre_original": "Stellantis supprime l’équipe de nuit de l’usine de Sochaux, 500 emplois concernés dès janvier",
-       "lien": "https://www.lemonde.fr/economie-francaise/article/2026/11/25/stellantis-supprime-l-equipe-de-nuit-de-l-usine-de-sochaux-500-emplois-concernes-des-janvier_6815054_1656968.html",
-       "publie": "2026-11-25T06:42:51+00:00",
-       "angle": "Le Monde relie cette annonce à celle du retrait des compétitions automobiles faite lundi."
-      }
-     ]
-    },
-    {
-     "titre": "Nahel Merzouk : le policier auteur du tir sera jugé pour meurtre",
-     "theme": "Justice",
-     "essentiel": "La cour d'appel de Versailles a ordonné mardi que Florian Menesplier soit jugé devant la cour d'assises des Hauts-de-Seine pour la mort de Nahel Merzouk en 2023. L'affaire a connu plusieurs rebondissements judiciaires.",
-     "pour_situer": null,
-     "incertain": null,
-     "contexte": "Nahel Merzouk, adolescent, a été tué par un tir de policier lors d'un contrôle routier à Nanterre en juin 2023, ce qui avait déclenché plusieurs nuits de violences urbaines en France.",
-     "lectures": [
-      {
-       "source": "franceinfo",
-       "titre_original": "Mort de Nahel Merzouk en 2023 : quatre questions après la décision de juger le policier auteur du tir pour meurtre",
-       "lien": "https://www.franceinfo.fr/faits-divers/adolescent-tue-par-un-policier-a-nanterre/mort-de-nahel-merzouk-en-2023-quatre-questions-apres-la-decision-de-juger-le-policier-auteur-du-tir-pour-meurtre_8297382.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-24T17:52:03+00:00",
-       "angle": "franceinfo répond en quatre questions à la suite de la décision de la cour d'appel."
-      }
-     ]
-    },
-    {
-     "titre": "Mobilisation étudiante et lycéenne : fermetures d'universités et rapport de l'inspection",
-     "theme": "Éducation",
-     "essentiel": "L'inspection générale de l'éducation nationale a remis mardi au ministre Édouard Geffray un rapport sur le mouvement lycéen, avec des recommandations pour sortir de la crise. Des universités sont fermées administrativement pour endiguer les blocus, dont celle de Lille, sur décision de son président. Seuls certains cours y sont maintenus, ce qui désoriente des étudiants de première année.",
+     "titre": "Budget 2027 : le Sénat s'oppose à la mise à contribution des retraités",
+     "theme": "Budget",
+     "pourquoi": "Le budget fixe les impôts et les dépenses de l'année et touche directement le revenu de millions de retraités.",
+     "suite": null,
+     "essentiel": "Au Sénat, une partie de la droite et du centre droit s'est jointe à la gauche et à l'extrême droite pour rejeter la mise à contribution des retraités. Ce vote est intervenu contre l'avis du gouvernement et de la commission des finances.",
      "pour_situer": null,
      "incertain": null,
      "contexte": null,
      "lectures": [
       {
        "source": "Le Monde",
-       "titre_original": "Mobilisation lycéenne : l’inspection générale de l’éducation nationale livre une première analyse du mouvement et formule des recommandations pour sortir de la crise",
-       "lien": "https://www.lemonde.fr/education/article/2026/11/25/mobilisation-lyceenne-l-inspection-generale-de-l-education-nationale-livre-une-premiere-analyse-du-mouvement-et-formule-des-recommandations-pour-sortir-de-la-crise_6815037_1473685.html",
-       "publie": "2026-11-25T04:45:07+00:00",
-       "angle": "Le Monde se concentre sur le rapport de l'inspection et ses recommandations après des semaines de confrontation politique."
+       "titre_original": "Budget 2027 : au Sénat, un vote inattendu sur la mise à contribution des retraités",
+       "lien": "https://www.lemonde.fr/politique/article/2026/11/25/budget-2027-au-senat-un-vote-inattendu-sur-la-mise-a-contribution-des-retraites_6815088_823448.html",
+       "publie": "2026-11-25T11:28:09+00:00",
+       "angle": "Le Monde souligne le caractère inattendu du vote, qui rassemble des camps opposés contre le gouvernement."
+      }
+     ]
+    },
+    {
+     "titre": "Apprentissage : la Cour des comptes alerte sur des fraudes et abus massifs",
+     "theme": "Finances publiques",
+     "pourquoi": "Des milliards d'euros d'argent public sont concernés, dans un dispositif central pour l'emploi des jeunes.",
+     "suite": null,
+     "essentiel": "La Cour des comptes estime que 10 à 20 % de l'argent public dépensé pour l'apprentissage sont exposés à des risques de fraude et d'abus. Ils portent notamment sur un nombre excessif d'apprentis par maître d'apprentissage. Libération chiffre cela à 1,5 à 3 milliards d'euros par an et cite une « faille systémique ».",
+     "pour_situer": null,
+     "incertain": "Il s'agit d'estimations de risques et d'abus, et non de montants de fraude établis.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "La Cour des comptes alerte sur des risques de fraude et d'abus dans les formations en apprentissage",
+       "lien": "https://www.franceinfo.fr/economie/emploi/la-cour-des-comptes-epingle-des-fraudes-et-des-abus-dans-les-formations-en-apprentissage_8299608.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T12:37:03+00:00",
+       "angle": "franceinfo présente la part de dépenses exposée (10 à 20 %) et la nature des risques."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Fraude à l’apprentissage : entre 1,5 et 3 milliards d’euros d’argent public détournés chaque année",
+       "lien": "https://www.liberation.fr/economie/fraude-a-lapprentissage-entre-15-et-3-milliards-deuros-dargent-public-detournes-chaque-annee-20261125_CO3OHJGT25C7FDWLBANTGX2SFQ/",
+       "publie": "2026-11-25T11:43:03+00:00",
+       "angle": "Libération avance une fourchette en milliards d'euros par an et reprend le terme de « faille systémique »."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Apprentissage : La Cour des comptes dénonce des milliards d’euros de fraudes et d’abus",
+       "lien": "https://www.20minutes.fr/societe/4265639-20261125-apprentissage-cour-comptes-denonce-milliards-euros-fraudes-abus?at_medium=display&at_campaign=149",
+       "publie": "2026-11-25T11:46:40+00:00",
+       "angle": "20 Minutes lie les abus à l'ouverture du robinet des subventions publiques."
+      }
+     ]
+    },
+    {
+     "titre": "Mobilisation lycéenne : le rapport de l'inspection dresse le profil des élèves",
+     "theme": "Éducation",
+     "pourquoi": "Le blocage d'établissements affecte des milliers d'élèves et nourrit un débat politique en cours.",
+     "suite": {
+      "titre": "Mobilisation étudiante et lycéenne : fermetures d'universités et rapport de l'inspection",
+      "deja_su": "Un rapport de l'inspection générale de l'éducation nationale a été remis mardi au ministre sur le mouvement lycéen, et des universités ont fermé pour endiguer les blocus.",
+      "edition": "archive/2026-11-25-matin.json",
+      "ancre": "france-6",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "Le rapport de l'inspection générale décrit des élèves mobilisés plutôt politisés et favorisés. Par ailleurs, un document interne du gouvernement recense une dizaine de cas d'enseignants accusés de complicité dans des violences en marge des mobilisations. Seuls quelques-uns aboutissent à des poursuites judiciaires.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "20 Minutes",
+       "titre_original": "Blocage des lycées : Politisés et favorisés, un rapport de l’Education nationale dresse le profil des élèves mobilisés",
+       "lien": "https://www.20minutes.fr/societe/4265580-20261125-blocage-lycees-politises-favorises-rapport-education-nationale-dresse-profil-eleves-mobilises?at_medium=display&at_campaign=149",
+       "publie": "2026-11-25T10:27:27+00:00",
+       "angle": "20 Minutes met en avant le profil sociologique des élèves mobilisés."
       },
       {
        "source": "franceinfo",
-       "titre_original": "\"Les visios, ce n'est pas viable\" : le désarroi d'étudiants en première année après la fermeture administrative de l'université de Lille",
-       "lien": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/les-visios-ce-n-est-pas-viable-le-desarroi-d-etudiants-en-premiere-annee-apres-la-fermeture-administrative-de-l-universite-de-lille_8298867.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-25T08:11:47+00:00",
-       "angle": "franceinfo donne la parole à des étudiants de Lille pour qui les cours en visio ne sont pas viables."
+       "titre_original": "Très peu d'enseignants accusés de complicité dans des violences en marge des mobilisations lycéennes, révèle un document interne du gouvernement",
+       "lien": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/tres-peu-d-enseignants-accuses-de-complicite-dans-des-violences-en-marge-des-mobilisations-lyceennes-revele-un-document-interne-du-gouvernement_8299731.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T13:43:26+00:00",
+       "angle": "franceinfo s'appuie sur un document interne pour montrer le faible nombre d'enseignants poursuivis."
+      }
+     ]
+    },
+    {
+     "titre": "Soupçons de fuites vers le RN : le préfet Moutouh démis, Pierre Ory nommé",
+     "theme": "Justice",
+     "pourquoi": "Une enquête sur de possibles fuites d'informations judiciaires touche l'État et un parti d'opposition majeur.",
+     "suite": {
+      "titre": "Procureur présent au siège du RN : Darmanin saisit l'Inspection générale de la justice",
+      "deja_su": "Le garde des Sceaux avait saisi l'Inspection générale de la justice après la présence du procureur adjoint de Paris au siège du RN.",
+      "edition": "archive/2026-11-25-matin.json",
+      "ancre": "france-1",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "Le préfet du Loiret et de la région Centre-Val de Loire, Hugues Moutouh, a été officiellement démis de ses fonctions et remplacé par Pierre Ory. Une enquête vise de possibles fuites d'éléments judiciaires concernant le Rassemblement national. Il avait lui-même demandé à être relevé. Il affirme être victime d'une opération politique. La présence du procureur adjoint Christian de Rocquigny au siège du RN suscite par ailleurs l'émoi dans la magistrature.",
+     "pour_situer": null,
+     "incertain": "Les soupçons de fuites ne sont pas établis, et le préfet les conteste.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "Enquête sur des soupçons de fuites vers le RN : Hugues Moutouh a été officiellement démis de ses fonctions et remplacé par le préfet Pierre Ory",
+       "lien": "https://www.franceinfo.fr/politique/front-national/enquete-sur-des-soupcons-de-fuites-vers-le-rn-hugues-moutouh-a-ete-officiellement-demis-de-ses-fonctions-remplace-par-le-prefet-pierre-ory_8299428.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T11:36:04+00:00",
+       "angle": "franceinfo s'en tient au remplacement officiel et à l'ouverture de l'enquête."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "« Ils ne me font pas peur! » : le préfet démissionnaire Hugues Moutouh veut rendre coup pour coup",
+       "lien": "https://www.lefigaro.fr/actualite-france/ils-ne-me-font-pas-peur-le-prefet-demissionnaire-hugues-moutouh-veut-rendre-coup-pour-coup-20261125",
+       "publie": "2026-11-25T11:24:59+00:00",
+       "angle": "Le Figaro donne la parole au préfet, qui y voit une opération politique."
+      },
+      {
+       "source": "Le Monde",
+       "titre_original": "La présence d’un procureur au siège du RN suscite l’émoi au sein de la magistrature et du ministère de la justice",
+       "lien": "https://www.lemonde.fr/societe/article/2026/11/25/la-presence-d-un-procureur-au-siege-du-rn-suscite-l-emoi-au-sein-de-la-magistrature_6815091_3224.html",
+       "publie": "2026-11-25T11:39:02+00:00",
+       "angle": "Le Monde se concentre sur l'émoi suscité par la présence du procureur adjoint, qui parle d'un rendez-vous « amical »."
+      }
+     ]
+    },
+    {
+     "titre": "David Lisnard réélu à la tête de l'Association des maires de France",
+     "theme": "Politique",
+     "pourquoi": "L'AMF est un interlocuteur majeur de l'État, et son président est aussi candidat à la présidentielle de 2027.",
+     "suite": {
+      "titre": "Salon des maires : les prétendants à l'Élysée courent les parrainages",
+      "deja_su": "Le congrès des maires se tenait à Paris, avec une élection à la présidence de l'AMF, alors que les prétendants à 2027 cherchaient des parrainages.",
+      "edition": "archive/2026-11-25-matin.json",
+      "ancre": "france-2",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "David Lisnard, maire de Cannes et candidat à la présidentielle, a été reconduit pour un troisième mandat à la tête de l'AMF, avec 72,06 % des voix selon Le Figaro. Il affrontait Philippe Laurent, élu UDI de Sceaux. Ses détracteurs dénoncent un mélange des genres entre ses fonctions et sa candidature.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "David Lisnard largement réélu pour un troisième mandat à la tête des maires de France",
+       "lien": "https://www.lefigaro.fr/elections/presidentielles/david-lisnard-reelu-pour-un-troisieme-mandat-a-la-tete-des-maires-de-france-20261125",
+       "publie": "2026-11-25T12:54:57+00:00",
+       "angle": "Le Figaro donne le score de 72,06 % des voix."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Présidentielle 2027 : David Lisnard, largement réélu à la tête de l'AMF, se félicite d'une \"défaite des ingérences\"",
+       "lien": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-lance-dans-la-course-a-l-elysee-david-lisnard-fixe-dans-la-journee-sur-sa-reelection-a-la-tete-de-l-association-des-maires-de-france_8298708.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T13:25:08+00:00",
+       "angle": "franceinfo rapporte que Lisnard parle d'une « défaite des ingérences »."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "En campagne pour l’Elysée, David Lisnard réélu à la tête des maires de France",
+       "lien": "https://www.liberation.fr/politique/elections/en-campagne-pour-lelysee-david-lisnard-reelu-a-la-tete-des-maires-de-france-20261125_SGKQEG6H3FHHPMAGJUG2OU2I2Q/",
+       "publie": "2026-11-25T12:37:49+00:00",
+       "angle": "Libération relève les critiques sur le mélange des genres avec la campagne."
+      }
+     ]
+    },
+    {
+     "titre": "Présidentielle 2027 : le gouvernement maintient le second tour au 2 mai",
+     "theme": "Élections",
+     "pourquoi": "La date d'un scrutin majeur, contestée par des candidats, conditionne l'organisation de la campagne.",
+     "suite": null,
+     "essentiel": "Le porte-parole du gouvernement a défendu la tenue du second tour le 2 mai, en invoquant la participation des Français et les vacances scolaires. Plusieurs candidats et le président du Sénat plaident pour un scrutin avancé d'une semaine, par crainte de débordements lors du défilé du 1er-Mai. Le gouvernement s'engage à ce que cette journée se passe dans les meilleures conditions possibles.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Présidentielle 2027 : le gouvernement défend la tenue du deuxième tour du scrutin le 2 mai, et s’engage à ce que le 1er-Mai se passe « dans les meilleures conditions possibles »",
+       "lien": "https://www.lemonde.fr/politique/article/2026/11/25/presidentielle-2027-le-gouvernement-defend-la-tenue-du-deuxieme-tour-du-scrutin-le-2-mai-et-s-engage-a-ce-que-le-1er-mai-se-passe-dans-les-meilleures-conditions-possibles_6815102_823448.html",
+       "publie": "2026-11-25T13:40:17+00:00",
+       "angle": "Le Monde rapporte l'argument de la participation et l'engagement sur le 1er-Mai."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "Présidentielle 2027 : le 2 mai reste la meilleure option pour le second tour, estime le porte-parole du gouvernement",
+       "lien": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-le-2-mai-reste-la-meilleure-option-pour-le-second-tour-estime-le-porte-parole-du-gouvernement-20261125",
+       "publie": "2026-11-25T13:13:13+00:00",
+       "angle": "Le Figaro met en avant les candidats et le président du Sénat qui demandent d'avancer le scrutin."
+      }
+     ]
+    },
+    {
+     "titre": "Eurostar : grève imprévue, trafic fortement perturbé entre Paris et Londres",
+     "theme": "Transports",
+     "pourquoi": "Une liaison internationale très fréquentée est touchée, ce qui affecte de nombreux voyageurs.",
+     "suite": null,
+     "essentiel": "Une grève imprévue a perturbé fortement le trafic des trains Eurostar entre Londres et Paris, dans les deux sens, avec plusieurs trains annulés. Les syndicats dénoncent notamment une dégradation des conditions de travail et une stagnation des salaires.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "Le trafic des trains Eurostar entre Londres et Paris fortement perturbé dans les deux sens en raison d'une \"grève imprévue\"",
+       "lien": "https://www.franceinfo.fr/economie/transports/le-trafic-des-trains-eurostar-entre-londres-et-paris-fortement-perturbe-en-raison-d-une-greve-imprevue_8299053.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-25T12:05:46+00:00",
+       "angle": "franceinfo détaille les revendications syndicales sur les conditions de travail et les salaires."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Eurostar : Plusieurs trains annulés entre Paris et Londres ce mercredi en raison d’une grève surprise",
+       "lien": "https://www.20minutes.fr/monde/royaume-uni/4265593-20261125-eurostar-plusieurs-trains-annules-entre-paris-londres-mercredi-raison-greve-surprise?at_medium=display&at_campaign=149",
+       "publie": "2026-11-25T10:14:33+00:00",
+       "angle": "20 Minutes insiste sur les conséquences pour les usagers et le caractère surprise de la grève."
       }
      ]
     }
@@ -163,19 +227,19 @@
    "sources": [
     {
      "source": "Le Monde",
-     "articles": 14
+     "articles": 10
     },
     {
      "source": "franceinfo",
-     "articles": 15
+     "articles": 12
     },
     {
      "source": "Le Figaro",
-     "articles": 13
+     "articles": 10
     },
     {
      "source": "Libération",
-     "articles": 15
+     "articles": 12
     },
     {
      "source": "20 Minutes",
@@ -186,197 +250,198 @@
   {
    "id": "international",
    "label": "International",
+   "type": "socle",
    "events": [
     {
-     "titre": "Prise d'otages dans un supermarché de Carthagène : tous les otages libérés",
-     "theme": "Colombie",
-     "essentiel": "Des clients d'un supermarché de Carthagène, en Colombie, étaient retenus depuis mardi matin par des hommes qui ont tenté en vain de s'emparer d'un fourgon blindé. Les forces de l'ordre ont donné l'assaut dans la nuit et tous les otages ont été libérés, selon le président. Un assaillant a été tué. Le président Abelardo de la Espriella a affirmé qu'il s'agissait de criminalité de droit commun, écartant toute implication des groupes armés.",
+     "titre": "Washington annonce de nouveaux droits de douane contre l'UE, la Chine et le Mexique",
+     "theme": "Commerce",
+     "pourquoi": "Des surtaxes américaines visant les principaux partenaires commerciaux des États-Unis pèsent sur les échanges mondiaux et les prix.",
+     "suite": null,
+     "essentiel": "L'administration Trump a annoncé de nouveaux droits de douane contre ses principaux partenaires commerciaux, dont l'Union européenne, la Chine et le Mexique. Ces surtaxes s'ajoutent à celles annoncées fin juillet, au prétexte de lutter contre le travail forcé. Elles concluent une enquête lancée en mars par le représentant américain au commerce.",
      "pour_situer": null,
-     "incertain": "Le nombre exact d'otages n'est pas précisé : franceinfo évoque une vingtaine de personnes libérées.",
-     "contexte": null,
+     "incertain": null,
+     "contexte": "Depuis 2025, les États-Unis ont fait des droits de douane un instrument central de leur politique commerciale, ce qui a entraîné négociations et ripostes avec leurs partenaires.",
      "lectures": [
       {
        "source": "Le Monde",
-       "titre_original": "En Colombie, le président et l’armée à Carthagène pour une prise d’otages en cours dans un supermarché",
-       "lien": "https://www.lemonde.fr/international/article/2026/11/25/en-colombie-le-president-et-l-armee-a-carthagenes-pour-une-prise-d-otages-en-cours-dans-un-supermarche_6814815_3211.html",
-       "publie": "2026-11-25T04:52:04+00:00",
-       "angle": "Le Monde rend compte de l'événement alors qu'il est en cours, avec le président et l'armée sur place."
+       "titre_original": "L’administration Trump annonce de nouveaux droits de douane contre ses principaux partenaires commerciaux, dont l’UE, la Chine et le Mexique",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/25/l-administration-trump-annonce-de-nouveaux-droits-de-douane-contre-ses-principaux-partenaires-commerciaux-dont-l-ue-la-chine-et-le-mexique_6815099_3210.html",
+       "publie": "2026-11-25T13:30:53+00:00",
+       "angle": "Le Monde rappelle que ces surtaxes s'ajoutent à celles de fin juillet et clôturent l'enquête de mars."
       },
       {
-       "source": "franceinfo",
-       "titre_original": "Une vingtaine de personnes libérées après une prise d'otages en Colombie",
-       "lien": "https://www.franceinfo.fr/monde/ameriques/une-vingtaine-de-personnes-retenues-dans-une-prise-d-otages-en-colombie-le-president-sur-place_8298720.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-25T07:56:24+00:00",
-       "angle": "franceinfo parle d'une vingtaine de personnes libérées et reprend la thèse de la criminalité ordinaire."
+       "source": "Le Figaro",
+       "titre_original": "Union européenne, Chine, Mexique… Washington annonce de nouveaux droits de douane contre ses principaux partenaires commerciaux",
+       "lien": "https://www.lefigaro.fr/conjoncture/union-europeenne-chine-mexique-washington-annonce-de-nouveaux-droits-de-douane-contre-ses-principaux-partenaires-commerciaux-20261125",
+       "publie": "2026-11-25T13:47:56+00:00",
+       "angle": "Le Figaro reprend le même cadrage factuel, en listant l'Union européenne, la Chine et le Mexique dès le titre."
       },
       {
-       "source": "Libération",
-       "titre_original": "Prises d’otage en Colombie : les forces de l’ordre donnent l’assaut, tous les détenus libérés",
-       "lien": "https://www.liberation.fr/international/amerique/prise-dotages-en-colombie-apres-un-braquage-rate-10-personnes-sur-30-liberees-le-president-dextreme-droite-sur-place-20261125_OZZ3PUOE3BAV3AELKK2ERPWK7A/",
-       "publie": "2026-11-25T07:12:13+00:00",
-       "angle": "Libération détaille le déroulement : tentative de vol d'un fourgon blindé puis assaut dans la nuit."
-      },
-      {
-       "source": "France 24",
-       "titre_original": "🔴 Prise d'otages en Colombie : un assaillant tué, \"tous les otages libérés\", annonce le président",
-       "lien": "https://www.france24.com/fr/am%C3%A9riques/20261124-colombie-prise-otages-cours-ville-touristique-carthag%C3%A8ne",
-       "publie": "2026-11-25T07:19:32+00:00",
-       "angle": "France 24 met en avant le bilan annoncé par le président : un assaillant tué, tous les otages libérés."
+       "source": "Courrier international",
+       "titre_original": "L’administration Trump prépare de nouveaux droits de douane",
+       "lien": "https://www.courrierinternational.com/article/guerre-commerciale-l-administration-trump-prepare-de-nouveaux-droits-de-douane_290308",
+       "publie": "2026-11-25T11:21:45+00:00",
+       "angle": "Courrier international insiste sur la Chine et les pays dont la politique industrielle est jugée néfaste."
       }
      ]
     },
     {
-     "titre": "Yémen : frappes saoudiennes sur Hodeïda, les Houthis menacent de représailles",
-     "theme": "Yémen",
-     "essentiel": "La coalition dirigée par l'Arabie saoudite a confirmé mercredi avoir visé des capacités opérationnelles dans le port de Hodeïda, au Yémen. Les Houthis menacent de représailles. Le siège du fonds souverain saoudien a été touché mardi pour la deuxième fois en cinq jours, et Riyad se prépare à une guerre plus intense. Autour d'Aden, capitale provisoire du Yémen, la bataille s'annonce.",
-     "pour_situer": null,
-     "incertain": null,
-     "contexte": "Le Yémen est en guerre depuis plus de dix ans entre le gouvernement, soutenu par une coalition emmenée par l'Arabie saoudite, et les houthis, qui contrôlent Sanaa et une partie de l'ouest du pays.",
-     "lectures": [
-      {
-       "source": "Le Monde International",
-       "titre_original": "Arabie saoudite : après la frappe sur le siège de son fonds souverain, Riyad se prépare à une guerre plus intense au Yémen",
-       "lien": "https://www.lemonde.fr/international/article/2026/11/25/arabie-saoudite-apres-la-frappe-sur-le-siege-de-son-fonds-souverain-riyad-se-prepare-a-une-guerre-plus-intense-au-yemen_6815066_3210.html",
-       "publie": "2026-11-25T08:15:08+00:00",
-       "angle": "Le Monde insiste sur la frappe contre le siège du fonds souverain saoudien et la préparation de Riyad à une guerre plus intense."
-      },
-      {
-       "source": "France 24",
-       "titre_original": "Au Yémen, l'Arabie saoudite attaque Hodeïda, les Houthis menacent de représailles",
-       "lien": "https://www.france24.com/fr/moyen-orient/20261125-yemen-arabie-saoudite-attaque-hodeida-houthis-menacent-represailles",
-       "publie": "2026-11-25T03:22:42+00:00",
-       "angle": "France 24 rapporte la confirmation par la coalition de la frappe sur Hodeïda et les menaces houthies."
-      },
-      {
-       "source": "franceinfo",
-       "titre_original": "Au Yémen, la bataille d'Aden va commencer : en jeu le contrôle du pays et de la mer Rouge",
-       "lien": "https://www.franceinfo.fr/replay-radio/d-un-monde-a-l-autre/au-yemen-la-bataille-d-aden-va-commencer-en-jeu-le-controle-du-pays-et-de-la-mer-rouge_8277113.html#xtor=RSS-3-[lestitres]",
-       "publie": "2026-11-25T07:25:55+00:00",
-       "angle": "franceinfo présente la bataille d'Aden à venir et son enjeu : le contrôle du pays et de la mer Rouge."
-      }
-     ]
-    },
-    {
-     "titre": "Guerre en Ukraine : attaques de drones et navires russes visés en Libye et dans la Baltique",
+     "titre": "Guerre en Ukraine : des données fuitées chiffrent les pertes russes à 500 000-700 000 morts",
      "theme": "Ukraine",
-     "essentiel": "La Russie a attaqué l'Ukraine avec 112 drones dans la nuit de mardi à mercredi, dont 88 abattus ou neutralisés selon l'armée ukrainienne. Deux militaires libyens sont morts des suites des attaques, revendiquées par l'Ukraine, contre des navires russes à Benghazi le 22 novembre. Deux navires russes ont aussi été frappés à dix jours d'intervalle dans le golfe de Finlande. Les brouillages GPS en Baltique ont triplé le nombre d'avions perturbés en une semaine.",
+     "pourquoi": "Le coût humain de la guerre pour la Russie est un enjeu central du conflit.",
+     "suite": {
+      "titre": "Guerre en Ukraine : attaques de drones et navires russes visés en Libye et dans la Baltique",
+      "deja_su": "La Russie avait attaqué l'Ukraine avec 112 drones, et l'Ukraine avait revendiqué des frappes contre des navires russes en Libye et dans la Baltique.",
+      "edition": "archive/2026-11-25-matin.json",
+      "ancre": "international-3",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "Des données fuitées de l'agence russe de statistiques, analysées par Meduza et Mediazona, estiment à plus de 700 000 les militaires russes morts ou disparus depuis février 2022. La BBC évoque près de 500 000 morts. Le Kremlin refuse de commenter ces chiffres.",
+     "pour_situer": null,
+     "incertain": "Les estimations divergent (environ 500 000 selon la BBC, plus de 700 000 selon les médias indépendants) et ne sont pas confirmées officiellement.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "France 24",
+       "titre_original": "L'agence russe de statistiques piratée : 700 000 soldats russes morts ou disparus",
+       "lien": "https://www.france24.com/fr/vid%C3%A9o/20261125-l-agence-russe-de-statistiques-pirat%C3%A9e-700-000-soldats-russes-morts-ou-disparus",
+       "publie": "2026-11-25T11:35:58+00:00",
+       "angle": "France 24 reprend l'estimation de plus de 700 000 morts ou disparus."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "Russia's own figures show it has lost nearly 500,000 people in Ukraine war",
+       "lien": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-25T12:21:49+00:00",
+       "angle": "La BBC retient près de 500 000 morts et parle d'un changement des schémas de mortalité en Russie."
+      },
+      {
+       "source": "Le Monde",
+       "titre_original": "EN DIRECT, guerre en Ukraine : le Kremlin refuse de commenter le bilan estimé de 500 000 à 700 000 soldats russes tués en Ukraine",
+       "lien": "https://www.lemonde.fr/international/live/2026/11/25/en-direct-guerre-en-ukraine-le-kremlin-refuse-de-commenter-le-bilan-estime-de-500-000-soldats-russes-tues-en-ukraine_6814183_3210.html",
+       "publie": "2026-11-25T12:48:05+00:00",
+       "angle": "Le Monde indique que le Kremlin renvoie au seul ministère de la Défense pour toute donnée sur les pertes."
+      }
+     ]
+    },
+    {
+     "titre": "Israël : la Knesset approuve en lecture préliminaire une commission d'enquête sur le 7-Octobre",
+     "theme": "Israël",
+     "pourquoi": "Le texte pourrait établir les responsabilités politiques de l'attaque du 7 octobre 2023.",
+     "suite": null,
+     "essentiel": "La Knesset a approuvé en lecture préliminaire, par 65 voix, un projet de loi créant une commission d'enquête sur le 7-Octobre. Il émane du parti du centriste Gadi Eisenkot, principal rival de Benyamin Nétanyahou. Le texte doit encore franchir d'autres étapes. Le vote intervient pendant des tractations pour former un gouvernement mené par Eisenkot.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "Israël : un projet de loi pour créer une commission d’enquête sur le 7 Octobre franchit un premier obstacle au Parlement",
+       "lien": "https://www.liberation.fr/international/moyen-orient/israel-un-projet-de-loi-pour-creer-une-commission-denquete-sur-le-7-octobre-franchit-un-premier-obstacle-au-parlement-20261125_L7L2HERAWBGPJJVYO3BWQ52ASU/",
+       "publie": "2026-11-25T13:48:01+00:00",
+       "angle": "Libération précise le score de 65 députés et la suite du parcours législatif."
+      },
+      {
+       "source": "Le Monde International",
+       "titre_original": "7-Octobre : en Israël, la Knesset approuve en lecture préliminaire la création d’une commission d’enquête",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/25/7-octobre-en-israel-la-knesset-approuve-en-lecture-preliminaire-la-creation-d-une-commission-d-enquete_6815104_3210.html",
+       "publie": "2026-11-25T13:46:34+00:00",
+       "angle": "Le Monde replace le vote dans la formation d'un gouvernement mené par Eisenkot."
+      }
+     ]
+    },
+    {
+     "titre": "Riyad : les Houthis revendiquent la frappe contre le quartier financier",
+     "theme": "Yémen",
+     "pourquoi": "Le conflit gagne le territoire saoudien et menace une région stratégique.",
+     "suite": {
+      "titre": "Yémen : frappes saoudiennes sur Hodeïda, les Houthis menacent de représailles",
+      "deja_su": "La coalition saoudienne avait confirmé des frappes sur Hodeïda et les Houthis menaçaient de représailles.",
+      "edition": "archive/2026-11-25-matin.json",
+      "ancre": "international-2",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "Les Houthis ont revendiqué la frappe de mardi contre la plus haute tour de Riyad, dans le quartier financier. Elle a fait 11 blessés. La tour avait déjà été ciblée récemment.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "France 24",
+       "titre_original": "Arabie Saoudite : les Houthis revendiquent l'attaque sur le quartier financier de Riyad",
+       "lien": "https://www.france24.com/fr/vid%C3%A9o/20261125-arabie-saoudite-les-houthis-revendiquent-l-attaque-sur-le-quartier-financier-de-riyad",
+       "publie": "2026-11-25T12:01:09+00:00",
+       "angle": "France 24 rapporte la revendication et le bilan de 11 blessés."
+      }
+     ]
+    },
+    {
+     "titre": "La RDC impose un nouvel embargo sur les exportations de cobalt",
+     "theme": "Matières premières",
+     "pourquoi": "La RDC est un producteur essentiel de cobalt, indispensable aux batteries.",
+     "suite": null,
+     "essentiel": "La République démocratique du Congo a de nouveau interdit l'exportation de cobalt, pour faire remonter des cours en baisse. La transformation du métal est presque entièrement contrôlée par la Chine. Un premier embargo avait été remplacé auparavant.",
      "pour_situer": null,
      "incertain": null,
      "contexte": null,
      "lectures": [
       {
        "source": "Le Monde International",
-       "titre_original": "EN DIRECT, guerre en Ukraine : les dernières informations",
-       "lien": "https://www.lemonde.fr/international/live/2026/11/25/en-direct-guerre-en-ukraine-deux-militaires-libyens-succombent-a-leurs-blessures-apres-les-frappes-revendiquees-par-kiev-contre-des-navires-russes-a-benghazi_6814183_3210.html",
-       "publie": "2026-11-25T05:27:46+00:00",
-       "angle": "Le Monde suit les dernières informations en direct, avec le bilan des drones russes de la nuit."
-      },
-      {
-       "source": "France 24",
-       "titre_original": "Ukraine en direct : deux militaires libyens tués dans les attaques de navires russes à Benghazi",
-       "lien": "https://www.france24.com/fr/europe/20261125-en-direct-ukraine-russie-libye-benghazi-union-europeenne-zelensky-poutine",
-       "publie": "2026-11-25T03:02:35+00:00",
-       "angle": "France 24 rapporte la mort de deux militaires libyens après les attaques de Benghazi."
-      },
-      {
-       "source": "RFI",
-       "titre_original": "Libye: deux militaires libyens morts des suites des attaques ukrainiennes contre des navires russes à Benghazi",
-       "lien": "https://www.rfi.fr/fr/afrique/20261125-libye-deux-militaires-libyens-morts-des-suites-des-attaques-ukrainiennes-contre-des-navires-russes-%C3%A0-benghazi",
-       "publie": "2026-11-25T03:41:28+00:00",
-       "angle": "RFI rapporte la même annonce de la mort des deux militaires libyens."
-      },
-      {
-       "source": "Le Figaro International",
-       "titre_original": "Attaques de drones, « flotte fantôme »… La mer Baltique, nouveau théâtre du conflit entre l’Ukraine et la Russie",
-       "lien": "https://www.lefigaro.fr/international/attaques-de-drones-flotte-fantome-la-mer-baltique-nouveau-theatre-du-conflit-entre-l-ukraine-et-la-russie-20261124",
-       "publie": "2026-11-24T20:31:45+00:00",
-       "angle": "Le Figaro s'intéresse à la Baltique, nouveau théâtre du conflit, et à l'embarras des pays riverains de l'Otan."
+       "titre_original": "La RDC impose un nouvel embargo sur les exportations de cobalt pour faire monter les cours",
+       "lien": "https://www.lemonde.fr/afrique/article/2026/11/25/la-rdc-impose-un-nouvel-embargo-sur-les-exportations-de-cobalt-pour-faire-monter-les-cours_6815079_3212.html",
+       "publie": "2026-11-25T10:00:09+00:00",
+       "angle": "Le Monde relie la mesure à la baisse des prix et au rôle de la Chine dans la transformation."
       }
      ]
     },
     {
-     "titre": "Huawei reconnu coupable de vol de secrets industriels aux États-Unis",
-     "theme": "Chine / États-Unis",
-     "essentiel": "Un jury fédéral de New York a reconnu mardi le groupe chinois Huawei coupable de fraude bancaire et de vol de secrets industriels, après un procès de onze semaines. Il l'a acquitté de l'accusation de racket. Huawei a vivement contesté le verdict.",
-     "pour_situer": "La procédure aura duré huit ans.",
-     "incertain": null,
-     "contexte": null,
-     "lectures": [
-      {
-       "source": "Libération",
-       "titre_original": "Le géant chinois Huawei reconnu coupable de vol de secrets industriels aux États-Unis",
-       "lien": "https://www.liberation.fr/international/amerique/le-geant-chinois-huawei-reconnu-coupable-de-vol-de-secrets-industriels-aux-etats-unis-20261125_B5HWM3HH5RFZFPQ4H6RLOO7WS4/",
-       "publie": "2026-11-25T08:21:58+00:00",
-       "angle": "Libération évoque aussi l'aide apportée à l'Iran pour censurer internet et la contestation de Huawei."
-      },
-      {
-       "source": "France 24",
-       "titre_original": "Le groupe chinois Huawei reconnu coupable de vol de secrets industriels aux États-Unis",
-       "lien": "https://www.france24.com/fr/%C3%A9co-tech/20261124-le-groupe-chinois-huawei-reconnu-coupable-de-vol-de-secret-industriel-aux-%C3%A9tats-unis",
-       "publie": "2026-11-24T23:01:24+00:00",
-       "angle": "France 24 cite la fraude bancaire et des tentatives de recrutement liées au vol de secrets."
-      },
-      {
-       "source": "BBC News",
-       "titre_original": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
-       "lien": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
-       "publie": "2026-11-25T02:59:27+00:00",
-       "angle": "La BBC souligne l'acquittement sur le chef de racket."
-      }
-     ]
-    },
-    {
-     "titre": "Nvidia : l'intervention de Trump pour le retour de Jensen Huang fait réagir le Congrès",
-     "theme": "Économie",
-     "essentiel": "Le retour à la tête de Nvidia de Jensen Huang, évincé le 12 novembre, suscite des réactions au Congrès, qui doit auditionner le dirigeant. L'action du groupe a reflué, de 7 % selon la BBC. Jensen Huang contredit l'implication de Donald Trump dans son retour. La ministre de la Justice américaine a esquivé les questions sur une enquête.",
-     "pour_situer": null,
-     "incertain": "Le rôle exact de Donald Trump dans le retour de Jensen Huang est contesté : le dirigeant le dément, des élus s'en indignent.",
-     "contexte": null,
-     "lectures": [
-      {
-       "source": "Libération",
-       "titre_original": "Tout juste réintégré à Nvidia, Jensen Huang contredit Trump et l’implication du président dans son retour",
-       "lien": "https://www.liberation.fr/international/amerique/tout-juste-reintegre-a-nvidia-jensen-huang-contredit-trump-et-limplication-du-president-dans-son-retour-20261125_APPQ6WKAMBCTFOW3H7FD4AUBC4/",
-       "publie": "2026-11-25T07:07:39+00:00",
-       "angle": "Libération insiste sur le démenti de Jensen Huang quant à l'implication de Trump et sur le recul de l'action."
-      },
-      {
-       "source": "Le Figaro International",
-       "titre_original": "Affaire Nvidia : l’intervention de Donald Trump en faveur de Jensen Huang tourne à l’affaire d’État",
-       "lien": "https://www.lefigaro.fr/secteur/high-tech/affaire-nvidia-l-intervention-de-donald-trump-en-faveur-de-jensen-huang-tourne-a-l-affaire-d-etat-20261124",
-       "publie": "2026-11-24T20:06:52+00:00",
-       "angle": "Le Figaro parle d'une affaire d'État et des réactions indignées au Congrès."
-      },
-      {
-       "source": "BBC News",
-       "titre_original": "US attorney general dodges questions about Nvidia investigation",
-       "lien": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
-       "publie": "2026-11-25T03:44:07+00:00",
-       "angle": "La BBC met en avant la chute de 7 % de l'action et les questions éludées sur une enquête."
-      }
-     ]
-    },
-    {
-     "titre": "Kilmar Ábrego García quitte les États-Unis pour l'Espagne",
+     "titre": "Midterms : les démocrates obtiennent 259 sièges à la Chambre",
      "theme": "États-Unis",
-     "essentiel": "Le Salvadorien Kilmar Ábrego García, habitant du Maryland marié à une Américaine, a pris mardi un vol pour l'Espagne. Expulsé vers le Salvador en mars 2025 puis ramené aux États-Unis, il avait été inculpé par la justice fédérale. Son cas était devenu un symbole du débat sur la politique d'immigration de Donald Trump.",
+     "pourquoi": "La composition du Congrès pèse sur la politique américaine des deux prochaines années.",
+     "suite": null,
+     "essentiel": "Deux candidats démocrates l'ont emporté en Caroline du Nord et dans le Tennessee. Selon Libération, la gauche américaine totalise 259 sièges à la Chambre, trois restant à pourvoir. C'est sa plus large majorité depuis 1992.",
      "pour_situer": null,
      "incertain": null,
      "contexte": null,
      "lectures": [
       {
-       "source": "Le Monde",
-       "titre_original": "Le Salvadorien Kilmar Abrego Garcia, symbole des expulsions sous Donald Trump, quitte les Etats-Unis",
-       "lien": "https://www.lemonde.fr/international/article/2026/11/25/le-salvadorien-kilmar-abrego-garcia-symbole-des-expulsions-sous-trump-quitte-les-etats-unis_6814999_3210.html",
-       "publie": "2026-11-25T03:25:48+00:00",
-       "angle": "Le Monde présente son parcours : expulsion, retour, puis inculpation fédérale."
-      },
+       "source": "Libération",
+       "titre_original": "Midterms : les démocrates obtiennent la plus large majorité depuis 1992 et l’arrivée de Bill Clinton au pouvoir",
+       "lien": "https://www.liberation.fr/international/amerique/midterms-les-democrates-obtiennent-la-plus-large-majorite-depuis-1992-et-larrivee-de-bill-clinton-au-pouvoir-20261123_HPQIG7ZFXZFODFJ2K5U2TVR6IA/",
+       "publie": "2026-11-25T11:41:20+00:00",
+       "angle": "Libération met l'accent sur le caractère historique de cette majorité."
+      }
+     ]
+    },
+    {
+     "titre": "Colombie : un assaut met fin à la prise d'otages de Carthagène",
+     "theme": "Colombie",
+     "pourquoi": "Les détails de l'opération précisent un événement déjà signalé.",
+     "suite": {
+      "titre": "Prise d'otages dans un supermarché de Carthagène : tous les otages libérés",
+      "deja_su": "Tous les otages du supermarché de Carthagène avaient été libérés après un assaut.",
+      "edition": "archive/2026-11-25-matin.json",
+      "ancre": "international-1",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "La police et l'armée ont donné l'assaut après environ 17 heures de détention. Un assaillant a été tué, et la BBC évoque une vingtaine d'otages libérés.",
+     "pour_situer": null,
+     "incertain": "Le nombre d'otages varie selon les sources : environ 20 pour la BBC, une trentaine pour France 24.",
+     "contexte": null,
+     "lectures": [
       {
        "source": "BBC News",
-       "titre_original": "Kilmar Ábrego García leaves US for Spain, ending Trump deportation battle",
-       "lien": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o?at_medium=RSS&at_campaign=rss",
-       "publie": "2026-11-25T06:36:00+00:00",
-       "angle": "La BBC y voit la fin d'une bataille et un point de crispation de la politique d'immigration de Trump."
+       "titre_original": "Colombian police storm supermarket to free 20 held hostage for 17 hours",
+       "lien": "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-25T11:45:16+00:00",
+       "angle": "La BBC parle d'une vingtaine d'otages et de 17 heures de détention."
+      },
+      {
+       "source": "France 24",
+       "titre_original": "Colombie : retour sur la prise d'otages dans un supermarché de Carthagène",
+       "lien": "https://www.france24.com/fr/vid%C3%A9o/20261125-colombie-retour-sur-la-prise-d-otages-dans-un-supermarch%C3%A9-de-carthag%C3%A8ne",
+       "publie": "2026-11-25T12:36:51+00:00",
+       "angle": "France 24 évoque une trentaine de personnes prises en otage."
       }
      ]
     }
@@ -384,23 +449,285 @@
    "sources": [
     {
      "source": "Le Monde International",
-     "articles": 14
+     "articles": 11
     },
     {
      "source": "France 24",
-     "articles": 15
+     "articles": 11
     },
     {
      "source": "RFI",
-     "articles": 14
+     "articles": 11
+    },
+    {
+     "source": "Courrier international",
+     "articles": 12
     },
     {
      "source": "Le Figaro International",
-     "articles": 9
+     "articles": 2
     },
     {
      "source": "BBC News",
-     "articles": 15
+     "articles": 8
+    }
+   ]
+  },
+  {
+   "id": "defense",
+   "label": "Défense",
+   "type": "theme",
+   "events": [
+    {
+     "titre": "Russie : un satellite pouvant emporter une arme nucléaire, risque jugé sérieux",
+     "theme": "Espace",
+     "pourquoi": "Une arme nucléaire en orbite aurait des conséquences majeures pour la sécurité internationale.",
+     "suite": null,
+     "essentiel": "Selon les éléments rapportés, la Russie pourrait envoyer d'ici deux mois dans l'espace un satellite capable d'emporter une arme nucléaire. Le risque est jugé sérieux. Washington identifie ce projet depuis longtemps, sans calendrier connu jusqu'ici.",
+     "pour_situer": null,
+     "incertain": "Les informations reposent sur des éléments rapportés, non confirmés officiellement.",
+     "contexte": "Le traité de l'espace de 1967 interdit de placer des armes nucléaires en orbite.",
+     "lectures": [
+      {
+       "source": "Le Monde International",
+       "titre_original": "Envoi d’une arme nucléaire russe dans l’espace d’ici deux mois : un risque jugé sérieux",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/25/envoi-d-une-arme-nucleaire-russe-dans-l-espace-d-ici-deux-mois-un-risque-juge-serieux_6815074_3210.html",
+       "publie": "2026-11-25T09:30:12+00:00",
+       "angle": "Le Monde souligne que le projet n'avait pas de calendrier connu."
+      }
+     ]
+    },
+    {
+     "titre": "Mali : près de 350 combattants russes tués en trois ans",
+     "theme": "Sahel",
+     "pourquoi": "Le bilan éclaire le coût de l'engagement russe en Afrique.",
+     "suite": null,
+     "essentiel": "Près de 350 combattants russes sont morts au Mali entre septembre 2023 et septembre 2026, selon des données de l'agence russe Rosstat obtenues par deux groupes de journalistes, révélées par The Guardian. Cela concerne l'Africa Corps.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "RFI",
+       "titre_original": "Mali: près de 350 combattants russes tués en trois ans, selon une enquête du «Guardian»",
+       "lien": "https://www.rfi.fr/fr/afrique/20261125-mali-pr%C3%A8s-de-350-combattants-russes-tu%C3%A9s-en-trois-ans-selon-une-enqu%C3%AAte-du-guardian",
+       "publie": "2026-11-25T03:12:40+00:00",
+       "angle": "RFI cite les données de Rosstat obtenues par deux groupes de journalistes."
+      },
+      {
+       "source": "Courrier international",
+       "titre_original": "Au Mali, les mercenaires russes de l’Africa Corps subissent de lourdes pertes",
+       "lien": "https://www.courrierinternational.com/article/le-chiffre-du-jour-au-mali-les-mercenaires-russes-de-l-africa-corps-subissent-de-lourdes-pertes_290305",
+       "publie": "2026-11-25T12:00:09+00:00",
+       "angle": "Courrier international parle de pertes lourdes de l'Africa Corps, d'après des chiffres exclusifs du Guardian."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Zone Militaire (Opex360)",
+     "articles": 1
+    },
+    {
+     "source": "Forces Operations Blog",
+     "articles": 0
+    },
+    {
+     "source": "Intelligence Online",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "IRIS",
+     "articles": 1
+    },
+    {
+     "source": "Jeunes IHEDN",
+     "articles": 0
+    },
+    {
+     "source": "Breaking Defense",
+     "articles": 1
+    }
+   ]
+  },
+  {
+   "id": "achats",
+   "label": "Achats",
+   "type": "theme",
+   "events": [
+    {
+     "titre": "RDC : le nouvel embargo sur le cobalt tend l'approvisionnement",
+     "theme": "Matières premières",
+     "pourquoi": "Les industriels des batteries dépendent d'un métal dont la transformation est contrôlée par la Chine.",
+     "suite": null,
+     "essentiel": "La RDC a de nouveau interdit les exportations de cobalt pour soutenir les cours. Un premier embargo avait été remplacé. La transformation du cobalt est presque entièrement contrôlée par la Chine.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde International",
+       "titre_original": "La RDC impose un nouvel embargo sur les exportations de cobalt pour faire monter les cours",
+       "lien": "https://www.lemonde.fr/afrique/article/2026/11/25/la-rdc-impose-un-nouvel-embargo-sur-les-exportations-de-cobalt-pour-faire-monter-les-cours_6815079_3212.html",
+       "publie": "2026-11-25T10:00:09+00:00",
+       "angle": "Le Monde insiste sur le contexte de baisse des prix et la domination chinoise."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Décision Achats",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "Le Monde des Achats",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "achatpublic.info",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "Supply Chain Magazine",
+     "articles": 6
+    },
+    {
+     "source": "L'Usine Nouvelle",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    }
+   ]
+  },
+  {
+   "id": "tech",
+   "label": "Tech et IA",
+   "type": "theme",
+   "events": [
+    {
+     "titre": "L'Union européenne présente un Quantum Act et un fonds de 50 milliards d'euros",
+     "theme": "Quantique",
+     "pourquoi": "Une stratégie industrielle européenne sur une technologie clé engage des investissements importants.",
+     "suite": null,
+     "essentiel": "La Commission a présenté le Quantum Act, un plan visant à accélérer le passage à l'usage industriel de l'informatique quantique. L'UE veut aussi créer un fonds souverain de 50 milliards d'euros pour investir dans le quantique et l'IA. L'Europe a une avance en recherche mais peine à la traduire commercialement.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde International",
+       "titre_original": "L’Union européenne veut se doter d’une stratégie industrielle sur l’informatique quantique",
+       "lien": "https://www.lemonde.fr/economie/article/2026/11/25/l-union-europeenne-veut-se-doter-d-une-strategie-industrielle-sur-l-informatique-quantique_6815075_3234.html",
+       "publie": "2026-11-25T09:39:30+00:00",
+       "angle": "Le Monde présente le Quantum Act comme un plan pour l'usage industriel."
+      }
+     ]
+    },
+    {
+     "titre": "Un système d'analyse de la CIA piraté, deux autres agences touchées",
+     "theme": "Cybersécurité",
+     "pourquoi": "Une intrusion dans le renseignement américain pose un enjeu majeur de sécurité.",
+     "suite": null,
+     "essentiel": "Selon le New York Times, un système d'analyse en sources ouvertes de la CIA et du bureau du directeur du renseignement national a été compromis. Deux autres agences américaines auraient été touchées. Numerama évoque un possible lien avec l'outil d'IA utilisé contre la Commission européenne.",
+     "pour_situer": null,
+     "incertain": "Le lien avec l'attaque contre la Commission européenne est présenté comme probable seulement.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Next",
+       "titre_original": "☕️ Un système de la CIA et du renseignement américain victime d’une intrusion",
+       "lien": "https://next.ink/brief-article/un-systeme-de-la-cia-et-du-renseignement-americain-victime-dune-intrusion/",
+       "publie": "2026-11-25T07:13:49+00:00",
+       "angle": "Next rapporte l'intrusion d'après les sources du New York Times."
+      },
+      {
+       "source": "Numerama",
+       "titre_original": "La menace s’étend : le système OSINT de la CIA piraté, probablement par le même outil IA que la Commission européenne",
+       "lien": "https://www.numerama.com/cyberguerre/2384431-la-menace-setend-le-systeme-osint-de-la-cia-pirate-probablement-par-le-meme-outil-ia-que-la-commission-europeenne.html",
+       "publie": "2026-11-25T12:10:00+00:00",
+       "angle": "Numerama ajoute les deux autres agences et l'hypothèse d'un outil IA commun."
+      }
+     ]
+    },
+    {
+     "titre": "Nvidia : l'action recule encore de plus de 5 %",
+     "theme": "Entreprises",
+     "pourquoi": "Le groupe est un acteur central des puces pour l'IA.",
+     "suite": {
+      "titre": "Nvidia : l'intervention de Trump pour le retour de Jensen Huang fait réagir le Congrès",
+      "deja_su": "Le retour de Jensen Huang à la tête de Nvidia faisait réagir le Congrès, et l'action du groupe reflux.",
+      "edition": "archive/2026-11-25-matin.json",
+      "ancre": "international-5",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "L'action Nvidia a perdu plus de 5 % mardi après son rebond de la veille, sur fond d'inquiétudes quant à sa trajectoire et à l'exposition de son patron.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "France 24",
+       "titre_original": "Scandale Nvidia : l'action de la multinationale replonge à Wall Street",
+       "lien": "https://www.france24.com/fr/vid%C3%A9o/20261125-scandale-nvidia-l-action-de-la-multinationale-replonge-%C3%A0-wall-street",
+       "publie": "2026-11-25T11:38:58+00:00",
+       "angle": "France 24 décrit un nouveau recul en Bourse."
+      }
+     ]
+    },
+    {
+     "titre": "Les IA ouvertes chinoises gagnent des parts auprès des entreprises",
+     "theme": "IA",
+     "pourquoi": "Cela modifie le rapport de force entre acteurs américains et chinois de l'IA.",
+     "suite": null,
+     "essentiel": "Moins coûteux que les outils américains et installables sur les serveurs des entreprises, les modèles ouverts de DeepSeek, Moonshot AI, Z.ai et Alibaba grignotent des parts de marché. Anthropic et OpenAI sont sous pression.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Le succès des IA chinoises auprès des entreprises met les leaders Anthropic et OpenAI sous pression",
+       "lien": "https://www.lemonde.fr/economie/article/2026/11/25/le-succes-des-ia-chinoises-aupres-des-entreprises-met-les-leaders-anthropic-et-openai-sous-pression_6815050_3234.html",
+       "publie": "2026-11-25T05:30:01+00:00",
+       "angle": "Le Monde souligne le coût et l'installation sur serveurs propres comme atouts."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Le Monde Pixels",
+     "articles": 2
+    },
+    {
+     "source": "Next",
+     "articles": 8
+    },
+    {
+     "source": "L'Usine Digitale",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "Numerama",
+     "articles": 8
+    },
+    {
+     "source": "MIT Technology Review",
+     "articles": 2
+    },
+    {
+     "source": "Ars Technica",
+     "articles": 1
+    },
+    {
+     "source": "The Verge",
+     "articles": 3
     }
    ]
   }
