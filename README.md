@@ -1,8 +1,8 @@
-# Le Relevé
+# Contrechamp
 
-Les faits du jour, recoupés par plusieurs journaux. Pas un journal : pas d'éditos ni d'opinions, juste une dose d'infos factuelles, sans le bruit.
+Les faits importants du jour, et comment chaque journal les raconte. Pour chaque événement, au moins deux journaux de sensibilités différentes, côte à côte. Pas d'éditos ni d'opinions, pas de flux sans fin : une édition par jour, puis c'est terminé.
 
-Chaque matin, un programme lit les flux RSS de plusieurs journaux, envoie les titres à Claude, qui regroupe les articles par événement et rédige l'essentiel, puis publie une édition finie en deux rubriques : **France** et **International**.
+Nom provisoire : à vérifier dans la base des marques de l'INPI avant toute ouverture au public.
 
 ## Comment ça marche
 

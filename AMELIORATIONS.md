@@ -1,4 +1,4 @@
-# Améliorations à faire
+# Améliorations à faire (Contrechamp, ex-Le Relevé)
 
 Liste tenue au fil de l'eau, à traiter en une seule séance après une semaine d'utilisation.
 
@@ -50,6 +50,8 @@ Pistes pour mieux juger l'importance, à évaluer :
 - **Nom et devise** : ils disent ce que fait l'appli, pas ce qu'elle évite (retour d'Alexis : « ce n'est pas que les bonnes nouvelles ? »).
 - **Mettre en avant les regards divergents** : pour chaque événement, une phrase « Ce qui diverge » et une étiquette « Regards divergents » sur les cartes où les journaux racontent le même fait très différemment ; montrer les angles dès la liste. Rester sur des angles différents, sans mise en scène de polémique.
 - **Comptes utilisateurs** (plus tard) : profil, connexion, rubriques et filtre synchronisés entre appareils.
+- **Couvrir le plus de journaux possible, avec un tri en deux étapes** (validé, après quelques jours avec les 22 sources actuelles) : 1) un tri gratuit, sans IA, regroupe les titres par sujet (mots en commun) et ne garde que les sujets couverts par plusieurs journaux ; 2) l'IA ne reçoit que ces groupes. Le coût dépend alors du nombre de sujets, plus du nombre de journaux.
+- **Concurrent à étudier : Ground News** (appli américaine qui compare la couverture d'un fait par plusieurs médias).
 - **Filtre d'importance** : une note de 1 à 3 par événement, et un réglage sur le téléphone. Plutôt deux niveaux (« L'essentiel » / « Complet ») que trois. Les événements secondaires en brèves (titre, une phrase, un lien) pour limiter le coût (+20 à 40 % estimés). « L'essentiel » par défaut.
 - **Rejeté : recherche libre avec les opinions des journaux** (retour de la mère de Raphael). Revient à refaire Google et contredit la ligne « pas d'opinions » ; le besoin réel (suivre un sujet) est couvert par les Suites et l'historique.
 - **Personnalisation** : socle commun obligatoire + rubriques au choix (fait sur ce téléphone) ; rubriques sur mesure plus tard éventuellement.
