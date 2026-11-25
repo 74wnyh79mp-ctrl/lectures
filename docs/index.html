@@ -448,7 +448,9 @@ function renderDetail(cat, i) {
     jb.appendChild(el("span", null, timeLabel(l.publie)));
     box.appendChild(jb);
     const b = el("div", "journal-body");
-    b.appendChild(el("p", "headline", "« " + l.titre_original + " »"));
+    const t = (l.titre_original || "").trim();
+    // Pas de guillemets en double quand le titre du journal est lui-même une citation.
+    b.appendChild(el("p", "headline", /^[«"“]/.test(t) ? t : "« " + t + " »"));
     if (l.angle) b.appendChild(el("p", "angle", l.angle));
     if (/^https:\/\//.test(l.lien || "")) {
       const a = el("a", null, "Lire l'article ↗");
