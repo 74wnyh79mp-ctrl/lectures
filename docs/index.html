@@ -63,6 +63,12 @@ a { color: var(--accent); }
 .about p { margin: 0; font-size: 0.93rem; }
 .about ul { margin: 0; padding-left: 18px; font-size: 0.93rem; display: flex; flex-direction: column; gap: 4px; }
 .about .btn { align-self: flex-start; }
+.plus { font-size: 1.1rem; font-weight: 600; padding: 8px 13px; }
+.picker { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+.picker h2 { margin: 0; font-size: 1rem; }
+.picker p { margin: 0; color: var(--muted); font-size: 0.88rem; }
+.pick { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); cursor: pointer; }
+.pick input { width: 22px; height: 22px; accent-color: var(--accent); }
 .datebar { display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: center; }
 .datebar .date {
   position: relative; text-align: center; font-size: 0.92rem; font-weight: 500;
@@ -173,6 +179,12 @@ a { color: var(--accent); }
     <div class="tabs" role="tablist" id="tabs"></div>
     <span class="progress" id="progress"></span>
   </nav>
+  <section class="picker" id="picker" hidden>
+    <h2>Mes rubriques</h2>
+    <p>France et International sont toujours affichés. Choisissez les rubriques à ajouter.</p>
+    <div id="picker-list"></div>
+    <button type="button" class="btn" id="picker-close">Terminé</button>
+  </section>
 
   <main id="view"><p class="state">Chargement de l'édition…</p></main>
 </div>
@@ -251,11 +263,46 @@ function render() {
 }
 window.addEventListener("hashchange", () => { if (edition) render(); });
 
+// ---------- Rubriques choisies (mémorisées sur ce téléphone) ----------
+function chosenThemes() {
+  try {
+    const v = JSON.parse(localStorage.getItem("releve-rubriques"));
+    if (Array.isArray(v)) return v;
+  } catch (e) {}
+  return null; // pas encore de choix : toutes les rubriques sont affichées
+}
+function isShown(c) {
+  if ((c.type || "socle") === "socle") return true;
+  const chosen = chosenThemes();
+  return chosen === null || chosen.includes(c.id);
+}
+function renderPicker() {
+  const list = document.getElementById("picker-list");
+  list.textContent = "";
+  edition.categories.filter(c => c.type === "theme").forEach(c => {
+    const row = el("label", "pick");
+    row.appendChild(el("span", null, c.label));
+    const box = el("input");
+    box.type = "checkbox";
+    box.id = "rubrique-" + c.id;
+    box.checked = isShown(c);
+    box.addEventListener("change", () => {
+      const ids = edition.categories.filter(t => t.type === "theme" && document.getElementById("rubrique-" + t.id).checked).map(t => t.id);
+      try { localStorage.setItem("releve-rubriques", JSON.stringify(ids)); } catch (e) {}
+      render();
+    });
+    row.appendChild(box);
+    list.appendChild(row);
+  });
+}
+document.getElementById("picker-close").addEventListener("click", () => { document.getElementById("picker").hidden = true; });
+
 function renderTabs(active) {
   const tabs = document.getElementById("tabs");
   tabs.textContent = "";
-  edition.categories.forEach((c, n) => {
-    const prev = edition.categories[n - 1];
+  const shown = edition.categories.filter(c => isShown(c) || c.id === active.id);
+  shown.forEach((c, n) => {
+    const prev = shown[n - 1];
     if (prev && (prev.type || "socle") === "socle" && c.type === "theme") tabs.appendChild(el("span", "sep"));
     const b = el("button", "btn", c.label + " (" + c.events.length + ")");
     b.type = "button";
@@ -265,10 +312,21 @@ function renderTabs(active) {
     tabs.appendChild(b);
     if (c.id === active.id) requestAnimationFrame(() => b.scrollIntoView({ block: "nearest", inline: "nearest" }));
   });
+  if (edition.categories.some(c => c.type === "theme")) {
+    const plus = el("button", "btn plus", "+");
+    plus.type = "button";
+    plus.setAttribute("aria-label", "Choisir mes rubriques");
+    plus.addEventListener("click", () => {
+      const picker = document.getElementById("picker");
+      picker.hidden = !picker.hidden;
+      if (!picker.hidden) renderPicker();
+    });
+    tabs.appendChild(plus);
+  }
 }
 function updateProgress() {
   const keys = [];
-  edition.categories.forEach(c => c.events.forEach((_, i) => keys.push(key(c.id, i))));
+  edition.categories.filter(isShown).forEach(c => c.events.forEach((_, i) => keys.push(key(c.id, i))));
   const n = keys.filter(k => readSet.has(k)).length;
   document.getElementById("progress").textContent = keys.length ? n + "/" + keys.length + " lus" : "";
   saveRead();

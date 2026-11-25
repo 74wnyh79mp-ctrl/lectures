@@ -270,7 +270,7 @@ def write_edition(categories: list[dict], items: list[dict],
         {k: item[k] for k in ("id", "source", "title", "summary", "published")}
         for item in items
     ]
-    user = f"Articles ({len(payload)}) :\n" + json.dumps(payload, ensure_ascii=False, indent=1)
+    user = f"Articles ({len(payload)}) :\n" + json.dumps(payload, ensure_ascii=False, separators=(",", ":"))  # compact : moins de jetons lus
 
     last_error: Exception | None = None
     for _ in range(2):  # un nouvel essai si le JSON est illisible
