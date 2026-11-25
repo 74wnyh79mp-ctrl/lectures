@@ -1,9 +1,10 @@
 {
-  "_note": "Liste des flux RSS par catégorie. Ces adresses sont à vérifier : remplace-les ou complète-les avec celles de ton Feedly. Un flux qui ne répond pas est simplement ignoré.",
+  "_note": "Flux RSS par rubrique. « url » : adresse exacte du flux. « site » : page d'accueil, dont le flux est trouvé automatiquement. Un flux qui ne répond pas est ignoré ; le bilan s'affiche en bas de chaque rubrique.",
   "categories": [
     {
       "id": "france",
       "label": "France",
+      "type": "socle",
       "feeds": [
         { "source": "Le Monde", "url": "https://www.lemonde.fr/rss/une.xml" },
         { "source": "franceinfo", "url": "https://www.francetvinfo.fr/titres.rss" },
@@ -15,12 +16,59 @@
     {
       "id": "international",
       "label": "International",
+      "type": "socle",
       "feeds": [
         { "source": "Le Monde International", "url": "https://www.lemonde.fr/international/rss_full.xml" },
         { "source": "France 24", "url": "https://www.france24.com/fr/rss" },
         { "source": "RFI", "url": "https://www.rfi.fr/fr/rss" },
+        { "source": "Courrier international", "site": "https://www.courrierinternational.com/" },
         { "source": "Le Figaro International", "url": "https://www.lefigaro.fr/rss/figaro_international.xml" },
         { "source": "BBC News", "url": "https://feeds.bbci.co.uk/news/world/rss.xml" }
+      ]
+    },
+    {
+      "id": "defense",
+      "label": "Défense",
+      "type": "theme",
+      "description": "armées, programmes et industrie de défense, renseignement, sécurité internationale",
+      "max_per_feed": 8,
+      "feeds": [
+        { "source": "Zone Militaire (Opex360)", "url": "https://www.opex360.com/feed/" },
+        { "source": "Forces Operations Blog", "url": "https://www.forcesoperations.com/feed/" },
+        { "source": "Intelligence Online", "site": "https://www.intelligenceonline.fr/" },
+        { "source": "IRIS", "url": "https://www.iris-france.org/feed/" },
+        { "source": "Jeunes IHEDN", "site": "https://jeunes-ihedn.org/" },
+        { "source": "Breaking Defense", "url": "https://breakingdefense.com/feed/" }
+      ]
+    },
+    {
+      "id": "achats",
+      "label": "Achats",
+      "type": "theme",
+      "description": "fonction achats, approvisionnement et chaînes logistiques, matières premières, marchés publics",
+      "max_per_feed": 8,
+      "feeds": [
+        { "source": "Décision Achats", "site": "https://www.decision-achats.fr/" },
+        { "source": "Le Monde des Achats", "site": "https://www.lemondedesachats.fr/" },
+        { "source": "achatpublic.info", "site": "https://www.achatpublic.info/" },
+        { "source": "Supply Chain Magazine", "site": "https://www.supplychainmagazine.fr/" },
+        { "source": "L'Usine Nouvelle", "site": "https://www.usinenouvelle.com/" }
+      ]
+    },
+    {
+      "id": "tech",
+      "label": "Tech et IA",
+      "type": "theme",
+      "description": "intelligence artificielle, grandes entreprises du numérique, régulation, cybersécurité, semi-conducteurs",
+      "max_per_feed": 8,
+      "feeds": [
+        { "source": "Le Monde Pixels", "url": "https://www.lemonde.fr/pixels/rss_full.xml" },
+        { "source": "Next", "url": "https://next.ink/feed/" },
+        { "source": "L'Usine Digitale", "site": "https://www.usine-digitale.fr/" },
+        { "source": "Numerama", "url": "https://www.numerama.com/feed/" },
+        { "source": "MIT Technology Review", "url": "https://www.technologyreview.com/feed/" },
+        { "source": "Ars Technica", "url": "https://feeds.arstechnica.com/arstechnica/index" },
+        { "source": "The Verge", "url": "https://www.theverge.com/rss/index.xml" }
       ]
     }
   ]

@@ -85,7 +85,13 @@ a { color: var(--accent); }
   padding-block: 8px; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;
   border-bottom: 1px solid var(--line);
 }
-.tabs { display: flex; gap: 8px; }
+.tabs {
+  display: flex; gap: 8px; align-items: center; flex: 1 1 100%; min-width: 0;
+  overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding: 1px;
+}
+.tabs::-webkit-scrollbar { display: none; }
+.tabs .sep { flex: 0 0 1px; align-self: stretch; background: var(--line); margin: 4px 2px; }
+.why { color: var(--accent); font-size: 0.95rem; font-weight: 500; }
 .progress { color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
 
 /* Cartes */
@@ -248,13 +254,16 @@ window.addEventListener("hashchange", () => { if (edition) render(); });
 function renderTabs(active) {
   const tabs = document.getElementById("tabs");
   tabs.textContent = "";
-  edition.categories.forEach(c => {
+  edition.categories.forEach((c, n) => {
+    const prev = edition.categories[n - 1];
+    if (prev && (prev.type || "socle") === "socle" && c.type === "theme") tabs.appendChild(el("span", "sep"));
     const b = el("button", "btn", c.label + " (" + c.events.length + ")");
     b.type = "button";
     b.setAttribute("role", "tab");
     b.setAttribute("aria-selected", c.id === active.id ? "true" : "false");
     b.addEventListener("click", () => { location.hash = c.id; });
     tabs.appendChild(b);
+    if (c.id === active.id) requestAnimationFrame(() => b.scrollIntoView({ block: "nearest", inline: "nearest" }));
   });
 }
 function updateProgress() {
@@ -332,6 +341,7 @@ function renderDetail(cat, i) {
   win.appendChild(bar);
   const body = el("div", "win-body");
   body.appendChild(el("h2", "detail-title", ev.titre));
+  if (ev.pourquoi) body.appendChild(el("p", "why", "Pourquoi c'est important : " + ev.pourquoi));
   body.appendChild(block("L'essentiel", ev.essentiel));
   if (ev.pour_situer) body.appendChild(block("Repère", ev.pour_situer, "box"));
   if (ev.incertain) body.appendChild(block("À confirmer", ev.incertain, "box warn"));
