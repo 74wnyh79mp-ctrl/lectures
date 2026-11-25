@@ -22,6 +22,8 @@ Liste tenue au fil de l'eau, à traiter en une seule séance après une semaine 
 - Rubriques thématiques Défense, Achats, Tech et IA, qui complètent le socle sans le répéter ; bouton « + » pour choisir ses rubriques.
 - Suivi d'un jour à l'autre : les articles déjà utilisés sont écartés, un sujet qui avance devient une « Suite », un sujet sans nouveauté disparaît.
 
+- Historique d'un sujet : depuis une « Suite », frise de toutes les étapes précédentes, tirée des éditions archivées (aucun coût d'IA). Idée née du retour de la mère de Raphael (« suivre un sujet qui m'intéresse »).
+
 ## Ligne éditoriale en vigueur
 
 **« Les faits qui comptent, et qui aident à comprendre le monde. »**
@@ -46,6 +48,8 @@ Pistes pour mieux juger l'importance, à évaluer :
 
 - **Suivi au-delà de la veille.** Aujourd'hui, la comparaison se fait seulement avec l'édition précédente : un sujet qui revient après plusieurs jours est traité comme nouveau.
 - **Nom et devise** : ils disent ce que fait l'appli, pas ce qu'elle évite (retour d'Alexis : « ce n'est pas que les bonnes nouvelles ? »).
+- **Filtre d'importance** : une note de 1 à 3 par événement, et un réglage sur le téléphone. Plutôt deux niveaux (« L'essentiel » / « Complet ») que trois. Les événements secondaires en brèves (titre, une phrase, un lien) pour limiter le coût (+20 à 40 % estimés). « L'essentiel » par défaut.
+- **Rejeté : recherche libre avec les opinions des journaux** (retour de la mère de Raphael). Revient à refaire Google et contredit la ligne « pas d'opinions » ; le besoin réel (suivre un sujet) est couvert par les Suites et l'historique.
 - **Personnalisation** : socle commun obligatoire + rubriques au choix (fait sur ce téléphone) ; rubriques sur mesure plus tard éventuellement.
 
 ## Positionnement à formaliser

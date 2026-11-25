@@ -99,6 +99,14 @@ a { color: var(--accent); }
 .tabs .sep { flex: 0 0 1px; align-self: stretch; background: var(--line); margin: 4px 2px; }
 .suite-tag { background: var(--accent); color: var(--card); border-radius: 6px; padding: 1px 6px; margin-right: 6px; letter-spacing: 0.04em; }
 .prev-link { align-self: flex-start; margin-top: 8px; }
+.history { list-style: none; margin: 10px 0 0; padding: 0; display: flex; flex-direction: column; gap: 0; }
+.history li { position: relative; padding: 0 0 12px 18px; border-left: 2px solid var(--line); margin-left: 5px; }
+.history li:last-child { padding-bottom: 0; }
+.history li::before { content: ""; position: absolute; left: -6px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--card); border: 2px solid var(--accent); }
+.history li.today::before { background: var(--accent); }
+.history .h-date { font-size: 0.78rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+.history .h-title { display: block; text-align: left; background: none; border: 0; padding: 2px 0 0; color: var(--ink); font-weight: 600; cursor: pointer; }
+.history .h-title:hover { color: var(--accent); }
 .why { color: var(--accent); font-size: 0.95rem; font-weight: 500; }
 .progress { color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums; }
 
@@ -409,13 +417,16 @@ function renderDetail(cat, i) {
     const box = el("div", "box");
     box.appendChild(el("p", "section-label", "Suite · ce qu'on savait déjà"));
     box.appendChild(el("p", null, ev.suite.deja_su || ("Sujet déjà traité : « " + ev.suite.titre + " »")));
-    const idx = editions.findIndex(e => e.fichier === ev.suite.edition);
-    if (idx >= 0) {
-      const b = el("button", "btn prev-link", "Voir l'édition " + (ev.suite.date ? "du " + ev.suite.date : "précédente"));
-      b.type = "button";
-      b.addEventListener("click", () => openEdition(idx, ev.suite.ancre));
-      box.appendChild(b);
-    }
+    const hb = el("button", "btn prev-link", "Voir l'historique du sujet");
+    hb.type = "button";
+    hb.addEventListener("click", async () => {
+      hb.disabled = true;
+      hb.textContent = "Chargement…";
+      const steps = await loadHistory(ev);
+      hb.remove();
+      box.appendChild(renderHistory(steps, ev));
+    });
+    box.appendChild(hb);
     body.appendChild(box);
   }
   body.appendChild(block("L'essentiel", ev.essentiel));
@@ -469,6 +480,56 @@ function renderDetail(cat, i) {
   wrap.appendChild(actions);
   view.appendChild(wrap);
   window.scrollTo(0, 0);
+}
+
+// ---------- Historique d'un sujet : on remonte la chaîne des « Suites » ----------
+const editionCache = {};
+async function fetchEdition(file) {
+  if (!editionCache[file]) {
+    editionCache[file] = fetch(file, { cache: "no-store" }).then(r => r.ok ? r.json() : null).catch(() => null);
+  }
+  return editionCache[file];
+}
+async function loadHistory(ev) {
+  const steps = [];
+  let link = ev.suite;
+  for (let n = 0; link && link.edition && n < 15; n++) {
+    const ed = await fetchEdition(link.edition);
+    if (!ed) break;
+    const m = String(link.ancre || "").match(/^([a-z]+)-(\d+)$/);
+    const cat = m && (ed.categories || []).find(c => c.id === m[1]);
+    const past = cat && cat.events[Number(m[2]) - 1];
+    if (!past) break;
+    steps.unshift({ date: ed.date, titre: past.titre, fichier: link.edition, ancre: link.ancre });
+    link = past.suite;
+  }
+  return steps;
+}
+function renderHistory(steps, ev) {
+  const wrap = el("div");
+  if (!steps.length) {
+    wrap.appendChild(el("p", "ai-note", "L'édition précédente n'est plus disponible."));
+    return wrap;
+  }
+  const list = el("ol", "history");
+  steps.forEach(st => {
+    const li = el("li");
+    li.appendChild(el("div", "h-date", st.date || ""));
+    const b = el("button", "h-title", st.titre);
+    b.type = "button";
+    b.addEventListener("click", () => {
+      const idx = editions.findIndex(e => e.fichier === st.fichier);
+      if (idx >= 0) openEdition(idx, st.ancre);
+    });
+    li.appendChild(b);
+    list.appendChild(li);
+  });
+  const now = el("li", "today");
+  now.appendChild(el("div", "h-date", (edition.date || "") + " · aujourd'hui"));
+  now.appendChild(el("span", "h-title", ev.titre));
+  list.appendChild(now);
+  wrap.appendChild(list);
+  return wrap;
 }
 
 // ---------- Éditions et dates ----------
