@@ -1,0 +1,487 @@
+{
+ "genere_le": "2026-11-26T07:22+01:00",
+ "date": "jeudi 26 novembre 2026",
+ "moment": "matin",
+ "modele": "claude-sonnet-5-5",
+ "categories": [
+  {
+   "id": "france",
+   "label": "France",
+   "type": "socle",
+   "events": [
+    {
+     "titre": "Reporters sans frontières demande à l'Arcom de suspendre CNews un mois",
+     "theme": "Médias",
+     "pourquoi": "La saisine porte sur le respect du pluralisme dans l'audiovisuel, une question qui touche aux libertés d'information.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/02/500/0/6000/3000/644/322/60/0/fd62098_ftp-1-adcsliiqn98z-afp-d6744zq.jpg",
+      "source": "Le Monde"
+     },
+     "suite": null,
+     "essentiel": "Reporters sans frontières a saisi l'Arcom pour défaut de pluralisme et demande la suspension de CNews pendant un mois. L'ONG s'appuie sur l'analyse de soixante et une heures de programmes diffusés en septembre. Elle estime que la chaîne contrôlée par Vincent Bolloré continue de ressasser les thèmes de l'extrême droite.",
+     "pour_situer": null,
+     "incertain": "La décision de l'Arcom n'est pas connue.",
+     "contexte": "L'Arcom est le régulateur de l'audiovisuel en France ; elle peut sanctionner les chaînes qui manquent à leurs obligations de pluralisme.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Reporters sans frontières demande la suspension de CNews pour une durée d’un mois",
+       "lien": "https://www.lemonde.fr/economie/article/2026/11/26/reporters-sans-frontieres-demande-la-suspension-de-cnews-pour-une-duree-d-un-mois_6815475_3234.html",
+       "publie": "2026-11-26T05:00:08+00:00",
+       "angle": "Le Monde détaille la méthode de l'étude et rappelle que RSF dénonce de nouveau un défaut de pluralisme."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "CNews : Reporters sans frontières saisit l’Arcom pour demander la suspension de la chaîne pendant un mois",
+       "lien": "https://www.liberation.fr/economie/medias/cnews-reporters-sans-frontieres-saisit-larcom-pour-demander-la-suspension-de-la-chaine-pendant-un-mois-20261126_36XEM44TVZBONCNFTMKZ6L6RXE/",
+       "publie": "2026-11-26T05:00:00+00:00",
+       "angle": "Libération insiste sur les trois émissions phares étudiées sur le mois de septembre."
+      },
+      {
+       "source": "Mediapart",
+       "titre_original": "Reporters sans frontières réclame la suspension de CNews pendant un mois",
+       "lien": "https://www.mediapart.fr/journal/culture-et-idees/261126/reporters-sans-frontieres-reclame-la-suspension-de-cnews-pendant-un-mois",
+       "publie": "2026-11-26T05:49:26+00:00",
+       "angle": "Mediapart relève que la chaîne ressasse toujours les thèmes chers à l'extrême droite."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "L'ONG Reporters sans frontières saisit l'Arcom pour demander de \"suspendre CNews pendant un mois\"",
+       "lien": "https://www.franceinfo.fr/economie/medias/l-ong-reporters-sans-frontieres-saisit-l-arcom-pour-demander-de-suspendre-cnews-pendant-un-mois_8300685.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T05:13:40+00:00",
+       "angle": "franceinfo reprend l'accusation de l'ONG de favoriser l'extrême droite, sous forme brève."
+      }
+     ]
+    },
+    {
+     "titre": "Les propos antisémites de Jordan Bardella en 2013 : nouveaux messages publiés",
+     "theme": "Politique",
+     "pourquoi": "Ces révélations concernent le dirigeant du principal parti d'opposition, à l'approche de la présidentielle de 2027.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/25/199/0/3000/1500/644/322/60/0/e365ab5_upload-1-1vhpdx5fycuk-01-bardella-messages.jpg",
+      "source": "Le Monde"
+     },
+     "suite": null,
+     "essentiel": "Le Monde dit s'être procuré la conversation de 2013 révélée par Mediapart le 28 septembre et s'être entretenu avec l'interlocuteur de l'époque. Mediapart publie de nouveaux messages, après les dénégations du patron du RN, une de ses sources ayant accepté de lever son anonymat. Les propos rapportés visent notamment un prétendu pouvoir des « sionistes » sur les banques.",
+     "pour_situer": null,
+     "incertain": "Les propos sont contestés par Jordan Bardella, qui les nie ; les journaux s'appuient sur des échanges qu'ils disent avoir consultés.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "« Les sionistes sont à la tête des banques, tout est lié » : nouvelles révélations sur les propos antisémites de Jordan Bardella",
+       "lien": "https://www.lemonde.fr/politique/article/2026/11/26/les-sionistes-sont-a-la-tete-des-banques-tout-est-lie-nouvelles-revelations-sur-les-propos-antisemites-de-jordan-bardella_6815484_823448.html",
+       "publie": "2026-11-26T05:55:12+00:00",
+       "angle": "Le Monde met en avant sa propre vérification : il a obtenu la conversation et interrogé l'interlocuteur de l'époque."
+      },
+      {
+       "source": "Mediapart",
+       "titre_original": "Des nouveaux messages révèlent le torrent antisémite déversé par Jordan Bardella",
+       "lien": "https://www.mediapart.fr/journal/politique/261126/des-nouveaux-messages-revelent-le-torrent-antisemite-deverse-par-jordan-bardella",
+       "publie": "2026-11-26T05:59:26+00:00",
+       "angle": "Mediapart, à l'origine des révélations, publie des messages supplémentaires en réponse aux dénégations du dirigeant du RN."
+      },
+      {
+       "source": "L'Opinion",
+       "titre_original": "Reconnaître des torts ou attaquer le système : les tiraillements du RN face aux affaires",
+       "lien": "https://www.lopinion.fr/politique/reconnaitre-des-torts-ou-attaquer-le-systeme-les-tiraillements-du-rn-face-aux-affaires",
+       "publie": "2026-11-25T19:00:00+00:00",
+       "angle": "L'Opinion traite des tiraillements du RN face à l'accumulation des affaires, entre reconnaissance de torts et mise en cause du système."
+      }
+     ]
+    },
+    {
+     "titre": "Affaire Moutouh-RN : la présence d'un procureur adjoint à une perquisition fait l'objet d'une enquête administrative",
+     "theme": "Justice",
+     "pourquoi": "L'affaire interroge l'indépendance de la justice à l'égard des partis, dans un dossier visant le premier parti d'opposition.",
+     "image": {
+      "url": "https://www.franceinfo.fr/pictures/EUw1UfMiobqY0C5uRMt9a8mEK9E/0x0:5337x3002/432x243/filters:format(jpg)/2026/11/25/6b071ff5a61f2432672414.jpg",
+      "source": "franceinfo"
+     },
+     "suite": {
+      "titre": "Soupçons de fuites vers le RN : le préfet Moutouh démis, Pierre Ory nommé",
+      "deja_su": "Le préfet Hugues Moutouh a été démis et remplacé, dans une enquête sur de possibles fuites d'éléments judiciaires concernant le RN.",
+      "edition": "archive/2026-11-25-soir.json",
+      "ancre": "france-4",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "La présence du procureur adjoint de Paris, Christian de Rocquigny, au siège du RN lors d'une perquisition le 9 novembre suscite des questions sur ses liens avec le parti. Une enquête administrative a été ouverte. L'exécutif redoute, selon L'Opinion, une récupération par LFI des soupçons visés contre le préfet.",
+     "pour_situer": null,
+     "incertain": "La nature exacte des liens du procureur avec le RN n'est pas établie.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "\"Tous les partis font ça\" : qui est Christian de Rocquigny, le procureur qui se trouvait au siège du Rassemblement national lors d'une perquisition ?",
+       "lien": "https://www.franceinfo.fr/politique/front-national/tous-les-partis-font-ca-qui-est-christian-de-rocquigny-le-procureur-qui-se-trouvait-au-siege-du-rassemblement-national-lors-d-une-perquisition_8299719.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T04:58:19+00:00",
+       "angle": "franceinfo présente le profil du procureur adjoint et l'ouverture de l'enquête administrative."
+      },
+      {
+       "source": "L'Opinion",
+       "titre_original": "Dossier RN-Moutouh : une affaire aussi politique que judiciaire",
+       "lien": "https://www.lopinion.fr/politique/dossier-rn-moutouh-une-affaire-aussi-politique-que-judiciaire",
+       "publie": "2026-11-25T18:15:00+00:00",
+       "angle": "L'Opinion lit le dossier comme aussi politique que judiciaire, avec la crainte d'une récupération par LFI."
+      },
+      {
+       "source": "Valeurs actuelles",
+       "titre_original": "Barnier veut recoller le « socle commun », David Lisnard a de la suite dans les idées, le RN s’agace de l’affaire Moutouh… Les coulisses politiques de la semaine",
+       "lien": "https://www.valeursactuelles.com/clubvaleurs/politique/barnier-veut-recoller-le-socle-commun-david-lisnard-a-de-la-suite-dans-les-idees-le-rn-sagace-de-laffaire-moutouh-les-coulisses-politiques-de-la-semaine",
+       "publie": "2026-11-25T17:00:10+00:00",
+       "angle": "Valeurs actuelles relaie l'agacement de l'entourage de Marine Le Pen face au traitement de l'affaire."
+      }
+     ]
+    },
+    {
+     "titre": "Procès d'Emilie König, ancienne figure française de l'État islamique, à Paris",
+     "theme": "Justice",
+     "pourquoi": "Ce procès d'assises spéciales est l'un des grands procès de jihadistes françaises revenues de Syrie.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/25/415/0/4842/2421/644/322/60/0/ace2790_upload-1-j0dbkuwbv2wt-000-96x643.jpg",
+      "source": "Le Monde"
+     },
+     "suite": null,
+     "essentiel": "Emilie König, 41 ans, mère de cinq enfants, est jugée à partir de jeudi devant la cour d'assises spéciale de Paris jusqu'à lundi. Elle a passé près de dix ans en Syrie. Elle est accusée d'association de malfaiteurs terroriste, notamment pour avoir relayé la propagande de l'organisation État islamique et joué un rôle de recruteuse. Elle encourt trente ans de réclusion.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Emilie König, la plus médiatique des djihadistes françaises, devant la justice",
+       "lien": "https://www.lemonde.fr/societe/article/2026/11/26/emilie-konig-la-plus-mediatique-des-djihadistes-francaises-devant-la-justice_6815463_3224.html",
+       "publie": "2026-11-26T04:00:16+00:00",
+       "angle": "Le Monde la décrit comme la plus médiatique des djihadistes françaises, « revenante » de Syrie."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "«L’égérie du jihad» Emilie König jugée dès ce jeudi à Paris pour ses liens étroits avec l’Etat islamique",
+       "lien": "https://www.liberation.fr/societe/police-justice/legerie-du-jihad-emilie-konig-jugee-des-ce-jeudi-a-paris-pour-ses-liens-etroits-avec-letat-islamique-20261126_LERKEOM3UFDXFBGSEIE4UKS6MA/",
+       "publie": "2026-11-26T05:30:00+00:00",
+       "angle": "Libération la qualifie d'« égérie du jihad » et insiste sur les accusations de recrutement pour Daech."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "\"Bien sûr que je regrette\" : de la Bretagne à l'Etat islamique en Syrie, comment Emilie König, jugée à Paris, a basculé dans le jihadisme",
+       "lien": "https://www.franceinfo.fr/faits-divers/terrorisme/bien-sur-que-je-regrette-de-la-bretagne-a-l-etat-islamique-en-syrie-comment-emilie-konig-jugee-a-paris-a-bascule-dans-le-jihadisme_8298870.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T04:59:27+00:00",
+       "angle": "franceinfo retrace son parcours de la Bretagne à la Syrie et rapporte son regret exprimé."
+      },
+      {
+       "source": "RFI",
+       "titre_original": "France: le procès d'Émilie König, «égérie du jihad», commence aux assises à Paris",
+       "lien": "https://www.rfi.fr/fr/france/20261126-france-le-proc%C3%A8s-d-%C3%A9milie-k%C3%B6nig-%C3%A9g%C3%A9rie-du-jihad-commence-aux-assises-%C3%A0-paris",
+       "publie": "2026-11-26T03:44:17+00:00",
+       "angle": "RFI rappelle son départ en Syrie dès 2012, dans un récit proche de celui des autres médias."
+      }
+     ]
+    },
+    {
+     "titre": "Présidentielle 2027 : la chasse aux 500 parrainages mobilise candidats et maires",
+     "theme": "Élections",
+     "pourquoi": "Les parrainages conditionnent la possibilité de se présenter à l'élection présidentielle.",
+     "image": {
+      "url": "https://www.franceinfo.fr/pictures/BlMG1rRVJofAP2kpywp_BrzACdM/0x227:5000x3040/432x243/filters:format(jpg)/2026/11/25/6b07163042147037835906.jpg",
+      "source": "franceinfo"
+     },
+     "suite": {
+      "titre": "Présidentielle 2027 : le gouvernement maintient le second tour au 2 mai",
+      "deja_su": "Le gouvernement maintenait le second tour de la présidentielle au 2 mai.",
+      "edition": "archive/2026-11-25-soir.json",
+      "ancre": "france-6",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "Au congrès des maires, de nombreux candidats ont sollicité les élus. Près d'un maire sur deux dit qu'il ne parrainera personne, selon franceinfo. Le maire de Cannes David Lisnard, réélu à la tête de l'AMF, poursuit sa campagne présidentielle.",
+     "pour_situer": "Il faut 500 parrainages d'élus pour être candidat.",
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "\"Les parrainages, je n'en donne à personne\" : les maires au centre de la chasse aux 500 signatures pour les candidats à l'élection présidentielle",
+       "lien": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/reportage-les-parrainages-je-n-en-donne-a-personne-les-maires-au-centre-de-la-chasse-aux-500-signatures-pour-les-candidats-a-l-election-presidentielle_8278493.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T06:00:47+00:00",
+       "angle": "franceinfo met au centre les maires, dont près de la moitié refusent de parrainer."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Présidentielle 2027 : « Je suis fan et je vais le parrainer »… Comment les candidats tentent de séduire les maires",
+       "lien": "https://www.20minutes.fr/politique/4265748-20261125-presidentielle-2027-fan-vais-parrainer-comment-candidats-tentent-seduire-maires?at_medium=display&at_campaign=149",
+       "publie": "2026-11-25T19:13:17+00:00",
+       "angle": "20 Minutes décrit les candidats qui ont défilé au congrès et au salon des maires pour séduire les élus."
+      },
+      {
+       "source": "RFI",
+       "titre_original": "Présidentielle 2027: pour les candidats comme pour les maires, la galère des parrainages",
+       "lien": "https://www.rfi.fr/fr/podcasts/reportage-france/20261125-pr%C3%A9sidentielle-2027-pour-les-candidats-comme-pour-les-maires-la-gal%C3%A8re-des-parrainages",
+       "publie": "2026-11-25T23:06:58+00:00",
+       "angle": "RFI parle d'une galère des parrainages à la fois pour les candidats et pour les maires."
+      }
+     ]
+    },
+    {
+     "titre": "Mobilisation lycéenne : tensions autour du rôle des adultes et des enseignants",
+     "theme": "Éducation",
+     "pourquoi": "Le mouvement soulève des questions sur la liberté des enseignants et sur la réponse du gouvernement.",
+     "image": null,
+     "suite": {
+      "titre": "Mobilisation lycéenne : le rapport de l'inspection dresse le profil des élèves",
+      "deja_su": "Le rapport de l'inspection décrivait des élèves mobilisés plutôt politisés et favorisés.",
+      "edition": "archive/2026-11-25-soir.json",
+      "ancre": "france-3",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "Un rapport de l'inspection générale identifie l'implication de nombreux adultes dans les blocages de lycées, selon Valeurs actuelles. À Grenoble, une enseignante de SES est convoquée au rectorat pour un devoir sur la « socialisation politique ». LFI demande la formation d'une commission d'enquête sur les propos du gouvernement.",
+     "pour_situer": null,
+     "incertain": "La portée exacte des faits reprochés aux adultes est contestée selon les médias.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "Mouvement lycéen : retour sur deux mois de mensonges du gouvernement",
+       "lien": "https://www.liberation.fr/checknews/les-ministres-vont-devoir-rendre-des-comptes-retour-sur-les-nombreux-mensonges-du-gouvernement-sur-le-mouvement-lyceen-20261126_KN3SZW6UJ5FRJIW2VL7L4D2BGI/",
+       "publie": "2026-11-26T06:18:26+00:00",
+       "angle": "Libération recense deux mois de propos jugés faux ou trompeurs de l'exécutif envers lycéens et personnels."
+      },
+      {
+       "source": "Valeurs actuelles",
+       "titre_original": "LFI, enseignants, parents d’élèves : un rapport de l’Éducation Nationale démontre l’implication de nombreux adultes dans les blocages des lycées",
+       "lien": "https://www.valeursactuelles.com/societe/lfi-enseignants-parents-deleves-un-rapport-de-leducation-nationale-demontre-limplication-de-nombreux-adultes-dans-les-blocages-des-lycees",
+       "publie": "2026-11-25T16:01:59+00:00",
+       "angle": "Valeurs actuelles met en avant l'implication d'adultes, dont LFI, enseignants et parents, dans les blocages."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Le Monde",
+     "articles": 10
+    },
+    {
+     "source": "Le Figaro",
+     "articles": 9
+    },
+    {
+     "source": "Libération",
+     "articles": 10
+    },
+    {
+     "source": "L'Humanité",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "La Croix",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "Les Échos",
+     "articles": 0,
+     "erreur": "<unknown>:14:4: mismatched tag"
+    },
+    {
+     "source": "L'Opinion",
+     "articles": 10
+    },
+    {
+     "source": "Mediapart",
+     "articles": 10
+    },
+    {
+     "source": "Valeurs actuelles",
+     "articles": 10
+    },
+    {
+     "source": "Le JDD",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "Franc-Tireur",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "Ouest-France",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "franceinfo",
+     "articles": 10
+    },
+    {
+     "source": "20 Minutes",
+     "articles": 8
+    }
+   ]
+  },
+  {
+   "id": "international",
+   "label": "International",
+   "type": "socle",
+   "events": [
+    {
+     "titre": "Droits de douane américains : les pays visés dénoncent des mesures « inacceptables »",
+     "theme": "Commerce",
+     "pourquoi": "Ces surtaxes touchent les principaux partenaires commerciaux des États-Unis et pèsent sur le commerce mondial et sur l'économie européenne.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/24/685/0/8225/4112/644/322/60/0/3dac54a_ftp-1-5hapjx1d3y1y-f6c999cf0f7b4c7daded4d5d29e15f89-0-b1859d1fb08648d3bcf4638b6964951a.jpg",
+      "source": "Le Monde"
+     },
+     "suite": {
+      "titre": "Washington annonce de nouveaux droits de douane contre l'UE, la Chine et le Mexique",
+      "deja_su": "Washington avait annoncé de nouveaux droits de douane contre l'UE, la Chine et le Mexique.",
+      "edition": "archive/2026-11-25-soir.json",
+      "ancre": "international-1",
+      "date": "mercredi 25 novembre 2026"
+     },
+     "essentiel": "Les nouveaux droits de douane annoncés mercredi par Washington visent 14 partenaires commerciaux, dont l'Union européenne, la Chine, l'Inde, le Brésil et Singapour. Les pays concernés ont réagi avec indignation ; le Brésil juge les mesures « inacceptables » et dit viser une résolution négociée. Washington reproche à ces pays des subventions qui provoquent une surproduction et pénalisent les entreprises américaines.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": "Les droits de douane sont devenus un outil central de la politique commerciale de Donald Trump depuis son retour à la Maison-Blanche en 2025.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Donald Trump persiste avec une nouvelle salve de droits de douane, notamment contre l’UE et la Chine, malgré la claque électorale",
+       "lien": "https://www.lemonde.fr/economie/article/2026/11/25/donald-trump-persiste-avec-une-nouvelle-salve-de-droits-de-douane-malgre-la-claque-electorale_6815108_3234.html",
+       "publie": "2026-11-25T14:04:49+00:00",
+       "angle": "Le Monde souligne que l'administration persiste dans cette voie malgré la défaite électorale des midterms."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "\"Inacceptables\", \"regrettables\", \"prétexte à la manipulation politique\"... Les pays visés s'indignent face aux nouveaux droits de douane américains",
+       "lien": "https://www.franceinfo.fr/monde/usa/droits-de-douane/inacceptables-regrettables-pretexte-a-la-manipulation-politique-les-pays-vises-s-indignent-face-aux-nouveaux-droits-de-douane-americains_8300712.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T05:39:33+00:00",
+       "angle": "franceinfo rapporte les réactions indignées des pays visés et l'accusation américaine de subventions provoquant une surproduction."
+      },
+      {
+       "source": "Al Jazeera",
+       "titre_original": "Brazil blasts ‘unacceptable’ new US tariff proposals",
+       "lien": "https://www.aljazeera.com/news/2026/11/26/brazil-blasts-unacceptable-new-us-tariff-proposals?traffic_source=rss",
+       "publie": "2026-11-26T04:47:47+00:00",
+       "angle": "Al Jazeera donne la position du Brésil : pas de recul face aux menaces, mais une solution négociée recherchée."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "US announces new tariffs on host of countries including China",
+       "lien": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-26T04:10:58+00:00",
+       "angle": "La BBC présente l'annonce de façon factuelle, en insistant sur l'ampleur des partenaires touchés, Chine et UE en tête."
+      }
+     ]
+    },
+    {
+     "titre": "Israël : des juges suggèrent d'abandonner le principal dossier de corruption contre Nétanyahou",
+     "theme": "Israël",
+     "pourquoi": "Cette recommandation peut changer l'issue judiciaire du procès du Premier ministre israélien.",
+     "image": {
+      "url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d91d/live/f0a5ecf0-e8fa-11f1-99b6-a35a62fa4264.jpg",
+      "source": "BBC News"
+     },
+     "suite": null,
+     "essentiel": "Des juges israéliens ont recommandé d'abandonner les charges les plus graves dans l'un des trois dossiers contre Benyamin Nétanyahou, estimant qu'une condamnation était peu probable. Le Premier ministre, accusé de corruption, fraude et abus de confiance, réclame que son procès prenne fin. Il nie tout acte répréhensible.",
+     "pour_situer": null,
+     "incertain": "Il s'agit d'une recommandation, pas d'une décision définitive.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "BBC News",
+       "titre_original": "Israeli judges recommend dropping most serious charges against Netanyahu",
+       "lien": "https://www.bbc.co.uk/news/articles/cxj05mv723r2o?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-25T19:47:39+00:00",
+       "angle": "La BBC rapporte la demande de Nétanyahou de mettre fin à son procès après l'avis des juges."
+      },
+      {
+       "source": "The New York Times",
+       "titre_original": "Judges in Israel Suggest Dropping Key Corruption Case Against Netanyahu",
+       "lien": "https://www.nytimes.com/2026/11/25/world/middleeast/judges-israel-corruption-case-netanyahu.html",
+       "publie": "2026-11-25T20:45:09+00:00",
+       "angle": "Le New York Times rappelle l'ensemble des accusations et le caractère clivant du procès dans le pays."
+      }
+     ]
+    },
+    {
+     "titre": "Guerre en Ukraine : Trump et le chef de l'Otan exhortent la Russie à ne pas « étendre la guerre »",
+     "theme": "Ukraine",
+     "pourquoi": "Le positionnement américain et européen conditionne les chances d'une reprise des négociations.",
+     "image": {
+      "url": "https://i.f1g.fr/media/cms/orig/2026/11/26/323b2860c6e0fbf183bdf66106df89735c26d9f501464b239150e6c3d66502b6.JPG",
+      "source": "Le Figaro"
+     },
+     "suite": null,
+     "essentiel": "Donald Trump et Mark Rutte ont publié mercredi une déclaration conjointe après leur rencontre en Floride, appelant Moscou à ne pas étendre la guerre. Ils plaident pour une résolution rapide et pacifique. L'émissaire américain Jared Kushner a de son côté évoqué une impasse territoriale et mis en garde contre une escalade. Les Européens se disent prêts à parler à Vladimir Poutine pour peser sur l'architecture de sécurité du continent.",
+     "pour_situer": null,
+     "incertain": "La date de reprise des négociations entre Russie et Ukraine n'est pas connue.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "Guerre en Ukraine : Trump et le secrétaire général de l'Otan exhortent la Russie à ne pas «étendre la guerre» avec Kiev",
+       "lien": "https://www.lefigaro.fr/international/guerre-en-ukraine-trump-et-le-secretaire-general-de-l-otan-exhortent-la-russie-a-ne-pas-etendre-la-guerre-avec-kiev-20261126",
+       "publie": "2026-11-26T05:31:59+00:00",
+       "angle": "Le Figaro relate la déclaration conjointe de Trump et Rutte et l'appel à une résolution rapide."
+      },
+      {
+       "source": "Le Monde",
+       "titre_original": "Guerre en Ukraine : les Européens prêts à parler à Vladimir Poutine pour imposer leur vision de l’architecture de sécurité du Vieux Continent",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/26/guerre-en-ukraine-les-europeens-prets-a-parler-a-vladimir-poutine-pour-imposer-leur-vision-de-l-architecture-de-securite-du-vieux-continent_6815467_3210.html",
+       "publie": "2026-11-26T04:30:16+00:00",
+       "angle": "Le Monde met l'accent sur la volonté européenne de ne pas laisser les États-Unis discuter sans eux."
+      },
+      {
+       "source": "RFI",
+       "titre_original": "Kaja Kallas, cheffe de la diplomatie européenne mais évincée des négociations Russie-Ukraine",
+       "lien": "https://www.rfi.fr/fr/europe/20261125-kaja-kallas-cheffe-de-la-diplomatie-europ%C3%A9enne-mais-%C3%A9vinc%C3%A9e-des-n%C3%A9gociations-russie-ukraine",
+       "publie": "2026-11-25T19:34:38+00:00",
+       "angle": "RFI s'intéresse à la place des Européens dans les négociations et à l'éviction de Kaja Kallas."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "France 24",
+     "articles": 10
+    },
+    {
+     "source": "RFI",
+     "articles": 10
+    },
+    {
+     "source": "Courrier international",
+     "articles": 10
+    },
+    {
+     "source": "BBC News",
+     "articles": 10
+    },
+    {
+     "source": "The Guardian",
+     "articles": 4
+    },
+    {
+     "source": "The New York Times",
+     "articles": 8
+    },
+    {
+     "source": "Al Jazeera",
+     "articles": 10
+    },
+    {
+     "source": "Deutsche Welle",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    },
+    {
+     "source": "Le Temps",
+     "articles": 0,
+     "erreur": "flux introuvable"
+    }
+   ]
+  }
+ ]
+}

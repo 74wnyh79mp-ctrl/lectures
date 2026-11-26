@@ -1,5 +1,11 @@
 [
  {
+  "fichier": "archive/2026-11-26-matin.json",
+  "date": "jeudi 26 novembre 2026",
+  "moment": "matin",
+  "genere_le": "2026-11-26T07:22+01:00"
+ },
+ {
   "fichier": "archive/2026-11-25-soir.json",
   "date": "mercredi 25 novembre 2026",
   "moment": "soir",
