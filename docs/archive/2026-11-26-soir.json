@@ -1,0 +1,724 @@
+{
+ "genere_le": "2026-11-26T19:04+01:00",
+ "date": "jeudi 26 novembre 2026",
+ "moment": "soir",
+ "modele": "claude-sonnet-5-5",
+ "categories": [
+  {
+   "id": "france",
+   "label": "France",
+   "type": "socle",
+   "events": [
+    {
+     "titre": "Propos antisémites de 2013 : Le Monde et Mediapart publient de nouveaux messages",
+     "theme": "Politique",
+     "pourquoi": "Elle touche le président du premier parti d'opposition, à cinq mois de la présidentielle de 2027.",
+     "image": {
+      "url": "https://www.humanite.fr/wp-content/uploads/2026/11/maxresdefault-10.webp?w=1200",
+      "source": "L'Humanité"
+     },
+     "suite": {
+      "titre": "Les propos antisémites de Jordan Bardella en 2013 : nouveaux messages publiés",
+      "deja_su": "Mediapart avait révélé fin septembre une conversation de 2013 contenant des propos antisémites attribués à Jordan Bardella, que le président du RN conteste.",
+      "edition": "archive/2026-11-26-matin.json",
+      "ancre": "france-2",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "Le Monde et Mediapart ont publié le 26 novembre de nouveaux messages Facebook de 2013, attribués à Jordan Bardella. Ces messages contiennent des propos antisémites, complotistes et islamophobes. Une source a accepté de lever son anonymat. Le patron du RN conteste être l'auteur de ces écrits, se dit victime d'une « entreprise de persécution » et envisage un complément de plainte pour faux et usage de faux visant les deux médias.",
+     "pour_situer": null,
+     "incertain": "L'authenticité des messages reste contestée par Jordan Bardella ; les deux rédactions affirment l'avoir établie par recoupements.",
+     "contexte": "Jordan Bardella préside le Rassemblement national depuis 2022, parti dirigé auparavant par Marine Le Pen. Le parti a longtemps cherché à rompre avec l'héritage antisémite et négationniste du Front national de Jean-Marie Le Pen.",
+     "lectures": [
+      {
+       "source": "L'Humanité",
+       "titre_original": "Messages antisémites : 19 éléments qui prouvent l’identité de Bardella",
+       "lien": "https://www.humanite.fr/politique/antisemitisme/messages-antisemites-19-elements-qui-prouvent-lidentite-de-bardella",
+       "publie": "2026-11-26T15:00:54+00:00",
+       "angle": "L'Humanité détaille 19 éléments censés établir l'identité de l'auteur des messages et juge les dénégations de Bardella peu convaincantes."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "Jordan Bardella fragilisé par de nouvelles révélations",
+       "lien": "https://www.lefigaro.fr/politique/jordan-bardella-fragilise-par-de-nouvelles-revelations-20261126",
+       "publie": "2026-11-26T17:59:03+00:00",
+       "angle": "Le Figaro parle d'un Jordan Bardella « fragilisé » et rapporte aussi sa contre-attaque judiciaire, avec la menace d'un complément de plainte."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "\"La pensée anti-juifs obsédait Jordan Bardella\" : ce qu'il faut retenir des nouvelles révélations sur des écrits antisémites attribués au patron du Rassemblement national",
+       "lien": "https://www.franceinfo.fr/politique/jordan-bardella/la-pensee-anti-juifs-obsedait-jordan-bardella-ce-qu-il-faut-retenir-des-nouvelles-revelations-sur-des-ecrits-antisemites-attribues-au-patron-du-rassemblement-national_8300919.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T17:18:23+00:00",
+       "angle": "franceinfo propose une synthèse de ce qu'il faut retenir des nouvelles révélations, sans prendre parti."
+      },
+      {
+       "source": "Le JDD",
+       "titre_original": "Accusations d'antisémitisme : Alloncle dénonce un «acharnement médiatique» contre Bardella",
+       "lien": "https://www.lejdd.fr/politique/accusations-dantisemitisme-alloncle-denonce-un-acharnement-mediatique-contre-bardella-189765",
+       "publie": "2026-11-26T16:11:03+00:00",
+       "angle": "Le JDD relaie la réaction du porte-parole de campagne de Marine Le Pen, qui dénonce un « acharnement médiatique » de « journalistes militants »."
+      }
+     ]
+    },
+    {
+     "titre": "Procès d'Emilie König : ouverture des débats et excuses « à la nation »",
+     "theme": "Justice",
+     "pourquoi": "Ce procès, très suivi, juge l'une des Françaises les plus actives dans la propagande de l'État islamique.",
+     "image": {
+      "url": "https://www.franceinfo.fr/pictures/z8OO4fldCuzci2-VNtACERuityc/0x0:2000x1125/432x243/filters:format(jpg)/2026/11/26/6b08325b29ec2332704537.jpg",
+      "source": "franceinfo"
+     },
+     "suite": {
+      "titre": "Procès d'Emilie König, ancienne figure française de l'État islamique, à Paris",
+      "deja_su": "Emilie König, 41 ans, ancienne figure française de l'État islamique, devait être jugée à Paris jusqu'à lundi pour association de malfaiteurs terroriste.",
+      "edition": "archive/2026-11-26-matin.json",
+      "ancre": "france-4",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "Le procès d'Emilie König s'est ouvert le 26 novembre devant la cour d'assises spéciale de Paris. Elle y a exprimé sa « honte » et présenté ses excuses « à toute la nation française ». Le Parquet national antiterroriste la présente comme une « véritable égérie » du groupe en Syrie. Elle encourt 30 ans de réclusion.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": "La cour d'assises spéciale, composée de magistrats professionnels, juge les crimes terroristes en France. L'État islamique a contrôlé de larges zones de Syrie et d'Irak entre 2014 et 2019.",
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "\"J'ai vraiment honte\" : au premier jour de son procès, Emilie König, ex-propagandiste de l'Etat islamique, présente ses excuses \"à toute la nation française\"",
+       "lien": "https://www.franceinfo.fr/monde/terrorisme-djihadistes/j-ai-vraiment-honte-au-premier-jour-de-son-proces-emilie-konig-ex-propagandiste-de-l-etat-islamique-presente-ses-excuses-a-toute-la-nation-francaise_8301402.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T14:03:34+00:00",
+       "angle": "franceinfo cite la présentation du parquet antiterroriste et le premier jour d'audience, avec les excuses de l'accusée."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "«Ça fait des années que j’attends ce moment» : la jihadiste Emilie König présente ses excuses «à la nation française»",
+       "lien": "https://www.liberation.fr/societe/police-justice/ca-fait-des-annees-que-jattends-ce-moment-la-jihadiste-emilie-konig-presente-ses-excuses-a-la-nation-francaise-20261126_4VSQ7OOYSNFL7CTIA5ZJWZTHQY/",
+       "publie": "2026-11-26T14:50:46+00:00",
+       "angle": "Libération insiste sur le parcours de la Bretonne devenue figure du terrorisme français et sur la peine encourue."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Procès d’Émilie König : « J’ai vraiment honte »… Les excuses à « la nation » de l’ancienne djihadiste",
+       "lien": "https://www.20minutes.fr/justice/4266081-20261126-proces-emilie-konig-vraiment-honte-excuses-nation-ancienne-djihadiste?at_medium=display&at_campaign=149",
+       "publie": "2026-11-26T17:57:44+00:00",
+       "angle": "20 Minutes met l'accent sur les excuses prononcées en préambule devant ses concitoyens."
+      }
+     ]
+    },
+    {
+     "titre": "Gérard Depardieu renvoyé en procès pour viol : la cour d'appel confirme en partie",
+     "theme": "Justice",
+     "pourquoi": "Une décision de justice majeure dans un dossier qui concerne l'une des plus grandes figures du cinéma français.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/24/718/0/4441/2220/644/322/60/0/78c8f31_ftp-1-ckie4ub2cpgc-afp-d84z2we.jpg",
+      "source": "Le Monde"
+     },
+     "suite": null,
+     "essentiel": "La chambre de l'instruction de la cour d'appel de Paris a confirmé le 26 novembre le renvoi de Gérard Depardieu devant la cour criminelle départementale pour des faits de viol commis le 7 août 2018 sur Charlotte Arnould. Elle a en revanche prononcé un non-lieu pour les faits dénoncés le 13 août. La défense n'exclut pas un pourvoi en cassation.",
+     "pour_situer": null,
+     "incertain": "Un pourvoi en cassation reste possible ; la date du procès n'est pas indiquée.",
+     "contexte": "Charlotte Arnould, comédienne, accuse l'acteur de viols dans sa résidence en août 2018. Gérard Depardieu conteste les accusations. La cour criminelle départementale juge les crimes passibles de vingt ans de réclusion.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Gérard Depardieu renvoyé en procès pour une partie des viols dont l’accuse Charlotte Arnould",
+       "lien": "https://www.lemonde.fr/societe/article/2026/11/26/gerard-depardieu-renvoye-en-proces-pour-une-partie-des-viols-dont-l-accuse-charlotte-arnould_6815543_3224.html",
+       "publie": "2026-11-26T14:13:51+00:00",
+       "angle": "Le Monde rapporte la décision de la cour, saisie par la défense, en précisant qu'elle est susceptible d'un pourvoi en cassation."
+      },
+      {
+       "source": "Mediapart",
+       "titre_original": "Affaire Depardieu: l’acteur sera jugé pour l’un des viols dénoncés par Charlotte Arnould",
+       "lien": "https://www.mediapart.fr/journal/france/261126/affaire-depardieu-l-acteur-sera-juge-pour-l-un-des-viols-denonces-par-charlotte-arnould",
+       "publie": "2026-11-26T14:02:11+00:00",
+       "angle": "Mediapart souligne que l'acteur sera jugé pour l'un des viols dénoncés, avec un non-lieu partiel."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Gérard Depardieu est renvoyé devant la cour criminelle pour viol commis sur la comédienne Charlotte Arnould",
+       "lien": "https://www.franceinfo.fr/culture/cinema/depardieu/gerard-depardieu-est-renvoye-devant-la-justice-pour-viol-commis-sur-la-comedienne-charlotte-arnould_8301426.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T14:44:34+00:00",
+       "angle": "franceinfo détaille la distinction entre les faits du 7 août (renvoi) et ceux du 13 août (non-lieu)."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Affaire Depardieu : L’acteur sera bien jugé pour viols sur Charlotte Arnould",
+       "lien": "https://www.20minutes.fr/justice/4265991-20261126-affaire-depardieu-acteur-bien-juge-viols-charlotte-arnould?at_medium=display&at_campaign=149",
+       "publie": "2026-11-26T13:35:59+00:00",
+       "angle": "20 Minutes résume la décision en l'attribuant à l'AFP, dans un récit court et factuel."
+      }
+     ]
+    },
+    {
+     "titre": "Présidentielle 2027 : David Lisnard progresse dans les sondages, Philippe recule",
+     "theme": "Présidentielle",
+     "pourquoi": "Le rapport de forces à droite et au centre se redessine à cinq mois du scrutin.",
+     "image": {
+      "url": "https://www.humanite.fr/wp-content/uploads/2026/11/lisnard-minia.webp?w=1200",
+      "source": "L'Humanité"
+     },
+     "suite": {
+      "titre": "Présidentielle 2027 : la chasse aux 500 parrainages mobilise candidats et maires",
+      "deja_su": "Les candidats à la présidentielle de 2027 cherchaient les 500 parrainages d'élus au congrès des maires.",
+      "edition": "archive/2026-11-26-matin.json",
+      "ancre": "france-5",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "Un sondage Opinion Way pour CNews et le JDD place David Lisnard en troisième position avec 12 % des voix, contre 8 % pour Édouard Philippe. Un sondage Odoxa-Backbone pour Le Figaro le donne préféré à Philippe par les sympathisants de droite et du centre. Huit députés LR annoncent par tribune leur soutien à Lisnard plutôt qu'à Bruno Retailleau, candidat de leur parti. Le processus de primaire à droite et au centre semble se diriger vers l'échec.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": "David Lisnard, maire de Cannes, vient d'être reconduit à la tête de l'Association des maires de France. Édouard Philippe (Horizons) et Bruno Retailleau (LR) sont également candidats.",
+     "lectures": [
+      {
+       "source": "L'Humanité",
+       "titre_original": "David Lisnard : le candidat qui bouscule la droite et son extrême",
+       "lien": "https://www.humanite.fr/politique/david-lisnard/david-lisnard-le-candidat-qui-bouscule-la-droite-et-son-extreme",
+       "publie": "2026-11-26T16:34:34+00:00",
+       "angle": "L'Humanité raconte l'ascension de Lisnard comme celle d'un candidat qui bouscule la droite et inquiète l'extrême droite."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "Présidentielle 2027 : David Lisnard meilleur candidat qu’Édouard Philippe pour les sympathisants de la droite et du centre",
+       "lien": "https://www.lefigaro.fr/politique/presidentielle-2027-david-lisnard-meilleur-candidat-qu-edouard-philippe-pour-les-sympathisants-de-la-droite-et-du-centre-20261126",
+       "publie": "2026-11-26T17:57:57+00:00",
+       "angle": "Le Figaro s'appuie sur son sondage Odoxa pour souligner l'avance de Lisnard sur Philippe chez les sympathisants de droite et du centre."
+      },
+      {
+       "source": "L'Opinion",
+       "titre_original": "Bruno Retailleau pris en étau entre David Lisnard et Edouard Philippe",
+       "lien": "https://www.lopinion.fr/politique/bruno-retailleau-pris-en-etau-entre-david-lisnard-et-edouard-philippe",
+       "publie": "2026-11-26T17:30:00+00:00",
+       "angle": "L'Opinion décrit un Retailleau pris en étau entre Lisnard et Philippe, tandis que la primaire se dirige vers l'échec."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Huit députés des Républicains annoncent leur soutien à David Lisnard plutôt que Bruno Retailleau pour la présidentielle 2027",
+       "lien": "https://www.franceinfo.fr/elections/huit-deputes-des-republicains-annoncent-leur-soutien-a-david-lisnard-plutot-que-bruno-retailleau-pour-la-presidentielle-2027_8301579.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T16:19:00+00:00",
+       "angle": "franceinfo rapporte l'appel des huit députés LR à soutenir Lisnard, qualifiant de « suicidaires » les postures de leur parti."
+      }
+     ]
+    },
+    {
+     "titre": "Teddy Riner conteste l'aide française à l'Ukraine : tollé chez les candidats",
+     "theme": "Présidentielle",
+     "pourquoi": "Le soutien à l'Ukraine est un grand sujet de politique étrangère, et la sortie du candidat le replace au centre de la campagne.",
+     "image": {
+      "url": "https://i.f1g.fr/media/cms/3000x1688_crop/2026/11/26/a1ee67378b19a842344e678fea24cf84f8db3296a91f7e6a86096505dbc69a43.jpg",
+      "source": "Le Figaro"
+     },
+     "suite": null,
+     "essentiel": "Au salon des maires, le candidat Teddy Riner a estimé que la France devait cesser de « donner de l'argent que nous n'avons pas » pour l'Ukraine, ajoutant que « ce n'est pas notre guerre ». Raphaël Glucksmann lui a répondu que « la guerre en Ukraine est notre guerre ». Riner affirme désormais que la France soutiendra toujours les pays opprimés. Le Figaro rappelle que sa position est singulière parmi les candidats, excepté Marine Le Pen.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "«Fermer le robinet», référendum, avoirs russes… Ce que proposent les candidats à la présidentielle sur la guerre en Ukraine",
+       "lien": "https://www.lefigaro.fr/politique/fermer-le-robinet-referendum-avoirs-russes-ce-que-proposent-les-candidats-a-la-presidentielle-sur-la-guerre-en-ukraine-20261126",
+       "publie": "2026-11-26T16:10:33+00:00",
+       "angle": "Le Figaro compare les positions de l'ensemble des candidats sur la guerre en Ukraine et note que Riner est quasi isolé, avec Marine Le Pen."
+      },
+      {
+       "source": "La Croix",
+       "titre_original": "Présidentielle 2027 : après ses propos sur l’Ukraine, comment Teddy Riner s’est retrouvé au cœur de la polémique",
+       "lien": "https://www.la-croix.com/politique/presidentielle-2027-apres-ses-propos-sur-l-ukraine-comment-teddy-riner-sest-retrouve-au-cour-de-la-polemique-20261126",
+       "publie": "2026-11-26T16:27:08+00:00",
+       "angle": "La Croix s'interroge sur les approximations du candidat : amateurisme ou positionnement politique assumé."
+      },
+      {
+       "source": "Ouest-France",
+       "titre_original": "INFOGRAPHIES. Guerre en Ukraine : Teddy Riner ne veut plus « donner de l’argent que nous n’avons pas », combien la France a-t-elle dépensé ?",
+       "lien": "https://www.ouest-france.fr/elections/presidentielle/infographies-guerre-en-ukraine-teddy-riner-ne-veut-plus-donner-de-largent-que-nous-navons-pas-combien-la-france-a-t-elle-depense-2082aea8-e9ab-11f1-9b33-2f81462d3339?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+       "publie": "2026-11-26T18:01:55+00:00",
+       "angle": "Ouest-France chiffre l'aide que la France a effectivement apportée à l'Ukraine, en infographies."
+      },
+      {
+       "source": "L'Opinion",
+       "titre_original": "« Il a exprimé une liberté d’opinion » : Ségolène Royal soutient Teddy Riner après sa sortie sur l'Ukraine",
+       "lien": "https://www.lopinion.fr/politique/il-a-exprime-une-liberte-dopinion-segolene-royal-soutient-teddy-riner-apres-sa-sortie-sur-lukraine",
+       "publie": "2026-11-26T14:00:37+00:00",
+       "angle": "L'Opinion relève le soutien de Ségolène Royal, qui y voit une liberté d'opinion, malgré la levée de boucliers."
+      }
+     ]
+    },
+    {
+     "titre": "Budget de la Sécurité sociale 2027 : échec de la commission mixte paritaire",
+     "theme": "Budget",
+     "pourquoi": "Sans accord, le budget de la Sécurité sociale reste en suspens, ce qui touche le financement de la santé et des retraites.",
+     "image": {
+      "url": "https://www.franceinfo.fr/pictures/5pOQk6CsaD0YLYIgEpWTD9infgs/0x0:4858x2732/432x243/filters:format(jpg)/2026/11/26/6b0804d64a1ad332181251.jpg",
+      "source": "franceinfo"
+     },
+     "suite": null,
+     "essentiel": "La commission mixte paritaire réunie le 26 novembre n'a pas trouvé d'accord entre députés et sénateurs sur le budget de la Sécurité sociale pour 2027. Les élus ont rapidement mis fin aux discussions. Le texte repart à l'Assemblée nationale. Au congrès des maires, le Premier ministre Sébastien Lecornu a prévenu que l'absence de budget mènerait « dans l'abîme ».",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": "Le budget de la Sécurité sociale fixe les dépenses d'assurance maladie, de retraites et de famille. Une commission mixte paritaire réunit sept députés et sept sénateurs pour trouver un texte commun.",
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "Projet de budget de la Sécu : députés et sénateurs échouent à s’accorder, le texte va repartir à l’Assemblée",
+       "lien": "https://www.liberation.fr/politique/projet-de-budget-de-la-secu-deputes-et-senateurs-echouent-a-saccorder-le-texte-va-repartir-a-lassemblee-20261126_FZQE3QSPMZAMFM5CXFHZWB5LBM/",
+       "publie": "2026-11-26T09:26:09+00:00",
+       "angle": "Libération rapporte que les élus ont préféré arrêter vite pour éviter « un texte non adoptable par les deux chambres »."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Budget de la Sécurité sociale 2027 : les députés et sénateurs échouent à trouver un accord, le texte retourne à l'Assemblée",
+       "lien": "https://www.franceinfo.fr/economie/budget/budget-de-la-securite-sociale-les-deputes-et-senateurs-echouent-a-trouver-un-accord-le-texte-retourne-a-l-assemblee_8301108.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T10:29:27+00:00",
+       "angle": "franceinfo parle d'un premier « conclave budgétaire » de la saison, déclaré non conclusif devant des points de vue inconciliables."
+      },
+      {
+       "source": "La Croix",
+       "titre_original": "Budget de la Sécurité sociale : députés et sénateurs échouent à trouver un accord",
+       "lien": "https://www.la-croix.com/economie/budget-de-la-securite-sociale-deputes-et-senateurs-echouent-a-trouver-un-accord-20261126",
+       "publie": "2026-11-26T09:15:57+00:00",
+       "angle": "La Croix résume l'échec et le renvoi du texte à l'Assemblée."
+      }
+     ]
+    },
+    {
+     "titre": "RSF saisit l'Arcom pour suspendre CNews ; la chaîne répond",
+     "theme": "Médias",
+     "pourquoi": "Une demande de suspension d'une chaîne d'information touche au pluralisme et à la liberté de la presse.",
+     "image": {
+      "url": "https://i.f1g.fr/media/cms/orig/2026/11/26/c01bbeb19a3abf99ce637c27eba947c5f27b33c464b40ee8b35af809fd10be9a.JPG",
+      "source": "Le Figaro"
+     },
+     "suite": {
+      "titre": "Reporters sans frontières demande à l'Arcom de suspendre CNews un mois",
+      "deja_su": "Reporters sans frontières avait annoncé vouloir saisir l'Arcom pour obtenir la suspension d'un mois de CNews, en invoquant un manque de pluralisme.",
+      "edition": "archive/2026-11-26-matin.json",
+      "ancre": "france-1",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "Reporters sans frontières a saisi l'Arcom le 26 novembre pour demander la suspension temporaire de CNews, accusée de non-respect répété du pluralisme. CNews a répondu qu'elle « ne se laisserait pas intimider ». Robert Ménard, fondateur de RSF, a qualifié les auteurs de la demande de « bande de gauchistes » sur l'antenne de la chaîne.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": "L'Arcom est le régulateur de l'audiovisuel en France et peut sanctionner les chaînes qui manquent à leurs obligations. CNews est contrôlée par Vincent Bolloré.",
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "«On ne se laissera pas intimider» : CNews répond à Reporters sans frontières qui demande sa suspension",
+       "lien": "https://tvmag.lefigaro.fr/programme-tv/actu-tele/on-ne-se-laissera-pas-intimider-cnews-repond-a-reporters-sans-frontieres-qui-demande-sa-suspension-20261126",
+       "publie": "2026-11-26T17:07:03+00:00",
+       "angle": "Le Figaro donne la réponse de CNews, qui affirme qu'elle ne se laissera pas intimider."
+      },
+      {
+       "source": "Valeurs actuelles",
+       "titre_original": "« Du bourrage de crâne » : l’ONG Reporters sans frontières saisit l’Arcom pour censurer CNews pendant un mois",
+       "lien": "https://www.valeursactuelles.com/politique/du-bourrage-de-crane-long-reporters-sans-frontieres-saisit-larcom-pour-censurer-cnews-pendant-un-mois",
+       "publie": "2026-11-26T15:01:20+00:00",
+       "angle": "Valeurs actuelles cite « bourrage de crâne » et présente la demande comme une volonté de censure de la chaîne."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Le Monde",
+     "articles": 15
+    },
+    {
+     "source": "Le Figaro",
+     "articles": 18
+    },
+    {
+     "source": "Libération",
+     "articles": 49
+    },
+    {
+     "source": "L'Humanité",
+     "articles": 20
+    },
+    {
+     "source": "La Croix",
+     "articles": 47
+    },
+    {
+     "source": "Les Échos",
+     "articles": 0,
+     "erreur": "<unknown>:14:4: mismatched tag"
+    },
+    {
+     "source": "L'Opinion",
+     "articles": 28
+    },
+    {
+     "source": "Mediapart",
+     "articles": 8
+    },
+    {
+     "source": "Valeurs actuelles",
+     "articles": 10
+    },
+    {
+     "source": "Le JDD",
+     "articles": 24
+    },
+    {
+     "source": "Franc-Tireur",
+     "articles": 0,
+     "erreur": "<unknown>:23:2: mismatched tag"
+    },
+    {
+     "source": "Ouest-France",
+     "articles": 10
+    },
+    {
+     "source": "franceinfo",
+     "articles": 29
+    },
+    {
+     "source": "20 Minutes",
+     "articles": 20
+    }
+   ]
+  },
+  {
+   "id": "international",
+   "label": "International",
+   "type": "socle",
+   "events": [
+    {
+     "titre": "Sommet européen sur le budget 2028-2034 : les Vingt-Sept très éloignés",
+     "theme": "Europe",
+     "pourquoi": "Le budget fixe pour sept ans les moyens de l'Union, soit environ 2 000 milliards d'euros, et exige l'unanimité.",
+     "image": {
+      "url": "https://www.humanite.fr/wp-content/uploads/2026/11/UE.jpg?w=1200",
+      "source": "L'Humanité"
+     },
+     "suite": null,
+     "essentiel": "Les chefs d'État et de gouvernement des Vingt-Sept sont réunis les 26 et 27 novembre à Bruxelles pour avancer sur le budget pluriannuel 2028-2034. Les positions restent très éloignées : la première ministre danoise a reconnu que les dirigeants étaient « très loin » les uns des autres. Emmanuel Macron a averti de conséquences si aucune solution n'était trouvée. La France hausse le ton sur la Politique agricole commune. La Slovaquie, la Hongrie et la République tchèque refusent de contribuer à un prêt commun de 45 milliards d'euros pour l'Ukraine. L'objectif est un accord d'ici Noël.",
+     "pour_situer": "Le budget doit être adopté à l'unanimité par les Vingt-Sept.",
+     "incertain": "Le montant d'un éventuel soutien supplémentaire à l'Ukraine est évoqué par France 24 (cent milliards), mais n'est pas confirmé dans les autres articles.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "L'Humanité",
+       "titre_original": "Sommet européen : pourquoi la réunion des Vingt-Sept sur le budget s’annonce particulièrement tendue ?",
+       "lien": "https://www.humanite.fr/monde/budget/sommet-europeen-pourquoi-la-reunion-des-vingt-sept-sur-le-budget-sannonce-particulierement-tendue",
+       "publie": "2026-11-26T15:56:05+00:00",
+       "angle": "L'Humanité explique pourquoi la réunion s'annonce particulièrement tendue, avec des divergences nombreuses."
+      },
+      {
+       "source": "L'Opinion",
+       "titre_original": "Trois pays européens qui disent non à l'aide à l'Ukraine, Berlin brandit la menace budgétaire",
+       "lien": "https://www.lopinion.fr/international/trois-pays-europeens-qui-disent-non-a-laide-a-lukraine-berlin-brandit-la-menace-budgetaire",
+       "publie": "2026-11-26T14:05:21+00:00",
+       "angle": "L'Opinion se concentre sur le refus de trois pays d'aider l'Ukraine et sur la menace budgétaire de Berlin."
+      },
+      {
+       "source": "Le Temps",
+       "titre_original": "Budget européen: les 27 à couteaux tirés, avec le spectre de Marine Le Pen qui plane sur les débats",
+       "lien": "https://www.letemps.ch/monde/budget-europeen-les-27-a-couteaux-tires-avec-le-spectre-de-marine-le-pen-qui-plane-sur-les-debats",
+       "publie": "2026-11-26T17:52:35+00:00",
+       "angle": "Le Temps évoque des dirigeants « à couteaux tirés » et le spectre de Marine Le Pen sur les débats."
+      },
+      {
+       "source": "La Croix",
+       "titre_original": "« Budget européen : la manœuvre de contournement du RN est à haut risque »",
+       "lien": "https://www.la-croix.com/a-vif/budget-europeen-la-manouvre-de-contournement-du-rn-est-a-haut-risque-20261126",
+       "publie": "2026-11-26T07:51:44+00:00",
+       "angle": "La Croix, dans une tribune, juge à haut risque la manœuvre de contournement du RN."
+      }
+     ]
+    },
+    {
+     "titre": "Pablo Hernandez de Cos désigné pour succéder à Christine Lagarde à la tête de la BCE",
+     "theme": "Économie",
+     "pourquoi": "Le président de la BCE oriente la politique monétaire de la zone euro, qui touche l'inflation et le crédit.",
+     "image": {
+      "url": "https://www.franceinfo.fr/pictures/UeLTSGeE9h1bkLFeem3TPBmp2sU/0x0:7158x4026/432x243/filters:format(jpg)/2026/11/26/6b084e06904de384102550.jpg",
+      "source": "franceinfo"
+     },
+     "suite": null,
+     "essentiel": "Les dirigeants de la zone euro ont désigné l'Espagnol Pablo Hernandez de Cos, directeur de la Banque des règlements internationaux, pour succéder à Christine Lagarde à la présidence de la BCE. Il a été préféré au Néerlandais Klaas Knot. Il prendra ses fonctions en février. Le trio de tête de la BCE a été renouvelé à cette occasion.",
+     "pour_situer": "Le Temps évoque un contexte d'inflation à 4 % et de tensions sur les marchés obligataires.",
+     "incertain": null,
+     "contexte": "La Banque centrale européenne fixe les taux directeurs de la zone euro. Christine Lagarde la préside depuis 2019.",
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "L'Espagnol Pablo Hernandez de Cos va succéder à Christine Lagarde à la tête de la Banque centrale européenne",
+       "lien": "https://www.franceinfo.fr/monde/europe/union-europeenne/l-ex-gouverneur-de-la-banque-d-espagne-pablo-hernandez-de-cos-va-succeder-a-christine-lagarde-a-la-tete-de-la-banque-centrale-europeenne_8301510.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T15:36:36+00:00",
+       "angle": "franceinfo présente le parcours de l'économiste et rappelle qu'il a été préféré à Klaas Knot."
+      },
+      {
+       "source": "Le Monde",
+       "titre_original": "A la tête de la BCE, un trio fraîchement nommé pour protéger l’Europe de l’inflation… et peut-être la France d’une attaque sur les marchés",
+       "lien": "https://www.lemonde.fr/economie/article/2026/11/26/a-la-tete-de-la-bce-un-trio-fraichement-nomme-pour-proteger-l-europe-de-l-inflation-et-peut-etre-la-france-d-une-attaque-sur-les-marches_6815550_3234.html",
+       "publie": "2026-11-26T15:04:15+00:00",
+       "angle": "Le Monde insiste sur le trio de dirigeants nommé pour protéger l'Europe de l'inflation, voire la France d'une attaque sur les marchés."
+      },
+      {
+       "source": "L'Opinion",
+       "titre_original": "BCE : qui est Pablo Hernández de Cos, choisi pour succéder à Christine Lagarde ?",
+       "lien": "https://www.lopinion.fr/economie/bce-qui-est-pablo-hernandez-de-cos-choisi-pour-succeder-a-christine-lagarde",
+       "publie": "2026-11-26T15:27:11+00:00",
+       "angle": "L'Opinion replace la nomination dans la campagne présidentielle française, dominée par des candidats eurosceptiques."
+      },
+      {
+       "source": "Al Jazeera",
+       "titre_original": "Spanish economist to become new European Central Bank chief",
+       "lien": "https://www.aljazeera.com/news/2026/11/26/spanish-economist-to-become-new-european-central-bank-chief?traffic_source=rss",
+       "publie": "2026-11-26T16:20:54+00:00",
+       "angle": "Al Jazeera relaie l'annonce après la réunion des dirigeants de la zone euro, de façon brève."
+      }
+     ]
+    },
+    {
+     "titre": "Israël : Gadi Eisenkot et Les Démocrates concluent un accord de coalition",
+     "theme": "Israël",
+     "pourquoi": "C'est une étape vers la formation d'un nouveau gouvernement israélien.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/25/565/0/6779/3389/644/322/60/0/e4b4592_ftp-1-cvbs6g2qhppg-afp-d8l368z.jpg",
+      "source": "Le Monde"
+     },
+     "suite": {
+      "titre": "Israël : des juges suggèrent d'abandonner le principal dossier de corruption contre Nétanyahou",
+      "deja_su": "Des juges israéliens avaient suggéré d'abandonner les charges les plus graves dans un dossier de corruption contre Benyamin Nétanyahou.",
+      "edition": "archive/2026-11-26-matin.json",
+      "ancre": "international-2",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "Le parti Yashar de Gadi Eisenkot, chargé de former le gouvernement, a conclu le 26 novembre un accord de coalition avec Les Démocrates, parti de gauche. Les discussions avaient été rompues mardi, faute d'entente sur la répartition des portefeuilles. Les Démocrates obtiennent quatre ministères, dont celui de la Sécurité intérieure. Courrier international estime que les doutes exprimés par les juges sur le procès de Benyamin Nétanyahou changent la dynamique de la formation du gouvernement.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Israël : Gadi Eisenkot et le parti de gauche Les Démocrates nouent un accord de coalition, premier pas vers la formation d’un gouvernement",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/26/israel-gadi-eisenkot-et-le-parti-de-gauche-les-democrates-nouent-un-accord-de-coalition-premier-pas-vers-la-formation-d-un-gouvernement_6815576_3210.html",
+       "publie": "2026-11-26T17:08:19+00:00",
+       "angle": "Le Monde rappelle que les discussions avaient été rompues mardi sur la répartition des ministères."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Israël : Gadi Eisenkot et le parti de gauche nouent un accord de coalition",
+       "lien": "https://www.liberation.fr/international/moyen-orient/israel-gadi-eisenkot-et-le-parti-de-gauche-nouent-un-accord-de-coalition-20261126_H6VS3XPF2RHSXG52PJ7STVQAAA/",
+       "publie": "2026-11-26T17:02:09+00:00",
+       "angle": "Libération précise que le portefeuille très sensible de la Sécurité intérieure revient aux Démocrates."
+      },
+      {
+       "source": "Courrier international",
+       "titre_original": "Les doutes sur le procès Nétanyahou changent la dynamique de la formation du nouveau gouvernement israélien",
+       "lien": "https://www.courrierinternational.com/article/israel-les-doutes-sur-le-proces-netanyahou-changent-la-dynamique-de-la-formation-du-nouveau-gouvernement-israelien_290642",
+       "publie": "2026-11-26T17:35:55+00:00",
+       "angle": "Courrier international relie l'accord aux doutes des juges sur le procès du Premier ministre sortant."
+      }
+     ]
+    },
+    {
+     "titre": "Guerre en Ukraine : Trump demande à Poutine de cesser « toute agression » en Europe",
+     "theme": "Ukraine",
+     "pourquoi": "Les relations entre grandes puissances et l'extension du conflit en Europe sont en jeu.",
+     "image": {
+      "url": "https://i.f1g.fr/media/cms/orig/2026/11/26/61b6a4f9b1fb7a210e199874128bdb522df699bdd735c6b9f0afd6cc5ea93daf.JPG",
+      "source": "Le Figaro"
+     },
+     "suite": {
+      "titre": "Guerre en Ukraine : Trump et le chef de l'Otan exhortent la Russie à ne pas « étendre la guerre »",
+      "deja_su": "Donald Trump et Mark Rutte avaient exhorté la Russie à ne pas étendre la guerre.",
+      "edition": "archive/2026-11-26-matin.json",
+      "ancre": "international-3",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "Dans un message publié sur Truth Social, Donald Trump demande à Vladimir Poutine de « mettre fin à toute agression militaire » en Europe. Il évoque ses récents échanges avec Vladimir Poutine en Chine et la nécessité de parvenir rapidement à la paix. Dans le même temps, l'Ukraine a revendiqué des frappes sur une base aérienne et une station pétrolière en Russie. L'Algérie dit refuser que la guerre s'étende au Maghreb, après des frappes ukrainiennes contre deux navires russes au large de la Libye.",
+     "pour_situer": null,
+     "incertain": "La légalité des frappes ukrainiennes en Libye est débattue, et les autorités de l'est du pays ont promis une réponse.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "Donald Trump souhaite que Vladimir Poutine «mette fin à toute agression militaire» en Europe",
+       "lien": "https://www.lefigaro.fr/international/donald-trump-souhaite-que-vladimir-poutine-mette-fin-a-toute-agression-militaire-en-europe-20261126",
+       "publie": "2026-11-26T17:08:51+00:00",
+       "angle": "Le Figaro détaille le message de Trump et ses échanges récents avec Poutine en Chine."
+      },
+      {
+       "source": "La Croix",
+       "titre_original": "Guerre en Ukraine : Trump presse Poutine de cesser ses « agressions » ; combattant colombien condamné",
+       "lien": "https://www.la-croix.com/international/ukraine-russie-jour-1737-point-conflit-ukrainien-poutine-aujourdhui-20261126",
+       "publie": "2026-11-26T17:53:22+00:00",
+       "angle": "La Croix associe la demande de Trump à une attaque ukrainienne ayant tué cinq personnes dans la région de Zaporijjia."
+      },
+      {
+       "source": "The Guardian",
+       "titre_original": "Trump says he wants Putin to ‘pull back all military aggression’ in Europe – as it happened",
+       "lien": "https://www.theguardian.com/world/live/2026/nov/26/eu-budget-summit-ukraine-russia-spain-serbia-elections-latest-news-updates",
+       "publie": "2026-11-26T15:59:13+00:00",
+       "angle": "The Guardian relate la déclaration de Trump dans un direct qui suit aussi le sommet européen."
+      }
+     ]
+    },
+    {
+     "titre": "Naufrage d'un pétrolier chargé de diesel au large d'Ibiza",
+     "theme": "Environnement",
+     "pourquoi": "Le risque de marée noire en Méditerranée a mobilisé des moyens d'État.",
+     "image": {
+      "url": "https://www.franceinfo.fr/pictures/8VY2L-hsGEolWT-owo_pCNl7Ej4/0x208:3189x2002/432x243/filters:format(jpg)/2026/11/26/6b0835e195f4d783774770.jpg",
+      "source": "franceinfo"
+     },
+     "suite": null,
+     "essentiel": "Le Med Emre, navire transportant jusqu'à 7 000 tonnes de diesel, a coulé le 26 novembre au large d'Ibiza. Un membre de l'équipage est mort, et plusieurs ont été hospitalisés pour hypothermie. L'Espagne a activé un plan d'urgence contre la pollution marine. Aucun déversement n'avait été observé à la mi-journée.",
+     "pour_situer": null,
+     "incertain": "L'ampleur d'un éventuel dommage environnemental est encore en cours d'évaluation.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "Un mort, 7 000 tonnes de carburant à bord, pas de traces de marée noire... Ce que l'on sait du naufrage d'un navire au large de l'île espagnole d'Ibiza",
+       "lien": "https://www.franceinfo.fr/environnement/pollution/naufrages/un-mort-7-000-tonnes-de-carburant-a-bord-pas-de-traces-d-une-maree-noire-ce-que-l-on-sait-du-naufrage-d-un-navire-au-large-de-l-ile-espagnole-d-ibiza_8301408.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T15:56:18+00:00",
+       "angle": "franceinfo précise qu'aucun déversement n'avait été observé à la mi-journée malgré les moyens déployés."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Un pétrolier fait naufrage au large d’Ibiza, l’Espagne active son plan d’urgence contre la pollution marine",
+       "lien": "https://www.liberation.fr/international/europe/un-petrolier-fait-naufrage-au-large-dibiza-lespagne-active-son-plan-durgence-contre-la-pollution-marine-20261126_MYWTLSFZ3JCPTIOQV74DQQJCVA/",
+       "publie": "2026-11-26T10:36:29+00:00",
+       "angle": "Libération donne le trajet prévu du navire et le bilan humain."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "Diesel tanker carrying up to 7,000 tonnes capsizes near Ibiza, killing one",
+       "lien": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-26T15:17:18+00:00",
+       "angle": "BBC News souligne que l'évaluation des dommages possibles est toujours en cours."
+      },
+      {
+       "source": "Le Temps",
+       "titre_original": "Un navire chargé de diesel coule au large d’Ibiza, l’Espagne se mobilise pour prévenir une marée noire",
+       "lien": "https://www.letemps.ch/monde/un-navire-charge-de-diesel-coule-au-large-d-ibiza-faisant-un-mort",
+       "publie": "2026-11-26T09:13:01+00:00",
+       "angle": "Le Temps insiste sur la mobilisation de l'Espagne pour prévenir une marée noire."
+      }
+     ]
+    },
+    {
+     "titre": "Législatives espagnoles du 29 novembre : le logement au cœur de la campagne",
+     "theme": "Espagne",
+     "pourquoi": "Le scrutin peut changer le gouvernement de l'Espagne et la place de l'extrême droite.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/25/309/0/1500/750/644/322/60/0/98539ea_upload-1-h6k6zkdzv5ar-mediaappel-01.png",
+      "source": "Le Monde"
+     },
+     "suite": null,
+     "essentiel": "Les Espagnols votent dimanche 29 novembre pour renouveler le Congrès des députés et le Sénat, lors d'élections anticipées. La flambée des prix du logement domine la campagne. Vox est donné troisième dans les sondages, et le PP et Vox l'emportent dans 76 simulations sur 100, selon une tribune du JDD. La gauche veut croire à une « remontada ». La droite et l'extrême droite alimentent des soupçons de fraude, selon Courrier international.",
+     "pour_situer": null,
+     "incertain": "Les simulations citées sont celles d'une tribune ; aucune projection officielle n'est fournie.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Législatives en Espagne : les cartes et graphiques pour comprendre comment la crise du logement est devenue un enjeu de la campagne",
+       "lien": "https://www.lemonde.fr/international/visuel/2026/11/26/legislatives-en-espagne-les-cartes-et-graphiques-pour-comprendre-comment-la-crise-du-logement-est-devenue-un-enjeu-de-la-campagne_6815566_3210.html",
+       "publie": "2026-11-26T16:30:10+00:00",
+       "angle": "Le Monde explique par des cartes et des graphiques comment la crise du logement est devenue un enjeu central."
+      },
+      {
+       "source": "L'Humanité",
+       "titre_original": "Espagne : à quelques jours des législatives, la gauche veut croire à sa « remontada »",
+       "lien": "https://www.humanite.fr/monde/elections-en-espagne/espagne-a-quelques-jours-des-legislatives-la-gauche-veut-croire-a-sa-remontada",
+       "publie": "2026-11-26T17:41:44+00:00",
+       "angle": "L'Humanité décrit une gauche qui veut croire à sa remontée face à une droite qui aiguise ses couteaux."
+      },
+      {
+       "source": "Le JDD",
+       "titre_original": "Après l’Italie, l’Espagne va-t-elle choisir l’union des droites contre Pedro Sánchez ?",
+       "lien": "https://www.lejdd.fr/International/apres-litalie-lespagne-va-t-elle-choisir-lunion-des-droites-contre-pedro-sanchez-189753",
+       "publie": "2026-11-26T13:46:27+00:00",
+       "angle": "Le JDD voit dans l'alliance PP-Vox une union des droites dont le seul ciment est l'opposition à Pedro Sánchez."
+      },
+      {
+       "source": "Courrier international",
+       "titre_original": "Législatives en Espagne : les partis de droite alimentent les soupçons de fraude",
+       "lien": "https://www.courrierinternational.com/article/politique-legislatives-en-espagne-les-partis-de-droite-alimentent-les-soupcons-de-fraude_290503",
+       "publie": "2026-11-26T15:18:22+00:00",
+       "angle": "Courrier international relève les accusations de fraude portées à l'avance par la droite et l'extrême droite."
+      }
+     ]
+    },
+    {
+     "titre": "Procès de jihadistes français en Irak : huit nouvelles condamnations à perpétuité",
+     "theme": "Justice",
+     "pourquoi": "Elle touche au sort de ressortissants français que Paris refuse de rapatrier pour les juger.",
+     "image": {
+      "url": "https://s.rfi.fr/media/display/ca1e7bba-c0dc-11f1-b01c-13420ab900a2/w:1024/p:16x9/2026-10-05T101214Z-1232127138-RC2YWNAFNRTE-RTRMADP-3-IRAQ-USA-COALITION.jpg",
+      "source": "RFI"
+     },
+     "suite": null,
+     "essentiel": "Huit jihadistes français, dont Romain Garnier, ont été condamnés à la prison à perpétuité par la justice irakienne pour leur appartenance à l'État islamique. Quarante-sept Français sont jugés en Irak depuis septembre, après avoir été extradés de Syrie. Paris a rapatrié des centaines de membres de familles de jihadistes, mais refuse de faire de même pour les combattants adultes.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "RFI",
+       "titre_original": "Procès de jihadistes français en Irak: huit nouveaux accusés condamnés à une peine de prison à perpétuité",
+       "lien": "https://www.rfi.fr/fr/moyen-orient/20261126-proc%C3%A8s-de-jihadistes-fran%C3%A7ais-en-irak-huit-nouveaux-accus%C3%A9s-condamn%C3%A9s-%C3%A0-la-perp%C3%A9tuit%C3%A9",
+       "publie": "2026-11-26T10:39:03+00:00",
+       "angle": "RFI annonce les condamnations à perpétuité et situe les poursuites dans le cadre des jugements en cours."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Irak : Romain Garnier et sept autres Français condamnés à perpétuité pour leur affiliation à l’Etat islamique",
+       "lien": "https://www.liberation.fr/international/moyen-orient/irak-romain-garnier-et-sept-autres-francais-condamnes-a-perpetuite-pour-leur-affiliation-a-letat-islamique-20261126_D7RVUD7OSJDRJIYYERDEROG4S4/",
+       "publie": "2026-11-26T08:52:40+00:00",
+       "angle": "Libération nomme l'un des condamnés et rappelle la position de Paris sur les rapatriements."
+      },
+      {
+       "source": "Ouest-France",
+       "titre_original": "En Irak, des figures du djihadisme français en procès pour leur appartenance à l’État islamique",
+       "lien": "https://www.ouest-france.fr/monde/irak/en-irak-des-figures-du-djihadisme-francais-en-proces-pour-leur-appartenance-a-letat-islamique-8a7ac7de-e986-11f1-86c1-70195b4d2e52?utm_source=fluxpublicactu&utm_medium=fluxrss&utm_campaign=banquedecontenu",
+       "publie": "2026-11-26T17:28:59+00:00",
+       "angle": "Ouest-France présente le procès comme celui de figures du djihadisme français, jugées pour la période 2014-2019."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "France 24",
+     "articles": 23
+    },
+    {
+     "source": "RFI",
+     "articles": 21
+    },
+    {
+     "source": "Courrier international",
+     "articles": 20
+    },
+    {
+     "source": "BBC News",
+     "articles": 20
+    },
+    {
+     "source": "The Guardian",
+     "articles": 24
+    },
+    {
+     "source": "The New York Times",
+     "articles": 15
+    },
+    {
+     "source": "Al Jazeera",
+     "articles": 25
+    },
+    {
+     "source": "Deutsche Welle",
+     "articles": 0,
+     "erreur": "<unknown>:2:0: syntax error"
+    },
+    {
+     "source": "Le Temps",
+     "articles": 18
+    }
+   ]
+  }
+ ]
+}
