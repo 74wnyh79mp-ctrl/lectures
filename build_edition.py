@@ -35,7 +35,8 @@ MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-5-5")
 MAX_EVENTS = int(os.environ.get("MAX_EVENTS", "10"))  # plafond de sécurité, pas un objectif
 WINDOW_HOURS = int(os.environ.get("WINDOW_HOURS", "24"))
 MIN_SOURCES = 2  # la double lecture : au moins deux journaux différents par événement
-MAX_PER_FEED = 10  # articles gardés par flux (réglable par rubrique) : moins de texte, moins de coût
+MAX_PER_FEED = 60   # articles lus par flux dans la fenêtre de temps (les gros journaux publient beaucoup)
+MAX_ITEMS = 220     # articles envoyés à l'IA après le pré-tri : c'est ce qui fixe le coût
 USER_AGENT = "Contrechamp/0.3 (lecteur RSS personnel)"
 
 JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
@@ -94,6 +95,50 @@ def entry_image(entry) -> str | None:
     return None
 
 
+# ---------------------------------------------------------------------------
+# Pré-tri sans IA : ne garder que les sujets couverts par plusieurs journaux
+# ---------------------------------------------------------------------------
+
+STOPWORDS = set("""
+apres avant selon contre entre depuis encore toujours alors celle cette ceux leurs notre votre
+pourquoi comment quand quelle quelles quels lequel laquelle autres autre aussi ainsi plusieurs
+premier premiere derniere dernier nouveau nouvelle nouveaux nouvelles grand grande grands
+france francais francaise francaises monde annee annees heure heures jours direct video videos
+photos article articles toute toutes tous faire fait faits avoir etait sont seront serait
+about after their there which would could should first years people where while being since
+under against between during other still these those video watch
+pendant durant chaque
+""".split())
+
+
+def keywords(text: str) -> set[str]:
+    import unicodedata
+    plain = unicodedata.normalize("NFKD", text.lower())
+    plain = "".join(c for c in plain if not unicodedata.combining(c))
+    return {w[:6] for w in re.findall(r"[a-z0-9]{5,}", plain) if w not in STOPWORDS}
+
+
+def prefilter(items: list[dict], limit: int = MAX_ITEMS) -> list[dict]:
+    """Garde les articles dont le sujet est repris par au moins un autre journal.
+    Gratuit (pas d'IA) : c'est ce qui permet de lire beaucoup de journaux sans payer plus."""
+    words = [keywords(i["title"]) for i in items]
+    full = [w | keywords(i["summary"][:160]) for w, i in zip(words, items)]
+    scores = []
+    for a, item in enumerate(items):
+        others = set()
+        for b, other in enumerate(items):
+            if other["source"] == item["source"] or other["source"] in others:
+                continue
+            common_titles = len(words[a] & words[b])
+            common_all = len(full[a] & full[b])
+            if common_titles >= 2 or (common_titles >= 1 and common_all >= 3):
+                others.add(other["source"])
+        scores.append(len(others))
+    kept = [(sc, i) for sc, i in zip(scores, items) if sc >= 1]
+    kept.sort(key=lambda x: -x[0])
+    return [i for _, i in kept[:limit]]
+
+
 def entry_time(entry) -> datetime | None:
     for key in ("published_parsed", "updated_parsed"):
         value = entry.get(key)
@@ -135,12 +180,19 @@ def fetch_category(category: dict, now: datetime, since: datetime | None = None,
         # déjà utilisés la veille restent écartés grâce à skip_links.
         since = now - timedelta(hours=int(category["window_hours"]))
     for feed in category["feeds"]:
-        parsed, url = None, feed.get("url")
-        if url:
+        parsed = None
+        urls = ([feed["url"]] if feed.get("url") else []) + list(feed.get("urls", []))
+        url = urls[0] if urls else None
+        for candidate in urls:  # on essaie chaque adresse connue jusqu'à en trouver une qui répond
             try:
-                parsed = feedparser.parse(url, agent=USER_AGENT)
+                attempt = feedparser.parse(candidate, agent=USER_AGENT)
             except Exception:
-                parsed = None
+                continue
+            parsed, url = attempt, candidate
+            if attempt.entries:
+                if candidate != urls[0]:
+                    print(f"   (flux trouvé pour {feed['source']} : {candidate})")
+                break
         if (parsed is None or not parsed.entries) and feed.get("site"):
             found = discover_feed(feed["site"])  # adresse absente ou muette : on cherche sur le site
             if found and found != url:
@@ -227,7 +279,7 @@ Ta tâche :
    - "contexte" : pour comprendre, 2 à 4 phrases de contexte général et durable, que tu peux tirer de tes connaissances : qui sont les acteurs, ce qu'est l'institution ou le lieu, les grandes étapes connues de l'affaire. Uniquement des faits établis et stables, sans chiffre récent ni événement que tu ne connais pas avec certitude. Mets null si tu n'es pas sûr.
    - "suite_de" : l'identifiant « prev-… » de l'événement de l'édition précédente qu'il prolonge, sinon null.
    - "deja_su" : pour une suite, une phrase qui rappelle ce qu'on savait déjà ; sinon null.
-   - "lectures" : 2 à 4 articles de journaux différents (jamais deux articles du même journal). Quand plusieurs journaux couvrent l'événement, choisis en priorité ceux dont les angles diffèrent le plus (sensibilités politiques, pays, type de média), avec "item_id" (l'identifiant fourni) et "angle" : une phrase, avec tes propres mots, sur ce que ce journal met en avant par rapport aux autres. Si deux articles semblent reprendre la même dépêche d'agence, dis-le dans l'angle.
+   - "lectures" : 2 à 4 articles de journaux différents (jamais deux articles du même journal). Contraste obligatoire : quand des journaux de bords différents ont couvert l'événement (voir la liste des journaux et de leur bord), les lectures doivent en mêler au moins deux bords, par exemple un journal de gauche ou de centre gauche et un de droite ou de centre droit. N'aligne jamais plusieurs journaux du même bord si un autre bord a traité le sujet. Ensuite, privilégie les angles les plus différents (pays, type de média), avec "item_id" (l'identifiant fourni) et "angle" : une phrase, avec tes propres mots, sur ce que ce journal met en avant par rapport aux autres. Si deux articles semblent reprendre la même dépêche d'agence, dis-le dans l'angle.
 
 Règles impératives :
 - Hors des champs "contexte" et "pourquoi", n'utilise que les informations présentes dans les articles fournis. N'ajoute aucun fait, chiffre, nom ou date que tu ne trouves pas dans les données.
@@ -342,7 +394,8 @@ def write_edition(categories: list[dict], items: list[dict],
                 prev_refs[ref] = {"titre": ev.get("titre", ""), "rubrique": c["id"], "numero": i + 1}
                 prev_list.append({"id": ref, "titre": ev.get("titre", ""), "essentiel": ev.get("essentiel", "")[:300]})
     compact = dict(ensure_ascii=False, separators=(",", ":"))  # compact : moins de jetons lus
-    profils = {f["source"]: f["profil"] for c in categories for f in c["feeds"] if f.get("profil")}
+    profils = {f["source"]: (f"{f['bord']} — " if f.get("bord") else "") + f["profil"]
+               for c in categories for f in c["feeds"] if f.get("profil")}
     user = ("Les journaux et leur sensibilité :\n" + "\n".join(f"- {k} : {v}" for k, v in profils.items())
             + f"\n\nÉdition précédente ({len(prev_list)} événements) :\n" + json.dumps(prev_list, **compact)
             + f"\n\nArticles du jour ({len(payload)}) :\n" + json.dumps(payload, **compact))
@@ -447,7 +500,9 @@ def build(sources_path: Path, out_dir: Path, llm: Callable[[str, str], str] = ca
             print(f"   - {line['source']} : {line['articles']} {line.get('erreur', '')}")
 
     total_items = len(all_items)
-    events = write_edition(config["categories"], all_items, llm, previous) if all_items else {}
+    selected = prefilter(all_items)
+    print(f"Pré-tri : {len(selected)} articles gardés sur {total_items} (sujets couverts par au moins deux journaux)")
+    events = write_edition(config["categories"], selected, llm, previous) if selected else {}
     categories = []
     for category in config["categories"]:
         cat_events = events.get(category["id"], [])
@@ -460,8 +515,8 @@ def build(sources_path: Path, out_dir: Path, llm: Callable[[str, str], str] = ca
             "sources": reports[category["id"]],
         })
 
-    if total_items == 0:
-        raise RuntimeError("aucun article récupéré : l'édition précédente est conservée")
+    if total_items == 0 or not selected:
+        raise RuntimeError("aucun article exploitable : l'édition précédente est conservée")
 
     edition = {
         "genere_le": local.isoformat(timespec="minutes"),

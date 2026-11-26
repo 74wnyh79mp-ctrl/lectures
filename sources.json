@@ -1,5 +1,5 @@
 {
-  "_note": "Un seul flux par journal, de sensibilités variées : c'est ce qui fait la double lecture. « url » : adresse du flux ; « site » : page d'accueil, utilisée pour trouver le flux si l'adresse manque ou ne répond pas. « profil » : sensibilité du journal, transmise à l'IA pour choisir des angles contrastés. « actif »: false met une rubrique en pause.",
+  "_note": "Un seul flux par journal, de sensibilités variées : c'est ce qui fait la double lecture. « url » : adresse du flux ; « site » : page d'accueil, utilisée pour trouver le flux si l'adresse manque ou ne répond pas. « profil » : sensibilité du journal, transmise à l'IA pour choisir des angles contrastés. « actif »: false met une rubrique en pause. « urls » : autres adresses essayées dans l'ordre si la première ne répond pas. « bord » : sensibilité, utilisée en interne pour imposer des lectures contrastées.",
   "categories": [
     {
       "id": "france",
@@ -9,74 +9,111 @@
         {
           "source": "Le Monde",
           "profil": "quotidien de référence, centre gauche",
-          "url": "https://www.lemonde.fr/rss/une.xml"
+          "url": "https://www.lemonde.fr/rss/une.xml",
+          "bord": "centre gauche"
         },
         {
           "source": "Le Figaro",
           "profil": "quotidien, droite libérale et conservatrice",
-          "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml"
+          "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+          "bord": "droite"
         },
         {
           "source": "Libération",
           "profil": "quotidien, gauche",
-          "url": "https://www.liberation.fr/arc/outboundfeeds/rss-all/?outputType=xml"
+          "url": "https://www.liberation.fr/arc/outboundfeeds/rss-all/?outputType=xml",
+          "bord": "gauche"
         },
         {
           "source": "L'Humanité",
           "profil": "quotidien, gauche communiste",
-          "site": "https://www.humanite.fr/"
+          "site": "https://www.humanite.fr/",
+          "bord": "gauche",
+          "urls": [
+            "https://www.humanite.fr/feed",
+            "https://www.humanite.fr/rss.xml"
+          ]
         },
         {
           "source": "La Croix",
           "profil": "quotidien d'inspiration catholique, centre",
-          "site": "https://www.la-croix.com/"
+          "site": "https://www.la-croix.com/",
+          "bord": "centre",
+          "urls": [
+            "https://www.la-croix.com/feeds/rss/site.xml",
+            "https://www.la-croix.com/RSS/UNIVERS"
+          ]
         },
         {
           "source": "Les Échos",
           "profil": "quotidien économique, libéral",
           "url": "https://syndication.lesechos.fr/rss/rss_une.xml",
-          "site": "https://www.lesechos.fr/"
+          "site": "https://www.lesechos.fr/",
+          "bord": "centre droit",
+          "urls": [
+            "https://services.lesechos.fr/rss/les-echos-une.xml",
+            "https://syndication.lesechos.fr/rss/rss_france.xml"
+          ]
         },
         {
           "source": "L'Opinion",
           "profil": "quotidien libéral, centre droit",
-          "site": "https://www.lopinion.fr/"
+          "site": "https://www.lopinion.fr/",
+          "bord": "centre droit"
         },
         {
           "source": "Mediapart",
           "profil": "journal en ligne d'investigation, gauche",
           "url": "https://www.mediapart.fr/articles/feed",
-          "site": "https://www.mediapart.fr/"
+          "site": "https://www.mediapart.fr/",
+          "bord": "gauche"
         },
         {
           "source": "Valeurs actuelles",
           "profil": "hebdomadaire, droite conservatrice",
-          "site": "https://www.valeursactuelles.com/"
+          "site": "https://www.valeursactuelles.com/",
+          "bord": "droite"
         },
         {
           "source": "Le JDD",
           "profil": "hebdomadaire, droite conservatrice",
-          "site": "https://www.lejdd.fr/"
+          "site": "https://www.lejdd.fr/",
+          "bord": "droite",
+          "urls": [
+            "https://www.lejdd.fr/rss.xml"
+          ]
         },
         {
           "source": "Franc-Tireur",
           "profil": "hebdomadaire, centre, laïque, opposé aux extrêmes",
-          "site": "https://www.franc-tireur.fr/"
+          "site": "https://www.franc-tireur.fr/",
+          "bord": "centre",
+          "urls": [
+            "https://www.franc-tireur.fr/feed",
+            "https://www.franc-tireur.fr/rss.xml"
+          ]
         },
         {
           "source": "Ouest-France",
           "profil": "quotidien régional, modéré",
-          "site": "https://www.ouest-france.fr/"
+          "site": "https://www.ouest-france.fr/",
+          "bord": "centre",
+          "urls": [
+            "https://www.ouest-france.fr/rss-en-continu.xml",
+            "https://www.ouest-france.fr/rss/une"
+          ]
         },
         {
           "source": "franceinfo",
           "profil": "service public d'information",
-          "url": "https://www.francetvinfo.fr/titres.rss"
+          "url": "https://www.francetvinfo.fr/titres.rss",
+          "bord": "service public"
         },
         {
           "source": "20 Minutes",
           "profil": "quotidien gratuit, généraliste",
-          "url": "https://www.20minutes.fr/feeds/rss-une.xml"
+          "url": "https://www.20minutes.fr/feeds/rss-une.xml",
+          "bord": "généraliste"
         }
       ]
     },
@@ -88,47 +125,64 @@
         {
           "source": "France 24",
           "profil": "chaîne publique française d'info internationale",
-          "url": "https://www.france24.com/fr/rss"
+          "url": "https://www.france24.com/fr/rss",
+          "bord": "service public"
         },
         {
           "source": "RFI",
           "profil": "radio publique française internationale",
-          "url": "https://www.rfi.fr/fr/rss"
+          "url": "https://www.rfi.fr/fr/rss",
+          "bord": "service public"
         },
         {
           "source": "Courrier international",
           "profil": "sélection traduite de la presse étrangère",
-          "site": "https://www.courrierinternational.com/"
+          "site": "https://www.courrierinternational.com/",
+          "bord": "presse étrangère traduite"
         },
         {
           "source": "BBC News",
           "profil": "service public britannique",
-          "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+          "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+          "bord": "étranger, service public"
         },
         {
           "source": "The Guardian",
           "profil": "quotidien britannique, centre gauche",
-          "url": "https://www.theguardian.com/world/rss"
+          "url": "https://www.theguardian.com/world/rss",
+          "bord": "étranger, centre gauche"
         },
         {
           "source": "The New York Times",
           "profil": "quotidien américain, centre gauche",
-          "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+          "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+          "bord": "étranger, centre gauche"
         },
         {
           "source": "Al Jazeera",
           "profil": "chaîne qatarie, regard du monde arabe et du Sud",
-          "url": "https://www.aljazeera.com/xml/rss/all.xml"
+          "url": "https://www.aljazeera.com/xml/rss/all.xml",
+          "bord": "étranger, monde arabe"
         },
         {
           "source": "Deutsche Welle",
           "profil": "média public allemand",
-          "site": "https://www.dw.com/fr/"
+          "site": "https://www.dw.com/fr/",
+          "bord": "étranger, service public",
+          "urls": [
+            "https://rss.dw.com/rdf/rss-fr-all",
+            "https://rss.dw.com/xml/rss-fr-all"
+          ]
         },
         {
           "source": "Le Temps",
           "profil": "quotidien suisse, libéral",
-          "site": "https://www.letemps.ch/"
+          "site": "https://www.letemps.ch/",
+          "bord": "étranger, libéral",
+          "urls": [
+            "https://www.letemps.ch/articles.rss",
+            "https://www.letemps.ch/rss"
+          ]
         }
       ]
     },
