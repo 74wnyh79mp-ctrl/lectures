@@ -1,0 +1,545 @@
+{
+ "genere_le": "2026-11-27T07:24+01:00",
+ "date": "vendredi 27 novembre 2026",
+ "moment": "matin",
+ "modele": "claude-sonnet-5-5",
+ "categories": [
+  {
+   "id": "france",
+   "label": "France",
+   "type": "socle",
+   "events": [
+    {
+     "titre": "Budget de l'UE 2028-2034 : pas d'accord à Bruxelles, négociations renvoyées à décembre",
+     "theme": "Europe",
+     "pourquoi": "Ce budget fixe pour sept ans les moyens de l'Union, dont la politique agricole commune, et engage la France et ses partenaires.",
+     "image": {
+      "url": "https://i.f1g.fr/media/cms/2850x1604_crop/2026/11/27/c1c652850833dde87cde14971db24321fab05b4b79d28bff3f29442f8044a17b.jpg",
+      "source": "Le Figaro"
+     },
+     "suite": null,
+     "essentiel": "Réunis à Bruxelles le 26 novembre, les Vingt-Sept n'ont pas surmonté leurs divergences sur le budget pluriannuel 2028-2034 et ont écourté le sommet, renvoyant les négociations à décembre. Emmanuel Macron a dénoncé une « erreur stratégique » face à la baisse envisagée du budget européen et fixé un ultimatum d'ici à la fin de l'année. Il a dit ne pas vouloir poursuivre les discussions au-delà, ce qui a provoqué une passe d'armes avec Marine Le Pen, qui y voit de « basses manœuvres politiciennes ».",
+     "pour_situer": null,
+     "incertain": "La position exacte des pays « frugaux » et le montant en discussion ne sont pas détaillés dans les articles fournis.",
+     "contexte": "Le budget pluriannuel de l'Union européenne est adopté à l'unanimité des États membres. Il finance notamment la politique agricole commune et les fonds de cohésion.",
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "Budget de l’UE : Emmanuel Macron dénonce une «erreur stratégique», trace ses lignes rouges et tacle la «drôle d’arrogance» de Marine Le Pen",
+       "lien": "https://www.lefigaro.fr/international/budget-europeen-macron-denonce-une-erreur-strategique-et-trace-ses-lignes-rouges-20261126",
+       "publie": "2026-11-27T05:44:38+00:00",
+       "angle": "Le Figaro insiste sur l'isolement de Macron face à l'Allemagne et aux pays « frugaux » et sur son ultimatum."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Coupes budgétaires : l’Europe est en train de faire une «erreur stratégique», prévient Emmanuel Macron",
+       "lien": "https://www.liberation.fr/international/europe/coupes-budgetaires-leurope-est-en-train-de-faire-une-erreur-strategique-previent-emmanuel-macron-20261126_WI6355WSOBAKRLTMIGPM4SD5G4/",
+       "publie": "2026-11-26T20:19:05+00:00",
+       "angle": "Libération reprend la mise en garde du président contre une « erreur stratégique » de coupes budgétaires."
+      },
+      {
+       "source": "Courrier international",
+       "titre_original": "Les Européens échouent à s’entendre sur leur budget et renvoient les négociations à décembre",
+       "lien": "https://www.courrierinternational.com/article/politique-les-europeens-echouent-a-s-entendre-sur-leur-budget-et-renvoient-les-negociations-a-decembre_290667",
+       "publie": "2026-11-27T04:48:52+00:00",
+       "angle": "Courrier international décrit l'ampleur des divergences entre les Vingt-Sept et le choix d'écourter le sommet."
+      },
+      {
+       "source": "Le Monde",
+       "titre_original": "Les discussions sur le budget de l’Union européenne menacées par les échéances électorales françaises",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/27/les-discussions-sur-le-budget-de-l-union-europeenne-menacees-par-les-echeances-electorales-francaises_6815793_3210.html",
+       "publie": "2026-11-27T04:29:31+00:00",
+       "angle": "Le Monde relie la fermeté de Macron aux échéances électorales françaises, qui menacent la suite des discussions."
+      }
+     ]
+    },
+    {
+     "titre": "Écrits antisémites attribués à Bardella : il nie, le RN peine à répondre",
+     "theme": "Politique",
+     "pourquoi": "L'affaire touche le président du premier parti d'opposition à six mois de la présidentielle.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/18/62/0/6500/3250/644/322/60/0/fb50843_upload-1-k3h658qa42od-kzihnioglu-paris-bardella-lepen-17112026-15.jpg",
+      "source": "Le Monde"
+     },
+     "suite": {
+      "titre": "Propos antisémites de 2013 : Le Monde et Mediapart publient de nouveaux messages",
+      "deja_su": "Le Monde et Mediapart avaient publié de nouveaux messages de 2013 attribués à Jordan Bardella, qui conteste en être l'auteur.",
+      "edition": "archive/2026-11-26-soir.json",
+      "ancre": "france-1",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "Le Monde rapporte que Jordan Bardella, confronté à de nouveaux éléments, nie sans préciser les raisons de ses dénégations. L'Opinion note que la riposte du RN est plus discrète qu'à l'automne, avec une mobilisation moindre des élus. Libération voit un parti partagé entre dénégation du passé et dédiabolisation.",
+     "pour_situer": null,
+     "incertain": "L'authenticité des messages est contestée par l'intéressé.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Ecrits antisémites : Jordan Bardella s’enferre dans le déni et les mensonges",
+       "lien": "https://www.lemonde.fr/politique/article/2026/11/27/ecrits-antisemites-jordan-bardella-s-enferre-dans-le-deni-et-les-mensonges_6815806_823448.html",
+       "publie": "2026-11-27T05:24:50+00:00",
+       "angle": "Le Monde, à l'origine des révélations, parle d'un Bardella « enferré dans le déni » et les mensonges."
+      },
+      {
+       "source": "L'Opinion",
+       "titre_original": "« Ça fait beaucoup » : au RN, la délicate riposte à l’affaire Bardella",
+       "lien": "https://www.lopinion.fr/politique/ca-fait-beaucoup-au-rn-la-delicate-riposte-face-a-laffaire-bardella",
+       "publie": "2026-11-26T18:15:00+00:00",
+       "angle": "L'Opinion décrit une riposte du RN plus discrète et la difficulté du parti à répondre."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Ecrits antisémites de Bardella : le RN coincé entre dénégation du passé et dédiabolisation",
+       "lien": "https://www.liberation.fr/politique/elections/ecrits-antisemites-de-bardella-le-rn-coince-entre-denegation-du-passe-et-dediabolisation-20261126_CEQ53D6KRVDD7OOTTKN5CXNBKY/",
+       "publie": "2026-11-26T19:49:04+00:00",
+       "angle": "Libération analyse le rapport ambigu du RN à son histoire, entre déni, ignorance et fierté."
+      }
+     ]
+    },
+    {
+     "titre": "Fuites vers le RN : le procureur surpris au siège du parti connaissait le dossier",
+     "theme": "Justice",
+     "pourquoi": "Un magistrat présent lors d'une perquisition au siège d'un parti majeur était informé d'une enquête visant ce parti, ce qui interroge l'indépendance de la justice.",
+     "image": {
+      "url": "https://i.la-croix.com/x/2026/11/26/2600096-le-procureur-surpris-au-siege-du-rn-lors-d-une-per.jpg",
+      "source": "La Croix"
+     },
+     "suite": null,
+     "essentiel": "Le procureur adjoint Christian de Rocquigny, surpris au siège du RN lors d'une perquisition le 9 novembre, a reconnu devant la procureure générale de Paris qu'il connaissait le dossier des fuites présumées du ministère de l'Intérieur vers le parti. Il en avait connaissance dès fin juillet et a admis avoir « relu » un rapport sur le sujet.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "Le procureur surpris au siège du RN était au courant de l’affaire des fuites de l’Intérieur vers le parti",
+       "lien": "https://www.liberation.fr/societe/police-justice/le-procureur-surpris-au-siege-du-rn-etait-au-courant-de-laffaire-des-fuites-de-linterieur-vers-le-parti-revele-mediapart-20261126_5V522TVF4JBXZBNCVNZDK5USSE/",
+       "publie": "2026-11-26T20:11:38+00:00",
+       "angle": "Libération s'appuie sur les informations de Mediapart et souligne que le magistrat a relu un rapport."
+      },
+      {
+       "source": "La Croix",
+       "titre_original": "Le procureur surpris au siège du RN a admis qu’il avait connaissance de l’affaire des fuites",
+       "lien": "https://www.la-croix.com/politique/le-procureur-surpris-au-siege-du-rn-a-admis-qu-il-avait-connaissance-de-laffaire-des-fuites-20261126",
+       "publie": "2026-11-26T20:07:43+00:00",
+       "angle": "La Croix relate sobrement l'aveu devant Marie-Suzanne Le Quéau."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Soupçons de fuites au profit du RN : Le magistrat surpris au siège du parti a admis qu’il connaissait le dossier",
+       "lien": "https://www.20minutes.fr/politique/4266146-20261126-soupcons-fuites-profit-rn-magistrat-surpris-siege-parti-admis-connaissait-dossier?at_medium=display&at_campaign=149",
+       "publie": "2026-11-26T21:16:28+00:00",
+       "angle": "20 Minutes précise que le magistrat connaissait le dossier dès fin juillet."
+      }
+     ]
+    },
+    {
+     "titre": "Mauvaise passe pour la Bourse de la baisse des sondages à droite : Lisnard 3e, Philippe à 8 %",
+     "theme": "Présidentielle",
+     "pourquoi": "Les rapports de force à droite et au centre à cinq mois du scrutin redessinent la présidentielle de 2027.",
+     "image": {
+      "url": "https://i.f1g.fr/media/cms/3000x2000_crop/2026/11/27/18964ae5cfadd67e051ffe1d2a9e0ca104e9ce1203622e45715e174b4bd6008d.jpg",
+      "source": "Le Figaro"
+     },
+     "suite": null,
+     "essentiel": "Un sondage OpinionWay pour CNews place David Lisnard à 12 % et troisième, tandis qu'Édouard Philippe chute à 8 %, soit quatre points de moins. Marine Le Pen domine les intentions de vote. Huit députés LR ont signé une tribune de soutien à Lisnard.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Figaro",
+       "titre_original": "EN DIRECT - Présidentielle 2027 : Édouard Philippe poursuit sa dégringolade, David Lisnard grimpe à 12%",
+       "lien": "https://www.lefigaro.fr/elections/presidentielles/en-direct-presidentielle-2027-edouard-philippe-poursuit-sa-degringolade-david-lisnard-grimpe-a-12-20261127",
+       "publie": "2026-11-27T06:16:05+00:00",
+       "angle": "Le Figaro suit en direct la « dégringolade » de Philippe et la montée de Lisnard."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Présidentielle 2027 : Édouard Philippe dévisse dans un nouveau sondage et se fait passer par David Lisnard",
+       "lien": "https://www.20minutes.fr/politique/4266128-20261126-presidentielle-2027-edouard-philippe-devisse-nouveau-sondage-fait-passer-david-lisnard?at_medium=display&at_campaign=149",
+       "publie": "2026-11-26T19:08:54+00:00",
+       "angle": "20 Minutes parle d'un Philippe qui « dévisse » et se fait dépasser par Lisnard."
+      }
+     ]
+    },
+    {
+     "titre": "Ukraine : Macron répond à Riner et défend le soutien à Kiev",
+     "theme": "Ukraine",
+     "pourquoi": "La position de la France sur l'Ukraine est un enjeu central de la campagne présidentielle.",
+     "image": {
+      "url": "https://www.franceinfo.fr/pictures/uVPGJ376ziCXe-ydoR13C7TNBHQ/0x392:6000x3767/432x243/filters:format(jpg)/2026/11/26/6b08983462b9f113940698.jpg",
+      "source": "franceinfo"
+     },
+     "suite": {
+      "titre": "Teddy Riner conteste l'aide française à l'Ukraine : tollé chez les candidats",
+      "deja_su": "Teddy Riner avait contesté l'aide française à l'Ukraine, ce qui avait provoqué un tollé chez les candidats.",
+      "edition": "archive/2026-11-26-soir.json",
+      "ancre": "france-5",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "Emmanuel Macron a affirmé que, « si on abandonnait l'Ukraine, on mettrait en péril notre sécurité à court ou moyen terme ». Il a martelé que « l'Europe est là, unie derrière l'Ukraine ». Cette prise de parole répond aux propos de la veille de Teddy Riner.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "\"Si on abandonnait l'Ukraine, on mettrait en péril notre sécurité à court ou moyen terme\", affirme Emmanuel Macron",
+       "lien": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/si-on-abandonnait-l-ukraine-on-mettrait-en-peril-notre-securite-a-court-ou-moyen-terme-affirme-emmanuel-macron_8302044.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-26T20:36:36+00:00",
+       "angle": "franceinfo met la réponse du chef de l'État en regard des propos de Riner."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "EN DIRECT Guerre en Ukraine : Macron martèle que « l’Europe est là, unie derrière l’Ukraine »…",
+       "lien": "https://www.20minutes.fr/monde/ukraine/4266173-20261127-direct-guerre-ukraine-macron-martele-europe-unie-derriere-ukraine?at_medium=display&at_campaign=149",
+       "publie": "2026-11-27T04:24:45+00:00",
+       "angle": "20 Minutes cite la formule de Macron sur une Europe unie derrière l'Ukraine, dans son suivi en direct."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Le Monde",
+     "articles": 11
+    },
+    {
+     "source": "Le Figaro",
+     "articles": 16
+    },
+    {
+     "source": "Libération",
+     "articles": 25
+    },
+    {
+     "source": "L'Humanité",
+     "articles": 4
+    },
+    {
+     "source": "La Croix",
+     "articles": 18
+    },
+    {
+     "source": "Les Échos",
+     "articles": 0,
+     "erreur": "<unknown>:14:4: mismatched tag"
+    },
+    {
+     "source": "L'Opinion",
+     "articles": 4
+    },
+    {
+     "source": "Mediapart",
+     "articles": 1
+    },
+    {
+     "source": "Valeurs actuelles",
+     "articles": 5
+    },
+    {
+     "source": "Le JDD",
+     "articles": 3
+    },
+    {
+     "source": "Franc-Tireur",
+     "articles": 0,
+     "erreur": "<unknown>:23:2: mismatched tag"
+    },
+    {
+     "source": "Ouest-France",
+     "articles": 10
+    },
+    {
+     "source": "franceinfo",
+     "articles": 27
+    },
+    {
+     "source": "20 Minutes",
+     "articles": 19
+    }
+   ]
+  },
+  {
+   "id": "international",
+   "label": "International",
+   "type": "socle",
+   "events": [
+    {
+     "titre": "Ukraine : Trump durcit le ton avec Poutine, Zelensky met en garde contre une grande offensive",
+     "theme": "Ukraine",
+     "pourquoi": "Le ton de Washington envers Moscou conditionne l'évolution de la guerre et la sécurité de l'Europe.",
+     "image": {
+      "url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/20f7/live/d0e75f10-e9e6-11f1-ab41-f1f84c0c758a.jpg",
+      "source": "BBC News"
+     },
+     "suite": {
+      "titre": "Guerre en Ukraine : Trump demande à Poutine de cesser « toute agression » en Europe",
+      "deja_su": "Donald Trump avait demandé à Vladimir Poutine de cesser « toute agression militaire » en Europe, tandis que l'Ukraine revendiquait des frappes.",
+      "edition": "archive/2026-11-26-soir.json",
+      "ancre": "international-4",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "Donald Trump a dit avoir demandé à Vladimir Poutine de se « retirer » et de mettre fin à son agression en Europe, sans préciser les territoires. Volodymyr Zelensky met en garde contre une importante attaque russe. Il juge « étrange » l'amitié affichée de Trump pour Poutine et regrette que Washington se concentre trop sur le Moyen-Orient.",
+     "pour_situer": null,
+     "incertain": "Le message de Trump ne précise pas s'il vise l'Ukraine.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "BBC News",
+       "titre_original": "US too focused on Middle East and not pushing Russia hard enough, Zelensky tells BBC",
+       "lien": "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-26T22:49:27+00:00",
+       "angle": "La BBC rapporte la frustration de Zelensky envers des États-Unis trop tournés vers le Moyen-Orient."
+      },
+      {
+       "source": "Al Jazeera",
+       "titre_original": "Zelenskyy warns of major Russian attack as Trump urges Putin to ‘pull back’",
+       "lien": "https://www.aljazeera.com/news/2026/11/27/zelenskyy-warns-of-major-russian-attack-as-trump-urges-putin-to-pull-back?traffic_source=rss",
+       "publie": "2026-11-27T02:14:25+00:00",
+       "angle": "Al Jazeera associe l'appel de Trump à un retrait et l'alerte de Zelensky sur une grande attaque russe."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Donald Trump dit souhaiter que Vladimir Poutine \"mette fin à toute agression militaire\" en Europe",
+       "lien": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/donald-trump-dit-souhaiter-que-vladimir-poutine-mette-fin-a-toute-agression-militaire-en-europe_8302359.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-27T05:11:37+00:00",
+       "angle": "franceinfo note que le message de Trump ne dit pas si l'Ukraine est visée."
+      }
+     ]
+    },
+    {
+     "titre": "Navires russes ciblés au large de la Libye : l'Algérie refuse l'extension de la guerre",
+     "theme": "Ukraine",
+     "pourquoi": "Des frappes ukrainiennes en Méditerranée étendent géographiquement le conflit et inquiètent les pays du Maghreb.",
+     "image": {
+      "url": "https://s.france24.com/media/display/f288ad42-b899-11f0-beca-005056a90284/w:1024/p:16x9/AP24086598360120.jpg",
+      "source": "France 24"
+     },
+     "suite": null,
+     "essentiel": "L'Ukraine a revendiqué l'attaque de deux navires russes au large de la Libye à l'aide de drones navals. L'Algérie a dit ne pas accepter que la guerre s'étende au Maghreb et dénoncé une atteinte inacceptable à la souveraineté libyenne. Le chef de la diplomatie ukrainienne assure que Kiev n'a aucune intention d'étendre la guerre à la Libye.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "France 24",
+       "titre_original": "Navires russes ciblés en Libye : l'Algérie \"n'accepte pas\" que la guerre \"s'étende\" au Maghreb",
+       "lien": "https://www.france24.com/fr/afrique/20261126-navires-russes-cibl%C3%A9s-libye-alg%C3%A9rie-n-accepte-pas-guerre-s-%C3%A9tende-maghreb",
+       "publie": "2026-11-26T19:18:32+00:00",
+       "angle": "France 24 rapporte la position du ministre algérien Ahmed Attaf."
+      },
+      {
+       "source": "Le Monde",
+       "titre_original": "EN DIRECT, guerre en Ukraine : Kiev n’a « aucune intention d’étendre la guerre à la Libye », assure le chef de la diplomatie ukrainienne",
+       "lien": "https://www.lemonde.fr/international/live/2026/11/27/en-direct-guerre-en-ukraine-kiev-n-a-aucune-intention-d-etendre-la-guerre-a-la-libye-assure-le-chef-de-la-diplomatie-ukrainienne_6814183_3210.html",
+       "publie": "2026-11-26T23:45:02+00:00",
+       "angle": "Le Monde insiste sur l'assurance de Kiev de ne viser que des objectifs russes."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Guerre en Ukraine : L’Algérie monte au créneau contre une extension du conflit",
+       "lien": "https://www.20minutes.fr/monde/ukraine/4266169-20261127-guerre-ukraine-algerie-monte-creneau-contre-extension-conflit?at_medium=display&at_campaign=149",
+       "publie": "2026-11-27T02:32:45+00:00",
+       "angle": "20 Minutes reprend la fustigation algérienne d'une atteinte à la souveraineté libyenne."
+      }
+     ]
+    },
+    {
+     "titre": "Guerre avec l'Iran : deux Italiens tués dans une frappe de drone au Koweït",
+     "theme": "Moyen-Orient",
+     "pourquoi": "Les frappes sur des pays du Golfe abritant des bases américaines élargissent un conflit dont les pourparlers piétinent.",
+     "image": {
+      "url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1ece/live/c83dee70-e9f4-11f1-9c56-b1b6306ef9e3.png",
+      "source": "BBC News"
+     },
+     "suite": null,
+     "essentiel": "Deux techniciens italiens de la société allemande Rheinmetall ont été tués dans une attaque de drone au Koweït, selon les autorités italiennes. Le New York Times la présente comme une attaque iranienne et évoque une série de frappes sur les États arabes du Golfe hébergeant des installations américaines, alors que les pourparlers pour mettre fin à la guerre s'enlisent. L'Iran nie toute responsabilité.",
+     "pour_situer": null,
+     "incertain": "La responsabilité de l'attaque : Téhéran la nie et la qualifie de « suspecte ».",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "The New York Times",
+       "titre_original": "Two Italians Killed in Iranian Drone Attack on Kuwait, Officials Say",
+       "lien": "https://www.nytimes.com/2026/11/26/world/middleeast/italians-killed-iran-drone-attack-kuwait.html",
+       "publie": "2026-11-26T19:33:06+00:00",
+       "angle": "Le New York Times attribue l'attaque à l'Iran et la replace dans une série de frappes sur le Golfe."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "Two Italians killed in strike in Kuwait, as Iran denies responsibility",
+       "lien": "https://www.bbc.co.uk/news/articles/c39w9y5dx4k5o?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-26T21:17:53+00:00",
+       "angle": "La BBC met en avant le démenti iranien."
+      },
+      {
+       "source": "Al Jazeera",
+       "titre_original": "Iran war live: Iran’s Araghchi calls deadly Kuwait attack ‘suspicious’",
+       "lien": "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious?traffic_source=rss",
+       "publie": "2026-11-27T00:00:00+00:00",
+       "angle": "Al Jazeera relaie la thèse d'Araghchi d'un incident « suspect », « recette préparée »."
+      }
+     ]
+    },
+    {
+     "titre": "Législatives espagnoles : à trois jours du vote, la droite favorite et Vox en position de force",
+     "theme": "Espagne",
+     "pourquoi": "Le scrutin peut mettre fin à huit ans de gouvernement socialiste et porter l'extrême droite au pouvoir.",
+     "image": {
+      "url": "https://i.la-croix.com/x/2026/11/26/2598862-le-premier-ministre-pedro-sanchez-a-barcelone-le-2.jpg",
+      "source": "La Croix"
+     },
+     "suite": {
+      "titre": "Législatives espagnoles du 29 novembre : le logement au cœur de la campagne",
+      "deja_su": "Les Espagnols votent dimanche 29 novembre lors d'élections anticipées, dans une campagne dominée par le logement.",
+      "edition": "archive/2026-11-26-soir.json",
+      "ancre": "international-6",
+      "date": "jeudi 26 novembre 2026"
+     },
+     "essentiel": "À trois jours du vote, les sondages accordent une large majorité aux partis de droite devant le PSOE. Pedro Sánchez espère encore une « remontada ». Vox, parti d'extrême droite, pourrait jouer les arbitres face au Parti populaire. Le logement et l'inflation dominent la campagne.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "La Croix",
+       "titre_original": "Élections en Espagne : à la veille du scrutin, Pedro Sanchez espère encore une « remontada » à la brésilienne",
+       "lien": "https://www.la-croix.com/international/elections-en-espagne-a-la-veille-du-scrutin-pedro-sanchez-espere-encore-une-remontada-a-la-bresilienne-20261126",
+       "publie": "2026-11-27T05:10:10+00:00",
+       "angle": "La Croix met en avant l'espoir de remontada de Sánchez malgré des sondages défavorables."
+      },
+      {
+       "source": "Le Temps",
+       "titre_original": "En Espagne, l’horizon d’une gouvernance conflictuelle entre conservateurs et extrême droite",
+       "lien": "https://www.letemps.ch/monde/europe/en-espagne-l-horizon-d-une-gouvernance-conflictuelle-entre-conservateurs-et-extreme-droite",
+       "publie": "2026-11-27T04:00:03+00:00",
+       "angle": "Le Temps anticipe une gouvernance conflictuelle entre conservateurs et extrême droite."
+      },
+      {
+       "source": "Valeurs actuelles",
+       "titre_original": "Préférence nationale, immigration, fiscalité : à la veille des élections législatives, l’Espagne à droite toute",
+       "lien": "https://www.valeursactuelles.com/clubvaleurs/monde/preference-nationale-immigration-fiscalite-a-la-veille-des-elections-legislatives-lespagne-a-droite-toute",
+       "publie": "2026-11-26T19:00:40+00:00",
+       "angle": "Valeurs actuelles décrit une Espagne « à droite toute » sur l'immigration et la fiscalité."
+      },
+      {
+       "source": "Mediapart",
+       "titre_original": "Espagne: deux ans après les inondations meurtrières, les gauches critiques réussissent l’union à Valence",
+       "lien": "https://www.mediapart.fr/journal/international/261126/espagne-deux-ans-apres-les-inondations-meurtrieres-les-gauches-critiques-reussissent-l-union-valenc",
+       "publie": "2026-11-26T18:26:37+00:00",
+       "angle": "Mediapart relève l'union des gauches alternatives à Valence."
+      }
+     ]
+    },
+    {
+     "titre": "Nouvelle-Zélande : la coalition sortante n'a pas la majorité, un petit parti arbitre",
+     "theme": "Nouvelle-Zélande",
+     "pourquoi": "Le résultat détermine qui gouvernera le pays et peut déboucher sur de nouvelles élections.",
+     "image": {
+      "url": "https://i.guim.co.uk/img/media/15bb64d1f1fa3f1840538248518d963a2c8d39e8/0_0_5000_4000/master/5000.jpg?width=140&quality=85&auto=format&fit=max&s=43d6b064ba99972f2f4003cf962441bc",
+      "source": "The Guardian"
+     },
+     "suite": null,
+     "essentiel": "Les résultats définitifs montrent que la coalition de droite emmenée par le Parti national manque la majorité d'un siège. Le Premier ministre Christopher Luxon a besoin du soutien du parti Opportunity pour rester au pouvoir. Ce dernier peut faire basculer le Parlement à gauche ou à droite.",
+     "pour_situer": null,
+     "incertain": "Le choix d'Opportunity n'est pas connu.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "The Guardian",
+       "titre_original": "New Zealand election: final results show ruling coalition needs minor party to govern",
+       "lien": "https://www.theguardian.com/world/2026/nov/27/new-zealand-nz-election-2026-final-results",
+       "publie": "2026-11-27T02:38:15+00:00",
+       "angle": "The Guardian note que, sans accord, le pays pourrait retourner aux urnes."
+      },
+      {
+       "source": "Al Jazeera",
+       "titre_original": "New Zealand’s Opportunity Party poised to become election kingmaker",
+       "lien": "https://www.aljazeera.com/video/newsfeed/2026/11/27/new-zealands-opportunity-party-poised-to-become-election-kingmaker?traffic_source=rss",
+       "publie": "2026-11-27T04:59:53+00:00",
+       "angle": "Al Jazeera présente Opportunity comme faiseur de roi."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "New Zealand's ruling coalition falls short of parliamentary majority by one seat",
+       "lien": "https://www.bbc.co.uk/news/articles/c670278qk879o?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-27T03:28:15+00:00",
+       "angle": "La BBC souligne que la coalition échoue à un siège de la majorité."
+      }
+     ]
+    },
+    {
+     "titre": "Guinée-Bissau : la présidentielle reportée de deux ans, à novembre 2028",
+     "theme": "Afrique",
+     "pourquoi": "Le report prolonge un régime issu d'un coup d'État et repousse le retour à l'ordre constitutionnel.",
+     "image": {
+      "url": "https://s.rfi.fr/media/display/527a6236-f71f-11f0-b42f-005056bf30b7/w:1024/p:16x9/000-86HX8N9-1.jpg",
+      "source": "RFI"
+     },
+     "suite": null,
+     "essentiel": "Le président de la transition a fixé au 26 novembre 2028 les élections présidentielle et législatives, initialement prévues le 6 décembre. Le processus électoral avait été interrompu par un coup d'État il y a un an.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "RFI",
+       "titre_original": "Guinée-Bissau: report de deux ans de la présidentielle initialement prévue le 6 décembre",
+       "lien": "https://www.rfi.fr/fr/afrique/20261126-guin%C3%A9e-bissau-report-de-deux-ans-de-la-pr%C3%A9sidentielle-initialement-pr%C3%A9vue-le-6-d%C3%A9cembre",
+       "publie": "2026-11-26T20:48:54+00:00",
+       "angle": "RFI replace le report un an après le coup d'État qui avait interrompu le processus électoral."
+      },
+      {
+       "source": "Le Temps",
+       "titre_original": "En Guinée-Bissau, la transition prolongée de deux ans après le report de la présidentielle",
+       "lien": "https://www.letemps.ch/monde/en-guinee-bissau-la-transition-prolongee-de-deux-ans-apres-le-report-de-la-presidentielle",
+       "publie": "2026-11-27T03:42:52+00:00",
+       "angle": "Le Temps met en avant la prolongation de la transition et les justifications de la junte."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "France 24",
+     "articles": 19
+    },
+    {
+     "source": "RFI",
+     "articles": 12
+    },
+    {
+     "source": "Courrier international",
+     "articles": 7
+    },
+    {
+     "source": "BBC News",
+     "articles": 9
+    },
+    {
+     "source": "The Guardian",
+     "articles": 22
+    },
+    {
+     "source": "The New York Times",
+     "articles": 11
+    },
+    {
+     "source": "Al Jazeera",
+     "articles": 25
+    },
+    {
+     "source": "Deutsche Welle",
+     "articles": 0,
+     "erreur": "<unknown>:2:0: syntax error"
+    },
+    {
+     "source": "Le Temps",
+     "articles": 18
+    }
+   ]
+  }
+ ]
+}
