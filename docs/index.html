@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contrechamp</title>
-<meta name="description" content="Les faits importants du jour, et comment chaque journal les raconte.">
+<title>Escale</title>
+<meta name="description" content="L'essentiel du jour, vu par plusieurs journaux.">
 <meta name="theme-color" content="#f6f7f8">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="apple-mobile-web-app-title" content="Contrechamp">
+<meta name="apple-mobile-web-app-title" content="Escale">
 <script>
   // Applique le mode choisi avant l'affichage, pour éviter un flash.
   try {
@@ -60,8 +60,7 @@ a { color: var(--accent); }
 .brand-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .brand { margin: 0; font-size: 1.6rem; font-weight: 700; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }
 .brand-mark { width: 30px; height: 30px; flex: 0 0 30px; }
-.brand-mark .champ { fill: var(--accent); stroke: var(--accent); }
-.brand-mark .contre { fill: none; stroke: var(--ink); }
+.brand-mark { fill: none; stroke: var(--accent); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
 .motto { margin: 2px 0 0; color: var(--muted); font-size: 0.9rem; }
 .numero { margin: 0; color: var(--muted); font-size: 0.8rem; display: flex; justify-content: space-between; gap: 10px; }
 .link-btn { background: none; border: 0; padding: 0; color: var(--accent); font-size: 0.8rem; font-weight: 600; cursor: pointer; }
@@ -192,8 +191,8 @@ a { color: var(--accent); }
   <header class="masthead">
     <div class="brand-row">
       <div>
-        <h1 class="brand"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path class="champ" d="M13 18 L29 32 L13 46 Z" stroke-width="5" stroke-linejoin="round"/><path class="contre" d="M51 18 L35 32 L51 46 Z" stroke-width="5" stroke-linejoin="round"/></svg>Contrechamp</h1>
-        <p class="motto">Les faits importants du jour, et comment chaque journal les raconte</p>
+        <h1 class="brand"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="15" r="4.5"/><path d="M32 19.5 V50 M24 27 H40 M15 37 C16.5 46 23 50 32 50 C41 50 47.5 46 49 37 M11.5 40.5 L15 36.5 L19 40 M52.5 40.5 L49 36.5 L45 40"/></svg>Escale</h1>
+        <p class="motto">L'essentiel du jour, vu par plusieurs journaux</p>
       </div>
       <button type="button" class="btn" id="theme-btn">Mode nuit</button>
     </div>
@@ -205,14 +204,8 @@ a { color: var(--accent); }
     <p class="numero"><span id="numero"></span><button type="button" class="link-btn" id="about-open">Le principe</button></p>
     <section class="about" id="about" hidden>
       <h2>Le principe</h2>
-      <p><b>Contrechamp vous montre les faits importants du jour, et comment chaque journal les raconte.</b> Au cinéma, le contrechamp, c'est le plan qui montre l'autre côté de la scène : ici, c'est le même fait vu par des journaux de sensibilités différentes.</p>
-      <ul>
-        <li><b>Au moins deux journaux par événement</b>, choisis parmi une vingtaine de titres de tous bords (Le Monde, Le Figaro, Libération, L'Humanité, Les Échos, La Croix, la BBC, Al Jazeera…). Pour chacun : son titre, et ce qu'il met en avant.</li>
-        <li><b>Seulement ce qui compte</b> : ce qui aura encore de l'importance dans un mois, concerne beaucoup de gens ou fait avancer un grand sujet. Pas de faits divers, de petites phrases ni d'opinions.</li>
-        <li><b>Les sujets suivis</b> : quand une affaire avance, elle revient en « Suite », avec ce qu'on savait déjà et son historique.</li>
-        <li><b>Une édition finie, chaque matin</b> : pas de flux sans fin, pas d'alertes. Toute l'actualité importante, bonne ou mauvaise, sans le bruit.</li>
-      </ul>
-      <p class="ai-note">Les résumés sont rédigés par une IA à partir des titres et chapeaux des journaux, qui peut se tromper : chaque article d'origine est en lien pour vérifier.</p>
+      <p>Une courte pause dans l'actualité : chaque matin, les faits importants du jour, racontés par plusieurs journaux de sensibilités différentes. Pas d'opinions, pas d'alertes, et une édition qui se termine.</p>
+      <p class="ai-note">Résumés rédigés par une IA, qui peut se tromper : chaque article d'origine est en lien.</p>
       <button type="button" class="btn" id="about-close">Compris</button>
     </section>
   </header>

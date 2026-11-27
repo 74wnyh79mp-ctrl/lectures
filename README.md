@@ -1,4 +1,4 @@
-# Contrechamp
+# Escale
 
 Les faits importants du jour, et comment chaque journal les raconte. Pour chaque événement, au moins deux journaux de sensibilités différentes, côte à côte. Pas d'éditos ni d'opinions, pas de flux sans fin : une édition par jour, puis c'est terminé.
 

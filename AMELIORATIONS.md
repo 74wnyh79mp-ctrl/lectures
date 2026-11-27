@@ -1,4 +1,4 @@
-# Améliorations à faire (Contrechamp, ex-Le Relevé)
+# Améliorations à faire (Escale, ex-Contrechamp, ex-Le Relevé)
 
 Liste tenue au fil de l'eau, à traiter en une seule séance après une semaine d'utilisation.
 
@@ -9,6 +9,11 @@ Liste tenue au fil de l'eau, à traiter en une seule séance après une semaine 
 - Journaux de chaque événement repliés derrière une flèche ; contexte « Pour comprendre » dépliable.
 - Navigation entre les éditions par date.
 - Tribunes, éditos et chroniques écartés ; édition plus courte les jours calmes.
+
+## Faites (27 novembre 2026, pendant la période de test)
+
+- Nouveau nom : Escale, logo en forme d'ancre, devise « L'essentiel du jour, vu par plusieurs journaux », note « Le principe » raccourcie.
+- Sujets d'un seul bord écartés : un événement dont tous les journaux sont du même camp politique (ex. RSF / Arcom / CNews, vu seulement par Le Figaro et Valeurs actuelles le 26 au soir) ne passe plus, ni dans les consignes de l'IA, ni dans le contrôle du code.
 
 ## Demandées (historique)
 
