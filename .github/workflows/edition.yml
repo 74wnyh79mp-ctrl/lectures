@@ -2,9 +2,10 @@ name: Édition du jour
 
 on:
   schedule:
-    # Une seule édition par jour pour limiter la consommation.
-    # 5 h 30 UTC = 6 h 30 à Paris en hiver (7 h 30 en été).
-    - cron: "30 5 * * *"
+    # Une seule édition par jour, le soir, pour limiter la consommation.
+    # 18 h 30 UTC = 19 h 30 à Paris en hiver (20 h 30 en été) ; GitHub démarre
+    # souvent avec près d'une heure de retard, d'où une édition vers 20 h.
+    - cron: "30 18 * * *"
   # Bouton « Run workflow » pour lancer une édition à la main.
   workflow_dispatch:
   # Une modification republie le site sans refaire d'édition (aucun appel à Claude),
