@@ -1,0 +1,602 @@
+{
+ "genere_le": "2026-11-28T20:28+01:00",
+ "date": "samedi 28 novembre 2026",
+ "moment": "soir",
+ "modele": "claude-sonnet-5-5",
+ "categories": [
+  {
+   "id": "france",
+   "label": "France",
+   "type": "socle",
+   "events": [
+    {
+     "titre": "Fuites de Beauvau vers le RN : la perquisition du 9 novembre précisée, de Rancourt est soupçonné",
+     "theme": "Justice",
+     "pourquoi": "Une enquête sur des fuites depuis le ministère de l'Intérieur atteint l'entourage immédiat de la candidate favorite à la présidentielle.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/28/0/141/3456/1728/644/322/60/0/46f15fe_ftp-1-vx8vmd9o7epg-afp-d8vx7we.jpg",
+      "source": "Le Monde"
+     },
+     "suite": {
+      "titre": "Fuites vers le RN : Ambroise de Rancourt soupçonné d'être le principal destinataire",
+      "deja_su": "On savait qu'Ambroise de Rancourt, responsable du programme présidentiel de Marine Le Pen, était soupçonné d'être le principal destinataire des informations confidentielles, et qu'il avait été visé par une perquisition au siège du RN.",
+      "edition": "archive/2026-11-27-soir.json",
+      "ancre": "france-5",
+      "date": "vendredi 27 novembre 2026"
+     },
+     "essentiel": "Son bureau au siège du RN et son domicile ont été perquisitionnés le 9 novembre. Selon la presse, il aurait échangé avec l'ancien préfet du Loiret Hugues Moutouh, accusé d'avoir transmis des informations confidentielles du ministère de l'Intérieur.",
+     "pour_situer": null,
+     "incertain": "Ambroise de Rancourt est soupçonné mais l'enquête est en cours ; les faits ne sont pas établis.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Fuites de Beauvau vers le RN : Ambroise de Rancourt, l’émissaire de Marine Le Pen auprès des grands patrons et de la haute fonction publique",
+       "lien": "https://www.lemonde.fr/politique/article/2026/11/28/fuites-de-beauvau-vers-le-rn-ambroise-de-rancourt-le-missi-dominici-de-marine-le-pen-aupres-des-grands-patrons-et-de-la-haute-fonction-publique_6816116_823448.html",
+       "publie": "2026-11-28T14:52:22+00:00",
+       "angle": "Le Monde, à l'origine des révélations, dresse le portrait d'un énarque, émissaire du RN auprès des patrons et de la haute fonction publique, et détaille ses échanges avec Hugues Moutouh."
+      },
+      {
+       "source": "L'Humanité",
+       "titre_original": "Un très proche de Marine Le Pen soupçonné d’être le destinataire des fuites du ministère de l’Intérieur",
+       "lien": "https://www.humanite.fr/politique/extreme-droite/un-tres-proche-de-marine-le-pen-soupconne-detre-le-destinataire-des-fuites-du-ministere-de-linterieur",
+       "publie": "2026-11-28T10:30:00+00:00",
+       "angle": "L'Humanité parle d'un « scandale d'État » touchant un très proche de Marine Le Pen."
+      },
+      {
+       "source": "L'Opinion",
+       "titre_original": "Fuites présumées au profit du RN : le bureau et le domicile de l'ex-directeur de cabinet de Marine Le Pen perquisitionnés",
+       "lien": "https://www.lopinion.fr/politique/fuites-presumees-au-profit-du-rn-le-bureau-et-le-domicile-de-lex-directeur-de-cabinet-de-marine-le-pen-perquisitionnes",
+       "publie": "2026-11-28T10:25:51+00:00",
+       "angle": "L'Opinion s'en tient aux faits judiciaires : la perquisition du 9 novembre et les soupçons de fuites."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Dans l'affaire des fuites au profit du RN, le bureau et le domicile d'Ambroise de Rancourt, coordinateur du programme présidentiel du parti, ont été perquisitionnés",
+       "lien": "https://www.franceinfo.fr/politique/front-national/dans-l-affaire-des-fuites-au-profit-du-rn-le-bureau-et-le-domicile-d-ambroise-de-rancourt-coordinateur-du-programme-presidentiel-du-parti-ont-ete-perquisitionnes_8304285.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-28T06:29:53+00:00",
+       "angle": "franceinfo rappelle que les informations seraient passées par le ministère de l'Intérieur."
+      }
+     ]
+    },
+    {
+     "titre": "Mobilisation contre les violences faites aux femmes : 44 500 manifestants en France",
+     "theme": "Société",
+     "pourquoi": "Une mobilisation nationale pour une loi intégrale, dans un climat social déjà tendu, concerne la sécurité de millions de femmes.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/28/257/0/7750/3875/644/322/60/0/6894a31_ftp-1-a84m25j0p4by-3ae1b97d71884f4087c97edaa799d022-0-44ce0b00ec0a493395c9ed8394db5e31.jpg",
+      "source": "Le Monde"
+     },
+     "suite": null,
+     "essentiel": "Selon le ministère de l'Intérieur, 44 500 personnes ont défilé samedi 28 novembre dans une trentaine de villes contre les violences faites aux femmes et la vie chère. À Paris, deux cortèges ont réuni 12 500 personnes selon la préfecture, avec des associations féministes, des syndicats, des organisations de jeunesse et des gilets jaunes. Les manifestants réclament notamment une loi intégrale.",
+     "pour_situer": "Ces cortèges s'inscrivent dans une série de mobilisations sociales depuis fin septembre.",
+     "incertain": "Les chiffres de participation varient selon que l'on suive la préfecture, le ministère ou les organisateurs.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Violences faites aux femmes : à Paris, plusieurs milliers de manifestants pour réclamer la loi intégrale",
+       "lien": "https://www.lemonde.fr/societe/article/2026/11/28/a-paris-plusieurs-milliers-de-manifestants-pour-reclamer-la-loi-integrale-contre-les-violences-faites-aux-femmes_6816141_3224.html",
+       "publie": "2026-11-28T18:48:15+00:00",
+       "angle": "Le Monde met en avant la revendication d'une loi intégrale et le chiffre de la préfecture à Paris."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "«Nous appelons à organiser un raz-de-marée féministe» : nouvelle journée de mobilisation samedi contre les violences faites aux femmes",
+       "lien": "https://www.lefigaro.fr/flash-actu/nous-appelons-a-organiser-un-raz-de-maree-feministe-nouvelle-journee-de-mobilisation-samedi-contre-les-violences-faites-aux-femmes-20261128",
+       "publie": "2026-11-28T13:26:25+00:00",
+       "angle": "Le Figaro situe la journée dans le contexte de manifestations à répétition depuis la fin septembre."
+      },
+      {
+       "source": "L'Humanité",
+       "titre_original": "« La présidentielle risque de tout faire basculer » : à Paris, la détermination des féministes à combattre l’extrême droite",
+       "lien": "https://www.humanite.fr/societe/feminicides/la-presidentielle-risque-de-tout-faire-basculer-a-paris-la-determination-des-feministes-a-combattre-lextreme-droite",
+       "publie": "2026-11-28T16:30:00+00:00",
+       "angle": "L'Humanité souligne la détermination des féministes à combattre l'extrême droite avant la présidentielle."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Manifestations : 44 500 personnes ont défilé en France contre les violences faites aux femmes et la vie chère, selon le ministère de l'Intérieur",
+       "lien": "https://www.franceinfo.fr/societe/manifestations/direct-manifestations-nouvelle-journee-de-mobilisation-samedi-notamment-contre-les-violences-faites-aux-femmes_8304345.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-28T17:47:11+00:00",
+       "angle": "franceinfo donne le bilan du ministère de l'Intérieur et mêle violences faites aux femmes et vie chère."
+      }
+     ]
+    },
+    {
+     "titre": "Biarritz : heurts autour du banquet du « Canon français », des policiers blessés",
+     "theme": "Ordre public",
+     "pourquoi": "Le blocage d'un événement privé par des militants, avec usage de la force par la police, pose la question de la liberté de réunion et des violences politiques en campagne.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/28/688/0/8256/4128/644/322/60/0/a6c9bbf_ftp-1-jljyi22hgabt-afp-d8vz8t8.jpg",
+      "source": "Le Monde"
+     },
+     "suite": null,
+     "essentiel": "Des centaines de manifestants ont tenté de bloquer l'accès au banquet du « Canon français », cofinancé par le milliardaire Pierre-Édouard Stérin, qui attendait 1 500 convives. Les forces de l'ordre ont utilisé des gaz lacrymogènes et des policiers ont été blessés (huit selon le JDD). Le ministre de l'Intérieur Laurent Nuñez a condamné la « violence extrême » de certains protestataires.",
+     "pour_situer": null,
+     "incertain": "Les récits divergent sur l'origine des violences et sur le bilan ; le nombre de policiers blessés n'est pas confirmé de façon uniforme.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "A un banquet du Canon français, à Biarritz, des manifestants bloquent les participants ; des policiers blessés",
+       "lien": "https://www.lemonde.fr/societe/article/2026/11/28/a-un-banquet-du-canon-francais-a-biarritz-des-manifestants-bloquent-les-participants-des-policiers-blesses_6816103_3225.html",
+       "publie": "2026-11-28T16:00:33+00:00",
+       "angle": "Le Monde décrit un rassemblement annoncé comme un « rempart humain » qui a tourné à l'affrontement avec la police."
+      },
+      {
+       "source": "Le Figaro",
+       "titre_original": "Violences au banquet du «Canon français» à Biarritz : la droite et le RN dénoncent les méthodes «liberticides» de l’«extrême gauche»",
+       "lien": "https://www.lefigaro.fr/actualite-france/violences-au-banquet-du-canon-francais-a-biarritz-la-droite-et-le-rn-denoncent-les-methodes-liberticides-de-l-extreme-gauche-20261128",
+       "publie": "2026-11-28T19:23:25+00:00",
+       "angle": "Le Figaro relaie la dénonciation par la droite et le RN de méthodes « liberticides » de l'extrême gauche."
+      },
+      {
+       "source": "Libération",
+       "titre_original": "Heurts entre opposants et participants à un banquet du «Canon français» à Biarritz, plusieurs blessés dont un policier",
+       "lien": "https://www.liberation.fr/societe/heurts-entre-opposants-et-participants-a-un-banquet-du-canon-francais-a-biarritz-20261128_ESH6BA55X5HO7KCP3AEJNJWEAU/",
+       "publie": "2026-11-28T16:35:34+00:00",
+       "angle": "Libération rappelle que syndicats, partis et associations avaient appelé à empêcher la tenue de l'événement."
+      },
+      {
+       "source": "Le JDD",
+       "titre_original": "Canon français à Biarritz : des antifas prennent à partie les convives, huit policiers blessés",
+       "lien": "https://www.lejdd.fr/Societe/canon-francais-a-biarritz-des-antifas-prennent-a-partie-les-convives-huit-policiers-blesses-189858",
+       "publie": "2026-11-28T14:05:32+00:00",
+       "angle": "Le JDD parle d'antifas prenant à partie les convives et met en avant le bilan de huit policiers blessés."
+      }
+     ]
+    },
+    {
+     "titre": "Le Sénat vote une contribution de 5 euros par jour pour les détenus",
+     "theme": "Justice",
+     "pourquoi": "Une mesure qui toucherait l'ensemble de la population carcérale et pose un principe nouveau sur le financement de la prison.",
+     "image": {
+      "url": "https://resize-lejdd.lanmedia.fr/var/jdd/public/styles/paysage/public/media/image/2026/11/28/16/sipa_01198556_000007.jpg?VersionId=vqO0ibERbl7FDSL6SeqZJkNT8xCuoxtr",
+      "source": "Le JDD"
+     },
+     "suite": null,
+     "essentiel": "Dans le cadre du budget 2027, le Sénat a adopté samedi, à main levée, un amendement de sénateurs LR instaurant une « contribution forfaitaire aux frais d'incarcération » de 5 euros par jour. Elle concernerait les détenus qui travaillent en détention ou disposent de ressources suffisantes.",
+     "pour_situer": null,
+     "incertain": "L'amendement doit encore passer l'ensemble du parcours budgétaire et peut être modifié ou supprimé.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "5 euros par jour de prison : le Sénat vote pour taxer les détenus",
+       "lien": "https://www.liberation.fr/politique/5-euros-par-jour-de-prison-le-senat-vote-pour-taxer-les-detenus-20261128_DVB27JZ6YRDAFOZ73FCH5SAM6U/",
+       "publie": "2026-11-28T17:53:40+00:00",
+       "angle": "Libération présente la mesure comme une taxation des détenus."
+      },
+      {
+       "source": "Le JDD",
+       "titre_original": "Prison : le Sénat veut faire payer 5 euros par jour aux détenus qui en ont les moyens",
+       "lien": "https://www.lejdd.fr/Societe/prison-le-senat-veut-faire-payer-5-euros-par-jour-aux-detenus-qui-en-ont-les-moyens-189867",
+       "publie": "2026-11-28T15:39:20+00:00",
+       "angle": "Le JDD insiste sur le fait que seuls les détenus qui en ont les moyens paieraient."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Le Sénat vote en faveur d'une contribution journalière de cinq euros pour les détenus",
+       "lien": "https://www.franceinfo.fr/societe/prisons/le-senat-vote-en-faveur-d-une-contribution-journaliere-de-cinq-euros-pour-les-detenus_8304762.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-28T15:47:54+00:00",
+       "angle": "franceinfo décrit le dispositif de façon factuelle, avec la condition de ressources suffisantes."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "Cinq euros par jour de prison… Le Sénat veut taxer les détenus",
+       "lien": "https://www.20minutes.fr/societe/4266479-20261128-cinq-euros-jour-prison-senat-veut-taxer-detenus?at_medium=display&at_campaign=149",
+       "publie": "2026-11-28T14:30:46+00:00",
+       "angle": "20 Minutes présente la participation comme visant les détenus qui travaillent ou ont des ressources."
+      }
+     ]
+    },
+    {
+     "titre": "Récession : la presse et la BCE réagissent après la perspective négative de S&P",
+     "theme": "Économie",
+     "pourquoi": "Le risque de dégradation de la note pèse sur les conditions de financement de la dette française.",
+     "image": {
+      "url": "https://www.franceinfo.fr/pictures/ni_lfN9CT9W5icT0I-piTJnO7Yg/0x0:4989x2806/432x243/filters:format(jpg)/2026/11/28/6b0ac0d2adc33023116121.jpg",
+      "source": "franceinfo"
+     },
+     "suite": {
+      "titre": "S&P maintient la note A+ de la France mais passe sa perspective à « négative »",
+      "deja_su": "S&P a maintenu la note A+ de la France mais a abaissé sa perspective à « négative », le jour où l'Insee a confirmé la récession.",
+      "edition": "archive/2026-11-27-soir.json",
+      "ancre": "france-2",
+      "date": "vendredi 27 novembre 2026"
+     },
+     "essentiel": "Le numéro 2 de la Banque centrale européenne a écarté un scénario « à la grecque » pour la dette française, après l'abaissement de la perspective par S&P, motivé par les difficultés du pays à réduire son déficit. Des candidats à la présidentielle, dont David Lisnard, dénoncent une « spirale d'appauvrissement ».",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "franceinfo",
+       "titre_original": "Le numéro 2 de la Banque centrale européenne écarte un scénario à la grecque pour la dette française",
+       "lien": "https://www.franceinfo.fr/economie/crise/le-numero-2-de-la-banque-centrale-europeenne-ecarte-un-scenario-a-la-grecque-pour-la-dette-francaise_8304585.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-28T13:53:39+00:00",
+       "angle": "franceinfo rapporte les propos du numéro 2 de la BCE écartant un scénario à la grecque."
+      },
+      {
+       "source": "Le JDD",
+       "titre_original": "France en récession : David Lisnard dénonce une «spirale d’appauvrissement» et promet d’y mettre fin",
+       "lien": "https://www.lejdd.fr/politique/france-en-recession-david-lisnard-denonce-une-spirale-dappauvrissement-et-promet-dy-mettre-fin-189855",
+       "publie": "2026-11-28T13:28:24+00:00",
+       "angle": "Le JDD relaie la critique de David Lisnard, qui dénonce une classe politique trop fiscaliste."
+      },
+      {
+       "source": "Courrier international",
+       "titre_original": "Entrée en récession, la France a vécu un “vendredi noir”",
+       "lien": "https://www.courrierinternational.com/article/vu-de-l-etranger-entree-en-recession-la-france-a-vecu-un-vendredi-noir_291096",
+       "publie": "2026-11-28T14:48:43+00:00",
+       "angle": "Courrier international parle d'un « vendredi noir » pour la France, avec récession et perspective négative."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "Le Monde",
+     "articles": 15
+    },
+    {
+     "source": "Le Figaro",
+     "articles": 16
+    },
+    {
+     "source": "Libération",
+     "articles": 46
+    },
+    {
+     "source": "L'Humanité",
+     "articles": 20
+    },
+    {
+     "source": "La Croix",
+     "articles": 18
+    },
+    {
+     "source": "Les Échos",
+     "articles": 0,
+     "erreur": "<unknown>:14:4: mismatched tag"
+    },
+    {
+     "source": "L'Opinion",
+     "articles": 10
+    },
+    {
+     "source": "Mediapart",
+     "articles": 10
+    },
+    {
+     "source": "Valeurs actuelles",
+     "articles": 10
+    },
+    {
+     "source": "Le JDD",
+     "articles": 17
+    },
+    {
+     "source": "Franc-Tireur",
+     "articles": 0,
+     "erreur": "<unknown>:5:2: mismatched tag"
+    },
+    {
+     "source": "Ouest-France",
+     "articles": 10
+    },
+    {
+     "source": "franceinfo",
+     "articles": 28
+    },
+    {
+     "source": "20 Minutes",
+     "articles": 23
+    }
+   ]
+  },
+  {
+   "id": "international",
+   "label": "International",
+   "type": "socle",
+   "events": [
+    {
+     "titre": "Législatives espagnoles : dernières heures avant un scrutin à haut risque pour Sánchez",
+     "theme": "Espagne",
+     "pourquoi": "Un changement de majorité à Madrid pourrait amener l'extrême droite au pouvoir dans un grand pays de l'UE et affaiblir l'un des derniers gouvernements de gauche européens.",
+     "image": {
+      "url": "https://static.mediapart.fr/etmagine/default/files/2026/11/28/img-mediapart-sanchez-psoe-espagne-corruption.jpg",
+      "source": "Mediapart"
+     },
+     "suite": {
+      "titre": "Législatives espagnoles : dernier jour de campagne avant le vote de dimanche",
+      "deja_su": "La veille du vote, les sondages donnaient la droite et l'extrême droite favorites face à Pedro Sánchez, dont l'avenir dépendait aussi du score de Vox.",
+      "edition": "archive/2026-11-27-soir.json",
+      "ancre": "international-1",
+      "date": "vendredi 27 novembre 2026"
+     },
+     "essentiel": "Les Espagnols votent dimanche 29 novembre pour des législatives anticipées. Le Parti populaire d'Alberto Núñez Feijóo est donné en tête et pourrait gouverner avec Vox, tandis que Pedro Sánchez, au pouvoir depuis 2018, compte sur une mobilisation de la gauche. La campagne a été marquée par les affaires judiciaires touchant des figures socialistes, l'immigration et les prix.",
+     "pour_situer": "Une coalition incluant Vox serait la première participation de l'extrême droite à un gouvernement espagnol depuis la fin du franquisme, selon The Guardian.",
+     "incertain": "L'issue dépend de la participation et du score de Vox, qui conditionne une éventuelle coalition avec le Parti populaire.",
+     "contexte": "Pedro Sánchez dirige le gouvernement espagnol depuis 2018, à la tête du Parti socialiste (PSOE). Le Parti populaire (droite) est le principal parti d'opposition. Vox est un parti d'extrême droite apparu sur la scène nationale à la fin des années 2010.",
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "Pourquoi la droite espagnole peut s’attendre à un rebond lors des législatives",
+       "lien": "https://www.liberation.fr/international/europe/pourquoi-la-droite-espagnole-peut-sattendre-a-un-rebond-lors-des-legislatives-20261128_62EUORF3PVGB7JKRS3TGQGMCYM/",
+       "publie": "2026-11-28T07:21:00+00:00",
+       "angle": "Libération explique pourquoi la droite peut s'attendre à un rebond, en s'appuyant sur les difficultés du gouvernement et son alliance avec Vox."
+      },
+      {
+       "source": "Mediapart",
+       "titre_original": "En Espagne, les affaires impliquant des figures socialistes dopent la mobilisation des droites",
+       "lien": "https://www.mediapart.fr/journal/international/281126/en-espagne-les-affaires-impliquant-des-figures-socialistes-dopent-la-mobilisation-des-droites",
+       "publie": "2026-11-28T17:55:16+00:00",
+       "angle": "Mediapart insiste sur la façon dont les affaires socialistes ont dopé la mobilisation des droites."
+      },
+      {
+       "source": "The Guardian",
+       "titre_original": "Spain to vote in election that could put far right in power for first time since Franco",
+       "lien": "https://www.theguardian.com/world/2026/nov/28/spain-vote-election-could-far-right-power-first-time-franco",
+       "publie": "2026-11-28T11:00:39+00:00",
+       "angle": "The Guardian pose l'enjeu historique : l'extrême droite pourrait entrer au pouvoir pour la première fois depuis Franco."
+      },
+      {
+       "source": "The New York Times",
+       "titre_original": "Spain’s Election Could Oust Sánchez, a Left-Wing Hero Abroad",
+       "lien": "https://www.nytimes.com/2026/11/28/world/europe/spain-pedro-sanchez-conservatives-election.html",
+       "publie": "2026-11-28T05:01:10+00:00",
+       "angle": "Le New York Times voit en Sánchez un héros de la gauche à l'étranger et un critique de Trump, en difficulté face au défi de la droite."
+      }
+     ]
+    },
+    {
+     "titre": "Israël : Nétanyahou propose une alternance au poste de Premier ministre à Eisenkot",
+     "theme": "Israël",
+     "pourquoi": "Les législatives d'octobre n'ont dégagé aucune majorité, et l'issue de ces négociations décidera de qui gouverne Israël.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/25/459/0/5500/2750/644/322/60/0/ef7222e_ftp-1-y80im324hsky-2026-11-25t103111z-186991965-rc2opoaf5v8p-rtrmadp-3-israel-politics.JPG",
+      "source": "Le Monde"
+     },
+     "suite": null,
+     "essentiel": "Le Premier ministre sortant Benyamin Nétanyahou a proposé samedi à son rival Gadi Eisenkot, chargé de former le gouvernement, de se partager le poste en alternance, en souhaitant l'exercer en premier. Eisenkot, qui refusait jusqu'ici de partager le pouvoir, n'a pas réagi dans l'immédiat ; Al Jazeera rapporte qu'il propose ensuite des discussions immédiates pour tester le sérieux de l'offre. Les pourparlers de coalition étaient bloqués.",
+     "pour_situer": null,
+     "incertain": "Les réponses d'Eisenkot divergent selon les sources et la proposition n'est à ce stade pas acceptée.",
+     "contexte": "Benyamin Nétanyahou dirige le gouvernement israélien de longue date, avec plusieurs interruptions. Gadi Eisenkot est un ancien chef d'état-major de l'armée devenu responsable politique du centre. Un cabinet à direction alternée suppose que deux dirigeants occupent tour à tour le poste de Premier ministre.",
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Israël : Benyamin Nétanyahou propose à son rival, Gadi Eisenkot, d’être le premier à occuper le poste de premier ministre en cas d’accord sur un cabinet à direction alternée",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/28/israel-benyamin-netanyahou-propose-a-son-rival-gadi-eisenkot-d-etre-le-premier-a-exercer-le-poste-de-premier-ministre-en-cas-d-accord-sur-un-cabinet-a-direction-alternee_6816132_3210.html",
+       "publie": "2026-11-28T17:21:55+00:00",
+       "angle": "Le Monde précise que le scrutin de fin octobre n'a donné de majorité absolue à aucun camp."
+      },
+      {
+       "source": "The Guardian",
+       "titre_original": "Netanyahu offers to rotate Israeli premiership with main rival Eisenkot",
+       "lien": "https://www.theguardian.com/world/2026/nov/28/benjamin-netanyahu-offers-rotate-israeli-premiership-with-main-rival-gadi-eisenkot",
+       "publie": "2026-11-28T19:16:32+00:00",
+       "angle": "The Guardian relie l'offre aux accusations d'obstruction contre le Likud dans les discussions de coalition."
+      },
+      {
+       "source": "Al Jazeera",
+       "titre_original": "Israel unity government talks stall: What happens now?",
+       "lien": "https://www.aljazeera.com/news/2026/11/28/israel-unity-government-talks-stall-what-happens-now?traffic_source=rss",
+       "publie": "2026-11-28T11:29:21+00:00",
+       "angle": "Al Jazeera détaille l'impasse : les pourparlers butent sur la rotation et les compromis de coalition."
+      },
+      {
+       "source": "Courrier international",
+       "titre_original": "Nétanyahou, en passe d’être remplacé, pousse Trump à relancer la guerre contre l’Iran",
+       "lien": "https://www.courrierinternational.com/article/analyse-netanyahou-en-passe-d-etre-remplace-pousse-trump-a-relancer-la-guerre-contre-l-iran_290635",
+       "publie": "2026-11-28T11:51:10+00:00",
+       "angle": "Courrier international, citant la presse étrangère, évoque un Nétanyahou en fin de course cherchant à pousser Trump à relancer la guerre contre l'Iran."
+      }
+     ]
+    },
+    {
+     "titre": "Élections locales à Taïwan : le Kuomintang conserve la mairie de Taipei",
+     "theme": "Taïwan",
+     "pourquoi": "Ce scrutin est lu comme un test avant la présidentielle taïwanaise dans quatorze mois, sur fond de relations avec la Chine.",
+     "image": {
+      "url": "https://static01.nyt.com/images/2026/11/28/multimedia/28int-taiwan-election-vglk/28int-taiwan-election-vglk-mediumSquareAt3X.jpg",
+      "source": "The New York Times"
+     },
+     "suite": null,
+     "essentiel": "Le Kuomintang, favorable à des liens plus étroits avec Pékin, a conservé la capitale : Chiang Wan-an a été réélu face à Puma Shen, candidat du Parti démocrate progressiste, qui a reconnu sa défaite. Le parti au pouvoir progresse toutefois dans l'ensemble du pays : selon The Guardian, il double le nombre de circonscriptions qu'il contrôle, son meilleur résultat en dix ans.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": "Taïwan est une île démocratique revendiquée par la Chine, qui n'exclut pas d'en prendre le contrôle. Le Parti démocrate progressiste, au pouvoir, défend la souveraineté de l'île ; le Kuomintang prône un rapprochement avec Pékin.",
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "A Taiwan, les pro-Pékin conservent la mairie de Taipei",
+       "lien": "https://www.liberation.fr/international/asie-pacifique/a-taiwan-les-pro-pekin-conservent-la-mairie-de-taipei-20261128_7SGF3HAFINDA3NQNJRS64L64BM/",
+       "publie": "2026-11-28T16:42:29+00:00",
+       "angle": "Libération souligne la victoire des pro-Pékin face à un novice en politique inscrit sur la liste noire chinoise des indépendantistes."
+      },
+      {
+       "source": "The New York Times",
+       "titre_original": "A Critic of Beijing Falls Short in Taiwan’s Key Mayoral Election",
+       "lien": "https://www.nytimes.com/2026/11/28/world/asia/taiwan-election-taipei-china.html",
+       "publie": "2026-11-28T15:39:19+00:00",
+       "angle": "Le New York Times note que ce résultat devrait soulager Pékin."
+      },
+      {
+       "source": "The Guardian",
+       "titre_original": "‘Victory for democracy’: Taiwan’s ruling party secures best result in a decade",
+       "lien": "https://www.theguardian.com/world/2026/nov/28/taiwan-ruling-party-dpp-secures-best-result-in-decade-china",
+       "publie": "2026-11-28T17:39:53+00:00",
+       "angle": "The Guardian retient la bonne performance nationale du parti au pouvoir, présentée comme une « victoire pour la démocratie »."
+      },
+      {
+       "source": "L'Humanité",
+       "titre_original": "Le Kuomintang conserve la mairie de Taipei, malgré la virulente campagne du candidat anti-Chine",
+       "lien": "https://www.humanite.fr/monde/chine/le-kuomintang-conserve-la-mairie-de-taipei-malgre-la-virulente-campagne-du-candidat-anti-chine",
+       "publie": "2026-11-28T14:30:00+00:00",
+       "angle": "L'Humanité critique la campagne virulente du candidat anti-Chine, défait."
+      }
+     ]
+    },
+    {
+     "titre": "Gaza : deux employés de Médecins sans frontières tués dans une frappe israélienne",
+     "theme": "Gaza",
+     "pourquoi": "La frappe sur une structure de soins relance la question de la protection des humanitaires et des soignants à Gaza.",
+     "image": {
+      "url": "https://i.guim.co.uk/img/media/2b407f70dc48284cb361ed01b3cabb77ccda0da2/516_0_6827_5464/master/6827.jpg?width=140&quality=85&auto=format&fit=max&s=951a3dcd4239d93beadf5c30d7e021fc",
+      "source": "The Guardian"
+     },
+     "suite": null,
+     "essentiel": "Deux gardiens d'une clinique de MSF à Gaza ont été tués par une frappe israélienne. L'ONG s'est dite bouleversée et révoltée, et l'OMS a condamné l'attaque. L'armée israélienne confirme la frappe et affirme avoir visé des membres du Hamas.",
+     "pour_situer": "L'Humanité indique que 17 employés de MSF ont été tués en un peu plus de trois ans.",
+     "incertain": "Les deux hommes sont qualifiés de « terroristes » par l'armée israélienne, qui n'a pas fourni de preuves selon L'Humanité ; MSF dément cette version.",
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Libération",
+       "titre_original": "Deux employés de Médecins sans frontières tués par l’armée israélienne à Gaza",
+       "lien": "https://www.liberation.fr/international/moyen-orient/deux-employes-de-medecins-sans-frontieres-tues-par-larmee-israelienne-a-gaza-20261128_N7BPZZ3ARREATDRI3EFK6JR6LA/",
+       "publie": "2026-11-28T14:55:57+00:00",
+       "angle": "Libération reprend la version de MSF et note que l'armée a confirmé la frappe en invoquant l'appartenance au Hamas."
+      },
+      {
+       "source": "The Guardian",
+       "titre_original": "Two Médecins Sans Frontières staff killed by Israeli strike in Gaza, charity says",
+       "lien": "https://www.theguardian.com/world/2026/nov/28/medecins-sans-frontieres-staff-killed-gaza-israeli-strike",
+       "publie": "2026-11-28T12:14:49+00:00",
+       "angle": "The Guardian relaie la dénonciation de MSF et de l'OMS face aux accusations israéliennes."
+      },
+      {
+       "source": "L'Humanité",
+       "titre_original": "Deux employés de MSF tués dans un bombardement à Gaza",
+       "lien": "https://www.humanite.fr/monde/armee-israelienne/deux-employes-de-msf-tues-dans-un-bombardement-a-gaza",
+       "publie": "2026-11-28T10:00:00+00:00",
+       "angle": "L'Humanité souligne l'absence de preuves fournies par l'armée et le nombre de membres de MSF tués depuis trois ans."
+      },
+      {
+       "source": "BBC News",
+       "titre_original": "Two staff killed in Israeli strike on Gaza medical clinic, MSF says",
+       "lien": "https://www.bbc.co.uk/news/articles/cm5y10yydln3o?at_medium=RSS&at_campaign=rss",
+       "publie": "2026-11-28T10:34:58+00:00",
+       "angle": "BBC News met en avant la version militaire israélienne (« terroristes du Hamas ») et la condamnation de l'OMS."
+      }
+     ]
+    },
+    {
+     "titre": "Palestine : huit pays dont la France appellent à des élections au premier trimestre 2027",
+     "theme": "Proche-Orient",
+     "pourquoi": "Un appel conjoint de pays européens à des élections palestiniennes pèse sur l'avenir politique des territoires.",
+     "image": {
+      "url": "https://img.lemde.fr/2026/11/28/452/0/5617/2808/644/322/60/0/2fe53bb_upload-1-snoyx2gz5wgi-2026-06-03t181825z-778153767-rc26mlaem0z0-rtrmadp-3-palestinians-politics.JPG",
+      "source": "Le Monde"
+     },
+     "suite": null,
+     "essentiel": "Huit pays, dont la France et le Royaume-Uni, ont appelé samedi l'Autorité palestinienne à organiser des élections présidentielle et législatives « au premier trimestre 2027 ». Mahmoud Abbas avait décidé en octobre de reporter le scrutin en invoquant des obstacles dressés par Israël et la nécessité de créer des conditions favorables.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "Le Monde",
+       "titre_original": "Palestine : huit pays, dont la France et le Royaume-Uni, appellent à l’organisation d’élections présidentielle et législatives « au premier trimestre 2027 »",
+       "lien": "https://www.lemonde.fr/international/article/2026/11/28/palestine-huit-pays-dont-la-france-et-le-royaume-uni-appellent-a-l-organisation-d-elections-presidentielle-et-legislatives-au-premier-trimestre-2027_6816138_3210.html",
+       "publie": "2026-11-28T18:04:31+00:00",
+       "angle": "Le Monde cite la déclaration conjointe : des élections libres et transparentes sont « indispensables » pour préserver les principes démocratiques."
+      },
+      {
+       "source": "franceinfo",
+       "titre_original": "Huit pays, dont la France, appellent à des élections en Palestine \"au premier trimestre 2027\"",
+       "lien": "https://www.franceinfo.fr/monde/palestine/huit-pays-dont-la-france-appellent-a-des-elections-en-palestine-au-premier-trimestre-2027_8305002.html#xtor=RSS-3-[lestitres]",
+       "publie": "2026-11-28T18:35:11+00:00",
+       "angle": "franceinfo rappelle le report décidé en octobre par Mahmoud Abbas et les raisons qu'il avançait."
+      },
+      {
+       "source": "20 Minutes",
+       "titre_original": "La France appelle à des élections en Palestine début 2027",
+       "lien": "https://www.20minutes.fr/monde/pologne/4266507-20261128-france-appelle-elections-palestine-debut-2027?at_medium=display&at_campaign=149",
+       "publie": "2026-11-28T17:43:59+00:00",
+       "angle": "20 Minutes met l'accent sur l'appel de la France et du Royaume-Uni à l'Autorité palestinienne."
+      }
+     ]
+    },
+    {
+     "titre": "Malouines : le tribunal du droit de la mer rejette la demande de l'Argentine contre un projet pétrolier",
+     "theme": "Diplomatie",
+     "pourquoi": "La décision d'un tribunal international ouvre la voie à une exploitation pétrolière dans une zone de souveraineté contestée.",
+     "image": {
+      "url": "https://i.guim.co.uk/img/media/32371dbe4bb863597422e9658bc6f2ab94586f6c/301_0_2043_1635/master/2043.jpg?width=140&quality=85&auto=format&fit=max&s=ea56b0b7871d801ab073df12080686d1",
+      "source": "The Guardian"
+     },
+     "suite": null,
+     "essentiel": "Le Tribunal international du droit de la mer a rejeté samedi la demande de l'Argentine de bloquer en urgence un projet pétrolier au large des îles Malouines. Le projet, porté par des entreprises britanniques et israéliennes, peut avancer. Londres appelle Buenos Aires à cesser ses pressions économiques sur les îles.",
+     "pour_situer": null,
+     "incertain": null,
+     "contexte": null,
+     "lectures": [
+      {
+       "source": "The Guardian",
+       "titre_original": "Argentina fails to block oil drilling off Falkland Islands",
+       "lien": "https://www.theguardian.com/uk-news/2026/nov/28/argentina-oil-drilling-falkland-islands-international-tribunal",
+       "publie": "2026-11-28T13:22:10+00:00",
+       "angle": "The Guardian met en avant l'appel du gouvernement britannique à l'Argentine à cesser ses « pressions économiques »."
+      },
+      {
+       "source": "The New York Times",
+       "titre_original": "Argentina Ramps Up Its Claim to the Falklands. Here’s What to Know.",
+       "lien": "https://www.nytimes.com/article/falkland-islands-trump-uk-argentina-malvinas.html",
+       "publie": "2026-11-28T15:45:00+00:00",
+       "angle": "Le New York Times rappelle l'offensive du président Milei et la révision par Donald Trump de la neutralité américaine."
+      },
+      {
+       "source": "RFI",
+       "titre_original": "Projet pétrolier aux Malouines: le tribunal du droit de la mer rejette la demande de l'Argentine",
+       "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261128-projet-p%C3%A9trolier-aux-malouines-le-tribunal-du-droit-de-la-mer-rejette-la-demande-de-l-argentine",
+       "publie": "2026-11-28T13:37:00+00:00",
+       "angle": "RFI décrit la décision du tribunal comme un rejet d'une demande d'urgence."
+      }
+     ]
+    }
+   ],
+   "sources": [
+    {
+     "source": "France 24",
+     "articles": 24
+    },
+    {
+     "source": "RFI",
+     "articles": 23
+    },
+    {
+     "source": "Courrier international",
+     "articles": 20
+    },
+    {
+     "source": "BBC News",
+     "articles": 15
+    },
+    {
+     "source": "The Guardian",
+     "articles": 25
+    },
+    {
+     "source": "The New York Times",
+     "articles": 18
+    },
+    {
+     "source": "Al Jazeera",
+     "articles": 25
+    },
+    {
+     "source": "Deutsche Welle",
+     "articles": 0,
+     "erreur": "<unknown>:2:0: syntax error"
+    },
+    {
+     "source": "Le Temps",
+     "articles": 20
+    }
+   ]
+  }
+ ]
+}

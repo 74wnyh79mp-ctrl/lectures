@@ -1,5 +1,11 @@
 [
  {
+  "fichier": "archive/2026-11-28-soir.json",
+  "date": "samedi 28 novembre 2026",
+  "moment": "soir",
+  "genere_le": "2026-11-28T20:28+01:00"
+ },
+ {
   "fichier": "archive/2026-11-27-soir.json",
   "date": "vendredi 27 novembre 2026",
   "moment": "soir",
